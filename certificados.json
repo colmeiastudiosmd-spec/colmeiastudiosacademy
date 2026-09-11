@@ -1,0 +1,36 @@
+[
+  {
+    "codigo": "CSA-2026-001",
+    "nome": "Aluno Exemplo da Silva",
+    "curso": "Formação Executiva & Mentoria VIP em IA",
+    "modalidade": "Mentoria Individual VIP 1:1",
+    "dataEmissao": "29/08/2026",
+    "cargaHoraria": "30 horas (20 aulas práticas)",
+    "instrutor": "Cristian Santos Pimentel",
+    "status": "Válido",
+    "competencias": [
+      "Engenharia de Prompts Avançada",
+      "Criação de Websites e Landing Pages com IA",
+      "Automações de Processos No-Code",
+      "Produção Audiovisual e Vídeos Neurais"
+    ]
+  },
+  {
+    "codigo": "CSA-2026-002",
+    "nome": "Maria Oliveira Santos",
+    "curso": "Formação Executiva em Inteligência Artificial",
+    "modalidade": "Turma Mensal Ao Vivo",
+    "dataEmissao": "15/08/2026",
+    "cargaHoraria": "30 horas (20 aulas práticas)",
+    "instrutor": "Cristian Santos Pimentel",
+    "status": "Válido",
+    "competencias": [
+      "Engenharia de Prompts Avançada & Chain-of-Thought",
+      "Design Gráfico, Branding & Documentos com IA",
+      "Produção Audiovisual & Avatares Neurais",
+      "Desenvolvimento Acelerado de Websites & SEO",
+      "Automações de Processos No-Code com Make & Zapier",
+      "IA Aplicada a Mercados Especializados"
+    ]
+  }
+]
