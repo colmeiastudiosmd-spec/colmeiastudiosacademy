@@ -24,29 +24,22 @@
     <meta property="og:url" content="https://colmeiastudiosacademy.com.br/cursos">
     <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
 
-    <!-- Schema JSON-LD Book -->
+    <!-- Schema JSON-LD Product -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Book",
-      "name": "IA no Trabalho",
-      "author": {
-        "@type": "Person",
-        "name": "Cristian Santos Pimentel"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Colmeia Studios Academy",
-        "url": "https://colmeiastudiosacademy.com.br"
-      },
-      "workExample": [
+      "@graph": [
         {
-          "@type": "Book",
-          "name": "Livro Digital — IA no Trabalho",
-          "bookFormat": "https://schema.org/EBook",
+          "@type": "Product",
+          "name": "IA no Trabalho (Livro Digital)",
+          "description": "Versão digital do livro IA no Trabalho da Colmeia Studios Academy. Aprenda a usar Inteligência Artificial para ganhar tempo, produzir melhor e se destacar no mercado.",
+          "image": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
+          "brand": {
+            "@type": "Brand",
+            "name": "Colmeia Studios Academy"
+          },
           "offers": {
             "@type": "Offer",
-            "name": "Livro Digital",
             "price": "47.37",
             "priceCurrency": "BRL",
             "availability": "https://schema.org/InStock",
@@ -54,33 +47,21 @@
           }
         },
         {
-          "@type": "Book",
-          "name": "Livro Físico — IA no Trabalho",
-          "bookFormat": "https://schema.org/Paperback",
+          "@type": "Product",
+          "name": "IA no Trabalho (Livro Físico)",
+          "description": "Versão impressa do livro IA no Trabalho da Colmeia Studios Academy. Material físico ideal para estudar com calma, fazer anotações e acompanhar com concentração.",
+          "image": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
+          "brand": {
+            "@type": "Brand",
+            "name": "Colmeia Studios Academy"
+          },
           "offers": {
             "@type": "Offer",
-            "name": "Livro Físico",
             "price": "67.30",
             "priceCurrency": "BRL",
             "availability": "https://schema.org/InStock",
             "url": "https://pay.hotmart.com/A106240775N?bid=1781054850796"
           }
-        }
-      ],
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "Versão Digital — IA no Trabalho",
-          "price": "47.37",
-          "priceCurrency": "BRL",
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "Versão Física — IA no Trabalho",
-          "price": "67.30",
-          "priceCurrency": "BRL",
-          "availability": "https://schema.org/InStock"
         }
       ]
     }
