@@ -2228,3 +2228,526 @@ ul {
         max-width: 320px;
     }
 }
+
+@media (max-width: 900px) {
+  .pacote-prestadores-card {
+    grid-template-columns: 1fr !important;
+    padding: 35px 22px !important;
+    gap: 35px !important;
+  }
+  .pacote-prestadores-card > div:last-child {
+    position: static !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   PÁGINA PRIVADA: NÚCLEO DE INTELIGÊNCIA JURÍDICA
+   ------------------------------------------------------------- */
+.legal-tech-page {
+    background-color: var(--bg-dark-deep);
+    color: var(--text-light-primary);
+}
+
+.header-private-tag {
+    display: flex;
+    align-items: center;
+}
+
+.badge-private {
+    background-color: rgba(255, 184, 0, 0.1);
+    color: var(--accent);
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.personalization-wrapper {
+    background: linear-gradient(90deg, #111111 0%, #1a1505 50%, #111111 100%);
+    border-bottom: 1px solid rgba(255, 184, 0, 0.2);
+    padding: 12px 0;
+}
+
+.personalization-banner {
+    font-size: 0.92rem;
+    color: var(--text-light-secondary);
+    text-align: center;
+    font-weight: 500;
+}
+
+.hero-legal {
+    padding: 60px 0 40px 0;
+    text-align: center;
+}
+
+.hero-legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.hero-legal-title {
+    font-size: 2.5rem;
+    color: var(--text-light-primary);
+    margin: 15px 0 10px 0;
+    line-height: 1.2;
+}
+
+.hero-legal-subtitle {
+    font-size: 1.25rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.hero-legal-text {
+    font-size: 1.1rem;
+    color: var(--text-light-secondary);
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.disclaimer-card {
+    background: #0d0d0d;
+    border: 1px solid rgba(255, 184, 0, 0.3);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--border-radius-sm);
+    padding: 18px 24px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    text-align: left;
+    margin: 25px 0;
+}
+
+.disclaimer-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.disclaimer-text {
+    font-size: 0.95rem;
+    color: var(--text-light-secondary);
+    line-height: 1.6;
+}
+
+.hero-cta-wrapper {
+    margin-top: 30px;
+}
+
+.section-padding {
+    padding: 60px 0;
+}
+
+.bg-alt {
+    background-color: var(--bg-dark-card);
+}
+
+.content-box {
+    background-color: var(--bg-dark-accent);
+    border: 1px solid var(--border-color-dark);
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    line-height: 1.7;
+    color: var(--text-light-secondary);
+    font-size: 1.05rem;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.section-header {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: var(--text-light-primary);
+    margin-bottom: 10px;
+}
+
+.section-intro {
+    color: var(--text-light-secondary);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.subtitle-tag {
+    color: var(--accent);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+}
+
+/* 3.4 Padrão Estratégico COLMEIA */
+.etapas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.etapa-card {
+    background: #0f0f0f;
+    border: 1px solid rgba(255, 184, 0, 0.2);
+    border-radius: var(--border-radius-md);
+    padding: 24px;
+    display: flex;
+    gap: 16px;
+    transition: var(--transition-smooth);
+}
+
+.etapa-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 15px rgba(255, 184, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.etapa-badge {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+    background: rgba(255, 184, 0, 0.1);
+    border-radius: 8px;
+    padding: 6px 12px;
+    height: fit-content;
+    line-height: 1;
+}
+
+.etapa-content h3 {
+    font-size: 1.15rem;
+    color: var(--text-light-primary);
+    margin-bottom: 8px;
+}
+
+.etapa-content p {
+    font-size: 0.95rem;
+    color: var(--text-light-secondary);
+    line-height: 1.5;
+}
+
+/* 3.5 Caso de Referência */
+.case-study-card {
+    background: #0f0f0f;
+    border: 1px solid rgba(255, 184, 0, 0.25);
+    border-radius: var(--border-radius-md);
+    padding: 35px;
+}
+
+.case-item {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.case-label {
+    font-weight: 700;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 6px;
+    font-size: 1.05rem;
+}
+
+.case-text {
+    color: var(--text-light-secondary);
+    font-size: 1.02rem;
+}
+
+.case-result {
+    background: rgba(255, 184, 0, 0.05);
+    border-left: 3px solid var(--accent);
+    padding: 15px;
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
+
+.case-disclaimer {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 3.6 Escopo e Vedações & 3.7 Faixas de Serviço */
+.table-responsive {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.comparison-table, .pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #0d0d0d;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-color-dark);
+}
+
+.comparison-table th, .pricing-table th {
+    background: #161616;
+    padding: 16px 20px;
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    color: var(--text-light-primary);
+    border-bottom: 1px solid var(--border-color-dark);
+}
+
+.th-fornece {
+    color: var(--accent) !important;
+    width: 50%;
+}
+
+.th-vedado {
+    color: #ff6b6b !important;
+    width: 50%;
+}
+
+.comparison-table td, .pricing-table td {
+    padding: 20px;
+    vertical-align: top;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.check-list li, .cross-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    color: var(--text-light-secondary);
+}
+
+.check-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.cross-list li::before {
+    content: "✕";
+    position: absolute;
+    left: 0;
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.tier-name {
+    font-weight: 700;
+    color: var(--text-light-primary);
+    width: 25%;
+}
+
+.tier-price {
+    font-weight: 700;
+    color: var(--accent);
+    white-space: nowrap;
+    width: 22%;
+}
+
+.tier-revisions {
+    text-align: center;
+    width: 13%;
+}
+
+.pricing-note {
+    font-size: 0.92rem;
+    color: var(--text-light-secondary);
+    background: rgba(255, 184, 0, 0.05);
+    border: 1px solid rgba(255, 184, 0, 0.15);
+    border-radius: var(--border-radius-sm);
+    padding: 14px 20px;
+    text-align: center;
+}
+
+/* 3.8 Selo de Parceria */
+.selo-card {
+    background: linear-gradient(135deg, #141414 0%, #1f1a09 100%);
+    border: 1px solid var(--accent);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow-glow);
+}
+
+.selo-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.selo-icon {
+    color: var(--accent);
+}
+
+.selo-header h3 {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+.selo-body {
+    font-size: 1.1rem;
+    color: var(--text-light-primary);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.selo-ethical-note {
+    font-size: 0.88rem;
+    color: var(--text-light-secondary);
+    border-top: 1px solid rgba(255, 184, 0, 0.2);
+    padding-top: 15px;
+}
+
+/* 3.9 Formulário de Triagem */
+.form-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #0f0f0f;
+    border: 1px solid var(--border-color-dark);
+    border-radius: var(--border-radius-lg);
+    padding: 40px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--text-light-primary);
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-input {
+    width: 100%;
+    background: #161616;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--border-radius-sm);
+    padding: 12px 16px;
+    color: var(--text-light-primary);
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    transition: var(--transition-smooth);
+}
+
+.form-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 8px rgba(255, 184, 0, 0.3);
+}
+
+.input-error {
+    border-color: var(--error) !important;
+}
+
+.form-warning-notice {
+    grid-column: span 2;
+    background: rgba(239, 68, 68, 0.08);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: var(--border-radius-sm);
+    padding: 14px 18px;
+    margin: 20px 0;
+    font-size: 0.9rem;
+    color: #fca5a5;
+    line-height: 1.5;
+}
+
+.form-feedback-message {
+    padding: 14px;
+    border-radius: var(--border-radius-sm);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.feedback-success {
+    background: rgba(57, 255, 20, 0.1);
+    border: 1px solid var(--success);
+    color: var(--success);
+}
+
+.feedback-error {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--error);
+    color: var(--error);
+}
+
+.btn-block {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+/* 3.10 Rodapé de Governança */
+.footer-governance {
+    background-color: #050505;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 40px 0;
+}
+
+.governance-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.governance-title {
+    font-size: 1.1rem;
+    color: var(--text-light-primary);
+    margin-bottom: 12px;
+}
+
+.governance-disclaimer {
+    font-size: 0.88rem;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .grid-2col, .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+
+    .hero-legal-title {
+        font-size: 1.8rem;
+    }
+
+    .selo-card, .form-container {
+        padding: 24px;
+    }
+
+    .comparison-table th, .comparison-table td,
+    .pricing-table th, .pricing-table td {
+        padding: 12px 14px;
+        font-size: 0.9rem;
+    }
+}
+
+

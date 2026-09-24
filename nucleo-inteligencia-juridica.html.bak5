@@ -1,0 +1,2409 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Núcleo de Inteligência Jurídica | Pesquisa Assistida e Inteligência Documental</title>
+    <meta name="description" content="Pesquisa assistida por IA, organização documental e auditoria de fontes para advogados e escritórios. Materiais rastreáveis e editáveis para revisão profissional.">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+
+    <link rel="canonical" href="https://colmeiastudiosacademy.com.br/nucleo-inteligencia-juridica">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Núcleo de Inteligência Jurídica | Colmeia Studios Academy">
+    <meta property="og:description" content="Pesquisa assistida por IA, inteligência documental e auditoria de fontes para escritórios de advocacia.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/nucleo-inteligencia-juridica">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/og-image-nucleo.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/colmeia-bee-logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Service",
+          "name": "Núcleo de Inteligência Jurídica",
+          "provider": {
+            "@type": "Organization",
+            "name": "Colmeia Studios Academy",
+            "url": "https://colmeiastudiosacademy.com.br"
+          },
+          "description": "Pesquisa assistida por inteligência artificial, inteligência documental e auditoria de fontes para escritórios de advocacia.",
+          "areaServed": "BR",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "BRL",
+            "lowPrice": "1800",
+            "highPrice": "12000",
+            "offerCount": "3"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "O Núcleo presta consultoria jurídica?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O Núcleo presta apoio técnico em pesquisa assistida, inteligência documental, organização de informações e auditoria de fontes. A interpretação jurídica, a orientação ao cliente, a definição da estratégia processual e a utilização do material são responsabilidades do advogado."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quem pode contratar o serviço?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O serviço é destinado a advogados inscritos na OAB, escritórios de advocacia, departamentos jurídicos e profissionais de apoio devidamente autorizados por advogado responsável. Não atendemos diretamente pessoas físicas ou organizações sem advogado responsável pela demanda."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O material é entregue pronto para protocolo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O material é entregue como dossiê técnico, relatório de fontes e estrutura preliminar editável. Antes de qualquer utilização profissional ou processual, o advogado responsável deverá revisar, adaptar, validar e assumir integralmente o conteúdo."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como as fontes são verificadas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Todas as referências localizadas passam por verificação direta em bases oficiais, diários de justiça, repositórios de tribunais e legislação antes de comporem o relatório de auditoria de fontes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "A inteligência artificial pode apresentar informações incorretas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim. Ferramentas de inteligência artificial podem produzir referências imprecisas ou inexistentes. Por isso, a Estratégia COLMEIA inclui conferência direta das fontes e registro dos pontos que precisam de validação profissional."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como os documentos são protegidos?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Operamos sob acordo de confidencialidade (NDA), minimização de dados e ciclo seguro de retenção. Os insumos do seu caso não são utilizados para treinar modelos públicos de inteligência artificial."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Posso enviar autos na triagem inicial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Na triagem inicial solicitamos apenas estimativas de volume e resumo operacional sem dados sensíveis. O envio de autos ocorre apenas após a assinatura do NDA e formalização contratual."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Quem define a estratégia processual?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A definição da tese, a escolha dos argumentos jurídicos e a condução da estratégia processual cabem exclusivamente ao advogado contratante."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual é o prazo de entrega?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Os prazos variam entre 5 e 12 dias úteis conforme a faixa de complexidade do caso (Essencial: até 5 dias; Padrão: até 8 dias; Complexa: até 12 dias), contando com opção de regime de urgência (48h a 72h)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O serviço garante resultado judicial?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. O serviço não oferece garantia de resultado. Decisões jurídicas e processuais dependem das circunstâncias de cada caso, da atuação dos profissionais responsáveis e das autoridades competentes."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Como funciona a contratação?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Envio da solicitação de triagem -> Alinhamento de escopo e proposta -> Formalização de contrato e NDA -> Execução e entrega dos materiais para validação profissional."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "O que está incluído na entrega?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dossiê técnico estruturado, relatório de auditoria de fontes com links de conferência e estrutura preliminar editável para desenvolvimento e validação do advogado."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* CSS Autocontido — Núcleo de Inteligência Jurídica */
+        :root {
+            --bg-black: #000000;
+            --bg-card: #0c0c0c;
+            --bg-card-hover: #141414;
+            --bg-alt: #070707;
+            --border-dark: #1f1f1f;
+            --border-gold: #f2b600;
+            --border-gold-subtle: rgba(242, 182, 0, 0.25);
+
+            --accent-gold: #f2b600;
+            --accent-gold-hover: #d9a300;
+            --accent-gold-light: rgba(242, 182, 0, 0.1);
+
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a0;
+            --text-dark: #666666;
+            
+            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+            --container-max: 1140px;
+            --header-height: 72px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: var(--header-height);
+            font-size: 16px;
+            background-color: var(--bg-black);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Tipografia & Acessibilidade */
+        p, li, td, th, label, input, textarea {
+            font-size: 0.9375rem; /* 15px mínimo */
+        }
+
+        @media (min-width: 768px) {
+            p, li, td, th, label, input, textarea {
+                font-size: 1rem; /* 16px no desktop */
+            }
+        }
+
+        h1, h2, h3, h4 {
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+        }
+
+        h1 { font-size: 2.25rem; }
+        h2 { font-size: 1.75rem; margin-bottom: 0.75rem; }
+        h3 { font-size: 1.25rem; margin-bottom: 0.5rem; }
+
+        @media (min-width: 768px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2.25rem; }
+            h3 { font-size: 1.375rem; }
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        ul { list-style: none; }
+
+        .container {
+            width: 100%;
+            max-width: var(--container-max);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .bg-alt {
+            background-color: var(--bg-alt);
+            border-top: 1px solid var(--border-dark);
+            border-bottom: 1px solid var(--border-dark);
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+            text-align: center;
+        }
+
+        .btn-gold {
+            background-color: var(--accent-gold);
+            color: #000000;
+            font-weight: 700;
+        }
+
+        .btn-gold:hover {
+            background-color: var(--accent-gold-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-block {
+            width: 100%;
+        }
+
+        .link-secondary {
+            color: var(--accent-gold);
+            font-weight: 500;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .link-secondary:hover {
+            color: #ffffff;
+        }
+
+        /* Header Fixo */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-dark);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            max-width: calc(100% - 60px);
+        }
+
+        .header-logo {
+            height: 32px;
+            width: auto;
+            flex-shrink: 0;
+        }
+
+        .header-titles {
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+        }
+
+        .brand-main {
+            font-weight: 700;
+            font-size: 1rem;
+            color: #ffffff;
+            line-height: 1.1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .brand-sub {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Botão Hambúrguer Mobile */
+        .mobile-menu-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 44px;
+            height: 44px;
+            background: transparent;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            cursor: pointer;
+            padding: 0;
+            z-index: 1001;
+            transition: all 0.2s ease;
+        }
+
+        .mobile-menu-toggle:hover,
+        .mobile-menu-toggle:focus-visible {
+            border-color: var(--border-gold);
+            outline: 2px solid var(--accent-gold);
+            outline-offset: 2px;
+        }
+
+        .hamburger-line {
+            width: 22px;
+            height: 2px;
+            background-color: var(--text-main);
+            border-radius: 2px;
+            transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] .hamburger-line {
+            background-color: var(--accent-gold);
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-toggle[aria-expanded="true"] .hamburger-line:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Menu de Navegação */
+        .header-nav {
+            display: none;
+        }
+
+        @media (max-width: 991px) {
+            .header-nav {
+                position: absolute;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                background: rgba(8, 8, 8, 0.98);
+                backdrop-filter: blur(12px);
+                border-bottom: 1px solid var(--border-gold-subtle);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+                padding: 20px;
+                flex-direction: column;
+                gap: 12px;
+                align-items: stretch;
+                max-height: calc(100vh - var(--header-height));
+                overflow-y: auto;
+                z-index: 1000;
+            }
+
+            .header-nav.is-open {
+                display: flex;
+            }
+
+            .header-nav a {
+                display: flex;
+                align-items: center;
+                min-height: 44px;
+                padding: 10px 16px;
+                border-radius: 6px;
+                font-size: 0.95rem;
+                font-weight: 500;
+                color: var(--text-main);
+                background: rgba(255, 255, 255, 0.02);
+                border: 1px solid transparent;
+                transition: all 0.2s ease;
+            }
+
+            .header-nav a:hover,
+            .header-nav a:focus-visible {
+                color: var(--accent-gold);
+                background: var(--accent-gold-light);
+                border-color: var(--border-gold-subtle);
+                outline: 2px solid var(--accent-gold);
+            }
+
+            .header-nav a.btn-gold {
+                margin-top: 8px;
+                justify-content: center;
+                text-align: center;
+                background-color: var(--accent-gold);
+                color: #000000;
+                font-weight: 700;
+                font-size: 0.9375rem !important;
+                padding: 14px 20px !important;
+            }
+
+            .header-nav a.btn-gold:hover {
+                background-color: var(--accent-gold-hover);
+                color: #000000;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .mobile-menu-toggle {
+                display: none;
+            }
+
+            .header-nav {
+                display: flex !important;
+                gap: 24px;
+                align-items: center;
+            }
+
+            .header-nav a {
+                font-size: 0.875rem;
+                color: var(--text-muted);
+                font-weight: 500;
+            }
+
+            .header-nav a:hover {
+                color: var(--accent-gold);
+            }
+        }
+
+        @media (max-width: 380px) {
+            .brand-main {
+                font-size: 0.875rem;
+            }
+            .brand-sub {
+                font-size: 0.6875rem;
+            }
+            .header-brand {
+                gap: 8px;
+            }
+            .header-logo {
+                height: 26px;
+            }
+        }
+
+        /* Barra de topo institucional */
+        .top-institutional-bar {
+            background: #090909;
+            border-bottom: 1px solid var(--border-dark);
+            padding: 8px 0;
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-top: var(--header-height);
+        }
+
+        /* Hero */
+        .hero-section {
+            padding: 60px 0 80px 0;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(242, 182, 0, 0.1);
+            border: 1px solid var(--border-gold-subtle);
+            color: var(--accent-gold);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .hero-title {
+            margin-bottom: 12px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-subtitle { font-size: 1.5rem; }
+        }
+
+        .hero-description {
+            font-size: 1.0625rem;
+            color: var(--text-main);
+            max-width: 860px;
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 36px;
+        }
+
+        .disclaimer-box-gold {
+            background: rgba(12, 12, 12, 0.8);
+            border: 1px solid var(--border-gold);
+            border-radius: 6px;
+            padding: 20px 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .disclaimer-icon-svg {
+            flex-shrink: 0;
+            color: var(--accent-gold);
+            margin-top: 2px;
+        }
+
+        .disclaimer-text-p {
+            font-size: 0.875rem;
+            color: #d0d0d0;
+            line-height: 1.6;
+        }
+
+        /* Barra de Prova Verificável */
+        .proof-bar-section {
+            background: #060606;
+            border-top: 1px solid var(--border-dark);
+            border-bottom: 1px solid var(--border-dark);
+            padding: 28px 0;
+        }
+
+        .proof-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            .proof-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .proof-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .proof-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.875rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        .proof-item-icon {
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        /* Seção Genérica Layout */
+        .section-header-block {
+            margin-bottom: 40px;
+        }
+
+        .section-header-block p {
+            color: var(--text-muted);
+            font-size: 1.0625rem;
+            margin-top: 8px;
+        }
+
+        /* 3 Colunas Comparativas */
+        .comparative-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        @media (min-width: 992px) {
+            .comparative-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .comp-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 32px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .comp-card.highlighted {
+            border: 1px solid var(--border-gold);
+            background: rgba(15, 15, 12, 0.95);
+            position: relative;
+        }
+
+        .comp-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--accent-gold);
+            color: #000;
+            font-weight: 700;
+            font-size: 0.75rem;
+            padding: 2px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+        .comp-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 12px;
+        }
+
+        .comp-card.highlighted h3 {
+            color: var(--accent-gold);
+            border-bottom-color: var(--border-gold-subtle);
+        }
+
+        .comp-card p {
+            color: var(--text-muted);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        /* Estratégia COLMEIA Cards */
+        .colmeia-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            .colmeia-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 992px) {
+            .colmeia-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .colmeia-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 28px 24px;
+            transition: border-color 0.2s ease;
+        }
+
+        .colmeia-card:hover {
+            border-color: var(--border-gold-subtle);
+        }
+
+        .colmeia-letter {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            line-height: 1;
+            margin-bottom: 12px;
+            font-family: var(--font-main);
+            letter-spacing: -0.02em;
+            text-shadow: 0 0 20px rgba(242, 182, 0, 0.2);
+        }
+
+        .colmeia-card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 10px;
+        }
+
+        .colmeia-card p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        /* Quem Conduz */
+        .bio-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        @media (min-width: 850px) {
+            .bio-wrapper { grid-template-columns: 320px 1fr; }
+        }
+
+        .bio-image-container {
+            width: 100%;
+            max-width: 320px;
+            margin: 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--border-dark);
+        }
+
+        .bio-image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
+
+        .bio-content h3 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .bio-role {
+            color: var(--accent-gold);
+            font-size: 0.9375rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .bio-text {
+            color: var(--text-muted);
+            margin-bottom: 24px;
+            line-height: 1.7;
+        }
+
+        .bio-trust-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-top: 1px solid var(--border-dark);
+            padding-top: 20px;
+        }
+
+        .bio-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.875rem;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        /* Segurança & LGPD Cards */
+        .security-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 640px) {
+            .security-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (min-width: 1024px) {
+            .security-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+
+        .sec-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .sec-icon {
+            color: var(--accent-gold);
+            margin-bottom: 16px;
+        }
+
+        .sec-card h3 {
+            font-size: 1.0625rem;
+            margin-bottom: 10px;
+        }
+
+        .sec-card p {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            line-height: 1.6;
+        }
+
+        /* Caso de Referência Card */
+        .case-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 36px 28px;
+        }
+
+        .case-step {
+            margin-bottom: 24px;
+        }
+
+        .case-step:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .case-label {
+            font-weight: 700;
+            color: var(--accent-gold);
+            font-size: 0.9375rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .case-text {
+            color: var(--text-main);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+        }
+
+        .case-tag-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            background: rgba(242, 182, 0, 0.12);
+            border: 1px solid var(--border-gold-subtle);
+            color: var(--accent-gold);
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 4px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .case-badge-stamp {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(242, 182, 0, 0.15);
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold);
+            font-size: 0.75rem;
+            font-weight: 700;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+        }
+
+        .case-result-box {
+            background: rgba(242, 182, 0, 0.08);
+            border: 1px solid var(--border-gold);
+            border-left: 4px solid var(--accent-gold);
+            padding: 24px;
+            margin: 24px 0;
+            border-radius: 6px;
+        }
+
+        .case-disclaimer {
+            font-size: 0.8125rem;
+            color: var(--text-dark);
+            border-top: 1px solid var(--border-dark);
+            padding-top: 16px;
+            margin-top: 24px;
+        }
+
+        /* Tabelas & Responsividade */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin-bottom: 24px;
+        }
+
+        .custom-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .custom-table th, .custom-table td {
+            padding: 18px 24px;
+            border-bottom: 1px solid var(--border-dark);
+            vertical-align: top;
+        }
+
+        .custom-table th {
+            background: #121212;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 0.9375rem;
+        }
+
+        .custom-table td {
+            color: var(--text-main);
+        }
+
+        .custom-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Adaptação de tabelas em Cards para telas pequenas (< 768px) */
+        @media (max-width: 767px) {
+            .mobile-card-table {
+                display: block;
+            }
+            .mobile-card-table thead {
+                display: none;
+            }
+            .mobile-card-table tbody {
+                display: block;
+            }
+            .mobile-card-table tr {
+                display: block;
+                background: var(--bg-card);
+                border: 1px solid var(--border-dark);
+                border-radius: 8px;
+                margin-bottom: 16px;
+                padding: 16px;
+            }
+            .mobile-card-table td {
+                display: block;
+                padding: 8px 0;
+                border-bottom: 1px solid #1a1a1a;
+            }
+            .mobile-card-table td:last-child {
+                border-bottom: none;
+            }
+            .mobile-card-table td::before {
+                content: attr(data-label);
+                font-weight: 700;
+                color: var(--accent-gold);
+                display: block;
+                font-size: 0.75rem;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+        }
+
+        /* Checklists & Crosslists */
+        .check-list li, .cross-list li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        .cross-list li::before {
+            content: "✕";
+            position: absolute;
+            left: 0;
+            color: #888888;
+            font-weight: bold;
+        }
+
+        /* Selo de Parceria */
+        .selo-card-block {
+            background: linear-gradient(145deg, #12120e, #0a0a08);
+            border: 1px solid var(--border-gold);
+            border-radius: 8px;
+            padding: 36px 32px;
+        }
+
+        .selo-header-inline {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+
+        .selo-header-inline svg {
+            color: var(--accent-gold);
+            flex-shrink: 0;
+        }
+
+        .selo-header-inline h3 {
+            font-size: 1.375rem;
+            color: var(--accent-gold);
+            margin-bottom: 0;
+        }
+
+        .selo-body-text {
+            color: var(--text-main);
+            font-size: 1rem;
+            margin-bottom: 16px;
+        }
+
+        .selo-ethical-note {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-gold-subtle);
+            padding-top: 14px;
+        }
+
+        /* Acordeão FAQ */
+        .faq-accordion {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-trigger {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 20px 24px;
+            text-align: left;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-family: var(--font-main);
+        }
+
+        .faq-trigger:hover {
+            color: var(--accent-gold);
+        }
+
+        .faq-icon {
+            color: var(--accent-gold);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 12px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 24px;
+            background: #090909;
+        }
+
+        .faq-item.active .faq-content {
+            max-height: 300px;
+            padding: 0 24px 20px 24px;
+            border-top: 1px solid var(--border-dark);
+        }
+
+        .faq-content p {
+            color: var(--text-muted);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            padding-top: 16px;
+        }
+
+        /* Lead Magnet */
+        .lead-magnet-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold-subtle);
+            border-radius: 8px;
+            padding: 36px 28px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 32px;
+        }
+
+        @media (min-width: 850px) {
+            .lead-magnet-card { grid-template-columns: 1fr 380px; align-items: center; }
+        }
+
+        .lead-magnet-info h3 {
+            font-size: 1.375rem;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        /* Formulários */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        @media (min-width: 640px) {
+            .form-grid { grid-template-columns: repeat(2, 1fr); }
+            .form-group.full-width { grid-column: span 2; }
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .form-group label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #d0d0d0;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 12px 16px;
+            background: #050505;
+            border: 1px solid var(--border-dark);
+            border-radius: 6px;
+            color: #ffffff;
+            font-family: var(--font-main);
+            transition: border-color 0.2s ease;
+        }
+
+        select.form-input {
+            width: 100%;
+            padding: 12px 16px;
+            background-color: #0b0b0b;
+            color: #ffffff;
+            border: 1px solid #333333;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.9375rem;
+            color-scheme: dark;
+        }
+
+        select.form-input option {
+            background-color: #111111;
+            color: #ffffff;
+        }
+
+        select.form-input option[value=""] {
+            color: #b3b3b3;
+        }
+
+        .form-input:focus {
+            outline: 2px solid rgba(242, 182, 0, 0.28);
+            outline-offset: 2px;
+            border-color: var(--accent-gold);
+        }
+
+        select.form-input:focus {
+            outline: 2px solid rgba(242, 182, 0, 0.28);
+            outline-offset: 2px;
+            border-color: var(--accent-gold);
+        }
+
+        .form-input.input-error {
+            border-color: #ef4444;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 4px;
+            accent-color: var(--accent-gold);
+            width: 16px;
+            height: 16px;
+        }
+
+        .checkbox-group label {
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        .form-warning-notice {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 3px solid var(--text-dark);
+            padding: 12px 16px;
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .form-feedback-message {
+            padding: 14px 18px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            margin-bottom: 20px;
+        }
+
+        .feedback-success {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #4ade80;
+        }
+
+        .feedback-error {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            color: #f87171;
+        }
+
+        /* Botão Flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            width: 56px;
+            height: 56px;
+            background-color: #25D366;
+            color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+            z-index: 999;
+            transition: transform 0.2s ease, opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08);
+        }
+
+        .whatsapp-float.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        /* Footer */
+        .site-footer {
+            background: #040404;
+            border-top: 1px solid var(--border-dark);
+            padding: 48px 0;
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            color: var(--text-dark);
+            border-bottom: 1px solid #141414;
+            padding-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Fixo -->
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="header-brand">
+                <img src="assets/colmeia-bee-logo.png" alt="Colmeia Studios Academy" class="header-logo" onerror="this.style.display='none';">
+                <div class="header-titles">
+                    <span class="brand-main">Núcleo de Inteligência Jurídica</span>
+                    <span class="brand-sub">Colmeia Studios Academy</span>
+                </div>
+            </div>
+
+            <button class="mobile-menu-toggle"
+                    type="button"
+                    id="mobile-menu-toggle"
+                    aria-label="Abrir menu de navegação"
+                    aria-expanded="false"
+                    aria-controls="mobile-navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="header-nav" id="mobile-navigation" aria-label="Navegação principal">
+                <a href="#estrategia">Estratégia COLMEIA</a>
+                <a href="#seguranca">Segurança</a>
+                <a href="#caso-referencia">Caso de referência</a>
+                <a href="#valores">Valores</a>
+                <a href="#faq">FAQ</a>
+                <a href="#triagem" class="btn btn-gold" style="padding: 8px 16px; font-size: 0.8125rem;">Solicitar triagem técnica</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Barra Institucional Fina -->
+    <div class="top-institutional-bar">
+        <div class="container">
+            Suporte técnico especializado para a advocacia
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <span class="hero-badge">Apoio Técnico de Alto Rendimento</span>
+                <h1>Núcleo de Inteligência Jurídica</h1>
+                <p class="hero-subtitle">Pesquisa assistida por inteligência artificial, inteligência documental e auditoria de fontes para escritórios de advocacia.</p>
+                
+                <p class="hero-description">
+                    Transformamos grandes volumes de autos, documentos, precedentes e fontes públicas em materiais estruturados, rastreáveis e editáveis para revisão, desenvolvimento e validação exclusiva do advogado responsável.
+                </p>
+                
+                <p style="font-size: 0.875rem; color: var(--accent-gold); font-weight: 600; margin-top: -16px; margin-bottom: 28px;">
+                    Atendimento técnico exclusivo a advogados, escritórios de advocacia e departamentos jurídicos.
+                </p>
+
+                <div class="hero-ctas">
+                    <a href="#triagem" class="btn btn-gold">Solicitar triagem técnica</a>
+                    <a href="#estrategia" class="btn btn-gold" style="background: transparent; border: 1px solid var(--border-gold); color: var(--accent-gold);">Conhecer a Estratégia COLMEIA</a>
+                </div>
+
+                <!-- Caixa com Borda Dourada do Aviso Legal -->
+                <div class="disclaimer-box-gold">
+                    <div class="disclaimer-icon-svg">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    </div>
+                    <div class="disclaimer-text-p">
+                        A Colmeia Studios Academy presta serviços técnicos de pesquisa assistida, processamento de informações, inteligência documental e organização de fontes. Não presta consultoria jurídica, não representa clientes, não protocola peças e não define estratégias processuais. A interpretação jurídica, a seleção das teses, a adaptação do material e sua utilização profissional permanecem sob responsabilidade exclusiva do advogado contratante.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra de Diferenciais -->
+        <section class="proof-bar-section">
+            <div class="container">
+                <div class="proof-grid">
+                    <div class="proof-item">
+                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span>Todas as entregas acompanhadas de relatório de auditoria de fontes</span>
+                    </div>
+                    <div class="proof-item">
+                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line></svg>
+                        <span>Estratégia COLMEIA estruturada em 7 etapas</span>
+                    </div>
+                    <div class="proof-item">
+                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        <span>Confidencialidade contratual e acesso restrito</span>
+                    </div>
+                    <div class="proof-item">
+                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <span>Material editável preparado para revisão do advogado</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- O Desafio Operacional -->
+        <section class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>O Desafio Operacional</h2>
+                </div>
+                <p style="margin-bottom: 24px; color: var(--text-main); font-size: 1.0625rem; max-width: 900px; line-height: 1.7;">
+                    Contenciosos complexos podem exigir horas de triagem, organização de autos, localização de fontes e conferência de precedentes. Quando profissionais experientes precisam concentrar grande parte do tempo nessas atividades operacionais, reduz-se a disponibilidade para análise jurídica, relacionamento com o cliente e definição da estratégia processual.
+                </p>
+                <ul class="cross-list" style="max-width: 850px;">
+                    <li>Horas de profissionais experientes consumidas por triagem documental e pesquisa inicial.</li>
+                    <li>Prazos reduzidos para organizar documentos, argumentos e fontes dispersas.</li>
+                    <li>Risco de utilização de referências incompletas, desatualizadas ou não verificadas.</li>
+                    <li>Dificuldade para manter rastreabilidade em pesquisas extensas.</li>
+                    <li>Sobrecarga da equipe em demandas com grande volume documental.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- A Curva de Adoção Não Espera -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>A Curva de Adoção Não Espera</h2>
+                </div>
+                <p style="margin-bottom: 20px; font-size: 1.0625rem; max-width: 900px; line-height: 1.7;">
+                    Levantamento da AASP com mais de 1.100 profissionais apontou que 87,4% dos participantes já utilizam inteligência artificial no trabalho e 84,3% relatam ganho de produtividade. O mesmo levantamento mostrou que 90,3% consideram as soluções desenvolvidas para o Direito brasileiro mais seguras e eficientes do que plataformas de uso geral.
+                </p>
+                <p style="margin-bottom: 24px; font-size: 0.8125rem; color: var(--text-muted);">
+                    Fonte: <a href="https://www.aasp.org.br/na-midia/ia-ja-faz-parte-da-rotina-da-advocacia-brasileira/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold); text-decoration: underline;">AASP — “IA já faz parte da rotina da advocacia brasileira”, julho de 2026</a>.
+                </p>
+                <p style="font-weight: 600; color: var(--accent-gold); font-size: 1.0625rem; max-width: 900px; line-height: 1.6;">
+                    A diferença competitiva não estará apenas no acesso às ferramentas, mas na capacidade de utilizá-las com critérios, segurança e consistência.
+                </p>
+            </div>
+        </section>
+
+        <!-- Você pode fazer internamente. A questão é se deve. -->
+        <section class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Você pode fazer internamente. A questão é se deve.</h2>
+                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 12px; line-height: 1.7;">
+                        A ferramenta representa apenas uma parte do resultado. A qualidade da entrega depende da estrutura de trabalho, da organização das informações, da auditoria das fontes e da supervisão humana. A diferença não está apenas no acesso à inteligência artificial, mas na capacidade de utilizá-la com critérios, rastreabilidade e responsabilidade.
+                    </p>
+                </div>
+
+                <div class="comparative-grid">
+                    <div class="comp-card">
+                        <h3>Ferramenta de IA genérica</h3>
+                        <p>Sua equipe assina o software, aprende a operar por tentativa e erro, cria os prompts, realiza a varredura e assume a responsabilidade pela auditoria do processo sem suporte externo especializado.</p>
+                    </div>
+                    <div class="comp-card">
+                        <h3>Contratar internamente</h3>
+                        <p>Criação de nova estrutura com custo fixo mensal contínuo de profissionais dedicados, treinamentos constantes e encargos trabalhistas, independentemente da oscilação do volume de demandas do mês.</p>
+                    </div>
+                    <div class="comp-card highlighted">
+                        <span class="comp-badge">Recomendado</span>
+                        <h3>Núcleo de Inteligência Jurídica</h3>
+                        <p>Receba o dossiê técnico completo e a estrutura preliminar editável para desenvolvimento e validação do advogado. Atuação sob demanda por caso com relatório completo de auditoria de fontes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estratégia COLMEIA -->
+        <section id="estrategia" class="section-padding">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Estratégia COLMEIA</h2>
+                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
+                        A Estratégia COLMEIA é uma estrutura operacional em sete etapas para transformar documentos, fontes e informações dispersas em material organizado, rastreável e preparado para validação profissional.
+                    </p>
+                </div>
+
+                <div class="colmeia-grid">
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">C</div>
+                        <h3>Contextualizar</h3>
+                        <p>Registrar o escopo, os objetivos operacionais, os documentos disponíveis, as fontes desejadas e as orientações fornecidas pelo advogado responsável.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">O</div>
+                        <h3>Organizar</h3>
+                        <p>Classificar documentos, identificar datas, eventos, referências, partes, temas e elementos relevantes para a estruturação do material.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">L</div>
+                        <h3>Localizar</h3>
+                        <p>Pesquisar legislação, precedentes, documentos e fontes públicas relacionadas ao escopo definido pelo advogado.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">M</div>
+                        <h3>Mapear</h3>
+                        <p>Relacionar argumentos, documentos, referências e fontes para facilitar a revisão profissional.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">E</div>
+                        <h3>Examinar</h3>
+                        <p>Conferir datas, citações, referências, correspondência documental e consistência material das informações localizadas.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">I</div>
+                        <h3>Integrar</h3>
+                        <p>Reunir as informações verificadas em uma estrutura coerente, conforme o escopo e as orientações do advogado responsável.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <div class="colmeia-letter">A</div>
+                        <h3>Apresentar</h3>
+                        <p>Entregar dossiê técnico, relatório de auditoria e material editável com fontes, referências e pontos de conferência.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quem Conduz -->
+        <section class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Quem Conduz a Operação</h2>
+                </div>
+                
+                <div class="bio-wrapper">
+                    <div class="bio-image-container">
+                        <img src="assets/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" loading="lazy" decoding="async" width="320" height="400">
+                    </div>
+                    
+                    <div class="bio-content">
+                        <h3>Cristian Santos Pimentel</h3>
+                        <div class="bio-role">Fundador da Colmeia Studios Academy</div>
+                        <p class="bio-text">
+                            Professor de inteligência artificial, fundador da Colmeia Studios Academy e responsável pela criação da Estratégia COLMEIA. Possui 15 anos de experiência em marketing, comunicação e tecnologia, com atuação na aplicação prática de inteligência artificial, pesquisa assistida, organização documental e auditoria de fontes.
+                        </p>
+                        <p class="bio-text" style="margin-top: -12px;">
+                            No Núcleo de Inteligência Jurídica, sua atuação está concentrada no processamento técnico de informações, na estruturação de materiais e na rastreabilidade das fontes para revisão profissional. Não presta consultoria jurídica nem substitui a análise do advogado responsável.
+                        </p>
+                        <p style="margin-bottom: 20px;">
+                            <a href="https://www.linkedin.com/in/cristian-santos-pimentel-765061408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="link-secondary">Perfil Profissional no LinkedIn &rarr;</a>
+                        </p>
+
+                        <div class="bio-trust-list">
+                            <div class="bio-trust-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <span>Operação técnica em ambiente seguro e controlado</span>
+                            </div>
+                            <div class="bio-trust-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                <span>Auditoria e conferência direta de fontes em toda entrega</span>
+                            </div>
+                            <div class="bio-trust-item">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                                <span>Confidencialidade protegida por contrato e NDA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segurança, Sigilo e LGPD -->
+        <section id="seguranca" class="section-padding">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Segurança, Confidencialidade e LGPD</h2>
+                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
+                        Garantias institucionais e procedimentos técnicos para a proteção das informações do seu escritório e de seus clientes.
+                    </p>
+                </div>
+
+                <div class="security-grid">
+                    <div class="sec-card">
+                        <div class="sec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                        </div>
+                        <h3>Confidencialidade contratual (NDA)</h3>
+                        <p>A assinatura de Acordo de Não Divulgação (NDA) vinculado ao contrato ocorre antes de qualquer recebimento de autos ou documentos do caso.</p>
+                    </div>
+
+                    <div class="sec-card">
+                        <div class="sec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h3>Uso Restrito de Dados</h3>
+                        <p>Os arquivos são utilizados exclusivamente para a execução do serviço contratado. Os dados processados não são utilizados para treinamento de modelos públicos.</p>
+                    </div>
+
+                    <div class="sec-card">
+                        <div class="sec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                        </div>
+                        <h3>Política de Retenção e Descarte</h3>
+                        <p>Eliminação dos arquivos de trabalho conforme prazos definidos contratualmente e o ciclo técnico dos sistemas operacionais utilizados.</p>
+                    </div>
+
+                    <div class="sec-card">
+                        <div class="sec-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <h3>Tratamento de Dados (LGPD)</h3>
+                        <p>Quando aplicável ao escopo contratado, a Colmeia Studios Academy realiza o tratamento das informações conforme as instruções documentadas do contratante.</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 32px; background: rgba(12, 12, 12, 0.8); border: 1px solid var(--border-dark); border-radius: 6px; padding: 20px 24px; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
+                    <strong style="color: var(--text-main); display: block; margin-bottom: 6px;">Protocolo de Segurança e Responsabilidade:</strong>
+                    A confidencialidade é protegida por contrato, controle de acesso, minimização de dados e procedimentos de segurança. Os arquivos são utilizados somente para a execução do serviço contratado e permanecem sujeitos aos prazos de retenção definidos contratualmente e ao ciclo técnico de eliminação dos sistemas utilizados. O escritório ou advogado contratante permanece responsável por definir as instruções, a finalidade e os limites do tratamento das informações compartilhadas. Solicitamos que informações confidenciais não sejam enviadas na triagem inicial.
+                </div>
+            </div>
+        </section>
+
+        <!-- O Que Você Recebe -->
+        <section class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>O Que Você Recebe</h2>
+                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
+                        Entrega de dossiê técnico, relatório de auditoria de fontes e estrutura preliminar editável, elaborada conforme o escopo e as instruções fornecidas pelo advogado, para desenvolvimento, revisão e validação profissional.
+                    </p>
+                </div>
+
+                <div class="colmeia-grid">
+                    <div class="colmeia-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        <h3>Dossiê Técnico Estruturado</h3>
+                        <p>Mapeamento analítico do cenário fático, histórico documental e tópicos relevantes organizados por tema.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <h3>Relatório de Auditoria de Fontes</h3>
+                        <p>Verificação ponto a ponto das citações, acórdãos e trechos normativos com links diretos e referências registradas.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        <h3>Matriz de Documentos e Referências</h3>
+                        <p>Tabela comparativa cruzando alegações, anexos, laudos e manifestações constantes nos autos.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <h3>Cronologia de Fatos e Eventos</h3>
+                        <p>Linha do tempo organizada de forma sequencial com indicação de folhas e datas marcantes do processo.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        <h3>Tabela de Fontes e Precedentes</h3>
+                        <p>Compilação de legislação aplicável, súmulas e julgados com indicação dos pontos de consonância ou divergência.</p>
+                    </div>
+                    <div class="colmeia-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                        <h3>Estrutura Preliminar Editável</h3>
+                        <p>Minuta técnica preliminar e não validada em formato editável (Word/Docs), destinada exclusivamente à revisão, adaptação e validação do advogado responsável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Para Quem É e Quando Não É Indicado -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Para Quem o Núcleo Foi Criado</h2>
+                    <p>Perfil de atuação técnica direcionado exclusivamente a profissionais e estruturas da advocacia.</p>
+                </div>
+
+                <div class="compliance-wrapper">
+                    <div class="compliance-col allowed">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            Para quem é indicado
+                        </h3>
+                        <ul>
+                            <li>Advogados e escritórios com autos extensos e grande volume documental.</li>
+                            <li>Equipes que precisam localizar e organizar fontes com mais rastreabilidade.</li>
+                            <li>Demandas com prazos reduzidos e alta carga operacional.</li>
+                            <li>Escritórios que desejam ampliar a capacidade de pesquisa sem aumentar imediatamente a estrutura fixa.</li>
+                            <li>Profissionais que precisam receber materiais organizados para revisão e validação.</li>
+                            <li>Departamentos jurídicos que enfrentam documentos, informações e referências dispersas.</li>
+                        </ul>
+                    </div>
+
+                    <div class="compliance-col forbidden">
+                        <h3>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                            Quando o serviço NÃO é indicado
+                        </h3>
+                        <ul>
+                            <li>Solicitações feitas por pessoas sem advogado responsável.</li>
+                            <li>Consultas jurídicas ou pedidos de orientação legal.</li>
+                            <li>Representação judicial ou extrajudicial.</li>
+                            <li>Protocolo autônomo de peças.</li>
+                            <li>Definição autônoma de tese ou estratégia processual.</li>
+                            <li>Demandas que exijam promessa ou garantia de resultado.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Caso de Referência -->
+        <section id="caso-referencia" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Caso de Referência</h2>
+                    <p>Caso real de aplicação da Estratégia COLMEIA em apoio a advogado responsável por pedido de indulto.</p>
+                    <div style="margin-top: 12px;">
+                        <span class="case-tag-badge">Caso real anonimizado</span>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-step">
+                        <span class="case-label">1. Contexto e desafio inicial</span>
+                        <p class="case-text">O trabalho teve início no apoio a um advogado responsável por um pedido de indulto. Após a apresentação da petição inicial, identificou-se a necessidade de complementar e aprofundar a fundamentação apresentada no processo.</p>
+                    </div>
+
+                    <div class="case-step">
+                        <span class="case-label">2. Pesquisa e estrutura técnica complementar</span>
+                        <p class="case-text">Com base no escopo e nas informações do caso, foi realizada pesquisa assistida por inteligência artificial, seguida de conferência das fontes localizadas. O material foi organizado em uma estrutura técnica aditiva para revisão, adaptação e utilização pelo advogado responsável.</p>
+                    </div>
+
+                    <div class="case-step">
+                        <span class="case-label">3. Manifestação contrária do Ministério Público</span>
+                        <p class="case-text">Após a juntada do material ao processo pelo advogado, o Ministério Público apresentou manifestação desfavorável ao pedido, com fundamentação extensa e apoio em seis precedentes judiciais.</p>
+                    </div>
+
+                    <div class="case-step">
+                        <span class="case-label">4. Pesquisa cruzada e estruturação da resposta</span>
+                        <p class="case-text">Foi realizada uma nova rodada de pesquisa assistida e cruzamento jurisprudencial. Foram selecionados e conferidos nove precedentes relacionados ao ponto controvertido, incluindo precedente do mesmo tribunal relacionado à principal referência utilizada na manifestação do Ministério Público. O material foi organizado em uma estrutura técnica de resposta, com referências verificáveis e pontos de conferência para revisão do advogado.</p>
+                        <p class="case-text" style="margin-top: 10px; color: var(--accent-gold); font-weight: 500;">
+                            A pesquisa permitiu sustentar entendimento contrário à manifestação ministerial e fortalecer a fundamentação apresentada em defesa do pedido. O trabalho concentrou a pesquisa, a organização das referências e os pontos de conferência em uma entrega estruturada para revisão do advogado.
+                        </p>
+                    </div>
+
+                    <div class="case-result-box">
+                        <div class="case-badge-stamp">CASO REAL — RESULTADO FAVORÁVEL</div>
+                        <h3 style="color: var(--accent-gold); font-size: 1.375rem; margin-bottom: 12px; font-weight: 800;">
+                            5. Resultado do caso: PEDIDO DE INDULTO DEFERIDO
+                        </h3>
+                        <p class="case-text" style="font-size: 1.0625rem; font-weight: 600; color: #ffffff; margin-bottom: 10px;">
+                            Após a revisão, validação e utilização do material pelo advogado responsável, o juízo competente deferiu o pedido de indulto.
+                        </p>
+                        <p class="case-text" style="color: #d0d0d0;">
+                            A aplicação da Estratégia COLMEIA contribuiu, neste caso específico, para a construção de uma resposta mais estruturada, fundamentada e apoiada em precedentes verificados.
+                        </p>
+                    </div>
+
+                    <div class="case-disclaimer">
+                        Caso real apresentado de forma anonimizada. Nomes, número do processo, dados pessoais e informações protegidas foram omitidos. O deferimento ocorreu nas circunstâncias específicas deste caso e não representa promessa ou garantia de resultados futuros. Cada demanda depende de seus fatos, documentos, fundamentos, atuação do advogado responsável e decisão da autoridade competente.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Escopo e Vedações -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Escopo e Vedações</h2>
+                    <p>Transparência total sobre os limites de atuação técnica do Núcleo.</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="custom-table mobile-card-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">O Núcleo fornece</th>
+                                <th style="width: 50%;">Atividades vedadas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="O Núcleo fornece">
+                                    <ul class="check-list">
+                                        <li>pesquisa assistida de jurisprudência e legislação;</li>
+                                        <li>resumo estruturado de documentos e autos extensos;</li>
+                                        <li>mapeamento estruturado de argumentos, documentos e fontes relacionadas;</li>
+                                        <li>estrutura preliminar editável para desenvolvimento e validação do advogado;</li>
+                                        <li>relatório de auditoria de fontes com registro de pontos de conferência.</li>
+                                    </ul>
+                                </td>
+                                <td data-label="Atividades vedadas">
+                                    <ul class="cross-list">
+                                        <li>consultoria ou assessoria jurídica a partes;</li>
+                                        <li>definição autônoma de tese ou estratégia processual;</li>
+                                        <li>assinatura, protocolo ou peticionamento;</li>
+                                        <li>representação processual de qualquer natureza;</li>
+                                        <li>promessa ou garantia de resultado judicial.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valores de Referência por Demanda -->
+        <section id="valores" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block">
+                    <h2>Valores de Referência por Demanda</h2>
+                    <p>Preços orientativos baseados na complexidade documental e no volume de pesquisa do caso.</p>
+                </div>
+
+                <div class="pricing-table-wrapper">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Faixa de Demanda</th>
+                                <th>Critérios do Caso</th>
+                                <th>Prazo Padrão</th>
+                                <th>Valor de Referência</th>
+                                <th>Revisões Incluídas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Essencial</td>
+                                <td data-label="Critérios">Pesquisa pontual de precedentes; organização de documentos curtos; estrutura preliminar de apoio</td>
+                                <td data-label="Prazo de entrega">Até 5 dias úteis</td>
+                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">R$ 1.800 a R$ 2.800</td>
+                                <td data-label="Revisões">1</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Padrão (Apoio Técnico Completo)</td>
+                                <td data-label="Critérios">Pesquisa aprofundada de fontes; mapeamento de argumentos; autos de média complexidade; 1 manifestação indicada pelo advogado para pesquisa e organização técnica</td>
+                                <td data-label="Prazo de entrega">Até 8 dias úteis</td>
+                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">R$ 4.000 a R$ 6.500</td>
+                                <td data-label="Revisões">2</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Complexa / Tribunais Superiores</td>
+                                <td data-label="Critérios">Múltiplos volumes, documentos complexos, grande volume de fontes, tribunais superiores</td>
+                                <td data-label="Prazo de entrega">Até 12 dias úteis</td>
+                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">R$ 7.000 a R$ 12.000</td>
+                                <td data-label="Revisões">2 a 3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px; font-size: 0.875rem; color: var(--text-muted);">
+                    <p>Adicional de urgência de 30% a 50% para prazos inferiores a 48–72 horas. Valores sujeitos a confirmação após triagem técnica do caso.</p>
+                    <p style="color: var(--text-main); font-weight: 500;"><strong>Contratação sob demanda:</strong> em vez de criar uma estrutura fixa para pesquisas e organização documental, o escritório contrata o suporte técnico conforme o volume e a complexidade de cada demanda.</p>
+                    <p style="color: var(--text-main); font-weight: 500;"><strong>Recorrência:</strong> Para escritórios com volume contínuo, o Núcleo opera em formato de cotas mensais de apoio — proposta sob consulta após triagem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="section-padding bg-alt">
+            <div class="container">
+                <div class="section-header-block text-center">
+                    <h2>Perguntas Frequentes</h2>
+                    <p>Esclarecimentos técnicos sobre a atuação do Núcleo.</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>O Núcleo presta consultoria jurídica?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Não. O Núcleo presta apoio técnico em pesquisa assistida, inteligência documental, organização de informações e auditoria de fontes. A interpretação jurídica, a orientação ao cliente, a definição da estratégia processual e a utilização do material são responsabilidades do advogado.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Quem pode contratar o serviço?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>O serviço é destinado a advogados inscritos na OAB, escritórios de advocacia, departamentos jurídicos e profissionais de apoio devidamente autorizados por advogado responsável. Não atendemos diretamente pessoas físicas ou organizações sem advogado responsável pela demanda.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>O material é entregue pronto para protocolo?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Não. O material é entregue como dossiê técnico, relatório de fontes e estrutura preliminar editável. Antes de qualquer utilização profissional ou processual, o advogado responsável deverá revisar, adaptar, validar e assumir integralmente o conteúdo.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Como as fontes são verificadas?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Todas as referências localizadas passam por procedimento de redução de riscos com verificação direta em bases oficiais, diários de justiça, repositórios de tribunais e legislação antes de comporem o relatório de auditoria de fontes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>A inteligência artificial pode apresentar informações incorretas?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Sim. Ferramentas de inteligência artificial podem produzir referências imprecisas ou inexistentes. Por isso, reduzimos o risco de referências inexistentes ou incorretas por meio da conferência direta das fontes e do registro dos pontos que precisam de validação profissional na Estratégia COLMEIA.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Como os documentos são protegidos?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>A confidencialidade é protegida por contrato (NDA), controle de acesso, minimização de dados e procedimentos de segurança. Os insumos do seu caso não são utilizados para treinar modelos públicos de inteligência artificial.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Posso enviar autos na triagem inicial?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Não. Na triagem inicial solicitamos apenas estimativas de volume e resumo operacional sem dados sensíveis. O envio de autos ocorre apenas após a assinatura do NDA e formalização contratual.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Quem define a estratégia processual?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>A definição da tese, a escolha dos argumentos jurídicos e a condução da estratégia processual cabem exclusivamente ao advogado contratante.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Qual é o prazo de entrega?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Os prazos variam entre 5 e 12 dias úteis conforme a faixa de complexidade do caso (Essencial: até 5 dias; Padrão: até 8 dias; Complexa: até 12 dias), contando com regime de urgência (48h a 72h).</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>O serviço garante resultado judicial?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Não. O serviço não oferece garantia de resultado. Decisões jurídicas e processuais dependem das circunstâncias de cada caso, da atuação dos profissionais responsáveis e das autoridades competentes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Como funciona a contratação?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>O fluxo inicia pela solicitação de triagem via formulário neste site. Em seguida, confirmamos a faixa de valor, emitimos a Ordem de Serviço com NDA assinado e damos início à entrega para sua validação profissional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>O que está incluído na entrega?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Entregamos um dossiê técnico estruturado, a estrutura preliminar editável e o relatório completo de auditoria de fontes contendo todos os pontos de conferência para a validação final do advogado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Magnet (Desativado conforme especificação até pronta disponibilização do material) -->
+        <!-- 
+        <section class="section-padding">
+            <div class="container">
+                <div class="lead-magnet-card">
+                    <div class="lead-magnet-info">
+                        <h3>Guia de Verificação de Fontes em Pesquisa Jurídica Assistida por IA</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 16px;">Baixe gratuitamente nosso checklist prático para auditoria de precedentes em seu escritório:</p>
+                        <ul class="check-list" style="margin-bottom: 20px;">
+                            <li>Checklist de auditoria de precedentes;</li>
+                            <li>Sinais de alucinação de IA;</li>
+                            <li>Modelo de registro de fontes;</li>
+                            <li>Boas práticas de prompting jurídico.</li>
+                        </ul>
+                    </div>
+                    <div class="lead-magnet-form">
+                        <form id="form-lead-magnet">
+                            <div class="form-group" style="margin-bottom: 12px;">
+                                <label for="lead_nome">Nome completo</label>
+                                <input type="text" id="lead_nome" name="lead_nome" required class="form-input">
+                            </div>
+                            <div class="form-group" style="margin-bottom: 16px;">
+                                <label for="lead_email">E-mail corporativo</label>
+                                <input type="email" id="lead_email" name="lead_email" required class="form-input">
+                            </div>
+                            <button type="submit" class="btn btn-gold btn-block">Baixar Guia Gratuitamente</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Formulário de Triagem -->
+        <section id="triagem" class="section-padding">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 8px; padding: 40px 32px;">
+                    <div class="section-header-block text-center" style="margin-bottom: 32px;">
+                        <h2>Solicitar Triagem Técnica de Caso</h2>
+                        <p>Preencha os dados iniciais do caso para avaliação de viabilidade e enquadramento de faixa de valor. Resposta em até 24 horas úteis.</p>
+                    </div>
+
+                    <form id="form-triagem" name="triagem-juridica" method="POST" data-netlify="true" netlify-honeypot="bot-field" novalidate>
+                        <input type="hidden" name="form-name" value="triagem-juridica" />
+                        <p class="hidden" style="display:none;"><label>Não preencha: <input name="bot-field" /></label></p>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="nome_advogado">Nome do advogado ou profissional solicitante *</label>
+                                <input type="text" id="nome_advogado" name="nome_advogado" required class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nome_escritorio">Nome do escritório ou organização</label>
+                                <input type="text" id="nome_escritorio" name="nome_escritorio" class="form-input">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="perfil_profissional">Qual é o seu perfil profissional? *</label>
+                                <select id="perfil_profissional" name="perfil_profissional" required class="form-input">
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="Sou advogado">Sou advogado</option>
+                                    <option value="Represento um escritório de advocacia">Represento um escritório de advocacia</option>
+                                    <option value="Represento um departamento jurídico">Represento um departamento jurídico</option>
+                                    <option value="Sou profissional de apoio autorizado pelo advogado responsável">Sou profissional de apoio autorizado pelo advogado responsável</option>
+                                    <option value="Outro">Outro</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group" id="group_oab">
+                                <label for="inscricao_oab" id="label_oab">Inscrição OAB (UF/número) *</label>
+                                <input type="text" id="inscricao_oab" name="inscricao_oab" required placeholder="Ex: MG/123456" class="form-input">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="whatsapp_contato">WhatsApp para contato *</label>
+                                <input type="tel" id="whatsapp_contato" name="whatsapp_contato" required placeholder="(00) 00000-0000" class="form-input">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="prazo_esperado">Prazo esperado para conclusão da demanda *</label>
+                                <select id="prazo_esperado" name="prazo_esperado" required class="form-input">
+                                    <option value="">Selecione o prazo desejado</option>
+                                    <option value="Até 48 horas">Até 48 horas</option>
+                                    <option value="De 3 a 5 dias úteis">De 3 a 5 dias úteis</option>
+                                    <option value="De 6 a 8 dias úteis">De 6 a 8 dias úteis</option>
+                                    <option value="De 9 a 12 dias úteis">De 9 a 12 dias úteis</option>
+                                    <option value="Ainda não definido">Ainda não definido</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="area_direito">Área do direito ou tema da demanda</label>
+                                <input type="text" id="area_direito" name="area_direito" placeholder="Ex.: Cível, Empresarial, Tributário, Trabalhista ou Penal" class="form-input">
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="volume_documental">Estimativa de volume documental</label>
+                                <textarea id="volume_documental" name="volume_documental" rows="3" placeholder="Páginas, volumes, peças da parte contrária, acórdãos etc." class="form-input"></textarea>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="resumo_operacional">Resumo técnico / escopo pretendido</label>
+                                <textarea id="resumo_operacional" name="resumo_operacional" rows="3" placeholder="Descreva somente o tipo de trabalho necessário, sem detalhes sigilosos." class="form-input"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Checkbox Confirmação do Advogado -->
+                        <div class="checkbox-group" style="margin-top: 16px;">
+                            <input type="checkbox" id="confirmacao_advogado" name="confirmacao_advogado" required>
+                            <label for="confirmacao_advogado">
+                                Confirmo que a demanda será conduzida, revisada e juridicamente validada por advogado responsável. *
+                            </label>
+                        </div>
+
+                        <!-- Checkbox LGPD / Privacidade -->
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="lgpd_consent" name="lgpd_consent" required>
+                            <label for="lgpd_consent">
+                                Declaro que li a <a href="privacidade.html" target="_blank" style="color: var(--accent-gold); text-decoration: underline;">Política de Privacidade</a> e estou ciente do tratamento dos dados necessários para análise da solicitação, contato por WhatsApp e elaboração de eventual proposta técnica. *
+                            </label>
+                        </div>
+
+                        <!-- Aviso antes do envio -->
+                        <div class="form-warning-notice">
+                            Este formulário destina-se apenas ao contato inicial e à triagem preliminar. Não envie autos, peças processuais, nomes das partes, números de processos sob sigilo ou dados pessoais sensíveis nesta etapa. O compartilhamento de documentos ocorrerá somente após a definição do escopo, a formalização da contratação e do acordo de confidencialidade, por canal definido com o contratante.
+                        </div>
+
+                        <div id="form-feedback" class="form-feedback-message" style="display: none;"></div>
+
+                        <button type="submit" id="btn-submit-triagem" class="btn btn-gold btn-block" style="padding: 16px;">Solicitar triagem técnica</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão Flutuante de WhatsApp -->
+    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica." 
+       class="whatsapp-float" 
+       id="whatsappFloat" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Contato via WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.007 3.676 3.75-1.009zm10.743-6.529c.145.242.223.518.223.8 0 .285-.084.561-.247.818-.466.733-1.44 1.282-2.152 1.282-.55 0-1.127-.22-1.994-.575-1.393-.571-2.868-1.579-4.041-2.752-1.173-1.173-2.181-2.648-2.752-4.041-.355-.867-.575-1.444-.575-1.994 0-.712.549-1.686 1.282-2.152.257-.163.533-.247.818-.247.282 0 .558.078.8.223l2.001 1.332c.264.176.4.475.34.787-.06.313-.274.571-.55.676l-.546.21c-.139.053-.257.147-.333.274-.145.242-.102.553.1.884.542.889 1.281 1.628 2.17 2.17.331.202.642.245.884.1.127-.076.221-.194.274-.333l.21-.546c.105-.276.363-.49.676-.55.312-.06.611.076.787.34l1.332 2.001z"/></svg>
+    </a>
+
+    <!-- Rodapé de Governança -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <strong style="color: #ffffff; font-size: 0.9375rem; display: block; margin-bottom: 8px;">Colmeia Studios Academy — Núcleo de Inteligência Jurídica</strong>
+                <p style="max-width: 900px; line-height: 1.6; margin-bottom: 16px;">
+                    Este serviço constitui atividade técnica especializada de processamento de dados, pesquisa assistida e tecnologia da informação. Não prestamos consultoria jurídica, não praticamos atos privativos da advocacia e não garantimos resultados processuais. Todo conteúdo produzido deve ser integralmente revisado, validado e assinado pelo advogado responsável.
+                </p>
+            </div>
+
+            <div class="footer-info">
+                <span>53.484.773 Cristian Santos Pimentel</span>
+                <span>CNPJ 53.484.773/0001-57</span>
+                <span>Rua Terenas 292 sala 201</span>
+                <span>E-mail: <a href="mailto:colmeiastudiosacademy@gmail.com" style="color: var(--text-muted); text-transform: none;">colmeiastudiosacademy@gmail.com</a></span>
+            </div>
+
+            <div class="footer-links">
+                <a href="privacidade.html">Política de Privacidade</a>
+                <a href="termos.html">Termos de Uso</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts da Página -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+
+        // Acordeão do FAQ
+        const faqTriggers = document.querySelectorAll(".faq-trigger");
+        faqTriggers.forEach(function(trigger) {
+            trigger.addEventListener("click", function() {
+                const item = this.parentElement;
+                const isExpanded = this.getAttribute("aria-expanded") === "true";
+                
+                // Fecha outros
+                document.querySelectorAll(".faq-item").forEach(function(other) {
+                    if(other !== item) {
+                        other.classList.remove("active");
+                        other.querySelector(".faq-trigger").setAttribute("aria-expanded", "false");
+                    }
+                });
+
+                // Toggle atual
+                item.classList.toggle("active");
+                this.setAttribute("aria-expanded", (!isExpanded).toString());
+            });
+        });
+
+        // Ocultar Botão de WhatsApp sobre o Formulário de Triagem
+        const whatsappBtn = document.getElementById("whatsappFloat");
+        const triagemSection = document.getElementById("triagem");
+
+        if (whatsappBtn && triagemSection && "IntersectionObserver" in window) {
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        whatsappBtn.classList.add("hidden");
+                    } else {
+                        whatsappBtn.classList.remove("hidden");
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            observer.observe(triagemSection);
+        }
+
+        // Lógica Condicional do Campo OAB
+        const perfilSelect = document.getElementById("perfil_profissional");
+        const inputOab = document.getElementById("inscricao_oab");
+        const labelOab = document.getElementById("label_oab");
+
+        function updateOabField() {
+            if (!perfilSelect || !inputOab || !labelOab) return;
+            const val = perfilSelect.value;
+            if (val === "Sou advogado") {
+                labelOab.textContent = "Inscrição OAB — UF/número *";
+                inputOab.required = true;
+                inputOab.classList.remove("input-error");
+            } else if (val === "Represento um escritório de advocacia") {
+                labelOab.textContent = "Inscrição OAB do responsável pela demanda — UF/número *";
+                inputOab.required = true;
+                inputOab.classList.remove("input-error");
+            } else {
+                labelOab.textContent = "Inscrição OAB do advogado responsável, se disponível";
+                inputOab.required = false;
+                inputOab.classList.remove("input-error");
+            }
+        }
+
+        if (perfilSelect) {
+            perfilSelect.addEventListener("change", updateOabField);
+            updateOabField();
+        }
+
+        // Validação e Envio do Formulário de Triagem para Netlify Forms
+        const formTriagem = document.getElementById("form-triagem");
+        if (formTriagem) {
+            formTriagem.addEventListener("submit", function(e) {
+                e.preventDefault();
+                
+                const feedbackEl = document.getElementById("form-feedback");
+                const submitBtn = document.getElementById("btn-submit-triagem");
+                
+                function showOk() {
+                    feedbackEl.style.display = "block";
+                    feedbackEl.className = "form-feedback-message feedback-success";
+                    feedbackEl.textContent = "Solicitação recebida. O contato será realizado pelo WhatsApp informado após a análise inicial das informações.";
+                    formTriagem.reset();
+                    submitBtn.disabled = false;
+                }
+
+                function showFail(msg) {
+                    feedbackEl.style.display = "block";
+                    feedbackEl.className = "form-feedback-message feedback-error";
+                    feedbackEl.textContent = msg;
+                    submitBtn.disabled = false;
+                }
+
+                const requiredFields = formTriagem.querySelectorAll("[required]");
+                let isValid = true;
+                
+                requiredFields.forEach(function(field) {
+                    if (field.type === "checkbox") {
+                        if (!field.checked) {
+                            isValid = false;
+                        }
+                    } else if (!field.value.trim()) {
+                        isValid = false;
+                        field.classList.add("input-error");
+                    } else {
+                        field.classList.remove("input-error");
+                    }
+                });
+
+                if (!isValid) {
+                    showFail("Por favor, preencha todos os campos obrigatórios (*) e confirme a leitura da Política de Privacidade.");
+                    return;
+                }
+
+                submitBtn.disabled = true;
+
+                const formData = new FormData(formTriagem);
+                if (!formData.get("form-name")) {
+                    formData.set("form-name", "triagem-juridica");
+                }
+
+                fetch(window.location.pathname || "/", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: new URLSearchParams(formData).toString()
+                })
+                .then(function(res) {
+                    if (res.ok) {
+                        showOk();
+                    } else {
+                        console.error("Erro na resposta do Netlify:", res.statusText);
+                        showFail("Erro no envio. Por favor, tente novamente ou entre em contato via WhatsApp.");
+                    }
+                })
+                .catch(function(err) {
+                    console.error("Falha no envio:", err);
+                    showFail("Erro de conexão. Por favor, tente novamente ou entre em contato diretamente pelo WhatsApp.");
+                });
+            });
+        }
+
+        // Lógica do Menu Mobile Responsivo & Acessível
+        const menuToggleBtn = document.getElementById("mobile-menu-toggle");
+        const navMenu = document.getElementById("mobile-navigation");
+
+        if (menuToggleBtn && navMenu) {
+            function openMenu() {
+                navMenu.classList.add("is-open");
+                menuToggleBtn.setAttribute("aria-expanded", "true");
+                menuToggleBtn.setAttribute("aria-label", "Fechar menu de navegação");
+            }
+
+            function closeMenu(focusToggle) {
+                if (!navMenu.classList.contains("is-open")) return;
+                navMenu.classList.remove("is-open");
+                menuToggleBtn.setAttribute("aria-expanded", "false");
+                menuToggleBtn.setAttribute("aria-label", "Abrir menu de navegação");
+                if (focusToggle) {
+                    menuToggleBtn.focus();
+                }
+            }
+
+            menuToggleBtn.addEventListener("click", function(e) {
+                e.stopPropagation();
+                const isOpen = navMenu.classList.contains("is-open");
+                if (isOpen) {
+                    closeMenu(false);
+                } else {
+                    openMenu();
+                }
+            });
+
+            // Fechar ao clicar em qualquer link do menu
+            const menuNavLinks = navMenu.querySelectorAll("a");
+            menuNavLinks.forEach(function(link) {
+                link.addEventListener("click", function() {
+                    closeMenu(false);
+                });
+            });
+
+            // Fechar ao clicar fora do cabeçalho / menu
+            document.addEventListener("click", function(e) {
+                if (navMenu.classList.contains("is-open")) {
+                    const isClickInsideMenu = navMenu.contains(e.target);
+                    const isClickOnToggle = menuToggleBtn.contains(e.target);
+                    if (!isClickInsideMenu && !isClickOnToggle) {
+                        closeMenu(false);
+                    }
+                }
+            });
+
+            // Fechar ao pressionar a tecla Escape
+            document.addEventListener("keydown", function(e) {
+                if (e.key === "Escape" || e.key === "Esc") {
+                    if (navMenu.classList.contains("is-open")) {
+                        closeMenu(true);
+                    }
+                }
+            });
+
+            // Fechar ao redimensionar para 992px ou mais
+            window.addEventListener("resize", function() {
+                if (window.innerWidth >= 992 && navMenu.classList.contains("is-open")) {
+                    closeMenu(false);
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>

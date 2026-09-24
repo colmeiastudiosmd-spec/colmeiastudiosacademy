@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1200, height=630, initial-scale=1.0">
+    <title>OG Image Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 1200px;
+            height: 630px;
+            overflow: hidden;
+            background-color: #0a0a0a;
+            font-family: var(--font-body);
+            color: var(--text-light-primary);
+        }
+
+        .og-card {
+            width: 1200px;
+            height: 630px;
+            padding: 60px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: radial-gradient(circle at 85% 15%, rgba(255, 184, 0, 0.08) 0%, transparent 50%),
+                        radial-gradient(circle at 15% 85%, rgba(255, 208, 0, 0.05) 0%, transparent 40%),
+                        #0a0a0a;
+            position: relative;
+            border: 1px solid rgba(255, 184, 0, 0.2);
+        }
+
+        .og-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .og-logo {
+            height: 120px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .og-badge {
+            background: rgba(255, 184, 0, 0.12);
+            border: 1px solid rgba(255, 184, 0, 0.3);
+            color: #FFD000;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .og-body {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .og-title {
+            font-family: var(--font-heading);
+            font-size: 54px;
+            font-weight: 700;
+            color: #FFD000;
+            line-height: 1.25;
+            letter-spacing: -0.5px;
+            margin-bottom: 20px;
+            max-width: 1000px;
+        }
+
+        .og-subtitle {
+            font-family: var(--font-body);
+            font-size: 26px;
+            font-weight: 400;
+            color: #FFFFFF;
+            letter-spacing: 0.5px;
+            opacity: 0.95;
+        }
+
+        .og-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            padding-top: 25px;
+        }
+
+        .og-domain {
+            font-family: var(--font-heading);
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-light-secondary);
+            letter-spacing: 1px;
+        }
+
+        .og-brand-tag {
+            color: #FFD000;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="og-card">
+        <div class="og-header">
+            <img src="assets/colmeia-bee-logo.png" alt="Colmeia Studios Academy Logo" class="og-logo">
+            <div class="og-badge">Colmeia Studios Academy</div>
+        </div>
+
+        <div class="og-body">
+            <h1 class="og-title">Inteligência Artificial Aplicada a Negócios</h1>
+            <p class="og-subtitle">Consultoria · Sites · Treinamentos · Ipatinga/MG</p>
+        </div>
+
+        <div class="og-footer">
+            <span class="og-domain">colmeiastudiosacademy.com.br</span>
+            <span class="og-brand-tag">Soluções Estratégicas em IA</span>
+        </div>
+    </div>
+</body>
+</html>

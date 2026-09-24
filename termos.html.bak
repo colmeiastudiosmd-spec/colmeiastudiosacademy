@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6WNR6F2CY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B6WNR6F2CY');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Termos de Uso | Núcleo de Inteligência Jurídica</title>
+    <meta name="description" content="Termos de Uso do Núcleo de Inteligência Jurídica - Colmeia Studios Academy. Condições de prestação de suporte técnico para escritórios de advocacia.">
+
+    <link rel="canonical" href="https://colmeiastudiosacademy.com.br/termos">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Termos de Uso | Núcleo de Inteligência Jurídica">
+    <meta property="og:description" content="Termos de Uso do Núcleo de Inteligência Jurídica - Colmeia Studios Academy. Condições de prestação de suporte técnico para escritórios de advocacia.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/termos">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/og-image-nucleo.jpg">
+    <meta property="og:locale" content="pt_BR">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/colmeia-bee-logo.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-black: #000000;
+            --bg-card: #0c0c0c;
+            --bg-alt: #070707;
+            --border-dark: #1f1f1f;
+            --border-gold: #f2b600;
+            --accent-gold: #f2b600;
+            --accent-gold-hover: #d9a300;
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a0;
+            --font-main: 'Inter', system-ui, -apple-system, sans-serif;
+            --header-height: 72px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html {
+            background-color: var(--bg-black);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body { font-size: 1rem; }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .site-header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--header-height);
+            background: rgba(0, 0, 0, 0.92);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-dark);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header-logo { height: 32px; width: auto; }
+
+        .brand-main { font-weight: 700; font-size: 1rem; color: #ffffff; }
+
+        .back-link {
+            color: var(--accent-gold);
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        .back-link:hover { text-decoration: underline; }
+
+        .legal-page-content {
+            padding-top: calc(var(--header-height) + 40px);
+            padding-bottom: 80px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .legal-subtitle {
+            color: var(--accent-gold);
+            font-size: 0.9375rem;
+            font-weight: 600;
+            margin-bottom: 32px;
+            border-bottom: 1px solid var(--border-dark);
+            padding-bottom: 16px;
+        }
+
+        .legal-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-dark);
+            border-radius: 8px;
+            padding: 32px 28px;
+            margin-bottom: 24px;
+        }
+
+        .legal-section h2 {
+            font-size: 1.125rem;
+            color: var(--accent-gold);
+            margin-bottom: 12px;
+        }
+
+        .legal-section p {
+            color: var(--text-main);
+            font-size: 0.9375rem;
+            line-height: 1.7;
+        }
+
+        .site-footer {
+            background: #040404;
+            border-top: 1px solid var(--border-dark);
+            padding: 32px 0;
+            font-size: 0.8125rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="header-brand">
+                <img src="assets/colmeia-bee-logo.png" alt="Colmeia Studios Academy" class="header-logo" onerror="this.style.display='none';">
+                <span class="brand-main">Núcleo de Inteligência Jurídica</span>
+            </div>
+            <a href="nucleo-inteligencia-juridica.html" class="back-link">&larr; Voltar para a página principal</a>
+        </div>
+    </header>
+
+    <main class="container legal-page-content">
+        <h1>Termos de Uso</h1>
+        <div class="legal-subtitle">Núcleo de Inteligência Jurídica — Colmeia Studios Academy</div>
+
+        <div class="legal-section">
+            <h2>1. Objeto</h2>
+            <p>Prestação de suporte técnico-pesquisador à advocacia — coleta e organização de material, pesquisa jurisprudencial e legislativa com auditoria de fontes, análises e minutas de peças — conforme proposta elaborada após triagem, por faixa de complexidade (Essencial, Padrão, Complexa) ou cota mensal.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>2. Natureza do serviço</h2>
+            <p>O material entregue é subsídio técnico de apoio ao profissional de advocacia. Não constitui parecer jurídico, não substitui a atividade do advogado habilitado e não gera vínculo de advocacia com o usuário final. A peça ou análise deve ser revisada, validada e assumida pelo profissional contratante.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>3. Vedação de atos privativos</h2>
+            <p>O Núcleo não pratica atos privativos da advocacia, observados o Estatuto da OAB e os regulamentos aplicáveis.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>4. Confidencialidade</h2>
+            <p>Todo conteúdo do caso é tratado como sigiloso; NDA disponível sob demanda.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>5. Pagamentos</h2>
+            <p>Valores conforme proposta enviada após a triagem; demandas urgentes sujeitas a adicional.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>6. Responsabilidade</h2>
+            <p>O serviço é prestado com diligência e método auditável; as decisões técnicas adotadas pelo contratante com base no material permanecem sob sua responsabilidade profissional.</p>
+        </div>
+
+        <div class="legal-section">
+            <h2>7. Foro e legislação</h2>
+            <p>Foro do domicílio do consumidor, nos termos da legislação aplicável. Leis do Brasil.</p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            53.484.773 Cristian Santos Pimentel · CNPJ 53.484.773/0001-57 · Rua Terenas 292 sala 201
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6WNR6F2CY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-B6WNR6F2CY');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colmeia Studios Academy | Inteligência Artificial Aplicada a Negócios</title>
+    <meta name="description" content="Acelere sua empresa com Inteligência Artificial: consultoria estratégica, criação de sites profissionais de alta conversão, gestão de redes sociais e treinamentos corporativos.">
+    <meta name="keywords" content="inteligência artificial para empresas, criação de sites profissionais, consultoria empresarial em IA, gestão de redes sociais com IA, treinamento de IA corporativo">
+    <meta name="google-site-verification" content="ropeiNhhenmotE5GJ6wllg_oR2a1JuZPIvTRSwV8s84" />
+    <link rel="canonical" href="https://colmeiastudiosacademy.com.br/">
+    
+    <!-- Open Graph / Meta Tags Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Colmeia Studios Academy | Soluções em IA para Negócios">
+    <meta property="og:description" content="Consultoria, sites de alta conversão, gestão de redes sociais e treinamentos em IA.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+
+    <!-- Schema JSON-LD ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Colmeia Studios Academy",
+      "url": "https://colmeiastudiosacademy.com.br",
+      "logo": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
+      "image": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
+      "telephone": "+55-31-99931-4793",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ipatinga",
+        "addressRegion": "MG",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://instagram.com/colmeiastudiosacademy"
+      ]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/colmeia-bee-logo.png" type="image/png">
+</head>
+<body>
+
+    <header class="header-main" id="headerMain">
+        <div class="container header-container">
+            <a href="/" class="logo-wrapper" id="logoLink">
+                <img src="assets/colmeia-bee-logo.png" alt="Colmeia Studios Academy" class="logo-img" id="logoImg" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';">
+                <span class="logo-fallback" id="logoFallback" style="display: none;">Colmeia Studios Academy</span>
+            </a>
+            
+            <nav class="header-nav">
+                <a href="/">Início</a>
+                <a href="/aulas-particulares-ia.html" style="color: #FFD000;">Aulas de IA</a>
+                <a href="/criacao-de-sites" style="color: #FFD000;">Criação de Sites</a>
+                <a href="/gestao-de-redes-sociais" style="color: #FFD000;">Redes Sociais</a>
+                <a href="/consultoria-e-treinamento-empresarial" style="color: #FFD000;">Consultoria & Treinamento</a>
+                <a href="/cursos">Cursos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="header-cta">
+                <a href="https://wa.me/5531999314793?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.875rem;">Fale no WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- 1. HERO SECTION DA COLMEIA STUDIOS ACADEMY -->
+        <section class="section-hero honeycomb-bg" id="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 40px; display: flex; align-items: center;">
+            <div class="container hero-content text-center">
+                
+                <div style="margin-bottom: 20px;">
+                    <img src="assets/colmeia-bee-logo.png" alt="Colmeia Studios Academy Logo" style="width: 120px; margin: 0 auto; filter: drop-shadow(0 0 10px rgba(255,184,0,0.5));" onerror="this.style.display='none';">
+                </div>
+
+                <h1 class="hero-title" style="font-size: 4rem; text-shadow: 0 0 20px rgba(255, 184, 0, 0.4);">Colmeia Studios Academy</h1>
+                
+                <p class="hero-subtitle" style="color: #ffffff; font-weight: 500; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">
+                    Inteligência Artificial aplicada a negócios, criação e educação.
+                </p>
+                <p class="hero-subtitle" style="margin-top: 15px; font-size: 1.1rem; max-width: 700px; margin-bottom: 0;">
+                    Aulas particulares, treinamentos corporativos, consultoria e gestão de redes sociais.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 2. SEÇÃO QUEM SOMOS -->
+        <section class="section-padding section-about" id="sobre" style="padding-top: 40px;">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-content reveal-element">
+                        <span class="section-tag">Quem Somos</span>
+                        <h2 class="section-title">Sobre a Colmeia Studios Academy</h2>
+                        <p class="about-text">
+                            Somos um hub de aprendizado e aplicação prática de Inteligência Artificial. Nossa missão é democratizar o acesso à IA para o mercado profissional, impulsionando empresas e carreiras.
+                        </p>
+                        <p class="about-text" style="margin-top: 15px;">
+                            Fundada por Cristian Santos Pimentel, que acumula mais de 15 anos de experiência em marketing, design, comunicação e tecnologia, atuando no Brasil e na Europa.
+                        </p>
+                        <a href="#contato" class="btn btn-secondary" style="margin-top: 25px;">Fale com o Fundador</a>
+                    </div>
+                    <div class="about-image-wrapper reveal-element" style="text-align: center;">
+                        <img src="assets/foto-professor.jpg" alt="Cristian Santos Pimentel" class="about-image" onerror="this.src='https://via.placeholder.com/500x500/111111/FFB800?text=Cristian+Pimentel';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. BANNER 1: FORMAÇÃO & AULAS EM INTELIGÊNCIA ARTIFICIAL -->
+        <section class="section-padding promo-banner-aulas" id="destaque-aulas" style="background-color: #0b0b0b; border-top: 2px solid #FFD000; padding: 60px 0; box-shadow: 0 0 35px rgba(255, 208, 0, 0.2);">
+            <div class="container text-center reveal-element">
+                
+                <div style="margin-bottom: 20px;">
+                    <span class="section-badge" style="background: rgba(255, 208, 0, 0.15); color: #FFD000; border: 1px solid #FFD000; padding: 10px 24px; border-radius: 50px; font-weight: 800; font-size: 0.95rem; display: inline-block; box-shadow: 0 0 15px rgba(255, 208, 0, 0.2); text-transform: uppercase; letter-spacing: 1px;">
+                        🎓 AULAS AVULSAS · FORMAÇÕES EXECUTIVAS · MENTORIA VIP
+                    </span>
+                </div>
+
+                <h2 class="section-title" style="color: #ffffff; font-size: 2.8rem; margin: 15px 0; font-weight: 800; text-shadow: 0 0 15px rgba(255, 208, 0, 0.3);">
+                    Domine Inteligência Artificial na Prática com a <span class="highlight-yellow" style="color: #FFD000;">Colmeia Studios Academy</span>
+                </h2>
+                
+                <p class="section-subtitle" style="color: #E0E0E0; max-width: 880px; margin: 0 auto 30px auto; font-size: 1.2rem; line-height: 1.6;">
+                    Oferecemos desde <strong>aulas avulsas pontuais</strong> para necessidades específicas até <strong>formações executivas completas</strong> (em grupo ou mentoria VIP 1:1), 100% aplicadas ao seu trabalho e negócios.
+                </p>
+
+                <div class="promo-highlights" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 35px;">
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                        <span>🎯</span> Aulas Avulsas a partir de R$ 250
+                    </div>
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                        <span>📅</span> Turmas Mensais (Início na 1ª segunda-feira do mês)
+                    </div>
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                        <span>👑</span> Mentoria VIP com 30 dias de assessoria
+                    </div>
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
+                        <span>📜</span> Certificação com QR Code e Verificação Online
+                    </div>
+                </div>
+
+                <div>
+                    <a href="/aulas-particulares-ia.html" class="btn btn-primary" style="background: #FFD000; color: #000000; font-weight: 800; font-size: 1.15rem; padding: 16px 38px; border-radius: 9999px; box-shadow: 0 0 20px rgba(255, 208, 0, 0.4); text-transform: uppercase; letter-spacing: 0.5px;">
+                        SAIBA MAIS &rarr;
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LINHA DIVISÓRIA AMARELA -->
+        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
+
+        <!-- 4. BANNER 2: WEBSITES PROFISSIONAIS DE ALTA PERFORMANCE -->
+        <section class="section-padding promo-banner-website" id="destaque-websites" style="background-color: #0b0b0b; padding: 60px 0; box-shadow: 0 0 35px rgba(255, 208, 0, 0.15);">
+            <div class="container text-center reveal-element">
+                <span class="section-tag" style="background: rgba(255, 208, 0, 0.12); color: #FFD000; border: 1px solid #FFD000; font-size: 0.9rem; letter-spacing: 2px;">🌐 NOVO SERVIÇO COLMEIA</span>
+                <h2 class="section-title" style="color: #ffffff; font-size: 2.8rem; margin: 15px 0; font-weight: 800; text-shadow: 0 0 15px rgba(255, 208, 0, 0.3);">
+                    Nova Solução Colmeia: Websites Profissionais de Alta Performance
+                </h2>
+                <p class="section-subtitle" style="color: #E0E0E0; max-width: 850px; margin: 0 auto 30px auto; font-size: 1.2rem; line-height: 1.6;">
+                    Combine design ultra-moderno, copywriting persuasivo e inteligência artificial para transformar seu negócio ou serviço em uma máquina de atração de clientes.
+                </p>
+
+                <div class="promo-highlights" style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 35px;">
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 14px 24px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+                        <span>⚡</span> Entrega ágil em até 7-10 dias
+                    </div>
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 14px 24px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+                        <span>🤖</span> Imagens e Copywriting otimizados por IA
+                    </div>
+                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 14px 24px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
+                        <span>🎯</span> Focado em Conversão e SEO no Google
+                    </div>
+                </div>
+
+                <div>
+                    <a href="/criacao-de-sites" class="btn btn-primary" style="background: #FFD000; color: #000000; font-weight: 800; font-size: 1.15rem; padding: 16px 38px; border-radius: 50px; box-shadow: 0 0 20px rgba(255, 208, 0, 0.4); text-transform: uppercase; letter-spacing: 0.5px;">
+                        Conhecer Planos e Condições Especiais &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINHA DIVISÓRIA AMARELA -->
+        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
+
+        <!-- 5. BANNER 3: PRESENÇA DIGITAL ESTRATÉGICA (GESTÃO DE REDES SOCIAIS COM IA) -->
+        <section class="section-padding" id="redes-sociais-destaque" style="background-color: #080808; padding: 60px 0;">
+            <div class="container">
+                <div class="reveal-element" style="background: linear-gradient(135deg, #141414 0%, #0a0a0a 100%); border: 1px solid rgba(255, 208, 0, 0.3); border-radius: 24px; padding: 50px 40px; box-shadow: 0 0 30px rgba(0,0,0,0.8);">
+                    <div class="row align-items-center text-center">
+                        <span class="section-tag" style="background: rgba(255, 208, 0, 0.12); color: #FFD000; border: 1px solid #FFD000; font-size: 0.85rem; letter-spacing: 2px;">📱 PRESENÇA DIGITAL ESTRATÉGICA</span>
+                        <h2 class="section-title" style="color: #FFFFFF; font-size: 2.6rem; margin: 15px 0 10px 0;">
+                            Gestão de Redes Sociais com Inteligência Artificial
+                        </h2>
+                        <p class="section-subtitle" style="color: #E0E0E0; max-width: 800px; margin: 0 auto 35px auto; font-size: 1.15rem; line-height: 1.6;">
+                            Transforme o perfil da sua empresa em uma vitrine de atração diária de clientes, combinando visão estratégica com criativos e copys de altíssimo nível desenvolvidos com IA.
+                        </p>
+
+                        <div class="highlights-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 40px; text-align: left;">
+                            <div style="background: #1a1a1a; border: 1px solid rgba(255, 208, 0, 0.2); padding: 22px; border-radius: 16px;">
+                                <div style="font-size: 1.8rem; margin-bottom: 10px;">🎨</div>
+                                <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 8px;">Design e Criativos com IA</h4>
+                                <p style="color: #AAA; font-size: 0.9rem; line-height: 1.5;">Imagens em alta definição e identidade visual marcante de última geração.</p>
+                            </div>
+
+                            <div style="background: #1a1a1a; border: 1px solid rgba(255, 208, 0, 0.2); padding: 22px; border-radius: 16px;">
+                                <div style="font-size: 1.8rem; margin-bottom: 10px;">✍️</div>
+                                <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 8px;">Copywriting Persuasivo</h4>
+                                <p style="color: #AAA; font-size: 0.9rem; line-height: 1.5;">Textos persuasivos otimizados para gerar engajamento, autoridade e vendas.</p>
+                            </div>
+
+                            <div style="background: #1a1a1a; border: 1px solid rgba(255, 208, 0, 0.2); padding: 22px; border-radius: 16px;">
+                                <div style="font-size: 1.8rem; margin-bottom: 10px;">📈</div>
+                                <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 8px;">Constância Estratégica</h4>
+                                <p style="color: #AAA; font-size: 0.9rem; line-height: 1.5;">Postagens recorrentes e planejamento completo sem você perder tempo.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a href="/gestao-de-redes-sociais" class="btn btn-primary" style="background: #FFD000; color: #000; font-weight: 800; font-size: 1.1rem; padding: 16px 36px; border-radius: 50px; box-shadow: 0 0 20px rgba(255, 208, 0, 0.4); text-transform: uppercase;">
+                                Ver Todos os Planos e Detalhes &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINHA DIVISÓRIA AMARELA -->
+        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
+
+        <!-- 6. BANNER 4: SOLUÇÕES CORPORATIVAS (CONSULTORIA & TREINAMENTOS DE IA PARA EMPRESAS) -->
+        <section class="section-padding honeycomb-bg" id="empresas-destaque" style="background-color: #050505;">
+            <div class="container text-center reveal-element">
+                <span class="hero-badge" style="background: #FFD000; color: #000; margin-bottom: 20px; font-size: 0.95rem; padding: 8px 22px; border-radius: 50px; font-weight: 800; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">🏢 SOLUÇÕES CORPORATIVAS</span>
+                <h2 class="section-title" style="font-size: 3rem; color: #FFFFFF; max-width: 900px; margin: 0 auto 15px auto;">
+                    Consultoria & Treinamentos de IA para Empresas
+                </h2>
+                <p class="section-subtitle" style="margin: 0 auto 30px auto; max-width: 850px; color: #E0E0E0; font-size: 1.25rem; line-height: 1.6;">
+                    Identifique gargalos, automatize processos e capacite sua equipe com o que há de mais avançado em Inteligência Artificial para gerar mais lucro e produtividade.
+                </p>
+                <div style="margin-top: 30px;">
+                    <a class="btn btn-primary" href="/consultoria-e-treinamento-empresarial" style="background: #FFD000; color: #000; font-size: 1.15rem; padding: 16px 42px; text-transform: uppercase; font-weight: 800; border-radius: 50px; box-shadow: 0 0 25px rgba(255, 208, 0, 0.35);">
+                        Conhecer Soluções Empresariais & Diagnóstico &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- LINHA DIVISÓRIA AMARELA -->
+        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
+
+        <!-- 7. SEÇÃO "SOLUÇÕES — O QUE A COLMEIA OFERECE" (GRID DE CARDS FINAL) -->
+        <section class="section-padding" id="servicos" style="background-color: #050505;">
+            <div class="container">
+                <div class="section-title-wrapper text-center reveal-element">
+                    <span class="section-tag">Soluções</span>
+                    <h2 class="section-title">O que a Colmeia oferece</h2>
+                    <p class="section-subtitle">Soluções de Inteligência Artificial para pessoas, criadores e empresas.</p>
+                </div>
+                
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+                    
+                    <!-- Card 1: Formação & Aulas em IA -->
+                    <div class="service-card reveal-element" style="border-color: rgba(255, 208, 0, 0.4); background: linear-gradient(180deg, #161616 0%, #0d0d0d 100%); flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="service-icon">🎓</div>
+                            <h3 class="service-title" style="color: #FFD000;">Formação Executiva & Aulas em IA</h3>
+                            <p class="service-desc">Aulas avulsas pontuais a partir de R$ 250, turmas mensais em grupo e mentoria VIP 1:1. Aprenda na prática prompts avançados, automações, vídeos, sites e IA aplicada ao seu mercado.</p>
+                        </div>
+                        <a href="/aulas-particulares-ia.html" class="btn btn-primary" style="width: fit-content; background: #FFD000; color: #000; font-weight: 700; margin-top: 20px;">Saber mais sobre as Formações &rarr;</a>
+                    </div>
+
+                    <!-- Card 2: Criação de Sites -->
+                    <div class="service-card reveal-element" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="service-icon">🌐</div>
+                            <h3 class="service-title">Criação de Websites Profissionais com IA</h3>
+                            <p class="service-desc">Websites e Landing Pages de alta conversão, design exclusivo, copywriting persuasivo, SEO no Google e imagens geradas por IA com entrega rápida em até 7-10 dias.</p>
+                        </div>
+                        <a href="/criacao-de-sites" class="btn btn-secondary" style="width: fit-content; margin-top: 20px;">Ver Planos de Sites</a>
+                    </div>
+
+                    <!-- Card 3: Card Único Consolidado Empresarial -->
+                    <div class="service-card reveal-element" style="border-color: rgba(255, 208, 0, 0.4); background: linear-gradient(180deg, #161616 0%, #0d0d0d 100%); flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="service-icon">🏢</div>
+                            <h3 class="service-title" style="color: #FFD000;">Consultoria & Treinamentos de IA para Empresas</h3>
+                            <p class="service-desc">Diagnóstico estratégico, automações inteligentes e capacitação sob medida para equipes de vendas, atendimento, marketing e gestão aumentarem a produtividade e os resultados com Inteligência Artificial.</p>
+                        </div>
+                        <a href="/consultoria-e-treinamento-empresarial" class="btn btn-primary" style="width: fit-content; background: #FFD000; color: #000; font-weight: 700; margin-top: 20px;">Conhecer Soluções Empresariais &rarr;</a>
+                    </div>
+
+                    <!-- Card 4: Gestão de Redes Sociais -->
+                    <div class="service-card reveal-element" style="border-color: rgba(57, 255, 20, 0.3); flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <div class="service-icon">📱</div>
+                            <h3 class="service-title">Gestão de Redes Sociais com IA</h3>
+                            <p class="service-desc">Sua empresa não pode mais ficar parada no digital. Planos completos de gestão profissional para comerciantes locais e negócios online.</p>
+                        </div>
+                        <a href="/gestao-de-redes-sociais" class="btn btn-primary" style="width: fit-content; margin-top: 20px;">Ver planos de Redes Sociais</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. SEÇÃO CONTATO -->
+        <section class="section-padding honeycomb-bg" id="contato" style="background-color: #080808; border-top: 1px solid rgba(255, 208, 0, 0.15);">
+            <div class="container reveal-element">
+                <div class="section-title-wrapper text-center">
+                    <span class="section-tag">Fale Conosco</span>
+                    <h2 class="section-title">Entre em contato</h2>
+                    <p class="section-subtitle">Tire suas dúvidas, solicite orçamentos ou marque uma reunião.</p>
+                </div>
+
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 600px; margin: 0 auto; background: var(--bg-dark-card); padding: 40px; border-radius: var(--border-radius-md); border: 1px solid var(--border-color-dark);">
+                    <h3 style="margin-bottom: 25px; color: var(--accent); font-size: 1.5rem;">Nossos Canais</h3>
+                    <div style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+                        <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.2rem; color: var(--text-light-primary); text-decoration: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                            (31) 99931-4793
+                        </a>
+                        <a href="https://www.instagram.com/colmeiastudiosacademy" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.2rem; color: var(--text-light-primary); text-decoration: none;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            @colmeiastudiosacademy
+                        </a>
+                        <a href="mailto:colmeiastudiosacademy@gmail.com" style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.2rem; color: var(--text-light-primary); text-decoration: none;">
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            colmeiastudiosacademy@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ PADRONIZADO -->
+    <footer class="footer-main">
+        <div class="container footer-grid">
+            
+            <div class="footer-brand">
+                <img src="assets/colmeia-bee-logo.png" alt="Logo Colmeia Studios Academy" style="width: 80px; margin-bottom: 15px; filter: grayscale(1) brightness(2);">
+                <h4>Colmeia Studios Academy</h4>
+                <p class="footer-tagline">Educação, criatividade e Inteligência Artificial para o futuro.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h5>Navegação</h5>
+                <ul class="footer-links-list">
+                    <li><a href="/">Início</a></li>
+                    <li><a href="/aulas-particulares-ia.html">Aulas Particulares de IA</a></li>
+                    <li><a href="/criacao-de-sites">Criação de Sites</a></li>
+                    <li><a href="/gestao-de-redes-sociais">Redes Sociais</a></li>
+                    <li><a href="/consultoria-e-treinamento-empresarial">Consultoria & Treinamento Empresarial</a></li>
+                    <li><a href="/cursos">Cursos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h5>Fale Conosco</h5>
+                <div class="footer-contact-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                    <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer">(31) 99931-4793</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <a href="https://www.instagram.com/colmeiastudiosacademy" target="_blank" rel="noopener noreferrer">@colmeiastudiosacademy</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://wa.me/5531999314793?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block; margin:auto; margin-top:15px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <!-- Supabase SDK & Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID_AQUI');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/></noscript>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</body>
+</html>
