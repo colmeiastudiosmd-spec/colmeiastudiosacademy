@@ -23,7 +23,7 @@
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/mapa-oportunidades">
     
     <link rel="stylesheet" href="../style.css">
-    <link rel="icon" href="../assets/colmeia-bee-logo.png" type="image/png">
+    <link rel="icon" href="/assets/colmeia-bee-logo.webp" type="image/png">
 
     <!-- JSON-LD com Schema.org -->
     <script type="application/ld+json">
@@ -101,7 +101,7 @@
 
             {
               "@type": "Question",
-              "name": "A oferta de R$ 497 é por tempo limitado mesmo?",
+              "name": "A oferta de R$ 497 é válida para as próximas 30 contratações mesmo?",
               "acceptedAnswer": {
                 "@type": "Answer",
                 "text": "Sim. O valor promocional de R$ 497 é válido até 30 de junho de 2026. Após esta data, o serviço retornará ao valor cheio de R$ 997."
@@ -118,14 +118,14 @@
     <header class="header-main" id="headerMain">
         <div class="container header-container">
             <a href="../index.html" class="logo-wrapper" id="logoLink">
-                <img src="../assets/colmeia-bee-logo.png" alt="Colmeia Studios Academy" class="logo-img" id="logoImg" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="logo-img" id="logoImg" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';">
                 <span class="logo-fallback" id="logoFallback" style="display: none;">Colmeia Studios Academy</span>
             </a>
             
             <nav class="header-nav" style="display: flex; gap: 20px; align-items: center; font-weight: 500;">
                 <a href="../index.html#hero">Início</a>
                 <a href="../aulas-particulares-ia.html" style="color: var(--accent);">Aulas de IA</a>
-                <a href="../cursos.html" style="color: var(--accent);">Livros</a>
+                <a href="/livros" style="color: var(--accent);">Livros</a>
                 <a href="../index.html#servicos">Serviços</a>
                 <a href="#" style="color: var(--accent);">Mapa de Oportunidades</a>
                 <a href="../index.html#planos">Planos</a>
@@ -504,7 +504,7 @@
                     </details>
 
                     <details class="faq-item">
-                        <summary>A oferta de R$ 497 é por tempo limitado mesmo?</summary>
+                        <summary>A oferta de R$ 497 é válida para as próximas 30 contratações mesmo?</summary>
                         <div class="faq-content">
                             <p>Sim. O valor promocional de R$ 497 é válido <strong>até 30 de junho de 2026</strong>. Após esta data, o serviço retornará ao valor cheio de R$ 997.</p>
                         </div>
@@ -539,7 +539,7 @@
         <div class="container footer-grid">
             
             <div class="footer-brand">
-                <img src="../assets/colmeia-bee-logo.png" alt="Logo Colmeia" style="width: 80px; margin-bottom: 15px; filter: grayscale(1) brightness(2);">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Logo Colmeia" style="width: 80px; margin-bottom: 15px; filter: grayscale(1) brightness(2);">
                 <h4>Colmeia Studios Academy</h4>
                 <p class="footer-tagline">Educação, criatividade e Inteligência Artificial para o futuro.</p>
             </div>
@@ -549,7 +549,7 @@
                 <ul class="footer-links-list">
                     <li><a href="../index.html#hero">Início</a></li>
                     <li><a href="../aulas-particulares-ia.html">Aulas de IA</a></li>
-                    <li><a href="../cursos.html">Livros</a></li>
+                    <li><a href="/livros">Livros</a></li>
                     <li><a href="../index.html#servicos">Serviços</a></li>
                     <li><a href="../index.html#planos">Planos</a></li>
                     <li><a href="../index.html#sobre">Sobre</a></li>
@@ -566,6 +566,10 @@
                 <div class="footer-contact-item">
                     <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                     <a href="https://www.instagram.com/colmeiastudiosacademy" target="_blank" rel="noopener noreferrer">@colmeiastudiosacademy</a>
+                </div>
+                <div class="footer-contact-item">
+                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:contato@colmeiastudiosacademy.com.br">contato@colmeiastudiosacademy.com.br</a>
                 </div>
             </div>
 
@@ -584,7 +588,6 @@
     </a>
 
     <!-- SCRIPTS FASE 3 E FASE 4 -->
-    <!-- Supabase SDK (Para uso futuro) -->
     <script src="../script.js"></script>
     <script>
         // Contador regressivo
@@ -606,9 +609,6 @@
           }
         })();
     </script>
-
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/></noscript>
 
     </body>
 </html>
