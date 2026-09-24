@@ -121,7 +121,7 @@
                         <a href="#contato" class="btn btn-secondary" style="margin-top: 25px;">Fale diretamente com Cristian</a>
                     </div>
                     <div class="about-image-wrapper reveal-element" style="text-align: center;">
-                        <img src="assets/foto-professor.jpg" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" class="about-image" onerror="this.src='https://via.placeholder.com/500x500/111111/FFB800?text=Cristian+Pimentel';">
+                        <img src="assets/foto-professor.jpg" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" class="about-image" onerror="this.style.display='none';">
                     </div>
                 </div>
             </div>
@@ -410,30 +410,10 @@
     </a>
 
     <!-- Supabase SDK & Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
 
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_ID_AQUI');
-    fbq('track', 'PageView');
-    </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/></noscript>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-</body>
+    </body>
 </html>
