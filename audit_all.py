@@ -18,8 +18,8 @@ for fn in files:
 print("\n--- 3. EMAIL LOWERCASE CHECK ---")
 for fn in files:
     content = open(fn, encoding="utf-8").read()
-    upper_email = "COLMEIASTUDIOSACADEMY@GMAIL.COM" in content
-    lower_email = "colmeiastudiosacademy@gmail.com" in content
+    upper_email = "contato@colmeiastudiosacademy.com.br" in content
+    lower_email = "contato@colmeiastudiosacademy.com.br" in content
     print(f"{fn}: UpperEmail={upper_email}, LowerEmail={lower_email}")
 
 print("\n--- 4. NUCLEO MAIN PAGE SPECIFICS ---")
