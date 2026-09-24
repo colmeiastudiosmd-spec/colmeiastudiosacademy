@@ -105,23 +105,13 @@ document.addEventListener("DOMContentLoaded", () => {
    4. TRACKING - MAPA DE OPORTUNIDADES
    ------------------------------------------------------------- */
 window.trackMapaConversao = function(origem) {
-    if (typeof fbq !== 'undefined') {
-        fbq('track', 'Lead', {
-            content_name: 'Mapa de Oportunidades com IA',
-            content_category: 'Diagnóstico IA',
-            value: 497.00,
-            currency: 'BRL',
-            origem_botao: origem
-        });
-    }
     if (typeof gtag !== 'undefined') {
         gtag('event', 'generate_lead', {
             event_category: 'CTA',
             event_label: 'Mapa de Oportunidades - ' + origem,
-            value: 497,
+            value: 1800,
             currency: 'BRL',
             origem_botao: origem
         });
     }
-    console.log('[Tracking] Conversão Mapa IA registrada:', origem);
 };
