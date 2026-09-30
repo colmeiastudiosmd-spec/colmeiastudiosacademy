@@ -167,6 +167,21 @@
                 "@type": "Answer",
                 "text": "O Núcleo conta com a participação de profissionais jurídicos independentes no aperfeiçoamento de sua metodologia, no desenvolvimento de protocolos e na definição de critérios especializados de pesquisa e organização documental. Quando necessário, especialistas podem ser acionados conforme a área envolvida e a complexidade da demanda. A interpretação jurídica, a definição da estratégia e a validação final permanecem sob responsabilidade exclusiva do advogado contratante."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "O que é a Auditoria de Entrada?",
+              "acceptedAnswer": { "@type": "Answer", "text": "É uma auditoria avulsa de até 10 referências da sua própria pesquisa (sua, do estagiário ou de uma IA), com entrega do Relatório de Auditoria de Fontes: ficha por referência com status (confirmada, com ressalva ou bloqueada para citação) e o local de conferência registrado. Valor fixo de R$ 800, prazo de até 5 dias úteis e 1 revalidação após os ajustes." }
+            },
+            {
+              "@type": "Question",
+              "name": "A Auditoria de Entrada exige enviar os autos do processo?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Não. Nesta modalidade são enviadas apenas as referências a conferir (precedentes, ementas, artigos de lei), que são documentos públicos. Autos e dados de partes só entram nas demandas completas, após NDA e Ordem de Serviço." }
+            },
+            {
+              "@type": "Question",
+              "name": "Qual a diferença entre a Auditoria de Entrada e a faixa Essencial?",
+              "acceptedAnswer": { "@type": "Answer", "text": "A Auditoria de Entrada confere referências que você já pesquisou. A faixa Essencial é uma demanda completa de pesquisa e organização feita pelo Núcleo, a partir de R$ 1.800. A primeira audita o seu material; a segunda produz o material." }
             }
           ]
         }
@@ -1562,6 +1577,7 @@
             <nav class="header-nav" id="mobile-navigation" aria-label="Navegação principal">
                 <a href="#estrategia">Estratégia COLMEIA</a>
                 <a href="#amostra">Amostra</a>
+                <a href="#auditoria-entrada">Auditoria de Entrada</a>
                 <a href="#metodologia">Metodologia</a>
                 <a href="#seguranca">Segurança</a>
                 <a href="#caso-referencia">Caso de referência</a>
@@ -1602,6 +1618,10 @@
                     </a>
                     <a href="#triagem" class="btn btn-gold" style="background: transparent; border: 1px solid var(--border-gold); color: var(--accent-gold);">Solicitar triagem técnica</a>
                 </div>
+
+                <p style="margin: -18px 0 24px; font-size: 0.9375rem;">
+                    <a href="#auditoria-entrada" class="link-secondary">Quer testar antes? Auditoria de Entrada: até 10 referências conferidas por R$ 800 →</a>
+                </p>
 
                 <p style="font-size: 0.84375rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; max-width: 800px;">
                     A conversa inicial ocorre sem envio de documentos sigilosos. Caso seja necessário avançar, o escopo técnico e as condições de tratamento das informações serão definidos antes do recebimento dos autos.
@@ -1842,6 +1862,105 @@
   </div>
 </section>
 
+<!-- Auditoria de Entrada: início -->
+<style>
+/* auditoria-entrada (secao principal) */
+.ae2{padding:88px 0;background:var(--bg-black,#000);border-top:1px solid var(--border-dark,#1f1f1f)}
+.ae2 *{box-sizing:border-box}
+.ae2-wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.ae2-eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f08a8a;font-weight:600}
+.ae2-title{font-size:clamp(26px,3.2vw,36px);margin:10px 0 14px;color:#fff;max-width:22em}
+.ae2-lead{max-width:780px;color:var(--text-muted,#a0a0a0);line-height:1.7;margin:0 0 32px}
+.ae2-lead b{color:#fff}
+.ae2-cases{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:18px}
+.ae2-case{background:var(--bg-card,#0c0c0c);border:1px solid var(--border-dark,#1f1f1f);border-top:3px solid #c85050;border-radius:8px;padding:20px 18px;display:flex;flex-direction:column}
+.ae2-case .ae2-k{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#f08a8a;font-weight:700}
+.ae2-case .ae2-v{font-size:26px;font-weight:800;color:#fff;margin:10px 0 6px;line-height:1}
+.ae2-case p{font-size:14px;color:var(--text-muted,#a0a0a0);line-height:1.55;margin:0}
+.ae2-case a{margin-top:auto;padding-top:12px;font-size:12px;color:var(--accent-gold,#f2b600);text-decoration:underline;text-underline-offset:3px}
+.ae2-note{font-size:12.5px;color:var(--text-dark,#8f8f8f);line-height:1.6;margin:0 0 40px;max-width:900px}
+.ae2-offer{display:grid;grid-template-columns:1.3fr .7fr;border:1px solid var(--border-gold,#f2b600);border-radius:10px;overflow:hidden;background:rgba(242,182,0,.04)}
+.ae2-in{padding:30px 32px}
+.ae2-tag{display:inline-block;background:var(--accent-gold,#f2b600);color:#000;font-weight:700;font-size:12px;padding:3px 10px;border-radius:4px;letter-spacing:.02em}
+.ae2-in h3{color:#fff;font-size:22px;margin:14px 0 10px}
+.ae2-in p{color:var(--text-muted,#a0a0a0);line-height:1.65;margin:0 0 16px;font-size:15.5px}
+.ae2-in p b{color:#fff}
+.ae2-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
+.ae2-list li{position:relative;padding-left:22px;font-size:14.5px;color:var(--text-main,#f0f0f0);line-height:1.5}
+.ae2-list li::before{content:"✓";position:absolute;left:0;color:#5fd07a;font-weight:700}
+.ae2-price{background:var(--bg-card,#0c0c0c);border-left:1px solid var(--border-gold-subtle,rgba(242,182,0,.25));padding:30px 26px;display:flex;flex-direction:column;justify-content:center;gap:10px}
+.ae2-price .ae2-l{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted,#a0a0a0);font-weight:600}
+.ae2-price .ae2-p{font-size:46px;font-weight:800;color:#fff;line-height:1}
+.ae2-price .ae2-s{font-size:13px;color:var(--text-muted,#a0a0a0);line-height:1.5}
+.ae2-btn{display:inline-flex;justify-content:center;align-items:center;background:var(--accent-gold,#f2b600);color:#000;font-weight:700;font-size:15px;text-decoration:none;padding:14px 20px;border-radius:6px;margin-top:6px;transition:background .2s,transform .2s}
+.ae2-btn:hover{background:var(--accent-gold-hover,#d9a300);transform:translateY(-1px)}
+.ae2-link{font-size:14px;font-weight:600;color:var(--accent-gold,#f2b600);text-decoration:underline;text-underline-offset:4px;text-align:center}
+.ae2-legal{font-size:12px;color:var(--text-dark,#8f8f8f);line-height:1.6;margin:18px 0 0}
+@media (max-width:991px){.ae2-cases{grid-template-columns:1fr 1fr}.ae2-offer{grid-template-columns:1fr}.ae2-price{border-left:0;border-top:1px solid var(--border-gold-subtle,rgba(242,182,0,.25))}}
+@media (max-width:600px){.ae2{padding:64px 0}.ae2-cases,.ae2-list{grid-template-columns:1fr}.ae2-in{padding:24px 20px}.ae2-price{padding:24px 20px}}
+</style>
+
+<section id="auditoria-entrada" class="ae2" aria-labelledby="ae2-titulo">
+  <div class="ae2-wrap">
+    <span class="ae2-eyebrow">O custo da referência não conferida</span>
+    <h2 id="ae2-titulo" class="ae2-title">Tribunais já estão multando quem cita sem conferir.</h2>
+    <p class="ae2-lead">A amostra acima mostra 4 problemas em 9 referências. Nos casos abaixo, ninguém fez essa conferência antes do protocolo — e <b>a responsabilidade recaiu sobre o advogado que assinou</b>, não sobre a ferramenta nem sobre a equipe.</p>
+
+    <div class="ae2-cases">
+      <article class="ae2-case">
+        <span class="ae2-k">TST · mar/2026</span>
+        <span class="ae2-v">1% + 1%</span>
+        <p>Multa sobre o valor da causa para a empresa <b style="color:#fff">e para o advogado</b>, por jurisprudência inexistente. Ofícios à OAB e ao MPF.</p>
+        <a href="https://www.tst.jus.br/en/-/empresa-e-advogado-sao-condenados-por-possivel-uso-de-ia-com-citacoes-falsas-de-jurisprudencia" target="_blank" rel="noopener noreferrer">Fonte: TST</a>
+      </article>
+      <article class="ae2-case">
+        <span class="ae2-k">TRT-2 · fev/2026</span>
+        <span class="ae2-v">5%</span>
+        <p>O advogado culpou o "corpo de estagiários". O tribunal rejeitou: a postulação é ato privativo do advogado. Ofício à OAB-SP.</p>
+        <a href="https://conjur.com.br/2026-fev-16/uso-de-jurisprudencia-criada-por-ia-gera-multa-por-ma-fe-e-oficio-a-oab/" target="_blank" rel="noopener noreferrer">Fonte: ConJur</a>
+      </article>
+      <article class="ae2-case">
+        <span class="ae2-k">TJSC · fev/2025</span>
+        <span class="ae2-v">10%</span>
+        <p>Jurisprudência e doutrina inexistentes após "uso inadvertido" do ChatGPT. Multa sobre o valor atualizado da causa e comunicação à OAB/SC.</p>
+        <a href="https://www.tjsc.jus.br/web/imprensa/-/tjsc-multa-autor-de-recurso-por-jurisprudencia-falsa-gerada-por-ia" target="_blank" rel="noopener noreferrer">Fonte: TJSC</a>
+      </article>
+      <article class="ae2-case">
+        <span class="ae2-k">TJMG · jul/2026</span>
+        <span class="ae2-v">R$ 990</span>
+        <p>A cliente venceu no mérito e, ainda assim, foi multada por dois precedentes falsos. Ofício à OAB-MG.</p>
+        <a href="https://g1.globo.com/mg/minas-gerais/noticia/2026/07/17/advogada-cita-jurisprudencias-inexistentes-em-processo-juiza-faz-alerta-sobre-uso-de-ia-e-aplica-multa-em-processo.ghtml" target="_blank" rel="noopener noreferrer">Fonte: g1 Minas</a>
+      </article>
+    </div>
+    <p class="ae2-note">Casos citados com base nas notícias indicadas; a Colmeia Studios Academy não atuou em nenhum deles. Percentuais de multa por litigância de má-fé calculados sobre o valor da causa, conforme cada decisão.</p>
+
+    <div class="ae2-offer">
+      <div class="ae2-in">
+        <span class="ae2-tag">Auditoria de Entrada</span>
+        <h3>Antes de contratar uma demanda completa, audite uma peça sua.</h3>
+        <p>Você traz até <b>10 referências da sua própria pesquisa</b> — sua, do estagiário ou da sua IA — e recebe cada uma conferida <b>direto na fonte oficial</b>, com o mesmo Relatório de Auditoria de Fontes da amostra acima. Sem envio de autos.</p>
+        <ul class="ae2-list">
+          <li>Até 10 referências conferidas</li>
+          <li>Status: confirmada, com ressalva ou bloqueada</li>
+          <li>Local de conferência registrado</li>
+          <li>1 revalidação após seus ajustes</li>
+          <li>Prazo: até 5 dias úteis</li>
+          <li>NDA incluído · só referências públicas</li>
+        </ul>
+      </div>
+      <div class="ae2-price">
+        <span class="ae2-l">Valor fixo</span>
+        <span class="ae2-p">R$ 800</span>
+        <span class="ae2-s">por auditoria · sem mensalidade e sem compromisso posterior</span>
+        <a class="ae2-btn" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Cristian.%20Cheguei%20pela%20p%C3%A1gina%20do%20N%C3%BAcleo%20e%20quero%20a%20Auditoria%20de%20Entrada%20(R%24%20800%2C%20at%C3%A9%2010%20refer%C3%AAncias).%20Sei%20que%20nesta%20etapa%20n%C3%A3o%20envio%20autos%20nem%20dados%20sigilosos." target="_blank" rel="noopener noreferrer">Solicitar auditoria de entrada</a>
+        <a class="ae2-link" href="/auditoria-de-entrada">Ver todos os detalhes da oferta</a>
+      </div>
+    </div>
+    <p class="ae2-legal">A auditoria de fontes é procedimento técnico de rastreabilidade e conferência. Não constitui parecer jurídico, não certifica a pertinência das referências ao caso concreto e não substitui a revisão e validação do advogado responsável.</p>
+  </div>
+</section>
+<!-- Auditoria de Entrada: fim -->
+
 <section class="section-padding bg-alt">
             <div class="container">
                 <div class="section-header-block">
@@ -1996,6 +2115,7 @@
                             <li>Escritórios que desejam ampliar a capacidade de pesquisa sem aumentar imediatamente a estrutura fixa.</li>
                             <li>Profissionais que precisam receber materiais organizados para revisão e validação.</li>
                             <li>Departamentos jurídicos que enfrentam documentos, informações e referências dispersas.</li>
+                            <li>Advogados que querem conhecer o método antes de contratar uma demanda maior: a <a href="#auditoria-entrada" style="color: var(--accent-gold); text-decoration: underline;">Auditoria de Entrada</a> confere até 10 referências de uma peça sua.</li>
                         </ul>
                     </div>
 
@@ -2228,6 +2348,13 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr style="background: rgba(242, 182, 0, 0.06); box-shadow: inset 3px 0 0 var(--accent-gold);">
+                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Auditoria de Entrada <a href="#auditoria-entrada" style="display:block; font-size:0.75rem; font-weight:600; color: var(--accent-gold); text-decoration: underline; margin-top:4px;">ver detalhes</a></td>
+                                <td data-label="Critérios">Conferência de até 10 referências da sua própria pesquisa na fonte oficial, com status por referência; somente referências públicas, sem envio de autos</td>
+                                <td data-label="Prazo de entrega">Até 5 dias úteis</td>
+                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">R$ 800 (valor fixo)</td>
+                                <td data-label="Revisões">1 revalidação</td>
+                            </tr>
                             <tr>
                                 <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Essencial</td>
                                 <td data-label="Critérios">Pesquisa pontual de precedentes; organização de documentos curtos; estrutura preliminar de apoio</td>
@@ -2255,6 +2382,7 @@
 
                 <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px; font-size: 0.875rem; color: var(--text-muted);">
                     <p>Regime de urgência: entrega em até 72 horas com acréscimo de 30% sobre o valor de referência; entrega em até 48 horas com acréscimo de 50% sobre o valor de referência. Valores sujeitos a confirmação após triagem técnica do caso.</p>
+                    <p><strong style="color: var(--text-main);">Auditoria de Entrada:</strong> valor fixo de R$ 800 para até 10 referências. A triagem confirma apenas se o material cabe nesse escopo; volumes maiores seguem as faixas acima.</p>
                     <p style="color: var(--text-main); font-weight: 500;"><strong>Contratação sob demanda:</strong> em vez de criar uma estrutura fixa para pesquisas e organização documental, o escritório contrata o suporte técnico conforme o volume e a complexidade de cada demanda.</p>
                     <p style="color: var(--text-main); font-weight: 500;"><strong>Recorrência:</strong> Para escritórios com volume contínuo, o Núcleo opera em formato de cotas mensais de apoio — proposta sob consulta após triagem.</p>
                 </div>
@@ -2357,6 +2485,36 @@
                         </button>
                         <div class="faq-content">
                             <p>Os prazos variam entre 5 e 12 dias úteis conforme a faixa de complexidade do caso (Essencial: até 5 dias úteis; Padrão: até 8 dias úteis; Complexa: até 12 dias úteis). Para demandas urgentes, há regime de urgência: entrega em até 72 horas, com acréscimo de 30%, ou em até 48 horas, com acréscimo de 50% sobre o valor de referência.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>O que é a Auditoria de Entrada?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>É uma auditoria avulsa de até 10 referências da sua própria pesquisa (sua, do estagiário ou de uma IA), com entrega do Relatório de Auditoria de Fontes: ficha por referência com status (confirmada, com ressalva ou bloqueada para citação) e o local de conferência registrado. Valor fixo de R$ 800, prazo de até 5 dias úteis e 1 revalidação após os ajustes.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>A Auditoria de Entrada exige enviar os autos do processo?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>Não. Nesta modalidade são enviadas apenas as referências a conferir (precedentes, ementas, artigos de lei), que são documentos públicos. Autos e dados de partes só entram nas demandas completas, após NDA e Ordem de Serviço.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false">
+                            <span>Qual a diferença entre a Auditoria de Entrada e a faixa Essencial?</span>
+                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </button>
+                        <div class="faq-content">
+                            <p>A Auditoria de Entrada confere referências que você já pesquisou. A faixa Essencial é uma demanda completa de pesquisa e organização feita pelo Núcleo, a partir de R$ 1.800. A primeira audita o seu material; a segunda produz o material.</p>
                         </div>
                     </div>
 
