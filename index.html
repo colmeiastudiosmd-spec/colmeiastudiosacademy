@@ -12,18 +12,25 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colmeia Studios Academy | Inteligência Artificial Aplicada a Negócios</title>
-    <meta name="description" content="Aulas particulares de IA, criação de sites, gestão de redes sociais, consultoria e treinamentos em IA, pesquisa assistida e inteligência documental.">
-    <meta name="keywords" content="inteligência artificial para empresas, criação de sites profissionais, consultoria empresarial em IA, gestão de redes sociais com IA, treinamento de IA corporativo">
+    <title>Colmeia Studios Academy | Inteligência Artificial Aplicada a Negócios, Criação e Educação</title>
+    <meta name="description" content="Inteligência Artificial aplicada a negócios, criação e educação. Escolha sua área: aulas de IA, websites, redes sociais, consultoria, livros e Núcleo de Inteligência Jurídica.">
+    <meta name="keywords" content="inteligência artificial, aulas particulares de IA, criação de sites, gestão de redes sociais, consultoria em IA, livros de IA, núcleo de inteligência jurídica">
     <meta name="google-site-verification" content="ropeiNhhenmotE5GJ6wllg_oR2a1JuZPIvTRSwV8s84" />
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/">
     
     <!-- Open Graph / Meta Tags Social -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Colmeia Studios Academy | Soluções em IA para Negócios">
-    <meta property="og:description" content="Aulas particulares de IA, criação de sites, gestão de redes sociais, consultoria e treinamentos em IA, pesquisa assistida e inteligência documental.">
+    <meta property="og:title" content="Colmeia Studios Academy | Inteligência Artificial Aplicada">
+    <meta property="og:description" content="Inteligência Artificial aplicada a negócios, criação e educação. Escolha sua área: aulas de IA, websites, redes sociais, consultoria, livros e Núcleo de Inteligência Jurídica.">
     <meta property="og:url" content="https://colmeiastudiosacademy.com.br/">
     <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts: Bricolage Grotesque, Instrument Sans, IBM Plex Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- Schema JSON-LD ProfessionalService -->
     <script type="application/ld+json">
@@ -36,6 +43,7 @@
       "image": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
       "telephone": "+55-31-99931-4793",
       "priceRange": "$$",
+      "description": "Inteligência Artificial aplicada a negócios, criação e educação. Aulas particulares, criação de sites, gestão de redes sociais, consultoria e treinamentos, livros de IA e Núcleo de Inteligência Jurídica.",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rua Terenas, 292, sala 201, Iguaçu",
@@ -44,377 +52,1312 @@
         "postalCode": "35162-126",
         "addressCountry": "BR"
       },
+      "founder": {
+        "@type": "Person",
+        "name": "Cristian Santos Pimentel"
+      },
       "sameAs": [
         "https://instagram.com/colmeiastudiosacademy"
       ]
     }
     </script>
     
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
+    
+    <style>
+        /* ================= DESIGN SYSTEM / RESET ================= */
+        :root {
+            --ink: #14100B;
+            --ink-deep: #0B0806;
+            --ink-soft: #575148;
+            --ink-muted: #8A8175;
+            --paper-warm: #FBF8F2;
+            --paper-card: #FFFFFF;
+            --paper-border: #E8E2D8;
+            --amber: #F2A71B;
+            --amber-hover: #FFB733;
+            --amber-light: #FDF4E3;
+            --amber-border: rgba(242, 167, 27, 0.35);
+            --amber-glow: rgba(242, 167, 27, 0.4);
+            --cream: #F6E7C8;
+            --font-display: 'Bricolage Grotesque', sans-serif;
+            --font-body: 'Instrument Sans', sans-serif;
+            --font-mono: 'IBM Plex Mono', monospace;
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            color-scheme: dark light;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--ink);
+            color: #EDE6DC;
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Focus visível acessível */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--amber);
+            outline-offset: 3px;
+        }
+
+        /* ================= 1. CABEÇALHO FIXO (STICKY) ================= */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(20, 16, 11, 0.88);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid rgba(242, 167, 27, 0.15);
+            transition: box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .site-header.scrolled {
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            background: rgba(14, 11, 7, 0.96);
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 76px;
+            gap: 20px;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .header-logo img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 8px rgba(242, 167, 27, 0.4));
+        }
+
+        .header-logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.05rem;
+            letter-spacing: -0.01em;
+            color: #FFFFFF;
+            line-height: 1.2;
+        }
+
+        .logo-sub {
+            font-family: var(--font-mono);
+            font-size: 0.68rem;
+            color: var(--amber);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .header-nav a {
+            font-size: 0.93rem;
+            font-weight: 500;
+            color: #D1C9BE;
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .header-nav a:hover {
+            color: var(--amber);
+        }
+
+        .header-nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--amber);
+            transition: width 0.2s ease;
+        }
+
+        .header-nav a:hover::after {
+            width: 100%;
+        }
+
+        .header-cta-btn {
+            background: var(--amber);
+            color: var(--ink);
+            font-weight: 700;
+            font-size: 0.88rem;
+            padding: 10px 20px;
+            border-radius: 6px;
+            letter-spacing: 0.02em;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .header-cta-btn:hover {
+            background: var(--amber-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 15px rgba(242, 167, 27, 0.35);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: transparent;
+            border: 1px solid rgba(242, 167, 27, 0.3);
+            border-radius: 6px;
+            color: var(--amber);
+            font-size: 1.4rem;
+            padding: 6px 12px;
+            cursor: pointer;
+        }
+
+        /* ================= 2. CAPA / HERO ================= */
+        .hero-section {
+            background-color: #14100B;
+            position: relative;
+            padding-top: 140px;
+            padding-bottom: 70px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Motivo hexagonal sutil ao fundo */
+        .hex-pattern-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='83.138' viewBox='0 0 48 83.138'%3E%3Cpath d='M48 41.569L24 55.425 0 41.569V13.856L24 0l24 13.856v27.713zm0 41.569L24 97l-24-13.862V55.425l24 13.856 24-13.856v27.713z' fill='%23F2A71B' fill-opacity='1' fill-rule='evenodd' stroke='%23F2A71B' stroke-width='1.2' stroke-opacity='0.6'/%3E%3C/svg%3E");
+            background-repeat: repeat;
+        }
+
+        .hero-radial-glow {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 700px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(242, 167, 27, 0.16) 0%, rgba(20, 16, 11, 0) 70%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+
+        .hero-emblem {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 28px auto;
+            filter: drop-shadow(0 0 24px var(--amber-glow));
+            animation: softPulse 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes softPulse {
+            0% { transform: scale(1); filter: drop-shadow(0 0 20px rgba(242, 167, 27, 0.35)); }
+            100% { transform: scale(1.03); filter: drop-shadow(0 0 32px rgba(242, 167, 27, 0.55)); }
+        }
+
+        .hero-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.3rem, 4.4vw, 3.8rem);
+            font-weight: 800;
+            line-height: 1.14;
+            color: #FFFFFF;
+            letter-spacing: -0.02em;
+            margin-bottom: 22px;
+        }
+
+        .hero-title .highlight {
+            color: var(--amber);
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.35rem);
+            color: #D1C9BE;
+            max-width: 720px;
+            margin: 0 auto 36px auto;
+            line-height: 1.55;
+            font-weight: 400;
+        }
+
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .btn-primary-hero {
+            background: var(--amber);
+            color: var(--ink);
+            font-weight: 800;
+            font-size: 1.05rem;
+            padding: 16px 36px;
+            border-radius: 8px;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(242, 167, 27, 0.35);
+        }
+
+        .btn-primary-hero:hover {
+            background: var(--amber-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 28px rgba(242, 167, 27, 0.5);
+        }
+
+        .btn-ghost-hero {
+            background: transparent;
+            color: #EDE6DC;
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 15px 32px;
+            border-radius: 8px;
+            border: 1px solid rgba(242, 167, 27, 0.4);
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-ghost-hero:hover {
+            border-color: var(--amber);
+            color: var(--amber);
+            background: rgba(242, 167, 27, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .hero-credibility {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            color: var(--ink-muted);
+            letter-spacing: 0.04em;
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        /* Divisor friso hexagonal entre hero e seletor */
+        .hex-divider {
+            position: relative;
+            height: 32px;
+            background: #14100B;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-bottom: 1px solid var(--paper-border);
+        }
+
+        .hex-divider svg {
+            height: 16px;
+            fill: var(--amber);
+            opacity: 0.4;
+        }
+
+        /* ================= 3. SELETOR DE SETORES (FUNDO CLARO #FBF8F2) ================= */
+        .selector-section {
+            background-color: var(--paper-warm);
+            color: var(--ink);
+            padding: 90px 0 110px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 740px;
+            margin: 0 auto 56px auto;
+        }
+
+        .section-eyebrow {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #C27D08;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .section-heading {
+            font-family: var(--font-display);
+            font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+            font-weight: 800;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+            margin-bottom: 12px;
+        }
+
+        .section-lead {
+            font-size: 1.1rem;
+            color: var(--ink-soft);
+            line-height: 1.5;
+        }
+
+        /* Grade das 3 Trilhas */
+        .tracks-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .track-card {
+            background: var(--paper-card);
+            border: 1px solid var(--paper-border);
+            border-radius: 18px;
+            padding: 36px 36px 40px 36px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            transition: var(--transition);
+        }
+
+        .track-card:hover {
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+            border-color: #D8CEBE;
+        }
+
+        .track-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid #EFEAE1;
+            padding-bottom: 18px;
+            margin-bottom: 28px;
+        }
+
+        .track-title {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--ink);
+            letter-spacing: -0.01em;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .track-number {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #C27D08;
+            background: var(--amber-light);
+            border: 1px solid rgba(242, 167, 27, 0.4);
+            padding: 3px 10px;
+            border-radius: 4px;
+        }
+
+        .track-subtitle {
+            font-size: 0.95rem;
+            color: var(--ink-soft);
+            font-style: italic;
+        }
+
+        /* Grid das células de cada trilha */
+        .track-cells-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .track-cells-grid.cols-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .track-cells-grid.cols-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* Estilo idêntico para todas as células (células hexagonais da colmeia) */
+        .honeycomb-cell {
+            background: #FFFFFF;
+            border: 1px solid var(--paper-border);
+            border-radius: 12px;
+            padding: 26px 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 16px;
+            text-decoration: none;
+            color: var(--ink);
+            transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cell-top {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        /* Emblema hexagonal para o ícone */
+        .hex-icon-badge {
+            width: 46px;
+            height: 46px;
+            background: var(--amber-light);
+            border: 1px solid rgba(242, 167, 27, 0.3);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .hex-icon-badge svg {
+            width: 22px;
+            height: 22px;
+            fill: #C27D08;
+            transition: var(--transition);
+        }
+
+        .cell-info {
+            flex: 1;
+        }
+
+        .cell-name {
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--ink);
+            line-height: 1.25;
+            margin-bottom: 6px;
+            transition: var(--transition);
+        }
+
+        .cell-line {
+            font-size: 0.92rem;
+            color: var(--ink-soft);
+            line-height: 1.45;
+            transition: var(--transition);
+        }
+
+        .cell-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #C27D08;
+            transition: var(--transition);
+        }
+
+        .cell-arrow svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            transition: transform 0.2s ease;
+        }
+
+        /* Hover das células hexagonais: preenche de âmbar e sobe */
+        .honeycomb-cell:hover {
+            background: var(--amber);
+            border-color: var(--amber);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(242, 167, 27, 0.28);
+        }
+
+        .honeycomb-cell:hover .hex-icon-badge {
+            background: #FFFFFF;
+            border-color: #FFFFFF;
+        }
+
+        .honeycomb-cell:hover .hex-icon-badge svg {
+            fill: #14100B;
+        }
+
+        .honeycomb-cell:hover .cell-name {
+            color: #14100B;
+        }
+
+        .honeycomb-cell:hover .cell-line {
+            color: #2E2519;
+            font-weight: 500;
+        }
+
+        .honeycomb-cell:hover .cell-arrow {
+            color: #14100B;
+        }
+
+        .honeycomb-cell:hover .cell-arrow svg {
+            transform: translateX(4px);
+        }
+
+        /* ================= 4. BLOCO INSTITUCIONAL (FUNDO ESCURO) ================= */
+        .about-founder-section {
+            background-color: #14100B;
+            position: relative;
+            padding: 95px 0 105px 0;
+            color: #EDE6DC;
+            overflow: hidden;
+            border-top: 1px solid rgba(242, 167, 27, 0.2);
+        }
+
+        .founder-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 50px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .founder-content .section-eyebrow {
+            color: var(--amber);
+        }
+
+        .founder-heading {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 3.4vw, 2.8rem);
+            font-weight: 800;
+            color: #FFFFFF;
+            letter-spacing: -0.01em;
+            margin-bottom: 22px;
+            line-height: 1.15;
+        }
+
+        .founder-paragraph {
+            color: #D1C9BE;
+            font-size: 1.05rem;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .founder-bullets {
+            list-style: none;
+            margin: 28px 0 34px 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .founder-bullet-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 0.98rem;
+            color: #EDE6DC;
+        }
+
+        .founder-bullet-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(242, 167, 27, 0.2);
+            border: 1px solid var(--amber);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--amber);
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .founder-actions {
+            margin-top: 24px;
+        }
+
+        .btn-founder {
+            background: var(--amber);
+            color: var(--ink);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 28px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .btn-founder:hover {
+            background: var(--amber-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(242, 167, 27, 0.35);
+        }
+
+        /* Foto de Cristian: horizontal ~16:9 ou enquadramento suave */
+        .founder-photo-frame {
+            position: relative;
+            border-radius: 16px;
+            border: 1px solid rgba(242, 167, 27, 0.35);
+            background: #1C1712;
+            padding: 10px;
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+        }
+
+        .founder-photo {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* ================= 5. RODAPÉ PADRONIZADO ================= */
+        .site-footer {
+            background-color: var(--ink-deep);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: #A39B8F;
+            padding: 70px 0 30px 0;
+            font-size: 0.95rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1.1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col-brand img {
+            width: 68px;
+            height: 68px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 10px rgba(242, 167, 27, 0.3));
+            margin-bottom: 16px;
+        }
+
+        .footer-brand-title {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: #FFFFFF;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .footer-tagline {
+            color: #A39B8F;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            max-width: 320px;
+        }
+
+        .footer-col-title {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            color: #FFFFFF;
+            font-weight: 700;
+            margin-bottom: 18px;
+            letter-spacing: -0.01em;
+        }
+
+        .footer-nav-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-nav-list a {
+            color: #B5ADA1;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+        }
+
+        .footer-nav-list a:hover {
+            color: var(--amber);
+        }
+
+        .footer-contact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #B5ADA1;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item svg {
+            width: 18px;
+            height: 18px;
+            stroke: var(--amber);
+            fill: none;
+            flex-shrink: 0;
+        }
+
+        .footer-contact-item a {
+            color: #B5ADA1;
+        }
+
+        .footer-contact-item a:hover {
+            color: var(--amber);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 24px;
+            font-size: 0.82rem;
+            color: #7A7267;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .footer-bottom a {
+            color: #A39B8F;
+            text-decoration: underline;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--amber);
+        }
+
+        /* Botão Flutuante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background-color: #25D366;
+            color: #FFFFFF;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+            z-index: 999;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.08) translateY(-2px);
+            box-shadow: 0 12px 28px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 30px;
+            height: 30px;
+            fill: currentColor;
+        }
+
+        /* ================= RESPONSIVIDADE ================= */
+        @media (max-width: 960px) {
+            .track-cells-grid.cols-3 {
+                grid-template-columns: 1fr;
+            }
+            .track-cells-grid.cols-2 {
+                grid-template-columns: 1fr;
+            }
+            .founder-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 36px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-nav {
+                display: none;
+                position: absolute;
+                top: 76px;
+                left: 0;
+                width: 100%;
+                background: #14100B;
+                border-bottom: 1px solid rgba(242, 167, 27, 0.2);
+                flex-direction: column;
+                padding: 20px 24px;
+                gap: 16px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+            }
+            .header-nav.active {
+                display: flex;
+            }
+            .mobile-menu-btn {
+                display: block;
+            }
+            .header-cta-btn {
+                display: none;
+            }
+            .hero-section {
+                padding-top: 110px;
+                padding-bottom: 50px;
+            }
+            .hero-emblem {
+                width: 96px;
+                height: 96px;
+            }
+            .track-card {
+                padding: 26px 20px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <header class="header-main" id="headerMain">
-        <div class="container header-container">
-            <a href="/" class="logo-wrapper" id="logoLink">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="logo-img" id="logoImg" onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';">
-                <span class="logo-fallback" id="logoFallback" style="display: none;">Colmeia Studios Academy</span>
+    <!-- ================= 1. CABEÇALHO FIXO (STICKY) ================= -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="/" class="header-logo" aria-label="Colmeia Studios Academy - Página Inicial">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" width="36" height="36" onerror="this.onerror=null;this.src='/assets/colmeia-bee-logo.png';">
+                <div class="header-logo-text">
+                    <span class="logo-title">Colmeia Studios Academy</span>
+                    <span class="logo-sub">Inteligência Artificial</span>
+                </div>
             </a>
-            
-            <nav class="header-nav">
-                <a href="/">Início</a>
-                <a href="/aulas-particulares-ia">Aulas de IA</a>
-                <a href="/criacao-de-sites">Criação de Sites</a>
-                <a href="/gestao-de-redes-sociais">Redes Sociais</a>
-                <a href="/consultoria-e-treinamento-empresarial">Consultoria & Treinamento</a>
-                <a href="/livros">Livros</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
+
+            <nav class="header-nav" id="headerNav" aria-label="Navegação principal">
+                <a href="#aprender-ia">Aprender IA</a>
+                <a href="#presenca-digital">Presença Digital</a>
+                <a href="#escalar-com-ia">Escalar com IA</a>
             </nav>
 
-            <div class="header-cta">
-                <a href="https://wa.me/5531999314793?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.875rem;">Fale no WhatsApp</a>
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Cristian!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." target="_blank" rel="noopener noreferrer" class="header-cta-btn">
+                    Falar com Cristian
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menu" aria-expanded="false" onclick="document.getElementById('headerNav').classList.toggle('active');">
+                    &#9776;
+                </button>
             </div>
         </div>
     </header>
 
     <main>
-        
-        <!-- 1. HERO SECTION DA COLMEIA STUDIOS ACADEMY -->
-        <section class="section-hero honeycomb-bg" id="hero" style="min-height: auto; padding-top: 140px; padding-bottom: 40px; display: flex; align-items: center;">
-            <div class="container hero-content text-center">
-                
-                <div style="margin-bottom: 20px;">
-                    <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy Logo" style="width: 120px; margin: 0 auto; filter: drop-shadow(0 0 10px rgba(255,184,0,0.5));" onerror="this.style.display='none';">
-                </div>
+        <!-- ================= 2. CAPA / HERO ================= -->
+        <section class="hero-section" id="hero">
+            <div class="hex-pattern-bg"></div>
+            <div class="hero-radial-glow"></div>
 
-                <h1 class="hero-title" style="font-size: 4rem; text-shadow: 0 0 20px rgba(255, 184, 0, 0.4);">Colmeia Studios Academy</h1>
-                
-                <p class="hero-subtitle" style="color: #ffffff; font-weight: 500; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 2px;">
-                    Inteligência Artificial aplicada a negócios, criação e educação.
-                </p>
-                <p class="hero-subtitle" style="margin-top: 15px; font-size: 1.1rem; max-width: 700px; margin-bottom: 0;">
-                    Aulas particulares de IA, criação de sites, gestão de redes sociais, consultoria e treinamentos corporativos, pesquisa assistida por IA e inteligência documental.
-                </p>
+            <div class="container hero-content">
+                <!-- Logo da Colmeia em destaque no topo -->
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy Logo" width="120" height="120" class="hero-emblem" onerror="this.onerror=null;this.src='/assets/colmeia-bee-logo.png';">
 
-            </div>
-        </section>
+                <h1 class="hero-title">
+                    Inteligência Artificial aplicada a <span class="highlight">negócios</span>, <span class="highlight">criação</span> e <span class="highlight">educação</span>.
+                </h1>
 
-        <!-- 2. SEÇÃO QUEM SOMOS -->
-        <section class="section-padding section-about" id="sobre" style="padding-top: 40px;">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text-content reveal-element" style="max-width: 650px;">
-                        <span class="section-tag">QUEM SOMOS</span>
-                        <h2 class="section-title">Inteligência Artificial aplicada ao trabalho e aos negócios</h2>
-                        <p class="about-text">
-                            A Colmeia Studios Academy transforma Inteligência Artificial em soluções práticas para profissionais, empresas e equipes. Atuamos com educação em IA, treinamentos corporativos, consultoria, desenvolvimento de websites, presença digital e inteligência documental.
-                        </p>
-                        <p class="about-text" style="margin-top: 15px;">
-                            À frente da Colmeia está <strong>Cristian Santos Pimentel</strong>, professor de Inteligência Artificial, empreendedor e profissional com mais de 15 anos de experiência em marketing, comunicação e tecnologia. Fundador de empresas de marketing e publicidade no Brasil e na Irlanda, Cristian também viveu nos Estados Unidos e possui inglês fluente, reunindo uma trajetória profissional construída entre diferentes mercados e culturas.
-                        </p>
-                        <p class="about-text" style="margin-top: 15px;">
-                            Essa experiência internacional amplia o acesso a pesquisas, tecnologias e tendências globais, que são transformadas pela Colmeia em aplicações práticas para a realidade de profissionais e empresas.
-                        </p>
-                        <p class="about-text" style="margin-top: 15px;">
-                            Mais do que apresentar ferramentas, nosso trabalho é ajudar cada cliente a utilizar a IA com estratégia, produtividade e aplicação real.
-                        </p>
-                        <a href="#contato" class="btn btn-secondary" style="margin-top: 25px;">Fale diretamente com Cristian</a>
-                    </div>
-                    <div class="about-image-wrapper reveal-element" style="text-align: center;">
-                        <img src="assets/foto-professor.jpg" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" class="about-image" onerror="this.style.display='none';">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 3. BANNER 1: FORMAÇÃO & AULAS EM INTELIGÊNCIA ARTIFICIAL -->
-        <section class="section-padding promo-banner-aulas" id="destaque-aulas" style="background-color: #0b0b0b; border-top: 2px solid #FFD000; padding: 60px 0; box-shadow: 0 0 35px rgba(255, 208, 0, 0.2);">
-            <div class="container text-center reveal-element">
-                
-                <div style="margin-bottom: 20px;">
-                    <span class="section-badge" style="background: rgba(255, 208, 0, 0.15); color: #FFD000; border: 1px solid #FFD000; padding: 10px 24px; border-radius: 50px; font-weight: 800; font-size: 0.95rem; display: inline-block; box-shadow: 0 0 15px rgba(255, 208, 0, 0.2); text-transform: uppercase; letter-spacing: 1px;">
-                        🎓 AULAS PARTICULARES 1 A 1 · AO VIVO NO ZOOM
-                    </span>
-                </div>
-
-                <h2 class="section-title" style="color: #ffffff; font-size: 2.8rem; margin: 15px 0; font-weight: 800; text-shadow: 0 0 15px rgba(255, 208, 0, 0.3);">
-                    Domine Inteligência Artificial na Prática com a <span class="highlight-yellow" style="color: #FFD000;">Colmeia Studios Academy</span>
-                </h2>
-                
-                <p class="section-subtitle" style="color: #E0E0E0; max-width: 880px; margin: 0 auto 30px auto; font-size: 1.2rem; line-height: 1.6;">
-                    Aulas particulares 1 a 1, ao vivo pelo Zoom, diretamente com Cristian Pimentel: 90 minutos 100% práticos, focados na sua necessidade real, sem mensalidade e sem contrato.
+                <p class="hero-subtitle">
+                    Uma empresa. Sete áreas de atuação. Encontre a sua em segundos e vá direto ao que interessa a você.
                 </p>
 
-                <div class="promo-highlights" style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 35px;">
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                        <span>🎯</span> Aula particular: R$ 250
-                    </div>
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                        <span>⏱️</span> 90 minutos ao vivo no Zoom
-                    </div>
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                        <span>🧩</span> Foco no seu projeto real
-                    </div>
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 12px 22px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 0.95rem; display: flex; align-items: center; gap: 8px;">
-                        <span>📜</span> Certificado com QR Code após avaliação prática
-                    </div>
-                </div>
-
-                <div>
-                    <a href="/aulas-particulares-ia.html" class="btn btn-primary" style="background: #FFD000; color: #000000; font-weight: 800; font-size: 1.15rem; padding: 16px 38px; border-radius: 9999px; box-shadow: 0 0 20px rgba(255, 208, 0, 0.4); text-transform: uppercase; letter-spacing: 0.5px;">Agendar minha aula particular &rarr;</a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- LINHA DIVISÓRIA AMARELA -->
-        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
-
-        <!-- 4. BANNER 2: WEBSITES PROFISSIONAIS DE ALTA PERFORMANCE -->
-        <section class="section-padding promo-banner-website" id="destaque-websites" style="background-color: #0b0b0b; padding: 60px 0; box-shadow: 0 0 35px rgba(255, 208, 0, 0.15);">
-            <div class="container text-center reveal-element">
-                <h2 class="section-title" style="color: #ffffff; font-size: 2.8rem; margin: 15px 0; font-weight: 800; text-shadow: 0 0 15px rgba(255, 208, 0, 0.3);">
-                    Nova Solução Colmeia: Websites Profissionais de Alta Performance
-                </h2>
-                <p class="section-subtitle" style="color: #E0E0E0; max-width: 850px; margin: 0 auto 30px auto; font-size: 1.2rem; line-height: 1.6;">
-                    Combine design ultra-moderno, copywriting persuasivo e inteligência artificial para transformar seu negócio ou serviço em uma máquina de atração de clientes.
-                </p>
-
-                <div class="promo-highlights" style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 35px;">
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 14px 24px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
-                        <span>⚡</span> Entrega ágil em 7 a 15 dias úteis
-                    </div>
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 14px 24px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
-                        <span>🤖</span> Imagens e Copywriting otimizados por IA
-                    </div>
-                    <div style="background: #161616; border: 1px solid rgba(255, 208, 0, 0.3); padding: 14px 24px; border-radius: 50px; font-weight: 600; color: #FFFFFF; font-size: 1rem; display: flex; align-items: center; gap: 8px;">
-                        <span>🎯</span> Focado em Conversão e SEO no Google
-                    </div>
-                </div>
-
-                <div>
-                    <a href="/criacao-de-sites" class="btn btn-primary" style="background: #FFD000; color: #000000; font-weight: 800; font-size: 1.15rem; padding: 16px 38px; border-radius: 50px; box-shadow: 0 0 20px rgba(255, 208, 0, 0.4); text-transform: uppercase; letter-spacing: 0.5px;">
-                        Conhecer Planos e Condições Especiais &rarr;
+                <div class="hero-actions">
+                    <a href="#seletor" class="btn-primary-hero">
+                        Escolher sua área
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                    </a>
+                    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Cristian!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." target="_blank" rel="noopener noreferrer" class="btn-ghost-hero">
+                        Falar com Cristian
                     </a>
                 </div>
+
+                <div>
+                    <span class="hero-credibility">
+                        +15 anos em marketing e tecnologia · Brasil · Irlanda · EUA · Metodologia própria com IA
+                    </span>
+                </div>
             </div>
         </section>
 
-        <!-- LINHA DIVISÓRIA AMARELA -->
-        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
+        <!-- Friso Hexagonal divisor -->
+        <div class="hex-divider" aria-hidden="true">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
+                <path d="M0,0 L20,15 L40,0 L60,15 L80,0 L100,15 L100,20 L0,20 Z" fill="#FBF8F2"></path>
+            </svg>
+        </div>
 
-        <!-- 5. BANNER 3: PRESENÇA DIGITAL ESTRATÉGICA (GESTÃO DE REDES SOCIAIS COM IA) -->
-        <section class="section-padding" id="redes-sociais-destaque" style="background-color: #080808; padding: 60px 0;">
+        <!-- ================= 3. SELETOR DE SETORES (A COLMEIA) ================= -->
+        <section class="selector-section" id="seletor">
             <div class="container">
-                <div class="reveal-element" style="background: linear-gradient(135deg, #141414 0%, #0a0a0a 100%); border: 1px solid rgba(255, 208, 0, 0.3); border-radius: 24px; padding: 50px 40px; box-shadow: 0 0 30px rgba(0,0,0,0.8);">
-                    <div class="row align-items-center text-center">
-                        <span class="section-tag" style="background: rgba(255, 208, 0, 0.12); color: #FFD000; border: 1px solid #FFD000; font-size: 0.85rem; letter-spacing: 2px;">📱 PRESENÇA DIGITAL ESTRATÉGICA</span>
-                        <h2 class="section-title" style="color: #FFFFFF; font-size: 2.6rem; margin: 15px 0 10px 0;">
-                            Gestão de Redes Sociais com Inteligência Artificial
-                        </h2>
-                        <p class="section-subtitle" style="color: #E0E0E0; max-width: 800px; margin: 0 auto 35px auto; font-size: 1.15rem; line-height: 1.6;">
-                            Transforme o perfil da sua empresa em uma vitrine de atração diária de clientes, combinando visão estratégica com criativos e copys de altíssimo nível desenvolvidos com IA.
-                        </p>
+                <div class="section-header">
+                    <span class="section-eyebrow">Escolha sua área</span>
+                    <h2 class="section-heading">O que você procura hoje?</h2>
+                    <p class="section-lead">Decisão rápida em 1 clique. Selecione sua trilha e vá direto à solução que você precisa.</p>
+                </div>
 
-                        <div class="highlights-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-bottom: 40px; text-align: left;">
-                            <div style="background: #1a1a1a; border: 1px solid rgba(255, 208, 0, 0.2); padding: 22px; border-radius: 16px;">
-                                <div style="font-size: 1.8rem; margin-bottom: 10px;">🎨</div>
-                                <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 8px;">Design e Criativos com IA</h4>
-                                <p style="color: #AAA; font-size: 0.9rem; line-height: 1.5;">Imagens em alta definição e identidade visual marcante de última geração.</p>
-                            </div>
-
-                            <div style="background: #1a1a1a; border: 1px solid rgba(255, 208, 0, 0.2); padding: 22px; border-radius: 16px;">
-                                <div style="font-size: 1.8rem; margin-bottom: 10px;">✍️</div>
-                                <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 8px;">Copywriting Persuasivo</h4>
-                                <p style="color: #AAA; font-size: 0.9rem; line-height: 1.5;">Textos persuasivos otimizados para gerar engajamento, autoridade e vendas.</p>
-                            </div>
-
-                            <div style="background: #1a1a1a; border: 1px solid rgba(255, 208, 0, 0.2); padding: 22px; border-radius: 16px;">
-                                <div style="font-size: 1.8rem; margin-bottom: 10px;">📈</div>
-                                <h4 style="color: #FFF; font-size: 1.1rem; margin-bottom: 8px;">Constância Estratégica</h4>
-                                <p style="color: #AAA; font-size: 0.9rem; line-height: 1.5;">Postagens recorrentes e planejamento completo sem você perder tempo.</p>
-                            </div>
+                <div class="tracks-container">
+                    
+                    <!-- TRILHA 1: APRENDER IA -->
+                    <div class="track-card" id="aprender-ia">
+                        <div class="track-header">
+                            <h3 class="track-title">
+                                <span class="track-number">Trilha 1</span>
+                                Aprender IA
+                            </h3>
+                            <span class="track-subtitle">Para você, profissional e estudante</span>
                         </div>
 
-                        <div>
-                            <a href="/gestao-de-redes-sociais" class="btn btn-primary" style="background: #FFD000; color: #000; font-weight: 800; font-size: 1.1rem; padding: 16px 36px; border-radius: 50px; box-shadow: 0 0 20px rgba(255, 208, 0, 0.4); text-transform: uppercase;">
-                                Ver Todos os Planos e Detalhes &rarr;
+                        <div class="track-cells-grid cols-3">
+                            <!-- Célula 1: Aulas Particulares -->
+                            <a href="/aulas-particulares-ia" class="honeycomb-cell" aria-label="Aulas Particulares de IA">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Capelo / Graduação -->
+                                        <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Aulas Particulares de IA</h4>
+                                        <p class="cell-line">1 a 1, ao vivo, prática desde o primeiro minuto.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Acessar área</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </a>
+
+                            <!-- Célula 2: Livros -->
+                            <a href="/livros" class="honeycomb-cell" aria-label="Livros de IA">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Livro -->
+                                        <svg viewBox="0 0 24 24"><path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Livros</h4>
+                                        <p class="cell-line">IA no Trabalho: digital, físico e audiobook.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Acessar área</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </a>
+
+                            <!-- Célula 3: Cursos -->
+                            <a href="mailto:contato@colmeiastudiosacademy.com.br?subject=Lista%20de%20espera%20%E2%80%94%20Cursos" class="honeycomb-cell" aria-label="Cursos de IA - Entrar na lista de espera">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Lâmpada / Ideia -->
+                                        <svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Cursos</h4>
+                                        <p class="cell-line">Em breve — entre na lista de espera.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Lista de espera</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
                             </a>
                         </div>
                     </div>
+
+                    <!-- TRILHA 2: PRESENÇA DIGITAL -->
+                    <div class="track-card" id="presenca-digital">
+                        <div class="track-header">
+                            <h3 class="track-title">
+                                <span class="track-number">Trilha 2</span>
+                                Presença Digital
+                            </h3>
+                            <span class="track-subtitle">Para o seu negócio aparecer e vender</span>
+                        </div>
+
+                        <div class="track-cells-grid cols-2">
+                            <!-- Célula 4: Criação de Websites -->
+                            <a href="/criacao-de-sites" class="honeycomb-cell" aria-label="Criação de Websites">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Monitor / Website -->
+                                        <svg viewBox="0 0 24 24"><path d="M20 3H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h6l-2 3v1h8v-1l-2-3h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 12H4V5h16v10z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Criação de Websites</h4>
+                                        <p class="cell-line">Alta conversão, design exclusivo, entrega em dias.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Acessar área</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </a>
+
+                            <!-- Célula 5: Gestão de Redes Sociais -->
+                            <a href="/gestao-de-redes-sociais" class="honeycomb-cell" aria-label="Gestão de Redes Sociais">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Smartphone / Redes -->
+                                        <svg viewBox="0 0 24 24"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14zm-5 1c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Gestão de Redes Sociais</h4>
+                                        <p class="cell-line">Criativos e copys com IA, constância estratégica.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Acessar área</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- TRILHA 3: ESCALAR COM IA -->
+                    <div class="track-card" id="escalar-com-ia">
+                        <div class="track-header">
+                            <h3 class="track-title">
+                                <span class="track-number">Trilha 3</span>
+                                Escalar com IA
+                            </h3>
+                            <span class="track-subtitle">Para empresas e escritórios</span>
+                        </div>
+
+                        <div class="track-cells-grid cols-2">
+                            <!-- Célula 6: Núcleo de Inteligência Jurídica -->
+                            <a href="/nucleo-inteligencia-juridica" class="honeycomb-cell" aria-label="Núcleo de Inteligência Jurídica">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Balança Jurídica -->
+                                        <svg viewBox="0 0 24 24"><path d="M12 3v2.24l5.37 8.05c.87 1.3 1.95 2.21 3.25 2.71-1.37 2.13-3.69 3.54-6.37 3.86V21h4v2H5.75v-2h4v-1.14C7.07 19.54 4.75 18.13 3.38 16c1.3-.5 2.38-1.41 3.25-2.71L12 5.24V3h0zm-5.75 11c-1.24 0-2.25.9-2.25 2s1.01 2 2.25 2 2.25-.9 2.25-2-1.01-2-2.25-2zm11.5 0c-1.24 0-2.25.9-2.25 2s1.01 2 2.25 2 2.25-.9 2.25-2-1.01-2-2.25-2z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Núcleo de Inteligência Jurídica</h4>
+                                        <p class="cell-line">Pesquisa assistida por IA e auditoria de fontes para advocacia.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Acessar área</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </a>
+
+                            <!-- Célula 7: Consultoria & Treinamentos -->
+                            <a href="/consultoria-e-treinamento-empresarial" class="honeycomb-cell" aria-label="Consultoria e Treinamentos">
+                                <div class="cell-top">
+                                    <div class="hex-icon-badge">
+                                        <!-- Ícone Maleta / Negócios -->
+                                        <svg viewBox="0 0 24 24"><path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/></svg>
+                                    </div>
+                                    <div class="cell-info">
+                                        <h4 class="cell-name">Consultoria & Treinamentos</h4>
+                                        <p class="cell-line">Diagnóstico, automações e capacitação de equipes.</p>
+                                    </div>
+                                </div>
+                                <div class="cell-arrow">
+                                    <span>Acessar área</span>
+                                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- LINHA DIVISÓRIA AMARELA -->
-        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
-
-        <!-- 6. BANNER 4: SOLUÇÕES CORPORATIVAS (CONSULTORIA & TREINAMENTOS DE IA PARA EMPRESAS) -->
-        <section class="section-padding honeycomb-bg" id="empresas-destaque" style="background-color: #050505;">
-            <div class="container text-center reveal-element">
-                <span class="hero-badge" style="background: #FFD000; color: #000; margin-bottom: 20px; font-size: 0.95rem; padding: 8px 22px; border-radius: 50px; font-weight: 800; display: inline-block; text-transform: uppercase; letter-spacing: 1px;">🏢 SOLUÇÕES CORPORATIVAS</span>
-                <h2 class="section-title" style="font-size: 3rem; color: #FFFFFF; max-width: 900px; margin: 0 auto 15px auto;">
-                    Consultoria & Treinamentos de IA para Empresas
-                </h2>
-                <p class="section-subtitle" style="margin: 0 auto 30px auto; max-width: 850px; color: #E0E0E0; font-size: 1.25rem; line-height: 1.6;">
-                    Identifique gargalos, automatize processos e capacite sua equipe com o que há de mais avançado em Inteligência Artificial para gerar mais lucro e produtividade.
-                </p>
-                <div style="margin-top: 30px;">
-                    <a class="btn btn-primary" href="/consultoria-e-treinamento-empresarial" style="background: #FFD000; color: #000; font-size: 1.15rem; padding: 16px 42px; text-transform: uppercase; font-weight: 800; border-radius: 50px; box-shadow: 0 0 25px rgba(255, 208, 0, 0.35);">
-                        Conhecer Soluções Empresariais & Diagnóstico &rarr;
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- LINHA DIVISÓRIA AMARELA -->
-        <div style="border-bottom: 1px solid rgba(255, 208, 0, 0.4); width: 100%;"></div>
-
-        <!-- 7. SEÇÃO "SOLUÇÕES — O QUE A COLMEIA OFERECE" (GRID DE CARDS FINAL) -->
-        <section class="section-padding" id="servicos" style="background-color: #050505;">
+        <!-- ================= 4. BLOCO INSTITUCIONAL (FUNDO ESCURO) ================= -->
+        <section class="about-founder-section" id="sobre">
+            <div class="hex-pattern-bg"></div>
             <div class="container">
-                <div class="section-title-wrapper text-center reveal-element">
-                    <span class="section-tag">Soluções</span>
-                    <h2 class="section-title">O que a Colmeia oferece</h2>
-                    <p class="section-subtitle">Soluções de Inteligência Artificial para pessoas, criadores e empresas.</p>
-                </div>
-                
-                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-                    
-                    <!-- Card 1: Formação & Aulas em IA -->
-                    <div class="service-card reveal-element" style="border-color: rgba(255, 208, 0, 0.4); background: linear-gradient(180deg, #161616 0%, #0d0d0d 100%); flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div class="service-icon">🎓</div>
-                            <h3 class="service-title" style="color: #FFD000;">Aulas Particulares de IA</h3>
-                            <p class="service-desc">Aulas particulares 1 a 1, ao vivo pelo Zoom, por R$ 250 a sessão de 90 minutos. Aprenda na prática prompts avançados, automações, vídeos, sites e IA aplicada ao seu mercado.</p>
+                <div class="founder-grid">
+                    <div class="founder-content">
+                        <span class="section-eyebrow">Quem está por trás</span>
+                        <h2 class="founder-heading">Cristian Santos Pimentel</h2>
+                        
+                        <p class="founder-paragraph">
+                            Fundador da Colmeia Studios Academy e criador da Estratégia COLMEIA, Cristian Santos Pimentel é professor de Inteligência Artificial com mais de 15 anos de experiência prática em marketing, comunicação e tecnologia. Sua trajetória inclui a fundação de empresas no Brasil e na Irlanda, vivência internacional nos Estados Unidos e atuação direta na aplicação prática da IA para produtividade real.
+                        </p>
+                        
+                        <p class="founder-paragraph">
+                            No comando da Colmeia, traduz tendências e ferramentas globais de ponta em metodologias estruturadas, acessíveis e de alto impacto para pessoas, profissionais liberais, escritórios jurídicos e empresas em expansão.
+                        </p>
+
+                        <ul class="founder-bullets">
+                            <li class="founder-bullet-item">
+                                <span class="founder-bullet-icon">&#10003;</span>
+                                <span>+15 anos em marketing, comunicação e tecnologia</span>
+                            </li>
+                            <li class="founder-bullet-item">
+                                <span class="founder-bullet-icon">&#10003;</span>
+                                <span>Empreendedor: empresas fundadas no Brasil e na Irlanda</span>
+                            </li>
+                            <li class="founder-bullet-item">
+                                <span class="founder-bullet-icon">&#10003;</span>
+                                <span>Inglês fluente e vivência internacional nos EUA</span>
+                            </li>
+                            <li class="founder-bullet-item">
+                                <span class="founder-bullet-icon">&#10003;</span>
+                                <span>Criador da Estratégia COLMEIA, metodologia em 7 etapas</span>
+                            </li>
+                        </ul>
+
+                        <div class="founder-actions">
+                            <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Cristian!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener noreferrer" class="btn-founder">
+                                Fale diretamente com Cristian &rarr;
+                            </a>
                         </div>
-                        <a href="/aulas-particulares-ia.html" class="btn btn-primary" style="width: fit-content; background: #FFD000; color: #000; font-weight: 700; margin-top: 20px;">Conhecer as Aulas Particulares &rarr;</a>
                     </div>
 
-                    <!-- Card 2: Criação de Sites -->
-                    <div class="service-card reveal-element" style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div class="service-icon">🌐</div>
-                            <h3 class="service-title">Criação de Websites Profissionais com IA</h3>
-                            <p class="service-desc">Websites e Landing Pages de alta conversão, design exclusivo, copywriting persuasivo, SEO no Google e imagens geradas por IA com entrega rápida em 7 a 15 dias úteis, conforme o plano.</p>
+                    <div class="founder-image-wrapper">
+                        <div class="founder-photo-frame">
+                            <img src="assets/cristian-pimentel.jpg" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" class="founder-photo" width="1448" height="1086" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/assets/cristian-santos-pimentel.webp';">
                         </div>
-                        <a href="/criacao-de-sites" class="btn btn-secondary" style="width: fit-content; margin-top: 20px;">Ver Planos de Sites</a>
-                    </div>
-
-                    <!-- Card 3: Card Único Consolidado Empresarial -->
-                    <div class="service-card reveal-element" style="border-color: rgba(255, 208, 0, 0.4); background: linear-gradient(180deg, #161616 0%, #0d0d0d 100%); flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div class="service-icon">🏢</div>
-                            <h3 class="service-title" style="color: #FFD000;">Consultoria & Treinamentos de IA para Empresas</h3>
-                            <p class="service-desc">Diagnóstico estratégico, automações inteligentes e capacitação sob medida para equipes de vendas, atendimento, marketing e gestão aumentarem a produtividade e os resultados com Inteligência Artificial. Investimento a partir de R$ 1.800,00.</p>
-                        </div>
-                        <a href="/consultoria-e-treinamento-empresarial" class="btn btn-primary" style="width: fit-content; background: #FFD000; color: #000; font-weight: 700; margin-top: 20px;">Conhecer Soluções Empresariais &rarr;</a>
-                    </div>
-
-                    <!-- Card 4: Gestão de Redes Sociais -->
-                    <div class="service-card reveal-element" style="border-color: rgba(57, 255, 20, 0.3); flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <div class="service-icon">📱</div>
-                            <h3 class="service-title">Gestão de Redes Sociais com IA</h3>
-                            <p class="service-desc">Sua empresa não pode mais ficar parada no digital. Planos completos de gestão profissional para comerciantes locais e negócios online.</p>
-                        </div>
-                        <a href="/gestao-de-redes-sociais" class="btn btn-primary" style="width: fit-content; margin-top: 20px;">Ver planos de Redes Sociais</a>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 8. SEÇÃO CONTATO -->
-        <section class="section-padding honeycomb-bg" id="contato" style="background-color: #080808; border-top: 1px solid rgba(255, 208, 0, 0.15);">
-            <div class="container reveal-element">
-                <div class="section-title-wrapper text-center">
-                    <span class="section-tag">Fale Conosco</span>
-                    <h2 class="section-title">Entre em contato</h2>
-                    <p class="section-subtitle">Tire suas dúvidas, solicite orçamentos ou marque uma reunião.</p>
-                </div>
-
-                <div style="display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 600px; margin: 0 auto; background: var(--bg-dark-card); padding: 40px; border-radius: var(--border-radius-md); border: 1px solid var(--border-color-dark);">
-                    <h3 style="margin-bottom: 25px; color: var(--accent); font-size: 1.5rem;">Nossos Canais</h3>
-                    <div style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
-                        <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.2rem; color: var(--text-light-primary); text-decoration: none;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                            (31) 99931-4793
-                        </a>
-                        <a href="https://www.instagram.com/colmeiastudiosacademy" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.2rem; color: var(--text-light-primary); text-decoration: none;">
-                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                            @colmeiastudiosacademy
-                        </a>
-                        <a href="mailto:contato@colmeiastudiosacademy.com.br" style="display: flex; align-items: center; justify-content: center; gap: 15px; font-size: 1.2rem; color: var(--text-light-primary); text-decoration: none;">
-                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            contato@colmeiastudiosacademy.com.br
-                        </a>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
-    <!-- RODAPÉ PADRONIZADO -->
-        <!-- RODAPÉ PADRONIZADO -->
-    <footer class="footer-main">
+    <!-- ================= 5. RODAPÉ PADRONIZADO ================= -->
+    <footer class="site-footer" id="contato">
         <div class="container footer-grid">
-            
-            <div class="footer-brand">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Logo Colmeia Studios Academy" style="width: 80px; margin-bottom: 15px; filter: grayscale(1) brightness(2);">
-                <h4>Colmeia Studios Academy</h4>
+            <!-- Coluna 1: Marca -->
+            <div class="footer-col-brand">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Logo Colmeia Studios Academy" width="68" height="68" onerror="this.onerror=null;this.src='/assets/colmeia-bee-logo.png';">
+                <h4 class="footer-brand-title">Colmeia Studios Academy</h4>
                 <p class="footer-tagline">Educação, criatividade e Inteligência Artificial para o futuro.</p>
             </div>
-            
-            <div class="footer-links">
-                <h5>Navegação</h5>
-                <ul class="footer-links-list">
-                    <li><a href="/">Início</a></li>
-                    <li><a href="/aulas-particulares-ia">Aulas de IA</a></li>
-                    <li><a href="/criacao-de-sites">Criação de Sites</a></li>
-                    <li><a href="/gestao-de-redes-sociais">Redes Sociais</a></li>
+
+            <!-- Coluna 2: Navegação com as 7 áreas + Cursos -->
+            <div class="footer-col-nav">
+                <h5 class="footer-col-title">Navegação</h5>
+                <ul class="footer-nav-list">
+                    <li><a href="/aulas-particulares-ia">Aulas Particulares de IA</a></li>
+                    <li><a href="/livros">Livros de IA</a></li>
+                    <li><a href="/cursos">Cursos (Em breve)</a></li>
+                    <li><a href="/criacao-de-sites">Criação de Websites</a></li>
+                    <li><a href="/gestao-de-redes-sociais">Gestão de Redes Sociais</a></li>
+                    <li><a href="/nucleo-inteligencia-juridica">Núcleo de Inteligência Jurídica</a></li>
                     <li><a href="/consultoria-e-treinamento-empresarial">Consultoria & Treinamento</a></li>
-                    <li><a href="/livros">Livros</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
-            
-            <div class="footer-contact">
-                <h5>Fale Conosco</h5>
-                <div class="footer-contact-item">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-                    <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer">(31) 99931-4793</a>
-                </div>
-                <div class="footer-contact-item">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="var(--accent)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    <a href="https://www.instagram.com/colmeiastudiosacademy" target="_blank" rel="noopener noreferrer">@colmeiastudiosacademy</a>
-                </div>
-                <div class="footer-contact-item">
-                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    <a href="mailto:contato@colmeiastudiosacademy.com.br">contato@colmeiastudiosacademy.com.br</a>
-                </div>
-            </div>
 
+            <!-- Coluna 3: Contato -->
+            <div class="footer-col-contact">
+                <h5 class="footer-col-title">Contato</h5>
+                <ul class="footer-contact-list">
+                    <li class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <a href="mailto:contato@colmeiastudiosacademy.com.br">contato@colmeiastudiosacademy.com.br</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                        <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer">(31) 99931-4793</a>
+                    </li>
+                    <li class="footer-contact-item">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <a href="https://www.instagram.com/colmeiastudiosacademy" target="_blank" rel="noopener noreferrer">@colmeiastudiosacademy</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        
+
         <div class="footer-bottom">
             <div class="container">
-                <p style="margin-bottom: 8px;">53.484.773 Cristian Santos Pimentel · CNPJ 53.484.773/0001-57 · Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126 · contato@colmeiastudiosacademy.com.br · (31) 99931-4793</p>
+                <p style="margin-bottom: 8px;">
+                    53.484.773 Cristian Santos Pimentel · CNPJ 53.484.773/0001-57 · Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126
+                </p>
+                <p style="margin-bottom: 8px;">
+                    <a href="/aviso-de-privacidade">Aviso de Privacidade</a>
+                </p>
                 <p>&copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/5531999314793?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco no WhatsApp">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:block; margin:auto; margin-top:15px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Cristian!%20Vim%20pelo%20site%20da%20Colmeia%20Studios%20Academy." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Falar com Cristian pelo WhatsApp">
+        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.24-3.8-.79-3.2-1.26-5.23-4.53-5.39-4.74-.16-.21-1.28-1.71-1.28-3.26 0-1.55.81-2.31 1.1-2.63.29-.31.63-.39.84-.39h.6c.19 0 .45-.07.7.53.26.63.89 2.18.97 2.34.08.16.13.34.02.55-.11.21-.16.34-.32.52-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.18.31.82 1.35 1.76 2.19 1.2 1.08 2.22 1.41 2.54 1.57.31.16.5.13.68-.08.18-.21.79-.92 1-1.24.21-.31.42-.26.71-.16.29.11 1.84.87 2.15 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
     </a>
 
-    <script src="script.js"></script>
+    <!-- Script de rolagem e interações suaves -->
+    <script>
+        // Header com efeito de sombra na rolagem
+        window.addEventListener('scroll', function() {
+            var header = document.getElementById('siteHeader');
+            if (window.scrollY > 30) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
 
-    </body>
+        // Fechar menu mobile ao clicar em link
+        document.querySelectorAll('#headerNav a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                document.getElementById('headerNav').classList.remove('active');
+            });
+        });
+    </script>
+</body>
 </html>
