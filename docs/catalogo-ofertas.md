@@ -1,0 +1,106 @@
+# Catálogo Central de Ofertas — Colmeia Studios Academy
+
+Este documento é a fonte de autoridade do catálogo de serviços, cursos e produtos da Colmeia Studios Academy.  
+Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente alinhado a este registro.
+
+---
+
+## 1. Cursos (Formações em Inteligência Artificial)
+*Todos os cursos estão em fase de desenvolvimento. Inscrições funcionam exclusivamente como lista de interesse (sem cobrança, sem matrícula, sem garantia de vaga).*
+
+| Curso | ID / Rota | Status | Modelo Comercial | Pré-requisitos |
+| :--- | :--- | :--- | :--- | :--- |
+| **Pesquisa Assistida por IA e Inteligência Documental com Auditoria de Fontes** | `/cursos/pesquisa-assistida-ia` | Em desenvolvimento | Lista de interesse (gratuito) | N/A |
+| ↳ *Trilha Estudantes de Direito* | `/cursos/pesquisa-assistida-ia/estudantes-direito` | Em desenvolvimento | Lista de interesse | Apoio técnico (não privativo da advocacia) |
+| ↳ *Trilha Advogados* | `/cursos/pesquisa-assistida-ia/advogados` | Em desenvolvimento | Lista de interesse | Inscrição OAB ativa para supervisão |
+| **Criação de Conteúdo para Redes Sociais com IA** | `/cursos/conteudo-redes-sociais-ia` | Em desenvolvimento | Lista de interesse (gratuito) | N/A |
+| **Criação de Websites Profissionais com IA** | `/cursos/criacao-websites-ia` | Em desenvolvimento | Lista de interesse (gratuito) | N/A |
+
+*Aviso Obrigatório dos Cursos:*  
+> "Esta formação está em desenvolvimento. A inscrição na lista de interesse não é matrícula, não exige pagamento e não garante vaga. Formato, conteúdo final, investimento e disponibilidade serão informados quando definidos."
+
+---
+
+## 2. Unidade Jurídica (Núcleo de Inteligência Jurídica)
+
+### 2.1. Auditoria de Entrada
+* **ID:** `auditoria-entrada`
+* **Rota:** `/auditoria-de-entrada`
+* **Status:** Ativo
+* **Valor:** **R$ 800,00** (valor fixo, não utilizar "a partir de")
+* **Tipo de Cobrança:** Pagamento único
+* **Volume:** Até 10 referências já pesquisadas pelo cliente
+* **Prazo Padrão:** Até 5 dias úteis (contados após recebimento dos materiais e formalização)
+* **Revalidação:** 1 revalidação inclusa após ajustes apontados
+* **Urgência:**
+  * Até 72 horas úteis: +30% (R$ 1.040,00)
+  * Até 48 horas úteis: +50% (R$ 1.200,00)
+  * *Sempre sujeito a disponibilidade e confirmação prévia de escopo.*
+* **NDA e Sigilo:** NDA incluído antes do envio de arquivos; envio restrito a trechos e referências públicas (sem envio de autos ou peças sigilosas).
+* **Entregáveis:** Ficha por referência, status técnico (*Confirmada*, *Com ressalva*, *Bloqueada para citação*), anotações para validação pelo advogado responsável.
+
+### 2.2. Demandas Completas do Núcleo
+* **ID:** `nucleo-demandas-completas`
+* **Rota:** `/nucleo-inteligencia-juridica`
+* **Status:** Ativo
+* **Faixas de Investimento:**
+  * **Essencial:** A partir de **R$ 1.800,00** · Até 5 dias úteis · 1 revisão
+  * **Padrão:** A partir de **R$ 4.000,00** · Até 8 dias úteis · 2 revisões
+  * **Complexa / Tribunais Superiores:** A partir de **R$ 7.000,00** · Até 12 dias úteis · 2 a 3 revisões
+  * **Recorrência:** Proposta personalizada sob consulta.
+* **Escopo:** Pesquisa assistida aprofundada, inteligência documental, matrizes cronológicas e auditoria de fontes com metodologia Estratégia COLMEIA.
+
+---
+
+## 3. Formação Prática Individual
+
+### Aulas Particulares de IA (1 a 1 ao vivo no Zoom)
+* **ID:** `aulas-particulares-ia`
+* **Rota:** `/aulas-particulares-ia`
+* **Status:** Ativo
+* **Investimento:** **R$ 250,00** por encontro
+* **Duração:** 90 minutos totais (2 blocos de 40 minutos com 10 minutos de intervalo)
+* **Condições de Pagamento:** Pix ou cartão em até 12x (taxas aplicáveis da operadora informadas no agendamento)
+* **Certificado:** Emitido após avaliação prática e aprovação, com carga horária cursada e verificação via QR Code.
+
+---
+
+## 4. Serviços Técnicos para Empresas
+
+### 4.1. Criação de Websites Profissionais
+* **ID:** `criacao-de-sites`
+* **Rota:** `/criacao-de-sites`
+* **Status:** Ativo
+* **Planos:**
+  * **Básico (One-page / Landing Page):** **R$ 1.497,00** · Prazo: 7 a 10 dias úteis
+  * **Completo (Até 5 páginas):** **R$ 2.497,00** (Ref. anterior: R$ 3.747,00) · Prazo: 7 a 10 dias úteis
+  * **Premium (Até 10 páginas com agendamento):** **R$ 3.297,00** (Ref. anterior: R$ 4.997,00) · Prazo: até 15 dias úteis
+* **Pacote Presença Digital Completa:** **R$ 2.997,00** (Ref. histórica: R$ 5.994,00)
+  * Inclui: Landing page + Perfil empresarial (Google) + Instagram configurado com montagem única de 30 artes + análise e calendário + SEO previsto. (Entrega em 7 a 10 dias úteis). *Montagem única não se confunde com gestão contínua mensal.*
+
+### 4.2. Gestão de Redes Sociais (Legado / Oferta Secundária)
+* **ID:** `gestao-de-redes-sociais`
+* **Rota:** `/gestao-de-redes-sociais`
+* **Status:** Secundário (preservado sem destaque na vitrine principal)
+* **Planos Mensais:**
+  * **Start:** **R$ 1.047,90/mês** (Ref.: R$ 1.497,00)
+  * **Growth:** **R$ 1.498,20/mês** (Ref.: R$ 2.497,00)
+  * **Sales:** **R$ 2.098,20/mês** (Ref.: R$ 3.497,00)
+* **Cláusula de Fidelidade:** Sem fidelidade de longo prazo, com condições formalizadas na contratação.
+
+### 4.3. Consultoria Empresarial Genérica
+* **ID:** `consultoria-empresarial`
+* **Status:** **DESCONTINUADA / RETIRADA DA VITRINE**
+* Não consta no menu, home, rodapé ou sitemap ativo. URL mantida como página de oferta descontinuada com `noindex`.
+
+---
+
+## 5. Livro e Conteúdos Gratuitos
+
+### Livro "IA no Trabalho" e Audiobook
+* **Rota:** `/conteudos-gratuitos/ia-no-trabalho` (com redirect 301 de `/livros`)
+* **Status do Download Gratuito:** Modo pendente (captura de lista de interessados até disponibilização dos arquivos no servidor).
+* **Opção de Compra Imediata (Hotmart):**
+  * E-book Digital: R$ 47,37 (Hotmart)
+  * Livro Físico: R$ 67,30 + frete (Hotmart)
+  * Audiobook: Consultar preço no checkout (Hotmart)

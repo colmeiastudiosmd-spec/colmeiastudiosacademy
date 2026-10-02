@@ -1,2 +1,15 @@
-# Redirecionamentos do site
-# A página /cursos agora possui sua própria landing page (cursos.html)
+# Redirecionamentos 301 Legados e de Limpeza de URLs — Colmeia Studios Academy
+
+# Livros e Materiais
+/livros                     /conteudos-gratuitos/ia-no-trabalho    301!
+/livros.html                /conteudos-gratuitos/ia-no-trabalho    301!
+
+# Rotas de Catálogo e Institucional
+/cursos.html                /cursos                                301!
+/servicos.html              /servicos                              301!
+/sobre.html                 /sobre                                 301!
+/contato.html               /contato                               301!
+/conteudos-gratuitos.html   /conteudos-gratuitos                   301!
+
+# Fallback 404 explícito
+/*                          /404.html                              404
