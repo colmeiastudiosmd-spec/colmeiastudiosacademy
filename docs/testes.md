@@ -14,7 +14,7 @@ Este documento registra a matriz de testes funcionais, visuais, de links, formul
 | T04 | **Auditoria de Revisão Ativa** | URL `/auditoria-de-revisao` preservada com todas as seções | APROVADO |
 | T05 | **Cursos sem Preço/Matrícula** | Todos em desenvolvimento, apenas lista de interesse | APROVADO |
 | T06 | **Preços Centralizados** | Valores fiéis ao catálogo (`docs/catalogo-ofertas.md`) | APROVADO |
-| T07 | **R$ 800 Fixo na Auditoria** | Sem menção a "a partir de" na Auditoria de Revisão | APROVADO |
+| T07 | **R$ 500 Fixo na Auditoria** | Auditoria de Revisão R$ 500 fixos na tabela | APROVADO |
 | T08 | **Escopo da Auditoria** | Até 10 referências, até 5 dias úteis, 1 revalidação | APROVADO |
 | T09 | **Diferença Auditoria vs. Essencial** | Auditoria afere existentes; Essencial produz pesquisa | APROVADO |
 | T10 | **Sem Upload de Autos** | Apenas referências públicas no primeiro contato | APROVADO |
@@ -33,6 +33,11 @@ Este documento registra a matriz de testes funcionais, visuais, de links, formul
 | T23 | **Redirecionamentos sem Loop** | `/livros` -> `/conteudos-gratuitos/ia-no-trabalho` sem loop | APROVADO |
 | T24 | **Acessibilidade e Foco** | `:focus-visible` ativo, contraste AA, mobile sem overflow | APROVADO |
 | T25 | **Build e Deploy Preview** | Sem erros de sintaxe ou links quebrados | APROVADO |
+| T26 | **Eliminação de "Porta de Entrada"** | Removido de cards, tabelas, 404 e Sobre | APROVADO |
+| T27 | **Liderança Técnica Sem Justificativas** | Direção técnica, 3 advogados contratados, sem "não sou advogado" | APROVADO |
+| T28 | **Homepage Grid-3 Intacta** | Fechamento prematuro corrigido, 3 cards na grade | APROVADO |
+| T29 | **Dark Theme em Páginas de Serviços** | Aulas, Sites e Redes com body.dark-theme e contraste alto | APROVADO |
+| T30 | **Tabelas Consolidadas Sem Preços Soltos** | Preços estritamente em tabelas dedicadas | APROVADO |
 
 ---
 

@@ -82,9 +82,9 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 * **Status:** Ativo
 * **Planos:**
   * **Básico (One-page / Landing Page):** **R$ 1.497,00** · Prazo: 7 a 10 dias úteis
-  * **Completo (Até 5 páginas):** **R$ 2.497,00** (Ref. anterior: R$ 3.747,00) · Prazo: 7 a 10 dias úteis
-  * **Premium (Até 10 páginas com agendamento):** **R$ 3.297,00** (Ref. anterior: R$ 4.997,00) · Prazo: até 15 dias úteis
-* **Pacote Presença Digital Completa:** **R$ 2.997,00** (Ref. histórica: R$ 5.994,00)
+  * **Completo (Até 5 páginas):** **R$ 2.497,00** · Prazo: 7 a 10 dias úteis
+  * **Premium (Até 10 páginas com agendamento):** **R$ 3.297,00** · Prazo: até 15 dias úteis
+* **Pacote Presença Digital Completa:** **R$ 2.997,00**
   * Inclui: Landing page + Perfil empresarial (Google) + Instagram configurado com montagem única de 30 artes + análise e calendário + SEO previsto. (Entrega em 7 a 10 dias úteis). *Montagem única não se confunde com gestão contínua mensal.*
 
 ### 4.2. Gestão de Redes Sociais (Legado / Oferta Secundária)
@@ -92,9 +92,9 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 * **Rota:** `/gestao-de-redes-sociais`
 * **Status:** Secundário (preservado sem destaque na vitrine principal)
 * **Planos Mensais:**
-  * **Start:** **R$ 1.047,90/mês** (Ref.: R$ 1.497,00)
-  * **Growth:** **R$ 1.498,20/mês** (Ref.: R$ 2.497,00)
-  * **Sales:** **R$ 2.098,20/mês** (Ref.: R$ 3.497,00)
+  * **Start:** **R$ 1.047,90/mês**
+  * **Growth:** **R$ 1.498,20/mês**
+  * **Sales:** **R$ 2.098,20/mês**
 * **Cláusula de Fidelidade:** Sem fidelidade de longo prazo, com condições formalizadas na contratação.
 
 ### 4.3. Consultoria Empresarial Genérica

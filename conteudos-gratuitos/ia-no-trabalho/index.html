@@ -134,7 +134,7 @@
                     </div>
 
                     <div class="notice-box" style="margin-bottom: 24px; font-size: 0.8125rem;">
-                        <strong>Aviso sobre disponibilidade:</strong> Cadastro recebido. Avisaremos quando o material gratuito estiver disponível. O cadastro não gera download ou envio imediato.
+                        <strong>Aviso sobre disponibilidade:</strong> Este cadastro reserva seu lugar na lista de liberação dos capítulos gratuitos. O material está em fase de distribuição e o envio ocorre após a liberação dos lotes, sem download imediato.
                     </div>
 
                     <form name="material-ia-no-trabalho" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/obrigado/material-gratuito">
@@ -185,49 +185,74 @@
                     </form>
                 </div>
 
-                <!-- OPÇÕES DE COMPRA HOTMART -->
+                <!-- OPÇÕES DE COMPRA HOTMART — TABELA DE INVESTIMENTO -->
                 <div id="comprar" style="border-top: 1px solid var(--border-light); padding-top: 48px;">
                     <div style="text-align: center; max-width: 700px; margin: 0 auto 36px;">
                         <span class="eyebrow">Acesso Imediato</span>
-                        <h2>Prefere adquirir a obra completa agora?</h2>
+                        <h2>Tabela de Investimento da Obra Completa</h2>
                         <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 8px;">
-                            Disponível na plataforma da Hotmart. Acesso imediato para as versões digitais e envio com prazo de entrega para a edição física.
+                            Aquisição direta via plataforma Hotmart. Pagamento único com acesso imediato às versões digitais ou envio via Correios para a edição física.
                         </p>
                     </div>
 
-                    <div class="grid-3">
-                        <!-- Digital -->
-                        <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <span class="badge badge-info" style="margin-bottom: 12px;">E-book Digital</span>
-                                <h3>Livro Digital</h3>
-                                <p style="color: var(--text-muted); font-size: 0.875rem; margin: 10px 0;">Leitura imediata em smartphone, tablet ou computador.</p>
-                                <div style="font-size: 2rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); margin: 12px 0;">R$ 47,37</div>
-                            </div>
-                            <a href="https://go.hotmart.com/I106040053I" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-sm">Comprar na Hotmart &rarr;</a>
-                        </div>
-
-                        <!-- Físico -->
-                        <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <span class="badge badge-active" style="margin-bottom: 12px;">Edição Impressa</span>
-                                <h3>Livro Físico</h3>
-                                <p style="color: var(--text-muted); font-size: 0.875rem; margin: 10px 0;">Exemplar impresso enviado via Correios (prazo de entrega informado no checkout).</p>
-                                <div style="font-size: 2rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); margin: 12px 0;">R$ 67,30</div>
-                            </div>
-                            <a href="https://pay.hotmart.com/A106240775N?bid=1781054850796" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-sm">Comprar na Hotmart &rarr;</a>
-                        </div>
-
-                        <!-- Audiobook -->
-                        <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: space-between;">
-                            <div>
-                                <span class="badge badge-info" style="margin-bottom: 12px;">Áudio Imersivo</span>
-                                <h3>Audiobook</h3>
-                                <p style="color: var(--text-muted); font-size: 0.875rem; margin: 10px 0;">Ouça no carro, na academia ou durante deslocamentos.</p>
-                                <div style="font-size: 1.25rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-display); margin: 16px 0;">Consultar preço no checkout</div>
-                            </div>
-                            <a href="https://pay.hotmart.com/D106085281T?bid=1780359143504" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-sm">Comprar na Hotmart &rarr;</a>
-                        </div>
+                    <div class="pricing-table-container" style="max-width: 900px; margin: 0 auto; overflow-x: auto;">
+                        <table class="pricing-table" style="width: 100%; border-collapse: collapse; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow-sm);">
+                            <thead>
+                                <tr style="background: var(--bg-page-alt); border-bottom: 1px solid var(--border-light);">
+                                    <th style="padding: 16px 20px; text-align: left; font-family: var(--font-display); width: 28%;">Formato</th>
+                                    <th style="padding: 16px 20px; text-align: left; font-family: var(--font-display); width: 42%;">Características de Acesso</th>
+                                    <th style="padding: 16px 20px; text-align: center; font-family: var(--font-display); width: 16%;">Investimento</th>
+                                    <th style="padding: 16px 20px; text-align: right; font-family: var(--font-display); width: 14%;">Ação</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--border-light);">
+                                    <td style="padding: 18px 20px; font-weight: 600; color: var(--text-main); vertical-align: middle;">
+                                        Livro Digital (E-book)
+                                        <span class="badge badge-info" style="display: block; width: fit-content; margin-top: 4px; font-size: 0.75rem;">Digital</span>
+                                    </td>
+                                    <td style="padding: 18px 20px; color: var(--text-muted); font-size: 0.875rem; vertical-align: middle;">
+                                        Leitura imediata em smartphone, tablet ou computador (PDF/ePub via Hotmart).
+                                    </td>
+                                    <td style="padding: 18px 20px; text-align: center; font-weight: 700; font-size: 1.25rem; color: var(--text-main); vertical-align: middle; white-space: nowrap;">
+                                        R$ 47,37
+                                    </td>
+                                    <td style="padding: 18px 20px; text-align: right; vertical-align: middle;">
+                                        <a href="https://go.hotmart.com/I106040053I" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Comprar &rarr;</a>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--border-light);">
+                                    <td style="padding: 18px 20px; font-weight: 600; color: var(--text-main); vertical-align: middle;">
+                                        Livro Físico
+                                        <span class="badge badge-active" style="display: block; width: fit-content; margin-top: 4px; font-size: 0.75rem;">Impresso</span>
+                                    </td>
+                                    <td style="padding: 18px 20px; color: var(--text-muted); font-size: 0.875rem; vertical-align: middle;">
+                                        Exemplar impresso enviado via Correios (prazo de entrega informado no checkout da Hotmart).
+                                    </td>
+                                    <td style="padding: 18px 20px; text-align: center; font-weight: 700; font-size: 1.25rem; color: var(--text-main); vertical-align: middle; white-space: nowrap;">
+                                        R$ 67,30
+                                    </td>
+                                    <td style="padding: 18px 20px; text-align: right; vertical-align: middle;">
+                                        <a href="https://pay.hotmart.com/A106240775N?bid=1781054850796" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Comprar &rarr;</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 18px 20px; font-weight: 600; color: var(--text-main); vertical-align: middle;">
+                                        Audiobook Oficial
+                                        <span class="badge badge-info" style="display: block; width: fit-content; margin-top: 4px; font-size: 0.75rem;">Áudio</span>
+                                    </td>
+                                    <td style="padding: 18px 20px; color: var(--text-muted); font-size: 0.875rem; vertical-align: middle;">
+                                        Narração integral em áudio imersivo para escutar no carro, academia ou deslocamentos.
+                                    </td>
+                                    <td style="padding: 18px 20px; text-align: center; color: var(--text-muted); font-size: 0.8125rem; font-weight: 600; vertical-align: middle;">
+                                        Consultar preço no checkout
+                                    </td>
+                                    <td style="padding: 18px 20px; text-align: right; vertical-align: middle;">
+                                        <a href="https://pay.hotmart.com/D106085281T?bid=1780359143504" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Comprar &rarr;</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>

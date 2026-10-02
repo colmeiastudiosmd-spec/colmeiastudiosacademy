@@ -4,6 +4,7 @@
  */
 
 document.addEventListener("DOMContentLoaded", () => {
+    document.documentElement.classList.add("js-ready");
     
     /* -------------------------------------------------------------
        1. CABEÇALHO FIXO COM EFEITO DE ROLAGEM (STICKY HEADER)

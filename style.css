@@ -1516,14 +1516,19 @@ ul {
     }
 }
 
-/* Classes de Scroll Reveal leves */
+/* Classes de Scroll Reveal leves com degradação graciosa */
 .reveal-element {
+    opacity: 1;
+    transform: none;
+}
+
+html.js-ready .reveal-element {
     opacity: 0;
     transform: translateY(25px);
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.reveal-element.revealed {
+html.js-ready .reveal-element.revealed {
     opacity: 1;
     transform: translateY(0);
 }

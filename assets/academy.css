@@ -65,6 +65,31 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Suporte a Tema Escuro em Páginas Técnicas e Landing Pages */
+body.dark-theme {
+  background-color: #0c0a08;
+  color: #D6CEC4;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #FFFFFF;
+}
+
+body.dark-theme p {
+  color: #A89F91;
+}
+
+body.dark-theme .pricing-card,
+body.dark-theme .plan-card,
+body.dark-theme .comparison-card {
+  color: #FFFFFF;
+}
+
 /* Acessibilidade — Foco Visível */
 :focus-visible {
   outline: 3px solid var(--accent-amber);
