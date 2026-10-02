@@ -29,7 +29,7 @@ Este documento detalha o mapa de páginas implementado, suas rotas canônicas, t
 | `/obrigado/material-gratuito` | `obrigado/material-gratuito/index.html` | Academy | Confirmação de cadastro no livro gratuito |
 | `/404` | `404.html` | Academy | Página de erro não encontrado padronizada |
 | `/nucleo-inteligencia-juridica` | `nucleo-inteligencia-juridica.html` | **Jurídico (Exceção)** | Unidade jurídica, demandas completas e método |
-| `/auditoria-de-entrada` | `auditoria-de-entrada.html` | **Jurídico (Exceção)** | Landing de entrada jurídica (R$ 800 até 10 refs) |
+| `/auditoria-de-revisao` | `auditoria-de-entrada.html` | **Jurídico (Exceção)** | Landing de entrada jurídica (R$ 800 até 10 refs) |
 | `/privacidade` | `privacidade.html` | **Jurídico (Exceção)** | Política de privacidade do setor jurídico |
 | `/termos` | `termos.html` | **Jurídico (Exceção)** | Termos de uso do setor jurídico |
 | `/consultoria-e-treinamento-empresarial` | `consultoria-e-treinamento-empresarial.html` | Descontinuada | Página descontinuada (`noindex`, fora da vitrine) |
@@ -41,7 +41,7 @@ Este documento detalha o mapa de páginas implementado, suas rotas canônicas, t
 1. **Shell Geral da Academy:**  
    Aplicado a todas as páginas da marca Academy, com header e footer idênticos, navegação padronizada:
    * **Menu Superior:** Cursos (`/cursos`), Núcleo (`/nucleo-inteligencia-juridica`), Serviços para empresas (`/servicos`), Conteúdos gratuitos (`/conteudos-gratuitos`), Sobre (`/sobre`), Botão de Ação: Conhecer os cursos (`/cursos`).
-   * **Rodapé:** 4 colunas (Formações, Serviços e Núcleo com link para Auditoria de Entrada, Conteúdos e institucional, Contato), dados legais completos e link de aviso de privacidade.
+   * **Rodapé:** 4 colunas (Formações, Serviços e Núcleo com link para Auditoria de Revisão, Conteúdos e institucional, Contato), dados legais completos e link de aviso de privacidade.
 
 2. **Shell do Setor Jurídico (Exceções Expressas):**  
-   `/nucleo-inteligencia-juridica` e `/auditoria-de-entrada` preservam rigorosamente seus próprios cabeçalhos e rodapés, cores, tabelas e tipografia conforme as versões aprovadas no preview, com os ajustes cirúrgicos institucionais requeridos.
+   `/nucleo-inteligencia-juridica` e `/auditoria-de-revisao` preservam rigorosamente seus próprios cabeçalhos e rodapés, cores, tabelas e tipografia conforme as versões aprovadas no preview, com os ajustes cirúrgicos institucionais requeridos.

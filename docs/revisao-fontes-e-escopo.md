@@ -1,6 +1,6 @@
 # Revisão de Fontes, Sanções e Limites de Escopo — Setor Jurídico
 
-Este documento consolida a revisão técnica das fontes jurídicas citadas nas páginas do Núcleo e da Auditoria de Entrada, garantindo exatidão fática, delimitação de responsabilidade e conformidade com os critérios do briefing.
+Este documento consolida a revisão técnica das fontes jurídicas citadas nas páginas do Núcleo e da Auditoria de Revisão, garantindo exatidão fática, delimitação de responsabilidade e conformidade com os critérios do briefing.
 
 ---
 
@@ -28,7 +28,7 @@ Este documento consolida a revisão técnica das fontes jurídicas citadas nas p
 ### 1.4. Tribunal de Justiça de Minas Gerais (TJMG)
 * **Órgão Julgador:** Juizado Especial de Belo Horizonte
 * **Referência:** Noticiado no portal oficial do TJMG e no g1 Minas em julho de 2026.
-* **Link Oficial TJMG:** `https://www.tjmg.jus.br/portal-tjmg/noticias/juiza-alerta-sobre-uso-de-ia-e-aplica-multa-a-advogada-por-jurisprudencia-falsa.htm`
+* **Link Oficial TJMG:** `https://www.tjmg.jus.br/portal-tjmg/noticias/uso-de-jurisprudencias-falsas-em-acao-de-acidente-de-transito-gera-multa.htm`
 * **Link de Imprensa:** `https://g1.globo.com/mg/minas-gerais/noticia/2026/07/17/advogada-cita-jurisprudencias-inexistentes-em-processo-juiza-faz-alerta-sobre-uso-de-ia-e-aplica-multa-em-processo.ghtml`
 * **Fato Concreto:** Em ação julgada improcedente quanto aos pedidos do autor, a ré foi condenada em multa de 9,9% sobre o valor da causa (R$ 990) por litigância de má-fé e expedição de ofício à OAB-MG, em razão de precedentes falsos atribuídos ao STJ e TJMG na peça de contestação.
 
@@ -43,11 +43,11 @@ Este documento consolida a revisão técnica das fontes jurídicas citadas nas p
 
 ---
 
-## 3. Delimitação Estrita do Escopo da Auditoria de Entrada
+## 3. Delimitação Estrita do Escopo da Auditoria de Revisão
 1. **Natureza do Serviço:** Procedimento estritamente técnico de rastreabilidade, localização e conferência de integridade textual de precedentes e fontes oficiais já indicados pelo cliente.
 2. **Não Privativo:** Não envolve assessoria, consultoria, elaboração de tese ou intervenção privativa da advocacia (Lei nº 8.906/1994).
 3. **Status Técnicos:**
    * **Confirmada:** A referência existe e o teor textual corresponde ao inteiro teor oficial conferido. *Não equivale a juízo de mérito ou certificação de pertinência jurídica à demanda.*
    * **Com ressalva:** A referência existe na base oficial, mas há divergências de transcrição, truncamento ou notas contextuais relevantes.
    * **Bloqueada para citação:** Precedente inexistente, julgado não localizado nas fontes oficiais indicadas ou citação com adulteração substancial. *Não representa decisão jurisdicional.*
-4. **Sem Minutas ou Autos:** No primeiro contato e no fluxo padrão da Auditoria de Entrada, o cliente envia apenas as referências e os trechos isolados a conferir, resguardando o sigilo dos autos processuais.
+4. **Sem Minutas ou Autos:** No primeiro contato e no fluxo padrão da Auditoria de Revisão, o cliente envia apenas as referências e os trechos isolados a conferir, resguardando o sigilo dos autos processuais.

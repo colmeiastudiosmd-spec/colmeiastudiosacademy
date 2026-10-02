@@ -23,18 +23,18 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 
 ## 2. Unidade Jurídica (Núcleo de Inteligência Jurídica)
 
-### 2.1. Auditoria de Entrada
-* **ID:** `auditoria-entrada`
-* **Rota:** `/auditoria-de-entrada`
+### 2.1. Auditoria de Revisão
+* **ID:** `auditoria-revisao`
+* **Rota:** `/auditoria-de-revisao` (com redirect 301 de `/auditoria-de-entrada`)
 * **Status:** Ativo
-* **Valor:** **R$ 800,00** (valor fixo, não utilizar "a partir de")
+* **Valor:** **R$ 500,00** (De R$ 800,00 por R$ 500,00, valor fixo, pagamento único)
 * **Tipo de Cobrança:** Pagamento único
 * **Volume:** Até 10 referências já pesquisadas pelo cliente
 * **Prazo Padrão:** Até 5 dias úteis (contados após recebimento dos materiais e formalização)
 * **Revalidação:** 1 revalidação inclusa após ajustes apontados
 * **Urgência:**
-  * Até 72 horas úteis: +30% (R$ 1.040,00)
-  * Até 48 horas úteis: +50% (R$ 1.200,00)
+  * Até 72 horas úteis: +30% (R$ 650,00)
+  * Até 48 horas úteis: +50% (R$ 750,00)
   * *Sempre sujeito a disponibilidade e confirmação prévia de escopo.*
 * **NDA e Sigilo:** NDA incluído antes do envio de arquivos; envio restrito a trechos e referências públicas (sem envio de autos ou peças sigilosas).
 * **Entregáveis:** Ficha por referência, status técnico (*Confirmada*, *Com ressalva*, *Bloqueada para citação*), anotações para validação pelo advogado responsável.

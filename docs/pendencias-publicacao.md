@@ -5,6 +5,10 @@ Este documento relaciona os itens que dependem de definições comerciais, forne
 ---
 
 ## 1. Materiais e Arquivos Faltantes (Bloqueios Operacionais)
+* **Gravações em Vídeo Pendentes:**
+  * *Vídeo do Livro "IA no Trabalho":* O embed de terceiro (`pFixRf4ofhA`) foi removido de `/conteudos-gratuitos/ia-no-trabalho`. O autor/fundador gravará um vídeo dedicado apresentando o livro e o audiobook para inclusão futura.
+  * *Vídeo Institucional de Gestão de Redes:* O vídeo inadequado foi removido do hero de `/gestao-de-redes-sociais`. Pendente vídeo demonstrativo do serviço de social media da Colmeia.
+
 * **Arquivos do Livro Digital e Audiobook:**  
   * *Situação:* Não existem arquivos `.pdf`, `.epub`, `.mp3` ou `.zip` correspondentes ao livro *"IA no Trabalho"* ou audiobook no repositório.
   * *Tratamento Implementado:* A página `/conteudos-gratuitos/ia-no-trabalho` opera em **modo pendente (cadastro na lista de espera para recebimento)**, exibindo com transparência que os arquivos serão disponibilizados aos inscritos na data de liberação. Não é prometido download automático imediato inexistente. Links para aquisição direta pela Hotmart foram mantidos ativos como alternativa.

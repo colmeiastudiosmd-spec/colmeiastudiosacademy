@@ -13,5 +13,10 @@
 /projeto-social             /                                      301!
 /projeto-social.html        /                                      301!
 
+# Auditoria de Revisão
+/auditoria-de-entrada          /auditoria-de-revisao                  301!
+/auditoria-de-entrada.html     /auditoria-de-revisao                  301!
+/auditoria-de-revisao.html     /auditoria-de-revisao                  301!
+
 # Fallback 404 explícito
 /*                          /404.html                              404

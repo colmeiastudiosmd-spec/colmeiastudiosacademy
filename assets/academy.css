@@ -581,6 +581,10 @@ textarea.form-control {
   .grid-3 { grid-template-columns: 1fr; }
 }
 
+@media (max-width: 768px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 640px) {
   .grid-2 { grid-template-columns: 1fr; }
   .grid-4 { grid-template-columns: 1fr; }

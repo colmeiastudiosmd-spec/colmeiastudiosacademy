@@ -10,11 +10,11 @@ Este documento registra a matriz de testes funcionais, visuais, de links, formul
 | :---: | :--- | :--- | :---: |
 | T01 | **Todas as páginas renderizam** | HTTP 200 em todas as 22 rotas | APROVADO |
 | T02 | **Header e Footer Academy** | Compartilhado em todas as páginas da Academy | APROVADO |
-| T03 | **Exceções Jurídicas Preservadas** | `/nucleo-inteligencia-juridica` e `/auditoria-de-entrada` com cascas próprias | APROVADO |
-| T04 | **Auditoria de Entrada Ativa** | URL `/auditoria-de-entrada` preservada com todas as seções | APROVADO |
+| T03 | **Exceções Jurídicas Preservadas** | `/nucleo-inteligencia-juridica` e `/auditoria-de-revisao` com cascas próprias | APROVADO |
+| T04 | **Auditoria de Revisão Ativa** | URL `/auditoria-de-revisao` preservada com todas as seções | APROVADO |
 | T05 | **Cursos sem Preço/Matrícula** | Todos em desenvolvimento, apenas lista de interesse | APROVADO |
 | T06 | **Preços Centralizados** | Valores fiéis ao catálogo (`docs/catalogo-ofertas.md`) | APROVADO |
-| T07 | **R$ 800 Fixo na Auditoria** | Sem menção a "a partir de" na Auditoria de Entrada | APROVADO |
+| T07 | **R$ 800 Fixo na Auditoria** | Sem menção a "a partir de" na Auditoria de Revisão | APROVADO |
 | T08 | **Escopo da Auditoria** | Até 10 referências, até 5 dias úteis, 1 revalidação | APROVADO |
 | T09 | **Diferença Auditoria vs. Essencial** | Auditoria afere existentes; Essencial produz pesquisa | APROVADO |
 | T10 | **Sem Upload de Autos** | Apenas referências públicas no primeiro contato | APROVADO |
@@ -41,7 +41,7 @@ Este documento registra a matriz de testes funcionais, visuais, de links, formul
 ### A. Teste Completo de Conformidade e Arquitetura (`scratch/test_complete_restructuring.py`)
 * **Isolamento de Analytics no Setor Jurídico:** APROVADO (Zero scripts GA4/gtag/G-B6WNR6F2CY em `nucleo-inteligencia-juridica.html`, `auditoria-de-entrada.html`, `privacidade.html` e `termos.html`).
 * **Padronização do Shell Visual da Academy:** APROVADO (20 páginas verificadas com `assets/academy.css`, identificação completa da empresa individual `53.484.773 Cristian Santos Pimentel`, CNPJ `53.484.773/0001-57`, endereço na Rua Terenas, 292, e links institucionais para `/aviso-de-privacidade` e `/termos-academy`).
-* **Auditoria de Entrada e Núcleo:** APROVADO (Preço fixo de R$ 800 sem "a partir de", contagem de 9 precedentes divididos em 5 confirmadas, 2 com ressalva, 2 bloqueadas e 1 nota destacada de precedente contraposto; casos do Núcleo utilizando "noticiado em").
+* **Auditoria de Revisão e Núcleo:** APROVADO (Preço fixo de R$ 800 sem "a partir de", contagem de 9 precedentes divididos em 5 confirmadas, 2 com ressalva, 2 bloqueadas e 1 nota destacada de precedente contraposto; casos do Núcleo utilizando "noticiado em").
 * **Formulários Netlify:** APROVADO (8 formulários verificados com `data-netlify="true"`, proteção honeypot `bot-field` e action funcional para página de obrigado).
 * **Redirecionamentos (`_redirects`):** APROVADO (Regras 301 de `/livros` para `/conteudos-gratuitos/ia-no-trabalho` e fallback explícito de `/404.html`).
 * **Sitemap XML (`sitemap.xml`):** APROVADO (20 URLs canônicas ativas incluídas, páginas com `noindex` devidamente excluídas).

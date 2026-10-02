@@ -23,13 +23,13 @@
      `Olá, Núcleo de Inteligência Jurídica da Colmeia Studios Academy. Gostaria de conversar sobre uma demanda técnica do escritório.`
    * Solicitação de amostra:  
      `Olá, Núcleo de Inteligência Jurídica. Sou advogado(a) e gostaria de solicitar a amostra completa da entrega.`
-   * Auditoria de Entrada:  
-     `Olá, Núcleo de Inteligência Jurídica da Colmeia Studios Academy. Tenho interesse na Auditoria de Entrada de R$ 800 para até 10 referências. Gostaria de confirmar se meu material se enquadra no escopo. Não enviarei autos nem dados sigilosos neste primeiro contato.`
+   * Auditoria de Revisão:  
+     `Olá, Núcleo de Inteligência Jurídica da Colmeia Studios Academy. Tenho interesse na Auditoria de Revisão de R$ 800 para até 10 referências. Gostaria de confirmar se meu material se enquadra no escopo. Não enviarei autos nem dados sigilosos neste primeiro contato.`
 
-3. **Bloco de Auditoria de Entrada (`#auditoria-entrada`):**
-   * Botão principal configurado para navegar até `/auditoria-de-entrada` com o texto: **"Conhecer a Auditoria de Entrada"**.
+3. **Bloco de Auditoria de Revisão (`#auditoria-entrada`):**
+   * Botão principal configurado para navegar até `/auditoria-de-revisao` com o texto: **"Conhecer a Auditoria de Revisão"**.
    * Link secundário para WhatsApp com a mensagem padronizada.
-   * Distinção explícita mantida: a Auditoria de Entrada (R$ 800) afere referências já pesquisadas pelo cliente (até 10), enquanto a faixa Essencial (a partir de R$ 1.800) realiza pesquisa e organização estruturada pelo Núcleo.
+   * Distinção explícita mantida: a Auditoria de Revisão (R$ 800) afere referências já pesquisadas pelo cliente (até 10), enquanto a faixa Essencial (a partir de R$ 1.800) realiza pesquisa e organização estruturada pelo Núcleo.
 
 4. **Institucionalização da Seção do Fundador:**
    * Substituição do bloco com foto de destaque pessoal pelo bloco institucional **"Método e Responsabilidade Técnica"**:

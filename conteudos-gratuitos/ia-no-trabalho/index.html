@@ -123,21 +123,6 @@
                     </div>
                 </div>
 
-                <!-- VÍDEO YOUTUBE (SEM AUTOPLAY) -->
-                <div style="max-width: 760px; margin: 0 auto 64px; text-align: center;">
-                    <h3 style="margin-bottom: 16px;">Assista à apresentação do autor</h3>
-                    <div style="position: relative; width: 100%; aspect-ratio: 16/9; border-radius: var(--radius-md); overflow: hidden; box-shadow: var(--shadow-md); background: #000;">
-                        <iframe 
-                            src="https://www.youtube.com/embed/pFixRf4ofhA?autoplay=0&rel=0&modestbranding=1" 
-                            title="Apresentação IA no Trabalho"
-                            style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-
                 <!-- FORMULÁRIO DE CADASTRO (MODO PENDENTE TRANSPARENTE) -->
                 <div id="cadastro" style="max-width: 680px; margin: 0 auto 64px; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 40px 32px; box-shadow: var(--shadow-sm);">
                     <div style="text-align: center; margin-bottom: 24px;">
@@ -149,7 +134,7 @@
                     </div>
 
                     <div class="notice-box" style="margin-bottom: 24px; font-size: 0.8125rem;">
-                        <strong>Aviso sobre disponibilidade:</strong> Cadastre-se para ser avisado quando o material gratuito estiver disponível. O cadastro não gera download nem envio imediato.
+                        <strong>Aviso sobre disponibilidade:</strong> Cadastro recebido. Avisaremos quando o material gratuito estiver disponível. O cadastro não gera download ou envio imediato.
                     </div>
 
                     <form name="material-ia-no-trabalho" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/obrigado/material-gratuito">
@@ -157,8 +142,8 @@
                         <p class="hidden" style="display:none;"><label>Não preencha: <input name="bot-field"></label></p>
 
                         <div class="form-group">
-                            <label for="nome">Nome completo *</label>
-                            <input type="text" id="nome" name="nome" required class="form-control" placeholder="Seu nome">
+                            <label for="nome">Nome completo (opcional)</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Seu nome">
                         </div>
 
                         <div class="form-group">
@@ -267,7 +252,7 @@
                     <h4 class="footer-col-title">Serviços &amp; Núcleo</h4>
                     <ul class="footer-links-list">
                         <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
-                        <li><a href="/auditoria-de-entrada" class="footer-link">Auditoria de Entrada (R$ 800)</a></li>
+                        <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão (R$ 500)</a></li>
                         <li><a href="/criacao-de-sites" class="footer-link">Criação de Websites</a></li>
                         <li><a href="/gestao-de-redes-sociais" class="footer-link">Gestão de Redes Sociais</a></li>
                         <li><a href="/servicos" class="footer-link">Portfólio Empresarial</a></li>

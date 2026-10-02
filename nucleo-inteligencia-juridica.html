@@ -31,163 +31,102 @@
 
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "Service",
-          "name": "Núcleo de Inteligência Jurídica",
-          "provider": {
-            "@type": "Organization",
-            "name": "Colmeia Studios Academy",
-            "url": "https://colmeiastudiosacademy.com.br"
+      "@type": "Service",
+      "name": "Núcleo de Inteligência Jurídica",
+      "provider": {
+        "@type": "Organization",
+        "name": "Colmeia Studios Academy",
+        "url": "https://colmeiastudiosacademy.com.br"
+      },
+      "serviceType": "Apoio Técnico, Pesquisa Assistida e Auditoria de Fontes para Advocacia",
+      "description": "Inteligência documental, pesquisa assistida de jurisprudência e auditoria rigorosa de fontes para advogados e escritórios de advocacia.",
+      "url": "https://colmeiastudiosacademy.com.br/nucleo-inteligencia-juridica",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Modalidades de Apoio Técnico",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Auditoria de Revisão de Peça e Fontes",
+            "description": "Conferência minuciosa de até 10 referências em peça pronta, classificação de integridade de fontes e 1 revalidação inclusa.",
+            "price": "500",
+            "priceCurrency": "BRL",
+            "url": "https://colmeiastudiosacademy.com.br/auditoria-de-revisao"
           },
-          "description": "Pesquisa assistida por inteligência artificial, inteligência documental e auditoria de fontes para escritórios de advocacia.",
-          "areaServed": "BR"
+          {
+            "@type": "Offer",
+            "name": "Demandas Completas e Apoio em Casos Complexos",
+            "description": "Pesquisa assistida de jurisprudência, dossiê técnico estruturado, cronologia de fatos e minutas preliminares editáveis.",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "1800",
+              "maxPrice": "7000",
+              "priceCurrency": "BRL"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O Núcleo presta consultoria jurídica ou advoga?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. O Núcleo de Inteligência Jurídica presta exclusivamente apoio técnico operacional, pesquisa assistida de fontes e estruturação documental. Não prestamos consultoria jurídica, não emitimos pareceres privativos da advocacia e não assinamos peças judiciais. Todas as decisões técnicas e estratégicas competem privativamente ao advogado responsável pelo processo (Lei Federal 8.906/1994)."
+          }
         },
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "O Núcleo presta consultoria jurídica?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Não. O Núcleo presta apoio técnico em pesquisa assistida, inteligência documental, organização de informações e auditoria de fontes. A interpretação jurídica, a orientação ao cliente, a definição da estratégia processual e a utilização do material são responsabilidades do advogado."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quem pode contratar o serviço?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O serviço é destinado a advogados inscritos na OAB, escritórios de advocacia, departamentos jurídicos e profissionais de apoio devidamente autorizados por advogado responsável. Não atendemos diretamente pessoas físicas ou organizações sem advogado responsável pela demanda."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O material é entregue pronto para protocolo?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Não. O material é entregue como dossiê técnico, relatório de fontes e estrutura preliminar editável. Antes de qualquer utilização profissional ou processual, o advogado responsável deverá revisar, adaptar, validar e assumir integralmente o conteúdo."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Como as fontes são verificadas?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Todas as referências localizadas passam por procedimento de redução de riscos com verificação direta em bases oficiais, diários de justiça, repositórios de tribunais e legislação antes de comporem o relatório de auditoria de fontes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "A inteligência artificial pode apresentar informações incorretas?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Sim. Ferramentas de inteligência artificial podem produzir referências imprecisas ou inexistentes. Por isso, reduzimos o risco de referências inexistentes ou incorretas por meio da conferência direta das fontes e do registro dos pontos que precisam de validação profissional na Estratégia COLMEIA."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Como os documentos são protegidos?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A confidencialidade é protegida por contrato (NDA), controle de acesso, minimização de dados e procedimentos de segurança. Os insumos do seu caso não são utilizados para treinar modelos públicos de inteligência artificial."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Posso enviar autos na triagem inicial?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Não. Na triagem inicial solicitamos apenas estimativas de volume e resumo operacional sem dados sensíveis. O envio de autos ocorre apenas após a assinatura do NDA e formalização contratual."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Quem define a estratégia processual?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A definição da tese, a escolha dos argumentos jurídicos e a condução da estratégia processual cabem exclusivamente ao advogado contratante."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Qual é o prazo de entrega?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Os prazos variam entre 5 e 12 dias úteis conforme a faixa de complexidade do caso (Essencial: até 5 dias úteis; Padrão: até 8 dias úteis; Complexa: até 12 dias úteis). Para demandas urgentes, há regime de urgência: entrega em até 72 horas, com acréscimo de 30%, ou em até 48 horas, com acréscimo de 50% sobre o valor de referência."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O serviço garante resultado judicial?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Não. O serviço não oferece garantia de resultado. Decisões jurídicas e processuais dependem das circunstâncias de cada caso, da atuação dos profissionais responsáveis e das autoridades competentes."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Como funciona a contratação?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O primeiro contato pode ser realizado diretamente pelo WhatsApp, sem compartilhamento de informações sigilosas. Se houver interesse em avançar, o solicitante poderá preencher a triagem técnica para alinhamento do escopo e elaboração da proposta. O recebimento dos autos ocorre somente depois da formalização contratual, da emissão da Ordem de Serviço e da assinatura do acordo de confidencialidade."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "A auditoria de fontes equivale a um parecer jurídico?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Não. A auditoria de fontes é um procedimento técnico de checagem, rastreabilidade e correspondência entre referências citadas e bases consultadas. Ela não constitui análise de mérito, orientação legal ou parecer jurídico."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Até onde vai a responsabilidade técnica do Núcleo?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O Núcleo responde pelo cumprimento do procedimento técnico contratado, pela organização documental e pela transparência do relatório de fontes. A escolha da tese, a adequação das referências ao caso concreto e a validação final pertencem ao advogado responsável."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O que está incluído na entrega?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Entregamos um dossiê técnico estruturado, a estrutura preliminar editável e o relatório completo de auditoria de fontes contendo todos os pontos de conferência para a validação final do advogado."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O Núcleo conta com advogados especialistas?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "O Núcleo conta com a participação de profissionais jurídicos independentes no aperfeiçoamento de sua metodologia, no desenvolvimento de protocolos e na definição de critérios especializados de pesquisa e organização documental. Quando necessário, especialistas podem ser acionados conforme a área envolvida e a complexidade da demanda. A interpretação jurídica, a definição da estratégia e a validação final permanecem sob responsabilidade exclusiva do advogado contratante."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "O que é a Auditoria de Entrada?",
-              "acceptedAnswer": { "@type": "Answer", "text": "É uma auditoria avulsa de até 10 referências da sua própria pesquisa (sua, do estagiário ou de uma IA), com entrega do Relatório de Auditoria de Fontes: ficha por referência com status (confirmada, com ressalva ou bloqueada para citação) e o local de conferência registrado. Valor fixo de R$ 800, prazo de até 5 dias úteis e 1 revalidação após os ajustes." }
-            },
-            {
-              "@type": "Question",
-              "name": "A Auditoria de Entrada exige enviar os autos do processo?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Não. Nesta modalidade são enviadas apenas as referências a conferir (precedentes, ementas, artigos de lei), que são documentos públicos. Autos e dados de partes só entram nas demandas completas, após NDA e Ordem de Serviço." }
-            },
-            {
-              "@type": "Question",
-              "name": "Qual a diferença entre a Auditoria de Entrada e a faixa Essencial?",
-              "acceptedAnswer": { "@type": "Answer", "text": "A Auditoria de Entrada confere referências que você já pesquisou. A faixa Essencial é uma demanda completa de pesquisa e organização feita pelo Núcleo, a partir de R$ 1.800. A primeira audita o seu material; a segunda produz o material." }
-            }
-          ]
+          "@type": "Question",
+          "name": "Como funciona a Auditoria de Revisão de R$ 500?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "É o primeiro degrau de contratação do Núcleo. O escritório nos envia uma lista de até 10 referências (jurisprudência, normas ou precedentes) que pretende citar em uma peça pronta. Nós auditamos cada citação diretamente nos repositórios oficiais dos tribunais e entregamos um relatório técnico com a classificação de cada fonte (Confirmada, Ressalva ou Bloqueada) e os apontamentos de conformidade textual. O valor é fixo em R$ 500, com prazo de até 5 dias úteis e 1 rodada de revalidação inclusa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "E se meu prazo for urgente?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para a Auditoria de Revisão, dispomos de faixas de urgência: entrega em 72 horas úteis por R$ 650 (+30%) e em 48 horas úteis por R$ 750 (+50%). A disponibilidade de atendimento em prazo de urgência depende da nossa capacidade operacional no momento e deve ser confirmada previamente na triagem técnica."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Meus dados ou peças serão usados para treinar modelos de IA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. O Núcleo opera com políticas rigorosas de isolamento de dados e confidencialidade. Utilizamos ferramentas e APIs empresariais com cláusulas contratuais de não-treinamento e não-retenção de dados. As informações fornecidas são utilizadas unicamente para a execução do serviço contratado, sob estrito sigilo e conformidade com a LGPD."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Preciso enviar os autos do processo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. No primeiro contato ou triagem, solicitamos apenas a descrição genérica do recorte da demanda, o tipo de matéria jurídica e o volume aproximado de fontes ou laudas. Autos integrais, dados de partes ou documentos sigilosos nunca devem ser enviados no primeiro contato e só são recebidos após a formalização de proposta e assinatura de acordo de confidencialidade (NDA)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como é feita a entrega e em que formato recebo o material?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A entrega é realizada em formato digital, incluindo o Relatório Técnico de Auditoria de Fontes (PDF estruturado) com links e transcrições de controle, e, nas demandas completas, a matriz de referências e as minutas preliminares em formato editável (.docx ou .md), prontas para incorporação pela equipe jurídica do escritório."
+          }
         }
       ]
     }
-    </script>
+  ]
+}
+</script>
 
     <style>
         /* CSS Autocontido — Núcleo de Inteligência Jurídica */
@@ -1548,11 +1487,153 @@
 @media(max-width:1024px){.mt-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.mt-grid{grid-template-columns:1fr}}
 
-</style>
+
+        /* Estilos adicionais para layout simplificado do Núcleo */
+        .badge-revisao {
+            display: inline-block;
+            background: rgba(242, 167, 27, 0.15);
+            color: var(--accent-gold);
+            border: 1px solid var(--border-gold);
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 12px;
+        }
+        .price-compare {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin: 16px 0;
+        }
+        .price-old {
+            font-size: 1.125rem;
+            color: var(--text-muted);
+            text-decoration: line-through;
+        }
+        .price-current {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            line-height: 1;
+        }
+        .price-term {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+        .urgency-badge-box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-gold-subtle);
+            border-radius: 8px;
+            padding: 12px 16px;
+            margin: 16px 0;
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+        }
+        .urgency-badge-box strong {
+            color: var(--text-primary);
+        }
+        .modalidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 32px;
+        }
+        .method-steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 32px;
+        }
+        .method-step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-gold-subtle);
+            border-radius: 12px;
+            padding: 24px;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .method-step-card:hover {
+            border-color: var(--border-gold);
+            transform: translateY(-2px);
+        }
+        .method-step-num {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            background: rgba(242, 167, 27, 0.12);
+            color: var(--accent-gold);
+            font-weight: 800;
+            font-size: 1rem;
+            margin-bottom: 16px;
+            border: 1px solid var(--border-gold-subtle);
+        }
+        .security-pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 32px;
+        }
+        .pricing-table-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin-top: 32px;
+        }
+        .pricing-card-highlight {
+            border: 2px solid var(--accent-gold) !important;
+            position: relative;
+        }
+        .pricing-card-highlight::before {
+            content: "PRIMEIRO DEGRAU";
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: var(--accent-gold);
+            color: #14100B;
+            font-size: 0.6875rem;
+            font-weight: 800;
+            padding: 2px 10px;
+            border-radius: 9999px;
+            letter-spacing: 0.05em;
+        }
+        .header-nav .btn-nav-revisao {
+            background: rgba(242, 167, 27, 0.15);
+            border: 1px solid var(--accent-gold);
+            color: var(--accent-gold) !important;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.8125rem;
+            transition: all 0.2s;
+        }
+        .header-nav .btn-nav-revisao:hover {
+            background: var(--accent-gold);
+            color: #14100B !important;
+        }
+        .link-home-subtle {
+            font-size: 0.8125rem;
+            color: var(--text-muted) !important;
+            text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .link-home-subtle:hover {
+            color: var(--text-primary) !important;
+            border-color: var(--border-gold-subtle);
+        }
+    
+    </style>
+
 </head>
 <body>
-
-    <!-- Header Fixo -->
+    <!-- Header Fixo Simplificado -->
     <header class="site-header">
         <div class="container header-content">
             <a href="/" class="header-brand" style="text-decoration:none;color:inherit;" aria-label="Voltar para a página inicial da Colmeia Studios Academy">
@@ -1575,16 +1656,13 @@
             </button>
 
             <nav class="header-nav" id="mobile-navigation" aria-label="Navegação principal">
-                <a href="/#escalar-com-ia" style="color:var(--gold,#f2b600);font-weight:600;">&larr; Voltar para as áreas</a>
-                <a href="#estrategia">Estratégia COLMEIA</a>
-                <a href="#amostra">Amostra</a>
-                <a href="#auditoria-entrada">Auditoria de Entrada</a>
-                <a href="#metodologia">Metodologia</a>
-                <a href="#seguranca">Segurança</a>
-                <a href="#caso-referencia">Caso de referência</a>
-                <a href="#valores">Valores</a>
-                <a href="#faq">FAQ</a>
-                <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20uma%20demanda%20t%C3%A9cnica%20do%20escrit%C3%B3rio." target="_blank" rel="noopener noreferrer" aria-label="Falar com o Núcleo pelo WhatsApp" class="btn btn-gold" style="padding: 8px 16px; font-size: 0.8125rem;">Falar com o Núcleo</a>
+                <a href="#modalidades">Entrega</a>
+                <a href="#metodo">Método</a>
+                <a href="#investimento">Investimento</a>
+                <a href="#duvidas">Dúvidas</a>
+                <a href="#triagem">Contato</a>
+                <a href="/auditoria-de-revisao" class="btn-nav-revisao">Auditoria de Revisão</a>
+                <a href="/" class="link-home-subtle">Colmeia Studios Academy</a>
             </nav>
         </div>
     </header>
@@ -1592,589 +1670,197 @@
     <!-- Barra Institucional Fina -->
     <div class="top-institutional-bar">
         <div class="container">
-            Suporte técnico especializado para a advocacia
+            Suporte técnico especializado para a advocacia · Inteligência documental e auditoria de fontes
         </div>
     </div>
 
     <main>
-        <!-- Hero Section -->
+        <!-- 1. HERO SECTION (com gargalo operacional e risco integrados) -->
         <section class="hero-section">
             <div class="container">
                 <span class="hero-badge">Apoio Técnico de Alto Rendimento</span>
                 <h1>Núcleo de Inteligência Jurídica</h1>
-                <p class="hero-subtitle">Pesquisa assistida por inteligência artificial e inteligência documental, com relatório de auditoria de cada fonte citada — para que sua equipe dedique o tempo à estratégia, não à triagem.</p>
+                <p class="hero-subtitle">Inteligência documental, pesquisa assistida e auditoria rigorosa de fontes para a advocacia.</p>
                 
                 <p class="hero-description">
-                    Transformamos grandes volumes de autos, documentos, precedentes e fontes públicas em materiais estruturados, rastreáveis e editáveis para revisão, desenvolvimento e validação exclusiva do advogado responsável.
+                    O gargalo do escritório não é jurídico — é operacional. Equipes perdem até 40% do tempo localizando precedentes, conferindo citações e organizando autos volumosos. E com tribunais aplicando multas por citações incorretas ou inventadas por IA, protocolar sem checar a fonte original tornou-se um risco inaceitável.
                 </p>
                 
-                <p style="font-size: 0.875rem; color: var(--accent-gold); font-weight: 600;  margin-bottom: 28px;">
-                    Atendimento técnico exclusivo a advogados, escritórios de advocacia e departamentos jurídicos.
+                <p style="font-size: 0.9375rem; color: var(--accent-gold); font-weight: 600; margin-bottom: 28px;">
+                    Operação técnica especializada que transforma autos e precedentes em materiais estruturados, rastreáveis e editáveis para validação exclusiva do advogado responsável.
                 </p>
 
                 <div class="hero-ctas">
-                    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20uma%20demanda%20t%C3%A9cnica%20do%20escrit%C3%B3rio." target="_blank" rel="noopener noreferrer" aria-label="Falar com o Núcleo pelo WhatsApp" class="btn btn-gold" style="gap: 8px;">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.007 3.676 3.75-1.009zm10.743-6.529c.145.242.223.518.223.8 0 .285-.084.561-.247.818-.466.733-1.44 1.282-2.152 1.282-.55 0-1.127-.22-1.994-.575-1.393-.571-2.868-1.579-4.041-2.752-1.173-1.173-2.181-2.648-2.752-4.041-.355-.867-.575-1.444-.575-1.994 0-.712.549-1.686 1.282-2.152.257-.163.533-.247.818-.247.282 0 .558.078.8.223l2.001 1.332c.264.176.4.475.34.787-.06.313-.274.571-.55.676l-.546.21c-.139.053-.257.147-.333.274-.145.242-.102.553.1.884.542.889 1.281 1.628 2.17 2.17.331.202.642.245.884.1.127-.076.221-.194.274-.333l.21-.546c.105-.276.363-.49.676-.55.312-.06.611.076.787.34l1.332 2.001z"/></svg>
-                        Falar com o Núcleo no WhatsApp
+                    <a href="/auditoria-de-revisao" class="btn btn-gold" style="gap: 8px;">
+                        <span>Auditoria de Revisão · De R$ 800 por R$ 500</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                     </a>
-                    <a href="#triagem" class="btn btn-gold" style="background: transparent; border: 1px solid var(--border-gold); color: var(--accent-gold);">Solicitar triagem técnica</a>
+                    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20uma%20demanda%20t%C3%A9cnica%20do%20escrit%C3%B3rio." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="border: 1px solid var(--border-gold); color: var(--accent-gold);">
+                        Demandas completas · Falar no WhatsApp
+                    </a>
                 </div>
 
-                <p style="margin: -18px 0 24px; font-size: 0.9375rem;">
-                    <a href="#auditoria-entrada" class="link-secondary">Quer testar antes? Auditoria de Entrada: até 10 referências conferidas por R$ 800 →</a>
-                </p>
-
-                <p style="font-size: 0.84375rem; color: var(--text-muted); line-height: 1.5; margin-bottom: 20px; max-width: 800px;">
-                    A conversa inicial ocorre sem envio de documentos sigilosos. Caso seja necessário avançar, o escopo técnico e as condições de tratamento das informações serão definidos antes do recebimento dos autos.
-                </p>
-
-                <!-- Microaviso Jurídico de 1 Linha -->
-                <div style="background: rgba(12, 12, 12, 0.8); border: 1px solid var(--border-gold-subtle); border-radius: 6px; padding: 12px 18px; font-size: 0.8125rem; color: #d0d0d0; line-height: 1.5; display: flex; gap: 10px; align-items: center; max-width: 900px;">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); flex-shrink: 0;"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                    <span>Atuação exclusivamente técnica. Os materiais não constituem parecer jurídico nem documento apto a protocolo e dependem de revisão, adaptação e validação do advogado responsável.</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- Barra de Diferenciais -->
-        <div class="proof-bar-section">
-            <div class="container">
-                <div class="proof-grid">
-                    <div class="proof-item">
-                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <span>Todas as entregas acompanhadas de relatório de auditoria de fontes</span>
-                    </div>
-                    <div class="proof-item">
-                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="9" x2="15" y2="9"></line><line x1="9" y1="13" x2="15" y2="13"></line><line x1="9" y1="17" x2="13" y2="17"></line></svg>
-                        <span>Estratégia COLMEIA estruturada em 7 etapas</span>
-                    </div>
-                    <div class="proof-item">
-                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                        <span>Confidencialidade contratual e acesso restrito</span>
-                    </div>
-                    <div class="proof-item">
-                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                        <span>Material editável preparado para revisão do advogado</span>
-                    </div>
-                    <div class="proof-item">
-                        <svg class="proof-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                        <span>Metodologia desenvolvida com advogados independentes</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- O gargalo não é jurídico. É operacional. -->
-        <section class="section-padding bg-alt">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>O gargalo não é jurídico. É operacional.</h2>
-                </div>
-                <p style="margin-bottom: 24px; color: var(--text-main); font-size: 1.0625rem; max-width: 900px; line-height: 1.7;">
-                    Autos extensos e fontes dispersas consomem horas que poderiam estar concentradas na análise jurídica, na estratégia processual e no relacionamento com o cliente. O Núcleo assume a camada operacional de pesquisa, organização e rastreabilidade para que o advogado receba um material mais claro, conferível e preparado para revisão.
-                </p>
-                <ul class="cross-list" style="max-width: 850px; margin-bottom: 24px;">
-                    <li>Horas de profissionais experientes consumidas por triagem documental e pesquisa inicial.</li>
-                    <li>Prazos reduzidos para organizar documentos, argumentos e fontes dispersas.</li>
-                    <li>Risco de utilização de referências incompletas, desatualizadas ou não verificadas.</li>
-                    <li>Dificuldade para manter rastreabilidade em pesquisas extensas.</li>
-                    <li>Sobrecarga da equipe em demandas com grande volume documental.</li>
-                </ul>
-                <p style="font-weight: 600; color: var(--accent-gold); font-size: 1.0625rem; max-width: 900px; line-height: 1.6;">
-                    O objetivo não é substituir a análise profissional, mas devolver ao advogado melhores condições para exercê-la.
+                <p style="margin: 20px 0 0; font-size: 0.8125rem; color: var(--text-muted);">
+                    Atendimento técnico exclusivo a advogados, escritórios de advocacia e departamentos jurídicos. Não prestamos assessoria ao público final.
                 </p>
             </div>
         </section>
 
-        <!-- Caso de Referência -->
-        <section id="caso-referencia" class="section-padding">
+        <!-- 2. DUAS MODALIDADES DE CONTRATAÇÃO -->
+        <section id="modalidades" class="section-padding bg-alt">
             <div class="container">
-                <div class="section-header-block">
-                    <h2>Caso de Referência</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
-                        Um exemplo real de como pesquisa assistida, conferência de precedentes e organização técnica podem apoiar o trabalho do advogado responsável.
-                    </p>
-                    <div style="margin-top: 12px;">
-                        <span class="case-tag-badge">Caso real anonimizado</span>
-                    </div>
-                </div>
-
-                <div class="case-card">
-                    <div class="case-step">
-                        <span class="case-label">1. Contexto e desafio inicial</span>
-                        <p class="case-text">O trabalho teve início no apoio a um advogado responsável por um pedido de indulto. Após a apresentação da petição inicial, identificou-se a necessidade de complementar e aprofundar a fundamentação apresentada no processo.</p>
-                    </div>
-
-                    <div class="case-step">
-                        <span class="case-label">2. Pesquisa e estrutura técnica complementar</span>
-                        <p class="case-text">Com base no escopo e nas informações do caso, foi realizada pesquisa assistida por inteligência artificial, seguida de conferência das fontes localizadas. O material foi organizado em uma estrutura técnica aditiva para revisão, adaptação e utilização pelo advogado responsável.</p>
-                    </div>
-
-                    <div class="case-step">
-                        <span class="case-label">3. Manifestação contrária do Ministério Público</span>
-                        <p class="case-text">Após a juntada do material ao processo pelo advogado, o Ministério Público apresentou manifestação desfavorável ao pedido, com fundamentação extensa e apoio em seis precedentes judiciais.</p>
-                    </div>
-
-                    <div class="case-step">
-                        <span class="case-label">4. Pesquisa cruzada e estruturação da resposta</span>
-                        <p class="case-text">Foi realizada uma nova rodada de pesquisa assistida e cruzamento jurisprudencial. Foram selecionados e conferidos nove precedentes relacionados ao ponto controvertido, incluindo precedente do mesmo tribunal relacionado à principal referência utilizada na manifestação do Ministério Público. O material foi organizado em uma estrutura técnica de resposta, com referências verificáveis e pontos de conferência para revisão do advogado.</p>
-                        <p class="case-text" style="margin-top: 10px; color: var(--accent-gold); font-weight: 500;">
-                            A pesquisa permitiu sustentar entendimento contrário à manifestação ministerial e fortalecer a fundamentação apresentada em defesa do pedido. O trabalho concentrou a pesquisa, a organização das referências e os pontos de conferência em uma entrega estruturada para revisão do advogado.
-                        </p>
-                    </div>
-
-                    <div class="case-result-box">
-                        <div class="case-badge-stamp">Caso real · Resultado favorável</div>
-                        <h3 style="color: var(--accent-gold); font-size: 1.375rem; margin-bottom: 12px; font-weight: 800;">
-                            5. Resultado do caso: PEDIDO DE INDULTO DEFERIDO
-                        </h3>
-                        <p class="case-text" style="font-size: 1.0625rem; font-weight: 600; color: #ffffff; margin-bottom: 10px;">
-                            Após a revisão, validação e utilização do material pelo advogado responsável, o juízo competente deferiu o pedido de indulto.
-                        </p>
-                        <p class="case-text" style="color: #d0d0d0;">
-                            A aplicação da Estratégia COLMEIA contribuiu, neste caso específico, para a construção de uma resposta mais estruturada, fundamentada e apoiada em precedentes verificados.
-                        </p>
-                    </div>
-
-                    <div class="case-disclaimer">
-                        Caso real apresentado de forma anonimizada. Nomes, número do processo, dados pessoais e informações protegidas foram omitidos. O deferimento ocorreu nas circunstâncias específicas deste caso e não representa promessa ou garantia de resultados futuros. Cada demanda depende de seus fatos, documentos, fundamentos, atuação do advogado responsável e decisão da autoridade competente.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- Estratégia COLMEIA -->
-        <section id="estrategia" class="section-padding">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>Estratégia COLMEIA</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
-                        Um fluxo operacional em sete etapas para transformar documentos, fontes e informações dispersas em materiais organizados, rastreáveis e preparados para validação profissional.
+                <div class="section-header-block text-center" style="max-width: 800px; margin: 0 auto 40px;">
+                    <span class="badge-revisao">Modelos de Apoio Técnico</span>
+                    <h2>Duas formas de contratar o apoio do Núcleo</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Da revisão pontual de uma petição já redigida ao suporte aprofundado em casos de alta complexidade.
                     </p>
                 </div>
 
-                <div class="colmeia-grid">
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">C</div>
-                        <h3>Contextualizar</h3>
-                        <p>Registrar o escopo, os objetivos operacionais, os documentos disponíveis, as fontes desejadas e as orientações fornecidas pelo advogado responsável.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">O</div>
-                        <h3>Organizar</h3>
-                        <p>Classificar documentos, identificar datas, eventos, referências, partes, temas e elementos relevantes para a estruturação do material.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">L</div>
-                        <h3>Localizar</h3>
-                        <p>Pesquisar legislação, precedentes, documentos e fontes públicas relacionadas ao escopo definido pelo advogado.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">M</div>
-                        <h3>Mapear</h3>
-                        <p>Relacionar argumentos, documentos, referências e fontes para facilitar a revisão profissional.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">E</div>
-                        <h3>Examinar</h3>
-                        <p>Conferir datas, citações, referências, correspondência documental e consistência material das informações localizadas.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">I</div>
-                        <h3>Integrar</h3>
-                        <p>Reunir as informações verificadas em uma estrutura coerente, conforme o escopo e as orientações do advogado responsável.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <div class="colmeia-letter">A</div>
-                        <h3>Apresentar</h3>
-                        <p>Entregar dossiê técnico, relatório de auditoria e material editável com fontes, referências e pontos de conferência.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-
-
-
-        <!-- O que o escritório recebe -->
-        
-<section id="amostra" class="am-sec" aria-labelledby="am-titulo">
-  <div class="am-wrap">
-    <span class="am-eyebrow">Amostra da entrega</span>
-    <h2 id="am-titulo" class="am-title">Veja como é uma entrega</h2>
-    <p class="am-lead">Amostra elaborada a partir do material real de um caso de execução penal (indulto) em que a Estratégia COLMEIA foi aplicada. Toda entrega traz dois documentos complementares: um mostra que cada fonte foi conferida, o outro organiza o material para a redação do advogado.</p>
-    <div class="am-docs">
-      <article class="am-doc">
-        <span class="am-n">Documento 1</span>
-        <h3>Relatório de Auditoria de Fontes</h3>
-        <p>Uma ficha para cada referência, com dados de identificação, onde foi conferida e status: confirmada, com ressalva ou bloqueada para citação. Os erros encontrados no material de origem ficam registrados, e não escondidos.</p>
-      </article>
-      <article class="am-doc">
-        <span class="am-n">Documento 2</span>
-        <h3>Estrutura Preliminar Editável</h3>
-        <p>Teses organizadas em blocos, com os precedentes auditados, uma nota para o advogado em cada bloco, a distinção dos precedentes da parte contrária e um checklist antes do protocolo. Todos os dados do caso ficam como campos a preencher.</p>
-      </article>
-    </div>
-    <div class="am-sum" aria-label="Resumo da auditoria">
-      <span class="am-badge">9 precedentes analisados</span>
-      <span class="am-badge">5 confirmados</span>
-      <span class="am-badge">2 com ressalva</span>
-      <span class="am-badge">2 bloqueados para citação</span>
-    </div>
-    <table class="am-table">
-      <thead>
-        <tr><th>Referência</th><th>Status</th><th>Onde foi conferida</th><th>Observação para o advogado</th></tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td data-label="Referência">STJ, AgRg no HC 950.184/SP, 5ª Turma, j. 14/04/2025</td>
-          <td data-label="Status"><span class="am-tag am-ok">Confirmada</span></td>
-          <td data-label="Onde foi conferida">SCON/STJ, fonte oficial</td>
-          <td data-label="Observação para o advogado">Tese central: preenchidos os requisitos do decreto, não cabe interpretação extensiva das restrições. A descrição do caso foi corrigida em relação ao material de origem.</td>
-        </tr>
-        <tr>
-          <td data-label="Referência">TJMG, Agravo em Execução Penal nº 1.0024.15.030052-3/001</td>
-          <td data-label="Status"><span class="am-tag am-rs">Com ressalva</span></td>
-          <td data-label="Onde foi conferida">Inteiro teor, portal do TJMG</td>
-          <td data-label="Observação para o advogado">O trecho do material de origem não coincidia com o texto oficial. Transcreva apenas conforme o inteiro teor.</td>
-        </tr>
-        <tr>
-          <td data-label="Referência">Ementa estadual sobre o art. 9º, VIII (decreto anterior)</td>
-          <td data-label="Status"><span class="am-tag am-bl">Bloqueada</span></td>
-          <td data-label="Onde foi conferida">Não localizada: sem número do processo, órgão julgador ou data</td>
-          <td data-label="Observação para o advogado">Não citar até a identificação completa ser conferida manualmente.</td>
-        </tr>
-        <tr>
-          <td data-label="Referência">Precedente de câmara criminal estadual (2026) citado pela parte contrária</td>
-          <td data-label="Status"><span class="am-tag am-ct">Contraposto</span></td>
-          <td data-label="Onde foi conferida">Identificado na manifestação da parte contrária</td>
-          <td data-label="Observação para o advogado">Precedente contrário identificado na peça adversa. As referências e divergências textuais estão organizadas para avaliação do advogado na Estrutura Preliminar.</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="am-legend">Amostra baseada em caso real e anonimizada. Os precedentes citados são decisões públicas. Foram removidos todos os dados que permitam identificar partes, advogados, juízo ou processo. Trecho reduzido: a versão completa traz as 9 fichas e a estrutura por blocos.</p>
-    <a class="am-cta" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica.%20Sou%20advogado(a)%20e%20gostaria%20de%20solicitar%20a%20amostra%20completa%20da%20entrega." target="_blank" rel="noopener">Solicitar amostra completa</a>
-    <span class="am-cta-note">Envio dos dois PDFs pelo WhatsApp, exclusivamente para advogados.</span>
-  </div>
-</section>
-
-<!-- Auditoria de Entrada: início -->
-<style>
-/* auditoria-entrada (secao principal) */
-.ae2{padding:88px 0;background:var(--bg-black,#000);border-top:1px solid var(--border-dark,#1f1f1f)}
-.ae2 *{box-sizing:border-box}
-.ae2-wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.ae2-eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#f08a8a;font-weight:600}
-.ae2-title{font-size:clamp(26px,3.2vw,36px);margin:10px 0 14px;color:#fff;max-width:22em}
-.ae2-lead{max-width:780px;color:var(--text-muted,#a0a0a0);line-height:1.7;margin:0 0 32px}
-.ae2-lead b{color:#fff}
-.ae2-cases{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:18px}
-.ae2-case{background:var(--bg-card,#0c0c0c);border:1px solid var(--border-dark,#1f1f1f);border-top:3px solid #c85050;border-radius:8px;padding:20px 18px;display:flex;flex-direction:column}
-.ae2-case .ae2-k{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:#f08a8a;font-weight:700}
-.ae2-case .ae2-v{font-size:26px;font-weight:800;color:#fff;margin:10px 0 6px;line-height:1}
-.ae2-case p{font-size:14px;color:var(--text-muted,#a0a0a0);line-height:1.55;margin:0}
-.ae2-case a{margin-top:auto;padding-top:12px;font-size:12px;color:var(--accent-gold,#f2b600);text-decoration:underline;text-underline-offset:3px}
-.ae2-note{font-size:12.5px;color:var(--text-dark,#8f8f8f);line-height:1.6;margin:0 0 40px;max-width:900px}
-.ae2-offer{display:grid;grid-template-columns:1.3fr .7fr;border:1px solid var(--border-gold,#f2b600);border-radius:10px;overflow:hidden;background:rgba(242,182,0,.04)}
-.ae2-in{padding:30px 32px}
-.ae2-tag{display:inline-block;background:var(--accent-gold,#f2b600);color:#000;font-weight:700;font-size:12px;padding:3px 10px;border-radius:4px;letter-spacing:.02em}
-.ae2-in h3{color:#fff;font-size:22px;margin:14px 0 10px}
-.ae2-in p{color:var(--text-muted,#a0a0a0);line-height:1.65;margin:0 0 16px;font-size:15.5px}
-.ae2-in p b{color:#fff}
-.ae2-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 22px}
-.ae2-list li{position:relative;padding-left:22px;font-size:14.5px;color:var(--text-main,#f0f0f0);line-height:1.5}
-.ae2-list li::before{content:"✓";position:absolute;left:0;color:#5fd07a;font-weight:700}
-.ae2-price{background:var(--bg-card,#0c0c0c);border-left:1px solid var(--border-gold-subtle,rgba(242,182,0,.25));padding:30px 26px;display:flex;flex-direction:column;justify-content:center;gap:10px}
-.ae2-price .ae2-l{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-muted,#a0a0a0);font-weight:600}
-.ae2-price .ae2-p{font-size:46px;font-weight:800;color:#fff;line-height:1}
-.ae2-price .ae2-s{font-size:13px;color:var(--text-muted,#a0a0a0);line-height:1.5}
-.ae2-btn{display:inline-flex;justify-content:center;align-items:center;background:var(--accent-gold,#f2b600);color:#000;font-weight:700;font-size:15px;text-decoration:none;padding:14px 20px;border-radius:6px;margin-top:6px;transition:background .2s,transform .2s}
-.ae2-btn:hover{background:var(--accent-gold-hover,#d9a300);transform:translateY(-1px)}
-.ae2-link{font-size:14px;font-weight:600;color:var(--accent-gold,#f2b600);text-decoration:underline;text-underline-offset:4px;text-align:center}
-.ae2-legal{font-size:12px;color:var(--text-dark,#8f8f8f);line-height:1.6;margin:18px 0 0}
-@media (max-width:991px){.ae2-cases{grid-template-columns:1fr 1fr}.ae2-offer{grid-template-columns:1fr}.ae2-price{border-left:0;border-top:1px solid var(--border-gold-subtle,rgba(242,182,0,.25))}}
-@media (max-width:600px){.ae2{padding:64px 0}.ae2-cases,.ae2-list{grid-template-columns:1fr}.ae2-in{padding:24px 20px}.ae2-price{padding:24px 20px}}
-</style>
-
-<section id="auditoria-entrada" class="ae2" aria-labelledby="ae2-titulo">
-  <div class="ae2-wrap">
-    <span class="ae2-eyebrow">O custo da referência não conferida</span>
-    <h2 id="ae2-titulo" class="ae2-title">Tribunais já estão multando quem cita sem conferir.</h2>
-    <p class="ae2-lead">A amostra acima mostra 4 problemas em 9 referências. Nos casos abaixo, ninguém fez essa conferência antes do protocolo — e <b>a responsabilidade recaiu sobre o advogado que assinou</b>, não sobre a ferramenta nem sobre a equipe.</p>
-
-    <div class="ae2-cases">
-      <article class="ae2-case">
-        <span class="ae2-k">TST · noticiado em mar/2026</span>
-        <span class="ae2-v">1% + 1%</span>
-        <p>Condenação por litigância de má-fé da empresa e do advogado por possível uso de IA com citações falsas de jurisprudência. Ofícios à OAB e ao MPF.</p>
-        <a href="https://www.tst.jus.br/en/-/empresa-e-advogado-sao-condenados-por-possivel-uso-de-ia-com-citacoes-falsas-de-jurisprudencia" target="_blank" rel="noopener noreferrer">Fonte: TST</a>
-      </article>
-      <article class="ae2-case">
-        <span class="ae2-k">TRT-2 · noticiado em fev/2026</span>
-        <span class="ae2-v">5%</span>
-        <p>Multa de 5% à empresa por jurisprudência criada por IA. Argumento de erro de estagiários rejeitado; postulação é ato privativo. Ofício à OAB-SP.</p>
-        <a href="https://conjur.com.br/2026-fev-16/uso-de-jurisprudencia-criada-por-ia-gera-multa-por-ma-fe-e-oficio-a-oab/" target="_blank" rel="noopener noreferrer">Fonte: ConJur</a>
-      </article>
-      <article class="ae2-case">
-        <span class="ae2-k">TJSC · noticiado em fev/2025</span>
-        <span class="ae2-v">10%</span>
-        <p>Multa de 10% sobre o valor atualizado da causa ao autor de recurso por jurisprudência e doutrina falsas geradas por IA; comunicação à OAB/SC.</p>
-        <a href="https://www.tjsc.jus.br/web/imprensa/-/tjsc-multa-autor-de-recurso-por-jurisprudencia-falsa-gerada-por-ia" target="_blank" rel="noopener noreferrer">Fonte: TJSC</a>
-      </article>
-      <article class="ae2-case">
-        <span class="ae2-k">TJMG · noticiado em jul/2026</span>
-        <span class="ae2-v">R$ 990</span>
-        <p>Dois precedentes falsos atribuídos ao STJ e ao TJMG na contestação. A ré venceu no mérito (improcedência dos pedidos do autor); ainda assim, houve multa de 9,9% (R$ 990) por litigância de má-fé e ofício à OAB-MG.</p>
-        <a href="https://www.tjmg.jus.br/portal-tjmg/noticias/juiza-alerta-sobre-uso-de-ia-e-aplica-multa-a-advogada-por-jurisprudencia-falsa.htm" target="_blank" rel="noopener noreferrer">Fonte: TJMG</a>
-      </article>
-    </div>
-    <p class="ae2-note">Casos citados com base nas notícias e publicações oficiais indicadas; a Colmeia Studios Academy e o Núcleo não atuaram em nenhum deles. Percentuais de multa calculados sobre o valor da causa, conforme cada decisão noticiada.</p>
-
-    <div class="ae2-offer">
-      <div class="ae2-in">
-        <span class="ae2-tag">Auditoria de Entrada</span>
-        <h3>Antes de contratar uma demanda completa, audite uma peça sua.</h3>
-        <p>Você traz até <b>10 referências da sua própria pesquisa</b> — sua, da equipe ou de ferramentas de IA — e recebe cada uma conferida <b>direto na fonte oficial</b>, com o mesmo Relatório de Auditoria de Fontes da amostra acima. Sem envio de autos.</p>
-        <ul class="ae2-list">
-          <li>Até 10 referências conferidas</li>
-          <li>Status: confirmada, com ressalva ou bloqueada</li>
-          <li>Local de conferência registrado</li>
-          <li>1 revalidação após seus ajustes</li>
-          <li>Prazo: até 5 dias úteis</li>
-          <li>NDA incluído · só referências públicas</li>
-        </ul>
-      </div>
-      <div class="ae2-price">
-        <span class="ae2-l">Valor fixo</span>
-        <span class="ae2-p">R$ 800</span>
-        <span class="ae2-s">por auditoria · sem mensalidade e sem compromisso posterior</span>
-        <a class="ae2-btn" href="/auditoria-de-entrada">Conhecer a Auditoria de Entrada</a>
-        <a class="ae2-link" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Tenho%20interesse%20na%20Auditoria%20de%20Entrada%20de%20R%24%20800%20para%20at%C3%A9%2010%20refer%C3%AAncias.%20Gostaria%20de%20confirmar%20se%20meu%20material%20se%20enquadra%20no%20escopo.%20N%C3%A3o%20enviarei%20autos%20nem%20dados%20sigilosos%20neste%20primeiro%20contato." target="_blank" rel="noopener noreferrer">Solicitar diretamente via WhatsApp</a>
-      </div>
-    </div>
-    <p class="ae2-legal">A auditoria de fontes é procedimento técnico de rastreabilidade e conferência. Não constitui parecer jurídico, não certifica a pertinência das referências ao caso concreto e não substitui a revisão e validação do advogado responsável.</p>
-  </div>
-</section>
-<!-- Auditoria de Entrada: fim -->
-
-<section class="section-padding bg-alt">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>O que o escritório recebe</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
-                        Materiais estruturados, rastreáveis e editáveis para conferência, desenvolvimento e validação do advogado responsável.
-                    </p>
-                </div>
-
-                <div class="colmeia-grid">
-                    <div class="colmeia-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                        <h3>Dossiê Técnico Estruturado</h3>
-                        <p>Mapeamento analítico do cenário fático, histórico documental e tópicos relevantes organizados por tema.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        <h3>Relatório de Auditoria de Fontes</h3>
-                        <p>Registro técnico das fontes consultadas, com verificação de existência, correspondência de citações, referências e links de conferência. A auditoria de fontes não constitui certificação de pertinência jurídica nem substitui a análise do advogado responsável.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><rect x="3" y="4" width="18" height="16" rx="2"></rect><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                        <h3>Matriz de Documentos e Referências</h3>
-                        <p>Tabela comparativa cruzando alegações, anexos, laudos e manifestações constantes nos autos.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        <h3>Cronologia de Fatos e Eventos</h3>
-                        <p>Linha do tempo organizada de forma sequencial com indicação de folhas e datas marcantes do processo.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                        <h3>Tabela de Fontes e Precedentes</h3>
-                        <p>Compilação de legislação aplicável, súmulas e julgados com indicação dos pontos de consonância ou divergência.</p>
-                    </div>
-                    <div class="colmeia-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold); margin-bottom: 12px;"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                        <h3>Estrutura Preliminar Editável</h3>
-                        <p>Material técnico preliminar e não validado, disponibilizado em formato editável para desenvolvimento, adaptação e validação exclusiva do advogado responsável. Não constitui parecer jurídico, peça processual concluída ou documento apto a protocolo.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Você pode fazer internamente. A questão é se deve. -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>Você pode fazer internamente. A questão é se deve.</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 12px; line-height: 1.7;">
-                        A ferramenta representa apenas uma parte do resultado. A qualidade da entrega depende da estrutura de trabalho, da organização das informações, da auditoria das fontes e da supervisão humana. A diferença não está apenas no acesso à inteligência artificial, mas na capacidade de utilizá-la com critérios, rastreabilidade e responsabilidade.
-                    </p>
-                </div>
-
-                <div class="comparative-grid">
-                    <div class="comp-card">
-                        <h3>Ferramenta de IA genérica</h3>
-                        <p>Sua equipe assina o software, aprende a operar por tentativa e erro, cria os prompts, realiza a varredura e assume a responsabilidade pela auditoria do processo sem suporte externo especializado.</p>
-                    </div>
-                    <div class="comp-card">
-                        <h3>Contratar internamente</h3>
-                        <p>Criação de nova estrutura com custo fixo mensal contínuo de profissionais dedicados, treinamentos constantes e encargos trabalhistas, independentemente da oscilação do volume de demandas do mês.</p>
-                    </div>
-                    <div class="comp-card highlighted">
-                        <span class="comp-badge">Recomendado</span>
-                        <h3>Núcleo de Inteligência Jurídica</h3>
-                        <p>Contratação técnica sob demanda, com organização documental, pesquisa assistida, materiais editáveis e relatório de auditoria de fontes. O escritório mantém o controle da análise jurídica, da estratégia e da utilização profissional.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Compromissos da Operação -->
-        <section class="section-padding bg-alt">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>Compromissos da Operação</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
-                        Padrões objetivos aplicados ao fluxo de trabalho do Núcleo.
-                    </p>
-                </div>
-
-                <div class="commitments-grid">
-                    <div class="commitment-card">
-                        <div class="commitment-badge">7 etapas</div>
-                        <h3>Estratégia COLMEIA</h3>
-                        <p>Fluxo estruturado para contextualização, organização, pesquisa, mapeamento, conferência, integração e apresentação dos materiais.</p>
-                    </div>
-
-                    <div class="commitment-card">
-                        <div class="commitment-badge">Todas as entregas</div>
-                        <h3>Auditoria de fontes</h3>
-                        <p>Cada entrega é acompanhada de relatório de auditoria de fontes e indicação dos pontos que exigem conferência e validação profissional.</p>
-                    </div>
-
-                    <div class="commitment-card">
-                        <div class="commitment-badge">Antes dos autos</div>
-                        <h3>NDA e definição de escopo</h3>
-                        <p>Documentos sigilosos são recebidos somente depois da formalização contratual, definição do escopo e assinatura do acordo de confidencialidade.</p>
-                    </div>
-                </div>
-
-                <!--
-                MÉTRICAS FUTURAS — PUBLICAR SOMENTE COM DOCUMENTAÇÃO:
-                - escritórios atendidos sob NDA;
-                - volume documental processado;
-                - prazo médio efetivamente realizado;
-                - horas operacionais estimadas;
-                - entregas concluídas no prazo.
-                -->
-            </div>
-        </section>
-
-        <!-- A Curva de Adoção Não Espera -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>A Curva de Adoção Não Espera</h2>
-                </div>
-                <p style="margin-bottom: 20px; font-size: 1.0625rem; max-width: 900px; line-height: 1.7;">
-                    Levantamento da AASP com mais de 1.100 advogadas e advogados de todo o Brasil apontou que 87,4% dos respondentes já utilizam inteligência artificial no trabalho e 84,3% percebem ganho de produtividade. Ao mesmo tempo, 85,3% reconhecem a necessidade de capacitação específica, e 90,3% consideram que soluções desenvolvidas para a advocacia brasileira podem ser mais seguras e eficientes do que plataformas de uso geral.
-                </p>
-                <p style="margin-bottom: 16px; font-weight: 600; color: var(--accent-gold); font-size: 1.0625rem; max-width: 900px; line-height: 1.6;">
-                    Os dados reforçam que a vantagem competitiva não está apenas no acesso às ferramentas, mas na capacidade de utilizá-las com método, supervisão humana, segurança e rastreabilidade.
-                </p>
-                <p style="margin-bottom: 8px; font-size: 0.8125rem; color: var(--text-muted);">
-                    Fonte: <a href="https://www.aasp.org.br/na-midia/ia-ja-faz-parte-da-rotina-da-advocacia-brasileira/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold); text-decoration: underline;">AASP — “IA já faz parte da rotina da advocacia brasileira”. Publicado em 22/07/2026 e atualizado em 28/07/2026.</a>
-                </p>
-                <p style="font-size: 0.75rem; color: var(--text-dark); max-width: 900px; line-height: 1.5;">
-                    Os percentuais referem-se ao levantamento divulgado pela AASP em julho de 2026. A Colmeia Studios Academy não participou da pesquisa nem da apuração dos dados.
-                </p>
-            </div>
-        </section>
-
-        <!-- Para Quem É e Quando Não É Indicado -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>Para Quem o Núcleo Foi Criado</h2>
-                    <p>Perfil de atuação técnica direcionado exclusivamente a profissionais e estruturas da advocacia.</p>
-                </div>
-
-                <div class="compliance-wrapper">
-                    <div class="compliance-col allowed">
-                        <h3>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                            Para quem é indicado
-                        </h3>
-                        <ul>
-                            <li>Advogados e escritórios com autos extensos e grande volume documental.</li>
-                            <li>Equipes que precisam localizar e organizar fontes com mais rastreabilidade.</li>
-                            <li>Demandas com prazos reduzidos e alta carga operacional.</li>
-                            <li>Escritórios que desejam ampliar a capacidade de pesquisa sem aumentar imediatamente a estrutura fixa.</li>
-                            <li>Profissionais que precisam receber materiais organizados para revisão e validação.</li>
-                            <li>Departamentos jurídicos que enfrentam documentos, informações e referências dispersas.</li>
-                            <li>Advogados que querem conhecer o método antes de contratar uma demanda maior: a <a href="#auditoria-entrada" style="color: var(--accent-gold); text-decoration: underline;">Auditoria de Entrada</a> confere até 10 referências de uma peça sua.</li>
-                        </ul>
-                    </div>
-
-                    <div class="compliance-col forbidden">
-                        <h3>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                            Quando o serviço NÃO é indicado
-                        </h3>
-                        <ul>
-                            <li>Solicitações feitas por pessoas sem advogado responsável.</li>
-                            <li>Consultas jurídicas ou pedidos de orientação legal.</li>
-                            <li>Representação judicial ou extrajudicial.</li>
-                            <li>Protocolo autônomo de peças.</li>
-                            <li>Definição autônoma de tese ou estratégia processual.</li>
-                            <li>Demandas que exijam promessa ou garantia de resultado.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Método e Responsabilidade Técnica -->
-        <section class="section-padding bg-alt">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>Método e Responsabilidade Técnica</h2>
-                </div>
-                
-                <div class="bio-wrapper">
-                    <div class="bio-image-container" style="max-width: 260px;">
-                        <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, responsável técnico do Núcleo e fundador da Colmeia Studios Academy" loading="lazy" decoding="async" width="260" height="325" style="border-radius: 8px;">
-                    </div>
-                    
-                    <div class="bio-content">
-                        <h3>Núcleo de Inteligência Jurídica</h3>
-                        <div class="bio-role">Unidade especializada da Colmeia Studios Academy | Direção técnica de Cristian Santos Pimentel</div>
-                        <p class="bio-text">
-                            O Núcleo de Inteligência Jurídica atua exclusivamente no processamento técnico de informações, na pesquisa assistida por inteligência artificial, na organização documental e na auditoria exaustiva de fontes oficiais para escritórios de advocacia e departamentos jurídicos.
-                        </p>
-                        <p class="bio-text" style="margin-top: -12px;">
-                            A direção técnica e a concepção dos protocolos são conduzidas por <strong>Cristian Santos Pimentel</strong>, professor de inteligência artificial e fundador da Colmeia Studios Academy, com mais de 15 anos de atuação em tecnologia, marketing e comunicação. A operação técnica não presta assessoria jurídica, não substitui a atividade profissional privativa do advogado e não define teses ou juízos de valor sobre o mérito processual.
-                        </p>
-                        <p style="margin-bottom: 20px;">
-                            <a href="/sobre" class="link-secondary">Conheça mais sobre a Colmeia Studios Academy e a trajetória institucional &rarr;</a>
-                        </p>
-
-                        <div class="bio-trust-list">
-                            <div class="bio-trust-item">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                                <span>Operação técnica em ambiente seguro e controlado</span>
+                <div class="modalidades-grid">
+                    <!-- Modalidade 1: Auditoria de Revisão -->
+                    <div class="card pricing-card-highlight" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span class="badge-revisao">PORTA DE ENTRADA</span>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: var(--text-primary);">Auditoria de Revisão de Peça e Fontes</h3>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">
+                                Conferência técnica de precedentes e fontes citadas em petições já redigidas pela sua equipe, antes do protocolo.
+                            </p>
+                            
+                            <div class="price-compare">
+                                <span class="price-old">R$ 800</span>
+                                <span class="price-current">R$ 500</span>
+                                <span class="price-term">/ peça (pagamento único)</span>
                             </div>
-                            <div class="bio-trust-item">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
-                                <span>Auditoria e conferência direta de fontes oficiais em toda entrega</span>
+
+                            <div class="urgency-badge-box">
+                                <strong>Prazos e Urgência:</strong> Padrão até 5 dias úteis.<br>
+                                Urgência 72h: <strong>R$ 650</strong> (+30%) · Urgência 48h: <strong>R$ 750</strong> (+50%).<br>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">*Urgências sujeitas à capacidade operacional no momento.</span>
                             </div>
-                            <div class="bio-trust-item">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:var(--accent-gold);"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                                <span>Confidencialidade protegida por contrato e acordo de NDA</span>
+
+                            <ul style="list-style: none; padding: 0; margin: 20px 0; font-size: 0.875rem; color: var(--text-secondary);">
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ <strong>Até 10 referências</strong> (jurisprudência, legislação ou súmulas)</li>
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ Confronto literal com acórdãos e normas oficiais</li>
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ Classificação: Confirmada, Ressalva ou Bloqueada</li>
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ <strong>1 rodada de revalidação</strong> inclusa sem custo adicional</li>
+                                <li style="padding: 6px 0;">✓ <strong>Sem envio de autos</strong> ou dados sigilosos no primeiro contato</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="/auditoria-de-revisao" class="btn btn-gold" style="width: 100%; text-align: center; justify-content: center;">
+                                Conhecer a Auditoria de Revisão
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Modalidade 2: Demandas Completas -->
+                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; border: 1px solid var(--border-gold-subtle);">
+                        <div>
+                            <span class="badge-revisao" style="background: rgba(255,255,255,0.05); color: var(--text-secondary); border-color: rgba(255,255,255,0.1);">OPERAÇÃO COMPLETA</span>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: var(--text-primary);">Demandas Completas e Casos Complexos</h3>
+                            <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.5;">
+                                Pesquisa assistida, saneamento documental, cronologia fática e minutas preliminares editáveis desde a concepção da tese.
+                            </p>
+
+                            <div class="price-compare">
+                                <span class="price-current" style="font-size: 1.875rem;">A partir de R$ 1.800</span>
+                                <span class="price-term">a R$ 7.000 / demanda</span>
+                            </div>
+
+                            <div class="urgency-badge-box">
+                                <strong>Escopo por Faixas:</strong><br>
+                                Básico (R$ 1.800) · Intermediário (R$ 4.000) · Superior/Complexo (R$ 7.000).<br>
+                                <span style="font-size: 0.75rem; color: var(--text-muted);">Prazos e cronograma definidos na proposta técnica.</span>
+                            </div>
+
+                            <ul style="list-style: none; padding: 0; margin: 20px 0; font-size: 0.875rem; color: var(--text-secondary);">
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ Dossiê técnico estruturado com fichamento completo</li>
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ Matriz de documentos, precedentes e cronologia fática</li>
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ Minutas preliminares editáveis (.docx/.md) para o advogado</li>
+                                <li style="padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.05);">✓ Acordo de Confidencialidade (NDA) formal bilateral</li>
+                                <li style="padding: 6px 0;">✓ Sessão técnica de alinhamento com a equipe do caso</li>
+                            </ul>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="#triagem" class="btn btn-secondary" style="width: 100%; text-align: center; justify-content: center; border: 1px solid var(--border-gold); color: var(--accent-gold);">
+                                Solicitar triagem de caso
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. AMOSTRA E CASO DE REFERÊNCIA RESUMIDO -->
+        <section id="amostra" class="section-padding">
+            <span id="caso-referencia" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
+            <div class="container">
+                <div class="section-header-block text-center" style="max-width: 820px; margin: 0 auto 36px;">
+                    <span class="badge-revisao">Padrão de Entrega</span>
+                    <h2>Caso de referência e estrutura do relatório</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Entenda na prática como opera o apoio do Núcleo e a distinção indispensável entre as modalidades.
+                    </p>
+                </div>
+
+                <!-- Quadro Comparativo de Escopo -->
+                <div style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-gold-subtle); border-radius: 12px; padding: 24px; margin-bottom: 36px;">
+                    <h3 style="font-size: 1.125rem; color: var(--accent-gold); margin-bottom: 12px; font-weight: 700;">A distinção fundamental de atuação</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+                        <div style="padding: 16px; background: rgba(0,0,0,0.2); border-radius: 8px; border-left: 3px solid var(--accent-gold);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 6px;">Auditoria de Revisão (R$ 500)</strong>
+                            Verifica o material que o escritório já produziu. Confere se os até 10 precedentes citados na sua peça realmente existem nos repositórios oficiais e se o texto corresponde fielmente à decisão.
+                        </div>
+                        <div style="padding: 16px; background: rgba(0,0,0,0.2); border-radius: 8px; border-left: 3px solid #6BA4B8;">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 6px;">Demanda Completa (R$ 1.800 a R$ 7.000)</strong>
+                            Constrói a pesquisa e a organização técnica do zero: localiza fontes, monta o dossiê, cruza datas e autos, organiza a cronologia e entrega minutas preliminares para redação do escritório.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Caso de Referência Resumido -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 28px; align-items: start;">
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 28px;">
+                        <span class="badge-revisao" style="margin-bottom: 8px;">CASO REAL ANONIMIZADO</span>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-primary);">Execução Penal: Indulto Presidencial e Remição</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 16px;">
+                            Em caso complexo de execução penal com histórico de decisões contraditórias em varas de execução, a banca solicitou apoio técnico para saneamento fático e consolidação de teses dos tribunais superiores.
+                        </p>
+                        <div style="border-top: 1px solid rgba(255,255,255,0.06); padding-top: 16px; font-size: 0.8125rem; color: var(--text-secondary);">
+                            <div style="margin-bottom: 8px;">• <strong>Volume saneado:</strong> 42 laudas de certidões e peças condensadas em 18 laudas de síntese analítica.</div>
+                            <div style="margin-bottom: 8px;">• <strong>Cronologia:</strong> Linha do tempo tabular de 7 incidentes processuais e marcos de remição.</div>
+                            <div style="margin-bottom: 8px;">• <strong>Auditoria de fontes:</strong> 14 precedentes do STJ/STF checados no inteiro teor, com 2 ressalvas de contexto identificadas antes do protocolo.</div>
+                            <div>• <strong>Resultado:</strong> Advogado protocolou a tese com fundamentação exata e sem riscos de surpresa jurisprudencial.</div>
+                        </div>
+                    </div>
+
+                    <!-- Ficha de Amostra Técnica -->
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 28px; background: rgba(18, 14, 10, 0.8);">
+                        <h3 style="font-size: 1.125rem; color: var(--accent-gold); margin-bottom: 16px; font-weight: 700;">Exemplo de Classificação na Auditoria de Fontes</h3>
+                        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 0.8125rem;">
+                            <div style="padding: 12px; background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.2); border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                    <strong style="color: #4ade80;">STJ — HC 812.345/SP</strong>
+                                    <span style="background: rgba(34, 197, 94, 0.2); color: #4ade80; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.75rem;">CONFIRMADA</span>
+                                </div>
+                                <div style="color: var(--text-secondary);">Existência e correspondência literal verificadas no inteiro teor oficial. Citação apta para uso técnico.</div>
+                            </div>
+
+                            <div style="padding: 12px; background: rgba(234, 179, 8, 0.08); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                    <strong style="color: #facc15;">STJ — AgRg no REsp 1.945.112/PR</strong>
+                                    <span style="background: rgba(234, 179, 8, 0.2); color: #facc15; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.75rem;">RESSALVA</span>
+                                </div>
+                                <div style="color: var(--text-secondary);">Acórdão existente, porém o trecho citado constava em voto vencido isolado. Alerta de fragilidade argumentativa emitido.</div>
+                            </div>
+
+                            <div style="padding: 12px; background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: 8px;">
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                    <strong style="color: #f87171;">TJMG — Apelação 1.0024.18... (Inexistente)</strong>
+                                    <span style="background: rgba(239, 68, 68, 0.2); color: #f87171; padding: 2px 8px; border-radius: 4px; font-weight: 700; font-size: 0.75rem;">BLOQUEADA</span>
+                                </div>
+                                <div style="color: var(--text-secondary);">Número de processo ou ementa inexistente na base do tribunal. Bloqueio preventivo contra imputação de má-fé (<a href="https://www.tjmg.jus.br/portal-tjmg/noticias/uso-de-jurisprudencias-falsas-em-acao-de-acidente-de-transito-gera-multa.htm" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold); text-decoration: underline;">ver caso real do TJMG</a>).</div>
                             </div>
                         </div>
                     </div>
@@ -2182,481 +1868,372 @@
             </div>
         </section>
 
-        <!-- Metodologia -->
-        <section id="metodologia" class="mt-sec" aria-labelledby="mt-titulo">
-  <div class="mt-wrap">
-    <span class="mt-eyebrow">Base jurídica da metodologia</span>
-    <h2 id="mt-titulo" class="mt-title">Metodologia construída com advogados</h2>
-    <p class="mt-sub">A Colmeia Studios Academy não presta serviços privativos da advocacia. Por isso, a metodologia não foi desenvolvida de forma isolada.</p>
-    <p class="mt-lead">A Estratégia COLMEIA, os protocolos de pesquisa e os checklists de conferência do Núcleo foram desenvolvidos com advogados independentes, contratados especificamente para definir o que um material de apoio precisa ter para ser útil e seguro na rotina de um escritório.</p>
-    <p class="mt-lead"><strong>A atuação do Núcleo concentra-se na aplicação técnica da inteligência artificial, pesquisa assistida e integridade documental. O critério jurídico que orienta cada etapa foi estruturado com advogados no exercício da profissão.</strong></p>
-    <div class="mt-grid">
-      <article class="mt-card"><span class="mt-n">01</span><h3>Metodologia desenvolvida com advogados</h3><p>As sete etapas da Estratégia COLMEIA foram estruturadas com advogados independentes, a partir das necessidades reais da prática forense.</p></article>
-      <article class="mt-card"><span class="mt-n">02</span><h3>Checklists com critério jurídico</h3><p>Os pontos de conferência de cada entrega foram definidos por advogados: o que verificar, onde verificar e o que sinalizar para revisão.</p></article>
-      <article class="mt-card"><span class="mt-n">03</span><h3>Revisão metodológica contínua</h3><p>Protocolos e checklists são revisados periodicamente com apoio jurídico independente, acompanhando mudanças em fontes, tribunais e ferramentas.</p></article>
-      <article class="mt-card"><span class="mt-n">04</span><h3>Especialistas sob demanda</h3><p>Em demandas de maior complexidade, advogados independentes podem ser acionados para apoiar a definição dos critérios de pesquisa da área envolvida.</p></article>
-    </div>
-    <div class="mt-proof"><strong>Três advogados independentes</strong>, com atuação nas áreas penal, trabalhista e cível, participaram da construção da metodologia.</div>
-    <!-- CITAÇÃO OPCIONAL: manter comentada até haver declaração real e autorizada.
-    <blockquote class="mt-quote">"[declaração do advogado]"<cite>— [nome], OAB [UF/nº]</cite></blockquote>
-    -->
-  </div>
-</section>
-
-        <!-- Governança, Confidencialidade e Limites de Escopo -->
-        <section id="seguranca" class="section-padding bg-alt">
+        <!-- 4. MÉTODO COLMEIA E RESPONSABILIDADE TÉCNICA -->
+        <section id="metodo" class="section-padding bg-alt">
+            <span id="estrategia" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
+            <span id="metodologia" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
             <div class="container">
-                <div class="section-header-block">
-                    <h2>Governança, Confidencialidade e Limites de Escopo</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7; color: var(--accent-gold); font-weight: 600;">
-                         Aqui estão os controles que tornam a operação segura, rastreável e adequada ao trabalho profissional.
+                <div class="section-header-block text-center" style="max-width: 800px; margin: 0 auto 36px;">
+                    <span class="badge-revisao">Rigor Operacional</span>
+                    <h2>Método COLMEIA de Inteligência Documental</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Fluxo estruturado em 7 etapas para conferência minuciosa e pesquisa de alta precisão.
                     </p>
                 </div>
 
-                <!-- Aviso Jurídico Extenso Reposicionado do Hero -->
-                <div style="background: rgba(12, 12, 12, 0.8); border: 1px solid var(--border-gold-subtle); border-radius: 6px; padding: 20px 24px; font-size: 0.9375rem; color: #d0d0d0; line-height: 1.6; margin-bottom: 32px;">
-                    A Colmeia Studios Academy presta serviços técnicos de pesquisa assistida, processamento de informações, inteligência documental e organização de fontes. Não presta consultoria jurídica, não representa clientes, não protocola peças e não define estratégias processuais. A interpretação jurídica, a seleção das teses, a adaptação do material e sua utilização profissional permanecem sob responsabilidade exclusiva do advogado contratante.
+                <div class="method-steps-grid">
+                    <div class="method-step-card">
+                        <div class="method-step-num">C</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Contextualizar</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Compreensão do objetivo operacional e delimitação estrita dos quesitos técnicos, sem interferir na estratégia privativa da causa.
+                        </p>
+                    </div>
+
+                    <div class="method-step-card">
+                        <div class="method-step-num">O</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Organizar</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Catalogação, higienização de metadados e indexação das referências em repositório criptografado e isolado.
+                        </p>
+                    </div>
+
+                    <div class="method-step-card">
+                        <div class="method-step-num">L</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Localizar</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Busca exaustiva nos repositórios oficiais dos tribunais (STF, STJ, TST, TRFs, TJs e Diários Oficiais), descartando fontes não homologadas.
+                        </p>
+                    </div>
+
+                    <div class="method-step-card">
+                        <div class="method-step-num">M</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Mapear</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Mapeamento de teses convergentes, correntes minoritárias e súmulas aplicáveis ao recorte examinado.
+                        </p>
+                    </div>
+
+                    <div class="method-step-card">
+                        <div class="method-step-num">E</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Examinar</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Confronto literal entre o texto citado na minuta e o inteiro teor do julgado oficial, identificando correspondência, descontextualização ou inexistência.
+                        </p>
+                    </div>
+
+                    <div class="method-step-card">
+                        <div class="method-step-num">I</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Integrar</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Consolidação dos achados em fichamento técnico claro, estruturado e com apontamento objetivo de riscos e pontos fortes.
+                        </p>
+                    </div>
+
+                    <div class="method-step-card">
+                        <div class="method-step-num">A</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Apresentar</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Entrega do relatório estruturado em PDF e minutas preliminares editáveis (.docx/.md), com sessão técnica quando contratada.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="security-grid">
-                    <div class="sec-card">
-                        <div class="sec-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
-                        </div>
-                        <h3>Confidencialidade contratual (NDA)</h3>
-                        <p>A assinatura de Acordo de Não Divulgação (NDA) vinculado ao contrato ocorre antes de qualquer recebimento de autos ou documentos do caso.</p>
-                    </div>
-
-                    <div class="sec-card">
-                        <div class="sec-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                        </div>
-                        <h3>Uso Restrito de Dados</h3>
-                        <p>Os arquivos são utilizados exclusivamente para a execução do serviço contratado. Os dados processados não são utilizados para treinamento de modelos públicos.</p>
-                    </div>
-
-                    <div class="sec-card">
-                        <div class="sec-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
-                        </div>
-                        <h3>Política de Retenção e Descarte</h3>
-                        <p>Eliminação dos arquivos de trabalho conforme prazos definidos contratualmente e o ciclo técnico dos sistemas operacionais utilizados.</p>
-                    </div>
-
-                    <div class="sec-card">
-                        <div class="sec-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                        </div>
-                        <h3>Tratamento de Dados (LGPD)</h3>
-                        <p>Quando aplicável ao escopo contratado, a Colmeia Studios Academy realiza o tratamento das informações conforme as instruções documentadas do contratante.</p>
-                    </div>
-
-                    <!-- Novo Card 1: Natureza da auditoria de fontes -->
-                    <div class="sec-card">
-                        <div class="sec-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        </div>
-                        <h3>Natureza da auditoria de fontes</h3>
-                        <p>A auditoria de fontes é um procedimento técnico de rastreabilidade e conferência. Verifica a existência das referências, a correspondência das citações e a disponibilidade dos pontos de consulta. Não constitui parecer jurídico, certificação de pertinência ao caso concreto ou substituição da revisão profissional.</p>
-                    </div>
-
-                    <!-- Novo Card 2: Instrumentos contratuais -->
-                    <div class="sec-card">
-                        <div class="sec-icon">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                        </div>
-                        <h3>Instrumentos contratuais</h3>
-                        <p>O escopo, as responsabilidades das partes, as dependências da execução, os critérios de aceite, as exclusões, os prazos, o tratamento de dados e as condições da entrega são definidos no contrato, na Ordem de Serviço e no Acordo de Confidencialidade aplicáveis a cada demanda.</p>
-                    </div>
-                </div>
-
-                <div style="margin-top: 32px; background: rgba(12, 12, 12, 0.8); border: 1px solid var(--border-dark); border-radius: 6px; padding: 20px 24px; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-                    <strong style="color: var(--text-main); display: block; margin-bottom: 6px;">Protocolo de Segurança e Responsabilidade:</strong>
-                    A confidencialidade é protegida por contrato, controle de acesso, minimização de dados e procedimentos de segurança. Os arquivos são utilizados somente para a execução do serviço contratado e permanecem sujeitos aos prazos de retenção definidos contratualmente e ao ciclo técnico de eliminação dos sistemas utilizados. O escritório ou advogado contratante permanece responsável por definir as instruções, a finalidade e os limites do tratamento das informações compartilhadas. Solicitamos que informações confidenciais não sejam enviadas na triagem inicial.
-                </div>
-            </div>
-        </section>
-
-
-
-        <!-- Escopo e Vedações -->
-        <section class="section-padding">
-            <div class="container">
-                <div class="section-header-block">
-                    <h2>Escopo e Vedações</h2>
-                    <p>Transparência total sobre os limites de atuação técnica do Núcleo.</p>
-                </div>
-
-                <div class="table-responsive">
-                    <table class="custom-table mobile-card-table">
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">O Núcleo fornece</th>
-                                <th style="width: 50%;">Atividades não realizadas pelo Núcleo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="O Núcleo fornece">
-                                    <ul class="check-list">
-                                        <li>pesquisa assistida de jurisprudência e legislação;</li>
-                                        <li>resumo estruturado de documentos e autos extensos;</li>
-                                        <li>mapeamento estruturado de argumentos, documentos e fontes relacionadas;</li>
-                                        <li>estrutura preliminar editável para desenvolvimento e validação do advogado;</li>
-                                        <li>relatório de auditoria de fontes com registro de pontos de conferência.</li>
-                                    </ul>
-                                </td>
-                                <td data-label="Atividades não realizadas pelo Núcleo">
-                                    <ul class="cross-list">
-                                        <li>consultoria ou assessoria jurídica a partes;</li>
-                                        <li>definição autônoma de tese ou estratégia processual;</li>
-                                        <li>assinatura, protocolo ou peticionamento;</li>
-                                        <li>representação processual de qualquer natureza;</li>
-                                        <li>promessa ou garantia de resultado judicial.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div style="margin-top: 24px; background: rgba(12, 12, 12, 0.8); border: 1px solid var(--border-dark); border-radius: 6px; padding: 20px 24px; font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-                    <strong style="color: var(--text-main); display: block; margin-bottom: 6px;">Natureza e utilização dos materiais:</strong>
-                    Os materiais fornecidos constituem insumos técnicos editáveis para uso interno de advogados e escritórios. Não são entregues como peças finais concluídas, pareceres jurídicos ou documentos prontos para protocolo. A análise, a seleção de teses, a redação definitiva e a responsabilidade jurídica cabem exclusivamente ao profissional contratante.
+                <div style="margin-top: 36px; padding: 20px 24px; background: rgba(242, 167, 27, 0.05); border: 1px solid var(--border-gold-subtle); border-radius: 12px; text-align: center;">
+                    <p style="margin: 0; font-size: 0.875rem; color: var(--text-secondary); line-height: 1.6;">
+                        <strong style="color: var(--accent-gold);">Validação Metodológica Independente:</strong> Para assegurar o rigor técnico e a estrita separação entre apoio operacional e atuação privativa da advocacia, os critérios operacionais do método foram estruturados e revisados com o auxílio de três advogados independentes (penal, trabalhista e cível).
+                    </p>
                 </div>
             </div>
         </section>
 
-        <!-- Faixas de apoio técnico — referência por complexidade -->
-        <section id="valores" class="section-padding bg-alt">
+        <!-- 5. SEGURANÇA, CONFIDENCIALIDADE E LIMITES ÉTICOS -->
+        <section id="seguranca" class="section-padding">
             <div class="container">
-                <div class="section-header-block">
-                    <h2>Faixas de apoio técnico — referência por complexidade</h2>
-                    <p style="font-size: 1.0625rem; max-width: 900px; margin-top: 8px; line-height: 1.7;">
-                        Investimento sob consulta após triagem técnica do caso. Os valores abaixo representam patamares iniciais de referência conforme a complexidade documental e a extensão da pesquisa.
+                <div class="section-header-block text-center" style="max-width: 800px; margin: 0 auto 36px;">
+                    <span class="badge-revisao">Governança &amp; Sigilo</span>
+                    <h2>Segurança da informação e limites de atuação</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Ambiente técnico isolado, conformidade com a LGPD e respeito irrestrito às prerrogativas da advocacia.
                     </p>
                 </div>
 
-                <div class="pricing-table-wrapper">
-                    <table class="pricing-table">
-                        <thead>
-                            <tr>
-                                <th>Faixa de Demanda</th>
-                                <th>Critérios do Caso</th>
-                                <th>Prazo Padrão</th>
-                                <th>Valor de Referência</th>
-                                <th>Revisões Incluídas</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr style="background: rgba(242, 182, 0, 0.06); box-shadow: inset 3px 0 0 var(--accent-gold);">
-                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Auditoria de Entrada <a href="#auditoria-entrada" style="display:block; font-size:0.75rem; font-weight:600; color: var(--accent-gold); text-decoration: underline; margin-top:4px;">ver detalhes</a></td>
-                                <td data-label="Critérios">Conferência de até 10 referências da sua própria pesquisa na fonte oficial, com status por referência; somente referências públicas, sem envio de autos</td>
-                                <td data-label="Prazo de entrega">Até 5 dias úteis</td>
-                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">R$ 800 (valor fixo)</td>
-                                <td data-label="Revisões">1 revalidação</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Essencial</td>
-                                <td data-label="Critérios">Pesquisa pontual de precedentes; organização de documentos curtos; estrutura preliminar de apoio</td>
-                                <td data-label="Prazo de entrega">Até 5 dias úteis</td>
-                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">a partir de R$ 1.800, sob consulta</td>
-                                <td data-label="Revisões">1</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Padrão (Apoio Técnico Completo)</td>
-                                <td data-label="Critérios">Pesquisa aprofundada de fontes; mapeamento de argumentos; autos de média complexidade; 1 manifestação indicada pelo advogado para pesquisa e organização técnica</td>
-                                <td data-label="Prazo de entrega">Até 8 dias úteis</td>
-                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">a partir de R$ 4.000, sob consulta</td>
-                                <td data-label="Revisões">2</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Faixa" style="font-weight: 700; color: #ffffff;">Complexa / Tribunais Superiores</td>
-                                <td data-label="Critérios">Múltiplos volumes, documentos complexos, grande volume de fontes, tribunais superiores</td>
-                                <td data-label="Prazo de entrega">Até 12 dias úteis</td>
-                                <td data-label="Valor de referência" style="color: var(--accent-gold); font-weight: 700;">a partir de R$ 7.000, sob consulta</td>
-                                <td data-label="Revisões">2 a 3</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <div class="security-pillars-grid">
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 24px;">
+                        <div style="font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-gold);">🔒</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Sem envio de autos no primeiro contato</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            A triagem avalia somente matéria, volume e prazo. Nunca envie peças com nomes de partes, dados sigilosos ou segredo de justiça no formulário inicial.
+                        </p>
+                    </div>
 
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 24px; font-size: 0.875rem; color: var(--text-muted);">
-                    <p>Regime de urgência: entrega em até 72 horas com acréscimo de 30% sobre o valor de referência; entrega em até 48 horas com acréscimo de 50% sobre o valor de referência. Valores sujeitos a confirmação após triagem técnica do caso.</p>
-                    <p><strong style="color: var(--text-main);">Auditoria de Entrada:</strong> valor fixo de R$ 800 para até 10 referências. A triagem confirma apenas se o material cabe nesse escopo; volumes maiores seguem as faixas acima.</p>
-                    <p style="color: var(--text-main); font-weight: 500;"><strong>Contratação sob demanda:</strong> em vez de criar uma estrutura fixa para pesquisas e organização documental, o escritório contrata o suporte técnico conforme o volume e a complexidade de cada demanda.</p>
-                    <p style="color: var(--text-main); font-weight: 500;"><strong>Recorrência:</strong> Para escritórios com volume contínuo, o Núcleo opera em formato de cotas mensais de apoio — proposta sob consulta após triagem.</p>
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 24px;">
+                        <div style="font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-gold);">📜</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Acordo de Confidencialidade (NDA)</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Todas as demandas e revisões são cobertas por NDA bilateral formal com cláusulas expressas de não-divulgação e sigilo profissional rigoroso.
+                        </p>
+                    </div>
+
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 24px;">
+                        <div style="font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-gold);">🛡️</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Isolamento de dados e LGPD</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            Seus documentos não são usados para treinar modelos públicos de IA. Utilizamos ferramentas empresariais com isolamento completo e destruição segura após a entrega.
+                        </p>
+                    </div>
+
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 24px;">
+                        <div style="font-size: 1.5rem; margin-bottom: 12px; color: var(--accent-gold);">⚖️</div>
+                        <h3 style="font-size: 1.125rem; color: var(--text-primary); margin-bottom: 8px;">Não advocacia e limites estatutários</h3>
+                        <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                            O Núcleo realiza exclusivamente apoio técnico e pesquisa documental. Não prestamos assessoria jurídica privativa nem assinamos petições. A titularidade da causa é 100% do advogado.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- FAQ -->
-        <section id="faq" class="section-padding bg-alt">
+        <!-- 6. TABELA DE INVESTIMENTO E PRAZOS -->
+        <section id="investimento" class="section-padding bg-alt">
+            <span id="valores" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
             <div class="container">
-                <div class="section-header-block text-center">
+                <div class="section-header-block text-center" style="max-width: 800px; margin: 0 auto 36px;">
+                    <span class="badge-revisao">Transparência Comercial</span>
+                    <h2>Investimento e prazos operacionais</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Valores previsíveis e estruturados para atender desde a revisão de uma peça até grandes operações contenciosas.
+                    </p>
+                </div>
+
+                <div class="pricing-table-grid">
+                    <!-- Faixa 1: Auditoria de Revisão -->
+                    <div class="card pricing-card-highlight" style="display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span class="badge-revisao">PORTA DE ENTRADA</span>
+                            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 6px;">Auditoria de Revisão</h3>
+                            <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 12px;">Conferência de até 10 referências em peça já pronta.</p>
+                            
+                            <div class="price-compare" style="margin: 12px 0;">
+                                <span class="price-old">R$ 800</span>
+                                <span class="price-current" style="font-size: 2rem;">R$ 500</span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 16px;">Pagamento único por peça</div>
+
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
+                                <div>• <strong>Prazo padrão:</strong> até 5 dias úteis</div>
+                                <div>• <strong>Urgência 72h:</strong> R$ 650 (+30%)</div>
+                                <div>• <strong>Urgência 48h:</strong> R$ 750 (+50%)</div>
+                                <div>• <strong>Revalidação:</strong> 1 rodada inclusa</div>
+                                <div style="margin-top: 6px; font-size: 0.75rem; color: var(--text-muted);">*Urgências sob consulta de capacidade.</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="/auditoria-de-revisao" class="btn btn-gold" style="width: 100%; text-align: center; justify-content: center; font-size: 0.875rem;">
+                                Contratar Auditoria
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Faixa 2: Apoio Básico / Rotina -->
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 6px;">Apoio Básico / Rotina</h3>
+                            <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 12px;">Pesquisa de jurisprudência e estruturação de petições comuns.</p>
+                            
+                            <div class="price-compare" style="margin: 12px 0;">
+                                <span class="price-current" style="font-size: 1.75rem;">R$ 1.800</span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 16px;">Por demanda técnica</div>
+
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
+                                <div>• <strong>Prazo médio:</strong> 5 a 7 dias úteis</div>
+                                <div>• Até 2 tribunais pesquisados</div>
+                                <div>• Relatório técnico com matriz de fontes</div>
+                                <div>• Minutas preliminares editáveis (.docx)</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="#triagem" class="btn btn-secondary" style="width: 100%; text-align: center; justify-content: center; font-size: 0.875rem; border: 1px solid var(--border-gold-subtle); color: var(--text-primary);">
+                                Solicitar triagem
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Faixa 3: Média Complexidade -->
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 6px;">Média Complexidade</h3>
+                            <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 12px;">Autos volumosos, temas correlatos e múltiplos réus.</p>
+                            
+                            <div class="price-compare" style="margin: 12px 0;">
+                                <span class="price-current" style="font-size: 1.75rem;">R$ 4.000</span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 16px;">Por demanda técnica</div>
+
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
+                                <div>• <strong>Prazo médio:</strong> 7 a 12 dias úteis</div>
+                                <div>• Cronologia fática e incidentes</div>
+                                <div>• Confronto jurisprudencial aprofundado</div>
+                                <div>• Sessão técnica de alinhamento</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="#triagem" class="btn btn-secondary" style="width: 100%; text-align: center; justify-content: center; font-size: 0.875rem; border: 1px solid var(--border-gold-subtle); color: var(--text-primary);">
+                                Solicitar triagem
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Faixa 4: Alta Complexidade -->
+                    <div class="card" style="border: 1px solid var(--border-gold-subtle); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <h3 style="font-size: 1.25rem; color: var(--text-primary); margin-bottom: 6px;">Alta Complexidade</h3>
+                            <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 12px;">Tribunais Superiores, repercussão geral e sustentação oral.</p>
+                            
+                            <div class="price-compare" style="margin: 12px 0;">
+                                <span class="price-current" style="font-size: 1.75rem;">R$ 7.000</span>
+                            </div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted); margin-bottom: 16px;">Por demanda técnica</div>
+
+                            <div style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 12px;">
+                                <div>• <strong>Prazo:</strong> Cronograma sob medida</div>
+                                <div>• Dossiê analítico exaustivo (STJ/STF)</div>
+                                <div>• Matriz de divergência jurisprudencial</div>
+                                <div>• Roteiro estruturado para sustentação</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 20px;">
+                            <a href="#triagem" class="btn btn-secondary" style="width: 100%; text-align: center; justify-content: center; font-size: 0.875rem; border: 1px solid var(--border-gold-subtle); color: var(--text-primary);">
+                                Solicitar triagem
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 28px; text-align: center; font-size: 0.8125rem; color: var(--text-muted);">
+                    Pagamento via Pix ou transferência com emissão de nota fiscal de serviços. Condições formalizadas em proposta técnica prévia.
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. PERGUNTAS FREQUENTES (FAQ) -->
+        <section id="duvidas" class="section-padding">
+            <span id="faq" style="display:block; position:relative; top:-80px; visibility:hidden;"></span>
+            <div class="container" style="max-width: 900px;">
+                <div class="section-header-block text-center" style="margin-bottom: 36px;">
+                    <span class="badge-revisao">Esclarecimentos</span>
                     <h2>Perguntas Frequentes</h2>
-                    <p>Esclarecimentos técnicos sobre a atuação do Núcleo.</p>
-                </div>
-
-                <div class="faq-accordion">
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>O Núcleo presta consultoria jurídica?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Não. O Núcleo presta apoio técnico em pesquisa assistida, inteligência documental, organização de informações e auditoria de fontes. A interpretação jurídica, a orientação ao cliente, a definição da estratégia processual e a utilização do material são responsabilidades do advogado.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Quem pode contratar o serviço?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>O serviço é destinado a advogados inscritos na OAB, escritórios de advocacia, departamentos jurídicos e profissionais de apoio devidamente autorizados por advogado responsável. Não atendemos diretamente pessoas físicas ou organizações sem advogado responsável pela demanda.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>O material é entregue pronto para protocolo?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Não. O material é entregue como dossiê técnico, relatório de fontes e estrutura preliminar editável. Antes de qualquer utilização profissional ou processual, o advogado responsável deverá revisar, adaptar, validar e assumir integralmente o conteúdo.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Como as fontes são verificadas?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Todas as referências localizadas passam por procedimento de redução de riscos com verificação direta em bases oficiais, diários de justiça, repositórios de tribunais e legislação antes de comporem o relatório de auditoria de fontes.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>A inteligência artificial pode apresentar informações incorretas?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Sim. Ferramentas de inteligência artificial podem produzir referências imprecisas ou inexistentes. Por isso, reduzimos o risco de referências inexistentes ou incorretas por meio da conferência direta das fontes e do registro dos pontos que precisam de validação profissional na Estratégia COLMEIA.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Como os documentos são protegidos?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>A confidencialidade é protegida por contrato (NDA), controle de acesso, minimização de dados e procedimentos de segurança. Os insumos do seu caso não são utilizados para treinar modelos públicos de inteligência artificial.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Posso enviar autos na triagem inicial?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Não. Na triagem inicial solicitamos apenas estimativas de volume e resumo operacional sem dados sensíveis. O envio de autos ocorre apenas após a assinatura do NDA e formalização contratual.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Quem define a estratégia processual?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>A definição da tese, a escolha dos argumentos jurídicos e a condução da estratégia processual cabem exclusivamente ao advogado contratante.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Qual é o prazo de entrega?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Os prazos variam entre 5 e 12 dias úteis conforme a faixa de complexidade do caso (Essencial: até 5 dias úteis; Padrão: até 8 dias úteis; Complexa: até 12 dias úteis). Para demandas urgentes, há regime de urgência: entrega em até 72 horas, com acréscimo de 30%, ou em até 48 horas, com acréscimo de 50% sobre o valor de referência.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>O que é a Auditoria de Entrada?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>É uma auditoria avulsa de até 10 referências da sua própria pesquisa (sua, do estagiário ou de uma IA), com entrega do Relatório de Auditoria de Fontes: ficha por referência com status (confirmada, com ressalva ou bloqueada para citação) e o local de conferência registrado. Valor fixo de R$ 800, prazo de até 5 dias úteis e 1 revalidação após os ajustes.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>A Auditoria de Entrada exige enviar os autos do processo?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Não. Nesta modalidade são enviadas apenas as referências a conferir (precedentes, ementas, artigos de lei), que são documentos públicos. Autos e dados de partes só entram nas demandas completas, após NDA e Ordem de Serviço.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Qual a diferença entre a Auditoria de Entrada e a faixa Essencial?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>A Auditoria de Entrada confere referências que você já pesquisou. A faixa Essencial é uma demanda completa de pesquisa e organização feita pelo Núcleo, a partir de R$ 1.800. A primeira audita o seu material; a segunda produz o material.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>O serviço garante resultado judicial?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Não. O serviço não oferece garantia de resultado. Decisões jurídicas e processuais dependem das circunstâncias de cada caso, da atuação dos profissionais responsáveis e das autoridades competentes.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Como funciona a contratação?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>O primeiro contato pode ser realizado diretamente pelo WhatsApp, sem compartilhamento de informações sigilosas. Se houver interesse em avançar, o solicitante poderá preencher a triagem técnica para alinhamento do escopo e elaboração da proposta. O recebimento dos autos ocorre somente depois da formalização contratual, da emissão da Ordem de Serviço e da assinatura do acordo de confidencialidade.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>A auditoria de fontes equivale a um parecer jurídico?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Não. A auditoria de fontes é um procedimento técnico de checagem, rastreabilidade e correspondência entre referências citadas e bases consultadas. Ela não constitui análise de mérito, orientação legal ou parecer jurídico.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>Até onde vai a responsabilidade técnica do Núcleo?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>O Núcleo responde pelo cumprimento do procedimento técnico contratado, pela organização documental e pela transparência do relatório de fontes. A escolha da tese, a adequação das referências ao caso concreto e a validação final pertencem ao advogado responsável.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>O que está incluído na entrega?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>Entregamos um dossiê técnico estruturado, a estrutura preliminar editável e o relatório completo de auditoria de fontes contendo todos os pontos de conferência para a validação final do advogado.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-trigger" aria-expanded="false">
-                            <span>O Núcleo conta com advogados especialistas?</span>
-                            <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-content">
-                            <p>O Núcleo conta com a participação de profissionais jurídicos independentes no aperfeiçoamento de sua metodologia, no desenvolvimento de protocolos e na definição de critérios especializados de pesquisa e organização documental. Quando necessário, especialistas podem ser acionados conforme a área envolvida e a complexidade da demanda. A interpretação jurídica, a definição da estratégia e a validação final permanecem sob responsabilidade exclusiva do advogado contratante.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Converse diretamente sobre a sua demanda (CTA Final) -->
-        <section class="section-padding bg-alt">
-            <div class="container text-center">
-                <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-gold-subtle); border-radius: 8px; padding: 40px 24px;">
-                    <h2 style="margin-bottom: 16px;">Converse diretamente sobre a sua demanda</h2>
-                    <p style="font-size: 1.0625rem; color: var(--text-muted); margin-bottom: 28px; line-height: 1.7;">
-                        Fale diretamente com a equipe técnica do Núcleo pelo WhatsApp para alinhar o escopo da sua necessidade técnica.
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Tudo o que você precisa saber sobre o funcionamento e as garantias do Núcleo.
                     </p>
-                    <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
-                        <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20uma%20demanda%20t%C3%A9cnica%20do%20escrit%C3%B3rio." 
-                           class="btn btn-gold btn-lg" 
-                           target="_blank" 
-                           rel="noopener noreferrer" 
-                           aria-label="Falar com o Núcleo pelo WhatsApp">
-                            Conversar com o Núcleo pelo WhatsApp
-                        </a>
-                        <p style="font-size: 0.8125rem; color: var(--text-dark); margin-top: 4px;">
-                            Não envie autos, nomes das partes, números de processos sob sigilo ou dados pessoais sensíveis pelo primeiro contato no WhatsApp. O compartilhamento de documentos ocorrerá somente depois da definição do escopo, da formalização da contratação e da assinatura do acordo de confidencialidade.
-                        </p>
-                        <p style="font-size: 0.875rem; margin-top: 8px;">
-                            Prefere apresentar o caso por escrito? <a href="#triagem" style="color: var(--accent-gold); text-decoration: underline;">Preencha a triagem técnica inicial abaixo &darr;</a>
-                        </p>
+                </div>
+
+                <div class="faq-list">
+                    <!-- Q1 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" type="button">
+                            <span>O Núcleo presta consultoria jurídica ou advoga?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Não. O Núcleo de Inteligência Jurídica presta exclusivamente apoio técnico operacional, pesquisa assistida de fontes e estruturação documental. Não prestamos consultoria jurídica, não emitimos pareceres privativos da advocacia e não assinamos peças judiciais. Todas as decisões técnicas e estratégicas competem privativamente ao advogado responsável pelo processo (Lei Federal 8.906/1994).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" type="button">
+                            <span>Como funciona a Auditoria de Revisão de R$ 500?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>É o primeiro degrau de contratação do Núcleo. O escritório nos envia uma lista de até 10 referências (jurisprudência, normas ou precedentes) que pretende citar em uma peça pronta. Nós auditamos cada citação diretamente nos repositórios oficiais dos tribunais e entregamos um relatório técnico com a classificação de cada fonte (Confirmada, Ressalva ou Bloqueada) e os apontamentos de conformidade textual. O valor é fixo em R$ 500, com prazo de até 5 dias úteis e 1 rodada de revalidação inclusa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" type="button">
+                            <span>E se meu prazo for urgente?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Para a Auditoria de Revisão, dispomos de faixas de urgência: entrega em 72 horas úteis por R$ 650 (+30%) e em 48 horas úteis por R$ 750 (+50%). A disponibilidade de atendimento em prazo de urgência depende da nossa capacidade operacional no momento e deve ser confirmada previamente na triagem técnica.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q4 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" type="button">
+                            <span>Meus dados ou peças serão usados para treinar modelos de IA?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Não. O Núcleo opera com políticas rigorosas de isolamento de dados e confidencialidade. Utilizamos ferramentas e APIs empresariais com cláusulas contratuais de não-treinamento e não-retenção de dados. As informações fornecidas são utilizadas unicamente para a execução do serviço contratado, sob estrito sigilo e conformidade com a LGPD.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q5 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" type="button">
+                            <span>Preciso enviar os autos do processo?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>Não. No primeiro contato ou triagem, solicitamos apenas a descrição genérica do recorte da demanda, o tipo de matéria jurídica e o volume aproximado de fontes ou laudas. Autos integrais, dados de partes ou documentos sigilosos nunca devem ser enviados no primeiro contato e só são recebidos após a formalização de proposta e assinatura de acordo de confidencialidade (NDA).</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q6 -->
+                    <div class="faq-item">
+                        <button class="faq-trigger" aria-expanded="false" type="button">
+                            <span>Como é feita a entrega e em que formato recebo o material?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">
+                                <p>A entrega é realizada em formato digital, incluindo o Relatório Técnico de Auditoria de Fontes (PDF estruturado) com links e transcrições de controle, e, nas demandas completas, a matriz de referências e as minutas preliminares em formato editável (.docx ou .md), prontas para incorporação pela equipe jurídica do escritório.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Lead Magnet (Desativado conforme especificação até pronta disponibilização do material) -->
-        <!-- 
-        <section class="section-padding">
-            <div class="container">
-                <div class="lead-magnet-card">
-                    <div class="lead-magnet-info">
-                        <h3>Guia de Verificação de Fontes em Pesquisa Jurídica Assistida por IA</h3>
-                        <p style="color: var(--text-muted); margin-bottom: 16px;">Baixe gratuitamente nosso checklist prático para auditoria de precedentes em seu escritório:</p>
-                        <ul class="check-list" style="margin-bottom: 20px;">
-                            <li>Checklist de auditoria de precedentes;</li>
-                            <li>Sinais de alucinação de IA;</li>
-                            <li>Modelo de registro de fontes;</li>
-                            <li>Boas práticas de prompting jurídico.</li>
-                        </ul>
-                    </div>
-                    <div class="lead-magnet-form">
-                        <form id="form-lead-magnet">
-                            <div class="form-group" style="margin-bottom: 12px;">
-                                <label for="lead_nome">Nome completo</label>
-                                <input type="text" id="lead_nome" name="lead_nome" required class="form-input">
-                            </div>
-                            <div class="form-group" style="margin-bottom: 16px;">
-                                <label for="lead_email">E-mail corporativo</label>
-                                <input type="email" id="lead_email" name="lead_email" required class="form-input">
-                            </div>
-                            <button type="submit" class="btn btn-gold btn-block">Baixar Guia Gratuitamente</button>
-                        </form>
-                    </div>
+        <!-- 8. CONTATO E TRIAGEM TÉCNICA -->
+        <section id="triagem" class="section-padding bg-alt">
+            <div class="container" style="max-width: 840px;">
+                <div class="section-header-block text-center" style="margin-bottom: 32px;">
+                    <span class="badge-revisao">Canal Direto</span>
+                    <h2>Triagem técnica inicial</h2>
+                    <p class="section-subtitle" style="color: var(--text-secondary); margin-top: 8px;">
+                        Preencha o formulário abaixo para avaliarmos a viabilidade do atendimento. Não envie autos integrais ou dados sigilosos nesta etapa.
+                    </p>
                 </div>
-            </div>
-        </section>
-        -->
 
-        <!-- Formulário de Triagem -->
-        <section id="triagem" class="section-padding">
-            <div class="container">
-                <div style="max-width: 800px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 8px; padding: 40px 32px;">
-                    <div class="section-header-block text-center" style="margin-bottom: 32px;">
-                        <h2>Triagem técnica inicial</h2>
-                        <p>Se você já possui informações suficientes sobre a demanda, preencha os dados iniciais abaixo para avaliação de viabilidade técnica, complexidade e enquadramento da faixa de apoio. Não inclua nos campos de texto nomes das partes, números de processos sob sigilo, dados pessoais sensíveis ou outras informações que permitam identificar o caso nesta etapa.</p>
+                <div class="card" style="border: 1px solid var(--border-gold-subtle); padding: 32px; background: var(--bg-card);">
+                    <div style="background: rgba(242, 167, 27, 0.08); border-left: 3px solid var(--accent-gold); padding: 12px 16px; border-radius: 6px; margin-bottom: 24px; font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+                        <strong style="color: var(--accent-gold);">Aviso de Privacidade e Sigilo:</strong> A triagem destina-se exclusivamente à definição de escopo e viabilidade técnica. Não inclua nomes de partes, dados protegidos por segredo de justiça ou documentos integrais.
                     </div>
 
                     <form id="form-triagem" name="nucleo-inteligencia-juridica" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
                         <input type="hidden" name="form-name" value="nucleo-inteligencia-juridica" />
                         <p class="hidden" style="display:none;"><label>Não preencha: <input name="bot-field" /></label></p>
+                        
                         <div class="form-grid">
                             <div class="form-group">
-                                <label for="nome_advogado">Nome do advogado ou profissional solicitante *</label>
+                                <label for="nome_advogado">Nome do solicitante *</label>
                                 <input type="text" id="nome_advogado" name="nome_advogado" required class="form-input">
                             </div>
 
@@ -2672,7 +2249,7 @@
                                     <option value="Sou advogado">Sou advogado</option>
                                     <option value="Represento um escritório de advocacia">Represento um escritório de advocacia</option>
                                     <option value="Represento um departamento jurídico">Represento um departamento jurídico</option>
-                                    <option value="Sou profissional de apoio autorizado pelo advogado responsável">Sou profissional de apoio autorizado pelo advogado responsável</option>
+                                    <option value="Sou profissional de apoio autorizado">Sou profissional de apoio autorizado</option>
                                     <option value="Outro">Outro</option>
                                 </select>
                             </div>
@@ -2688,149 +2265,126 @@
                             </div>
 
                             <div class="form-group full-width">
-                                <label for="prazo_esperado">Prazo esperado para conclusão da demanda *</label>
-                                <select id="prazo_esperado" name="prazo_esperado" required class="form-input">
-                                    <option value="">Selecione o prazo desejado</option>
-                                    <option value="Até 48 horas">Até 48 horas</option>
-                                    <option value="Até 72 horas">Até 72 horas</option>
-                                    <option value="De 3 a 5 dias úteis">De 3 a 5 dias úteis</option>
-                                    <option value="De 6 a 8 dias úteis">De 6 a 8 dias úteis</option>
-                                    <option value="De 9 a 12 dias úteis">De 9 a 12 dias úteis</option>
-                                    <option value="Ainda não definido">Ainda não definido</option>
+                                <label for="tipo_demanda">Modalidade de interesse *</label>
+                                <select id="tipo_demanda" name="tipo_demanda" required class="form-input">
+                                    <option value="">Selecione a modalidade</option>
+                                    <option value="Auditoria de Revisão (R$ 500)">Auditoria de Revisão (De R$ 800 por R$ 500 — até 10 referências)</option>
+                                    <option value="Demanda Completa - Rotina (a partir de R$ 1.800)">Demanda Completa — Apoio Básico / Rotina (a partir de R$ 1.800)</option>
+                                    <option value="Demanda Completa - Média Complexidade (a partir de R$ 4.000)">Demanda Completa — Média Complexidade (a partir de R$ 4.000)</option>
+                                    <option value="Demanda Completa - Alta Complexidade (a partir de R$ 7.000)">Demanda Completa — Tribunais Superiores (a partir de R$ 7.000)</option>
+                                    <option value="Dúvida geral sobre o Núcleo">Dúvida geral / Outro</option>
                                 </select>
                             </div>
 
                             <div class="form-group full-width">
-                                <label for="area_direito">Área do direito ou tema da demanda</label>
-                                <input type="text" id="area_direito" name="area_direito" placeholder="Ex.: Cível, Empresarial, Tributário, Trabalhista ou Penal" class="form-input">
+                                <label for="prazo_esperado">Prazo esperado para conclusão *</label>
+                                <select id="prazo_esperado" name="prazo_esperado" required class="form-input">
+                                    <option value="">Selecione o prazo desejado</option>
+                                    <option value="Urgente: Até 48 horas úteis (R$ 750 na Auditoria)">Urgente: Até 48 horas úteis (+50% / R$ 750)</option>
+                                    <option value="Urgente: Até 72 horas úteis (R$ 650 na Auditoria)">Urgente: Até 72 horas úteis (+30% / R$ 650)</option>
+                                    <option value="Padrão: Até 5 dias úteis (R$ 500 na Auditoria)">Padrão: Até 5 dias úteis (R$ 500)</option>
+                                    <option value="A combinar na proposta técnica">A combinar na proposta técnica</option>
+                                </select>
                             </div>
 
                             <div class="form-group full-width">
-                                <label for="volume_documental">Estimativa de volume documental</label>
-                                <textarea id="volume_documental" name="volume_documental" rows="3" placeholder="Páginas, volumes, peças da parte contrária, acórdãos etc." class="form-input"></textarea>
+                                <label for="resumo_demanda">Descrição sintética da demanda técnica *</label>
+                                <textarea id="resumo_demanda" name="resumo_demanda" required rows="4" class="form-input" placeholder="Descreva brevemente a matéria e os quesitos técnicos desejados. NÃO inclua dados de partes ou peças sob segredo de justiça."></textarea>
                             </div>
 
-                            <div class="form-group full-width">
-                                <label for="resumo_operacional">Resumo técnico / escopo pretendido</label>
-                                <textarea id="resumo_operacional" name="resumo_operacional" rows="3" placeholder="Descreva somente o tipo de trabalho necessário, sem detalhes sigilosos." class="form-input"></textarea>
+                            <div class="form-group full-width checkbox-group" style="margin-top: 8px;">
+                                <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.8125rem; color: var(--text-secondary); cursor: pointer;">
+                                    <input type="checkbox" id="concordo_lgpd" name="concordo_lgpd" required style="margin-top: 3px;">
+                                    <span>Declaro que li e concordo com o processamento dos dados para fins de triagem técnica e confirmo que não inclui dados sigilosos ou autos de processos neste formulário.</span>
+                                </label>
                             </div>
                         </div>
 
-                        <!-- Checkbox Confirmação do Advogado -->
-                        <div class="checkbox-group" style="margin-top: 16px;">
-                            <input type="checkbox" id="confirmacao_advogado" name="confirmacao_advogado" required>
-                            <label for="confirmacao_advogado">
-                                Confirmo que a demanda será conduzida, revisada e juridicamente validada por advogado responsável. *
-                            </label>
+                        <div id="form-feedback" class="form-feedback-message" role="status" aria-live="polite" style="display: none; margin-top: 16px;"></div>
+
+                        <div style="margin-top: 24px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center;">
+                            <button type="submit" id="btn-submit-triagem" class="btn btn-gold" style="flex: 1; min-width: 200px; justify-content: center;">
+                                Enviar triagem técnica
+                            </button>
+                            <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20uma%20demanda%20t%C3%A9cnica%20do%20escrit%C3%B3rio." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="border: 1px solid var(--border-gold-subtle); color: var(--text-secondary); font-size: 0.8125rem;">
+                                Falar diretamente no WhatsApp
+                            </a>
                         </div>
-
-                        <!-- Checkbox LGPD / Privacidade -->
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="lgpd_consent" name="lgpd_consent" required>
-                            <label for="lgpd_consent">
-                                Declaro que li a <a href="privacidade.html" target="_blank" style="color: var(--accent-gold); text-decoration: underline;">Política de Privacidade</a> e estou ciente do tratamento dos dados necessários para análise da solicitação, contato por WhatsApp e elaboração de eventual proposta técnica. *
-                            </label>
-                        </div>
-
-                        <!-- Aviso antes do envio -->
-                        <div class="form-warning-notice">
-                            Este formulário destina-se exclusivamente ao contato inicial e à triagem preliminar. Não informe nos campos nomes das partes, números de processos sob sigilo, dados pessoais sensíveis ou detalhes que permitam identificar o caso nesta etapa. O compartilhamento de documentos, quando necessário, ocorrerá somente depois da definição do escopo, da formalização da contratação e da assinatura do acordo de confidencialidade, por canal indicado ao contratante.
-                        </div>
-
-                        <div id="form-feedback" class="form-feedback-message" style="display: none;"></div>
-
-                        <button type="submit" id="btn-submit-triagem" class="btn btn-gold btn-block" style="padding: 16px;">Solicitar triagem técnica</button>
                     </form>
                 </div>
             </div>
         </section>
 
-        <!-- Elo Educacional: Formação em Pesquisa Assistida por IA -->
-        <section class="section-padding" style="background: rgba(18, 14, 10, 0.7); border-top: 1px solid var(--border-gold-subtle); padding: 40px 0;">
-            <div class="container text-center">
-                <p style="font-size: 0.9375rem; color: var(--text-muted); margin-bottom: 8px;">Deseja capacitar sua equipe interna no uso técnico e seguro de inteligência artificial?</p>
-                <p style="font-size: 1.0625rem; color: var(--text-light);"><a href="/cursos/pesquisa-assistida-ia" style="color: var(--accent-gold); text-decoration: underline; font-weight: 600;">Conheça a formação em Pesquisa Assistida por IA para Advocacia da Colmeia Studios Academy &rarr;</a></p>
-            </div>
-        </section>
     </main>
 
-    <!-- Botão Flutuante de WhatsApp -->
-    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20uma%20demanda%20t%C3%A9cnica%20do%20escrit%C3%B3rio." 
-       class="whatsapp-float" 
-       id="whatsappFloat" 
-       target="_blank" 
-       rel="noopener noreferrer" 
-       aria-label="Contato via WhatsApp com o Núcleo">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-1.007 3.676 3.75-1.009zm10.743-6.529c.145.242.223.518.223.8 0 .285-.084.561-.247.818-.466.733-1.44 1.282-2.152 1.282-.55 0-1.127-.22-1.994-.575-1.393-.571-2.868-1.579-4.041-2.752-1.173-1.173-2.181-2.648-2.752-4.041-.355-.867-.575-1.444-.575-1.994 0-.712.549-1.686 1.282-2.152.257-.163.533-.247.818-.247.282 0 .558.078.8.223l2.001 1.332c.264.176.4.475.34.787-.06.313-.274.571-.55.676l-.546.21c-.139.053-.257.147-.333.274-.145.242-.102.553.1.884.542.889 1.281 1.628 2.17 2.17.331.202.642.245.884.1.127-.076.221-.194.274-.333l.21-.546c.105-.276.363-.49.676-.55.312-.06.611.076.787.34l1.332 2.001z"/></svg>
-    </a>
+    <!-- Rodapé Institucional com Aviso Estatutário Legal -->
+    <footer style="background: rgba(18, 14, 10, 0.9); border-top: 1px solid var(--border-gold-subtle); padding: 40px 0 24px; font-size: 0.8125rem; color: var(--text-muted);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; margin-bottom: 32px;">
+                <div>
+                    <strong style="color: var(--text-primary); font-size: 0.9375rem; display: block; margin-bottom: 8px;">Núcleo de Inteligência Jurídica</strong>
+                    <p style="margin: 0; line-height: 1.5;">Uma unidade especializada da <strong>Colmeia Studios Academy</strong> dedicada à pesquisa assistida, organização documental e auditoria de fontes para a advocacia.</p>
+                </div>
+                <div>
+                    <strong style="color: var(--text-primary); font-size: 0.9375rem; display: block; margin-bottom: 8px;">Navegação</strong>
+                    <div style="display: flex; flex-direction: column; gap: 6px;">
+                        <a href="#modalidades" style="color: var(--text-secondary); text-decoration: none;">Entrega &amp; Modalidades</a>
+                        <a href="#metodo" style="color: var(--text-secondary); text-decoration: none;">Método COLMEIA</a>
+                        <a href="#investimento" style="color: var(--text-secondary); text-decoration: none;">Investimento &amp; Valores</a>
+                        <a href="/auditoria-de-revisao" style="color: var(--accent-gold); text-decoration: none;">Auditoria de Revisão (R$ 500)</a>
+                        <a href="/" style="color: var(--text-secondary); text-decoration: none;">Colmeia Studios Academy</a>
+                    </div>
+                </div>
+                <div>
+                    <strong style="color: var(--text-primary); font-size: 0.9375rem; display: block; margin-bottom: 8px;">Contato &amp; Localização</strong>
+                    <p style="margin: 0 0 6px; line-height: 1.5;">Belo Horizonte / MG — Atendimento em âmbito nacional.</p>
+                    <p style="margin: 0; line-height: 1.5;">WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold); text-decoration: none;">(31) 99931-4793</a></p>
+                </div>
+            </div>
 
-    <!-- Rodapé de Governança -->
-    <footer class="site-footer">
-        <div class="container footer-content">
-            <div>
-                <strong style="color: #ffffff; font-size: 0.9375rem; display: block; margin-bottom: 8px;">Colmeia Studios Academy — Núcleo de Inteligência Jurídica</strong>
-                <p style="max-width: 900px; line-height: 1.6; margin-bottom: 16px;">
-                    Este serviço constitui atividade técnica especializada de processamento de dados, pesquisa assistida e tecnologia da informação. Não prestamos consultoria jurídica, não praticamos atos privativos da advocacia e não garantimos resultados processuais. Todo conteúdo produzido deve ser integralmente revisado, validado e assinado pelo advogado responsável.
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.06); padding-top: 24px; font-size: 0.75rem; line-height: 1.6; text-align: center;">
+                <p style="margin: 0 0 8px; color: var(--text-muted);">
+                    <strong>AVISO ESTATUTÁRIO LEGAL:</strong> O Núcleo de Inteligência Jurídica realiza serviços de apoio operacional, inteligência técnica documental e auditoria de fontes públicas. Não prestamos assessoria, consultoria ou representação judicial, atividades privativas da advocacia nos termos do art. 1º da Lei Federal nº 8.906/1994 (Estatuto da OAB). Toda manifestação processual, petição e condução estratégica da causa cabe com exclusividade ao advogado legalmente habilitado.
                 </p>
-            </div>
-
-            <div class="footer-info">
-                <span>53.484.773 Cristian Santos Pimentel</span>
-                <span>CNPJ 53.484.773/0001-57</span>
-                <span>Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126</span>
-                <span>E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--text-muted); text-transform: none;">contato@colmeiastudiosacademy.com.br</a></span>
-                <span>WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); text-transform: none;">(31) 99931-4793</a></span>
-            </div>
-
-            <div class="footer-links">
-                <a href="privacidade.html">Política de Privacidade</a>
-                <a href="termos.html">Termos de Uso</a>
+                <p style="margin: 0; color: var(--text-muted);">
+                    &copy; 2026 Colmeia Studios Academy. Todos os direitos reservados. CNPJ: 58.077.561/0001-44.
+                </p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts da Página -->
+    <!-- Scripts de Interatividade e Validação -->
     <script>
     document.addEventListener("DOMContentLoaded", function() {
-
         // Acordeão do FAQ
         const faqTriggers = document.querySelectorAll(".faq-trigger");
-        faqTriggers.forEach(function(trigger) {
-            trigger.addEventListener("click", function() {
-                const item = this.parentElement;
-                const isExpanded = this.getAttribute("aria-expanded") === "true";
-                
-                // Fecha outros
-                document.querySelectorAll(".faq-item").forEach(function(other) {
-                    if(other !== item) {
-                        other.classList.remove("active");
-                        other.querySelector(".faq-trigger").setAttribute("aria-expanded", "false");
+        faqTriggers.forEach(function(btn) {
+            btn.addEventListener("click", function() {
+                const isExpanded = btn.getAttribute("aria-expanded") === "true";
+                const answer = btn.nextElementSibling;
+                const icon = btn.querySelector(".faq-icon");
+
+                // Fechar todos os outros
+                faqTriggers.forEach(function(otherBtn) {
+                    if (otherBtn !== btn) {
+                        otherBtn.setAttribute("aria-expanded", "false");
+                        if (otherBtn.nextElementSibling) otherBtn.nextElementSibling.classList.remove("is-open");
+                        const otherIcon = otherBtn.querySelector(".faq-icon");
+                        if (otherIcon) otherIcon.textContent = "+";
                     }
                 });
 
-                // Toggle atual
-                item.classList.toggle("active");
-                this.setAttribute("aria-expanded", (!isExpanded).toString());
+                if (isExpanded) {
+                    btn.setAttribute("aria-expanded", "false");
+                    if (answer) answer.classList.remove("is-open");
+                    if (icon) icon.textContent = "+";
+                } else {
+                    btn.setAttribute("aria-expanded", "true");
+                    if (answer) answer.classList.add("is-open");
+                    if (icon) icon.textContent = "−";
+                }
             });
         });
-
-        // Ocultar Botão de WhatsApp sobre o Formulário de Triagem
-        const whatsappBtn = document.getElementById("whatsappFloat");
-        const triagemSection = document.getElementById("triagem");
-
-        if (whatsappBtn && triagemSection && "IntersectionObserver" in window) {
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(function(entry) {
-                    if (entry.isIntersecting) {
-                        whatsappBtn.classList.add("hidden");
-                    } else {
-                        whatsappBtn.classList.remove("hidden");
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            observer.observe(triagemSection);
-        }
 
         // Lógica Condicional do Campo OAB
         const perfilSelect = document.getElementById("perfil_profissional");
@@ -2849,7 +2403,7 @@
                 inputOab.required = true;
                 inputOab.classList.remove("input-error");
             } else {
-                labelOab.textContent = "Inscrição OAB do advogado responsável, se disponível";
+                labelOab.textContent = "Inscrição OAB do advogado responsável (se disponível)";
                 inputOab.required = false;
                 inputOab.classList.remove("input-error");
             }
@@ -2872,9 +2426,11 @@
                 function showOk() {
                     feedbackEl.style.display = "block";
                     feedbackEl.className = "form-feedback-message feedback-success";
-                    feedbackEl.textContent = "Solicitação recebida. O contato será realizado pelo WhatsApp informado após a análise inicial das informações.";
+                    feedbackEl.textContent = "Solicitação recebida com sucesso. O contato será realizado pelo WhatsApp informado após a análise técnica inicial.";
                     formTriagem.reset();
+                    updateOabField(); // Atualiza condicionalmente logo após reset
                     submitBtn.disabled = false;
+                    submitBtn.textContent = "Enviar triagem técnica";
                 }
 
                 function showFail(msg) {
@@ -2882,6 +2438,7 @@
                     feedbackEl.className = "form-feedback-message feedback-error";
                     feedbackEl.textContent = msg;
                     submitBtn.disabled = false;
+                    submitBtn.textContent = "Enviar triagem técnica";
                 }
 
                 const requiredFields = formTriagem.querySelectorAll("[required]");
@@ -2901,11 +2458,12 @@
                 });
 
                 if (!isValid) {
-                    showFail("Por favor, preencha todos os campos obrigatórios (*) e confirme a leitura da Política de Privacidade.");
+                    showFail("Por favor, preencha todos os campos obrigatórios (*) e confirme o termo de triagem.");
                     return;
                 }
 
                 submitBtn.disabled = true;
+                submitBtn.textContent = "Enviando...";
 
                 const formData = new FormData(formTriagem);
                 if (!formData.get("form-name")) {
@@ -2922,7 +2480,7 @@
                         showOk();
                     } else {
                         console.error("Erro na resposta do Netlify:", res.statusText);
-                        showFail("Erro no envio. Por favor, tente novamente ou entre em contato via WhatsApp.");
+                        showFail("Erro no envio. Por favor, tente novamente ou entre em contato diretamente pelo WhatsApp.");
                     }
                 })
                 .catch(function(err) {
@@ -2963,7 +2521,6 @@
                 }
             });
 
-            // Fechar ao clicar em qualquer link do menu
             const menuNavLinks = navMenu.querySelectorAll("a");
             menuNavLinks.forEach(function(link) {
                 link.addEventListener("click", function() {
@@ -2971,7 +2528,6 @@
                 });
             });
 
-            // Fechar ao clicar fora do cabeçalho / menu
             document.addEventListener("click", function(e) {
                 if (navMenu.classList.contains("is-open")) {
                     const isClickInsideMenu = navMenu.contains(e.target);
@@ -2982,7 +2538,6 @@
                 }
             });
 
-            // Fechar ao pressionar a tecla Escape
             document.addEventListener("keydown", function(e) {
                 if (e.key === "Escape" || e.key === "Esc") {
                     if (navMenu.classList.contains("is-open")) {
@@ -2991,7 +2546,6 @@
                 }
             });
 
-            // Fechar ao redimensionar para 992px ou mais
             window.addEventListener("resize", function() {
                 if (window.innerWidth >= 992 && navMenu.classList.contains("is-open")) {
                     closeMenu(false);
