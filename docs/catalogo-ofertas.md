@@ -41,10 +41,10 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 * **Volume:** Até 10 referências já pesquisadas pelo cliente
 * **Prazo Padrão:** Até 5 dias úteis (contados após recebimento dos materiais e formalização)
 * **Revalidação:** 1 revalidação inclusa após ajustes apontados
-* **Urgência:**
-  * Até 72 horas úteis: +30% (R$ 650,00)
-  * Até 48 horas úteis: +50% (R$ 750,00)
-  * *Sempre sujeito a disponibilidade e confirmação prévia de escopo.*
+* **Urgência (Observação de acréscimo, não é produto de tabela):**
+  * Acréscimo de 50% para atendimento em 48 horas úteis
+  * Acréscimo de 30% para atendimento em 72 horas úteis
+  * *Sujeito à confirmação de disponibilidade e das condições na proposta (sem linhas com valores recalculados na tabela).*
 * **NDA e Sigilo:** NDA incluído antes do envio de arquivos; envio restrito a trechos e referências públicas (sem envio de autos ou peças sigilosas).
 * **Entregáveis:** Ficha por referência, status técnico (*Confirmada*, *Com ressalva*, *Bloqueada para citação*), anotações para validação pelo advogado responsável.
 

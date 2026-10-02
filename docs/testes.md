@@ -80,6 +80,22 @@ Este documento registra a matriz de testes funcionais, visuais, de links, formul
   - `python scratch/test_certificados.py` -> 100% PASS.
   - `python scratch/test_complete_restructuring.py` -> 100% PASS.
   - `python scratch/check_all_links.py` -> 100% PASS (719 links verificados, 0 erros).
+
+## Rodada Final — Correções Pendentes Aprovadas
+* **Tabela do Núcleo com 4 Serviços:**
+  - Auditoria de Revisão (R$ 500), Demanda Completa Essencial (a partir de R$ 1.800), Demanda Completa Padrão (a partir de R$ 4.000), Demanda Completa Complexa (a partir de R$ 7.000).
+  - Removidas da tabela as linhas de urgência 72h e 48h (sem R$ 650 nem R$ 750).
+* **Observação de Urgência Abaixo da Tabela:**
+  - Ordem obrigatória: 50% para 48h, 30% para 72h, sujeita à disponibilidade e confirmação na proposta.
+  - Aplicada a `nucleo-inteligencia-juridica.html` e `auditoria-de-revisao.html`.
+* **FAQ do Núcleo — 15 Perguntas em 3 Grupos:**
+  - Grupo 1 (Serviço e Entregas): 5 perguntas.
+  - Grupo 2 (Método e Responsabilidades): 6 perguntas.
+  - Grupo 3 (Contratação e Confidencialidade): 4 perguntas.
+  - Totalmente isentas de preços e percentuais; schema JSON-LD sincronizado.
+* **Acessos a `/privacidade` e `/termos`:**
+  - Restabelecidos no rodapé e no consentimento do formulário da página do Núcleo e preservados na Auditoria.
+
 * **Pendências Operacionais (Pós-Deploy Preview / Autorização Humana):**
   - Confirmação do recebimento de submissão do formulário no painel Netlify Forms (requer envio real após deploy).
   - Autorização formal do proprietário para publicação definitiva em produção (nunca executar `--prod` sem autorização expressa).

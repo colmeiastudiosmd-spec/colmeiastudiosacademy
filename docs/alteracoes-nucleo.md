@@ -28,10 +28,25 @@
    *(Nenhum preço em URLs de WhatsApp ou botões)*.
 
 3. **Política de Preços Concentrada:**
-   * **Preços Exclusivos na Tabela de Investimento (`#investimento`):**
-     * Auditoria de Revisão: R$ 500 (valor fixo por peça, até 10 referências, até 5 dias úteis, 1 revalidação).
-     * Urgência 72h: R$ 650 · Urgência 48h: R$ 750 (sujeito à confirmação prévia de capacidade técnica).
-     * Demandas completas: Essencial (a partir de R$ 1.800), Padrão (a partir de R$ 4.000), Complexa (a partir de R$ 7.000). Valores de referência iniciais sem teto fixo artificial, definidos após triagem.
+   * **Tabela de Investimento (`#investimento`) com Exatamente Quatro Serviços:**
+     * Linha 1: Auditoria de Revisão: R$ 500 (valor fixo por peça, até 10 referências, prazo padrão até 5 dias úteis, 1 revalidação inclusa, sem envio de autos).
+     * Linha 2: Demanda Completa · Essencial: A partir de R$ 1.800 (prazo padrão até 5 dias úteis).
+     * Linha 3: Demanda Completa · Padrão: A partir de R$ 4.000 (prazo padrão até 8 dias úteis).
+     * Linha 4: Demanda Completa · Complexa / Tribunais Superiores: A partir de R$ 7.000 (prazo padrão até 12 dias úteis).
+     * *Remoção total das linhas de urgência da tabela (sem R$ 650, sem R$ 750).*
+   * **Observação Curta de Urgência Abaixo da Tabela:**
+     * Inserida imediatamente abaixo da tabela como texto corrido:
+       *"Atendimento de urgência: acréscimo de 50% para atendimento em 48 horas ou de 30% para atendimento em 72 horas, sujeito à confirmação de disponibilidade e das condições na proposta."*
+     * Ordem obrigatória: 50% para 48h, 30% para 72h.
+     * Preservada a observação de valores iniciais de referência para demandas completas.
+   * **FAQ Completo com 15 Perguntas em 3 Grupos:**
+     * Restaurado acordeão com 15 perguntas sem preços ou percentuais, divididas em:
+       * Grupo 1: Serviço e Entregas (5 perguntas).
+       * Grupo 2: Método e Responsabilidades (6 perguntas).
+       * Grupo 3: Contratação e Confidencialidade (4 perguntas).
+     * Schema JSON-LD `FAQPage` sincronizado com as 15 perguntas.
+   * **Acessos a Privacidade e Termos:**
+     * Links limpos para `/privacidade` e `/termos` no rodapé e no consentimento do formulário de triagem técnica (`target="_blank" rel="noopener"`).
    * **Zero Preços fora da Tabela:** Nenhum preço em Hero, botões, cards conceituais, FAQs, selects ou rodapé.
    * **Sanções Judiciais em `#riscos-fontes`:** Multa de 9,9% (R$ 990) no TJMG, 5% no TRT-2 e 1% no TST preservadas como fatos processuais documentados (não se confundem com preços de serviços).
 
