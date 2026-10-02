@@ -27,9 +27,10 @@ Este documento consolida a revisão técnica das fontes jurídicas citadas nas p
 
 ### 1.4. Tribunal de Justiça de Minas Gerais (TJMG)
 * **Órgão Julgador:** Juizado Especial de Belo Horizonte
-* **Referência:** Reportagem g1 Minas de julho de 2026.
-* **Link:** `https://g1.globo.com/mg/minas-gerais/noticia/2026/07/17/advogada-cita-jurisprudencias-inexistentes-em-processo-juiza-faz-alerta-sobre-uso-de-ia-e-aplica-multa-em-processo.ghtml`
-* **Fato Concreto:** Condenação da autora em multa de R$ 990 por litigância de má-fé e expedição de ofício à OAB-MG, mesmo com êxito no mérito da ação, devido à inclusão de julgados inexistentes atribuídos ao STJ e TJMG.
+* **Referência:** Noticiado no portal oficial do TJMG e no g1 Minas em julho de 2026.
+* **Link Oficial TJMG:** `https://www.tjmg.jus.br/portal-tjmg/noticias/juiza-alerta-sobre-uso-de-ia-e-aplica-multa-a-advogada-por-jurisprudencia-falsa.htm`
+* **Link de Imprensa:** `https://g1.globo.com/mg/minas-gerais/noticia/2026/07/17/advogada-cita-jurisprudencias-inexistentes-em-processo-juiza-faz-alerta-sobre-uso-de-ia-e-aplica-multa-em-processo.ghtml`
+* **Fato Concreto:** Em ação julgada improcedente quanto aos pedidos do autor, a ré foi condenada em multa de 9,9% sobre o valor da causa (R$ 990) por litigância de má-fé e expedição de ofício à OAB-MG, em razão de precedentes falsos atribuídos ao STJ e TJMG na peça de contestação.
 
 ### 1.5. Declaração Obrigatória
 > *"A Colmeia Studios Academy e o Núcleo de Inteligência Jurídica não atuaram como prestadores de serviços, assessores ou patronos em nenhum dos processos judiciais acima referenciados."*

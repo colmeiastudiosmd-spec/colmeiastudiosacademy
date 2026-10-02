@@ -149,15 +149,16 @@
                 <!-- FORMULÁRIO DE INTERESSE -->
                 <div id="interesse" style="max-width: 680px; margin: 0 auto; background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 40px 32px; box-shadow: var(--shadow-sm);">
                     <div style="text-align: center; margin-bottom: 28px;">
-                        <span class="badge badge-dev" style="margin-bottom: 12px;">Lista de Espera Profissional</span>
-                        <h2>Entrar na Lista de Espera para Advogados</h2>
+                        <span class="badge badge-dev" style="margin-bottom: 12px;">Lista de Interesse Profissional</span>
+                        <h2>Lista de Interesse da Trilha para Advogados</h2>
                         <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 8px;">
-                            Cadastre seu contato para receber o syllabus completo e prioridade de vaga na primeira turma do programa.
+                            Esta formação está em desenvolvimento. A inscrição na lista de interesse não é matrícula, não exige pagamento e não garante vaga. Formato, conteúdo final, investimento e disponibilidade serão informados quando definidos.
                         </p>
                     </div>
 
                     <form name="interesse-pesquisa-ia" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/obrigado/lista-interesse">
                         <input type="hidden" name="form-name" value="interesse-pesquisa-ia">
+                        <input type="hidden" name="trilha" value="Advogados">
                         <input type="hidden" name="perfil" value="Advogado ou Escritório">
                         <p class="hidden" style="display:none;"><label>Não preencha: <input name="bot-field"></label></p>
 
@@ -193,7 +194,7 @@
                             </label>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 24px;">Garantir prioridade na lista profissional</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 24px;">Entrar na lista de interesse</button>
                     </form>
                 </div>
             </div>

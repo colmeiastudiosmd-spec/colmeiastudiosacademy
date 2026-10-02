@@ -149,7 +149,7 @@
                     </div>
 
                     <div class="notice-box" style="margin-bottom: 24px; font-size: 0.8125rem;">
-                        <strong>Aviso sobre envio:</strong> O envio de materiais gratuitos e capítulos de degustação é processado e notificado por e-mail após a confirmação do seu cadastro. Não realizamos downloads automáticos diretos no navegador sem verificação.
+                        <strong>Aviso sobre disponibilidade:</strong> Cadastre-se para ser avisado quando o material gratuito estiver disponível. O cadastro não gera download nem envio imediato.
                     </div>
 
                     <form name="material-ia-no-trabalho" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/obrigado/material-gratuito">
@@ -183,9 +183,16 @@
                         </div>
 
                         <div class="form-checkbox">
-                            <input type="checkbox" id="consentimento" name="consentimento" required>
-                            <label for="consentimento">
-                                Concordo em receber o material por e-mail e aceito os termos do <a href="/aviso-de-privacidade" target="_blank" style="color: var(--accent-amber); text-decoration: underline;">Aviso de Privacidade</a>.
+                            <input type="checkbox" id="termos_privacidade" name="termos_privacidade" required>
+                            <label for="termos_privacidade">
+                                Li e aceito o <a href="/aviso-de-privacidade" target="_blank" style="color: var(--accent-amber); text-decoration: underline;">Aviso de Privacidade</a>. *
+                            </label>
+                        </div>
+
+                        <div class="form-checkbox" style="margin-top: 10px;">
+                            <input type="checkbox" id="consentimento_marketing" name="consentimento_marketing">
+                            <label for="consentimento_marketing">
+                                Desejo receber novidades, avisos de lançamento e conteúdos educativos da Colmeia Studios Academy (opcional).
                             </label>
                         </div>
 
@@ -199,7 +206,7 @@
                         <span class="eyebrow">Acesso Imediato</span>
                         <h2>Prefere adquirir a obra completa agora?</h2>
                         <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 8px;">
-                            Disponível na plataforma segura da Hotmart com garantia e entrega instantânea.
+                            Disponível na plataforma da Hotmart. Acesso imediato para as versões digitais e envio com prazo de entrega para a edição física.
                         </p>
                     </div>
 
@@ -220,7 +227,7 @@
                             <div>
                                 <span class="badge badge-active" style="margin-bottom: 12px;">Edição Impressa</span>
                                 <h3>Livro Físico</h3>
-                                <p style="color: var(--text-muted); font-size: 0.875rem; margin: 10px 0;">Exemplar impresso entregue em sua casa para estudo com calma.</p>
+                                <p style="color: var(--text-muted); font-size: 0.875rem; margin: 10px 0;">Exemplar impresso enviado via Correios (prazo de entrega informado no checkout).</p>
                                 <div style="font-size: 2rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); margin: 12px 0;">R$ 67,30</div>
                             </div>
                             <a href="https://pay.hotmart.com/A106240775N?bid=1781054850796" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-sm">Comprar na Hotmart &rarr;</a>
@@ -232,7 +239,7 @@
                                 <span class="badge badge-info" style="margin-bottom: 12px;">Áudio Imersivo</span>
                                 <h3>Audiobook</h3>
                                 <p style="color: var(--text-muted); font-size: 0.875rem; margin: 10px 0;">Ouça no carro, na academia ou durante deslocamentos.</p>
-                                <div style="font-size: 2rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); margin: 12px 0;">R$ 47,37</div>
+                                <div style="font-size: 1.25rem; font-weight: 700; color: var(--text-muted); font-family: var(--font-display); margin: 16px 0;">Consultar preço no checkout</div>
                             </div>
                             <a href="https://pay.hotmart.com/D106085281T?bid=1780359143504" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-block btn-sm">Comprar na Hotmart &rarr;</a>
                         </div>

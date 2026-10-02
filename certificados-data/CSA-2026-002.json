@@ -1,0 +1,18 @@
+{
+  "codigo": "CSA-2026-002",
+  "nome": "Maria Oliveira Santos",
+  "curso": "Formação Executiva em Inteligência Artificial",
+  "modalidade": "Turma Mensal Ao Vivo",
+  "dataEmissao": "15/08/2026",
+  "cargaHoraria": "30 horas (20 aulas práticas)",
+  "instrutor": "Cristian Santos Pimentel",
+  "status": "Válido",
+  "competencias": [
+    "Engenharia de Prompts Avançada & Chain-of-Thought",
+    "Design Gráfico, Branding & Documentos com IA",
+    "Produção Audiovisual & Avatares Neurais",
+    "Desenvolvimento Acelerado de Websites & SEO",
+    "Automações de Processos No-Code com Make & Zapier",
+    "IA Aplicada a Mercados Especializados"
+  ]
+}

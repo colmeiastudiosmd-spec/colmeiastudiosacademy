@@ -47,7 +47,35 @@ Este documento registra a matriz de testes funcionais, visuais, de links, formul
 * **Sitemap XML (`sitemap.xml`):** APROVADO (20 URLs canônicas ativas incluídas, páginas com `noindex` devidamente excluídas).
 
 ### B. Verificação de Links Internos (`scratch/check_all_links.py`)
-* **Total de arquivos HTML inspecionados:** 35
-* **Total de links internos avaliados:** 725
+* **Total de arquivos HTML inspecionados:** 33
+* **Total de links internos avaliados:** 719
 * **Links quebrados detectados:** 0 (zero)
+
+### C. Teste de Segurança e Estados de Certificados (`scratch/test_certificados.py`)
+* **Validação de formato e comprimento:** APROVADO (Rejeição de códigos inválidos ou fora do padrão `/^[A-Za-z0-9\-_]{4,32}$/`).
+* **Tratamento de 5 Estados:**
+  1. `Válido` (emissão regular confirmada, metadados renderizados);
+  2. `Revogado` (sinalização de cancelamento/revogação técnica);
+  3. `Demonstrativo` (código de teste/demonstração pedagógica);
+  4. `Inexistente` (HTTP 404, código não localizado no diretório `/certificados-data/`);
+  5. `Base Indisponível` (tratamento defensivo de falha de conexão/JSON corrompido).
+* **Prevenção de XSS e Proteção de Dados:** APROVADO (Eliminação total de `innerHTML` com dados do aluno; uso estrito de `textContent` e DOM APIs; migração de monolithic `certificados.json` para arquivos individuais `/certificados-data/{codigo}.json`).
+* **Isolamento de Marca:** APROVADO (Shell oficial da Academy, remoção de links da consultoria legada).
+
+---
+
+## 3. Classificação de Evidências
+
+* **Inspeção Estrita de Código:**
+  - Isolamento de tracking/analytics (zero GA4 nas páginas jurídicas).
+  - Remoção de escassez artificial ("próximas 30 contratações") em `criacao-de-sites.html` e `gestao-de-redes-sociais.html`.
+  - Termos de hospedagem e titularidade de credenciais alinhados.
+  - Conformidade das 20 rotas canônicas em `sitemap.xml`.
+* **Testes Automatizados Executados (Evidência Local):**
+  - `python scratch/test_certificados.py` -> 100% PASS.
+  - `python scratch/test_complete_restructuring.py` -> 100% PASS.
+  - `python scratch/check_all_links.py` -> 100% PASS (719 links verificados, 0 erros).
+* **Pendências Operacionais (Pós-Deploy Preview / Autorização Humana):**
+  - Confirmação do recebimento de submissão do formulário no painel Netlify Forms (requer envio real após deploy).
+  - Autorização formal do proprietário para publicação definitiva em produção (nunca executar `--prod` sem autorização expressa).
 

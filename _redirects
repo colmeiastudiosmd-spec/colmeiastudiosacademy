@@ -10,6 +10,8 @@
 /sobre.html                 /sobre                                 301!
 /contato.html               /contato                               301!
 /conteudos-gratuitos.html   /conteudos-gratuitos                   301!
+/projeto-social             /                                      301!
+/projeto-social.html        /                                      301!
 
 # Fallback 404 explícito
 /*                          /404.html                              404

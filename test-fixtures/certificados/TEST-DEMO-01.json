@@ -1,0 +1,11 @@
+{
+  "codigo": "TEST-DEMO-01",
+  "nome": "Aluno Modelo Demonstrativo",
+  "curso": "Demonstração de Formação em IA",
+  "modalidade": "Demonstração",
+  "dataEmissao": "01/01/2026",
+  "cargaHoraria": "0 horas",
+  "instrutor": "Instrutor Teste",
+  "status": "Demonstrativo",
+  "competencias": ["Simulação de Habilidade"]
+}

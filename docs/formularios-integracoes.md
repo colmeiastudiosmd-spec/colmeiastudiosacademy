@@ -20,7 +20,7 @@ Todos os formulários foram construídos em HTML semântico com atributos estát
 | `interesse-conteudo-ia` | `/cursos/conteudo-redes-sociais-ia` | `/obrigado/lista-interesse` | Nome (opcional), E-mail, Consentimento | Lista de interesse do curso de redes |
 | `interesse-websites-ia` | `/cursos/criacao-websites-ia` | `/obrigado/lista-interesse` | Nome (opcional), E-mail, Consentimento | Lista de interesse do curso de websites |
 | `material-ia-no-trabalho` | `/conteudos-gratuitos/ia-no-trabalho` | `/obrigado/material-gratuito` | Nome (opcional), E-mail, Marketing opcional (desmarcado) | Cadastro para recebimento do livro/áudio |
-| `contato-academy` | `/contato` | Mensagem de sucesso inline / redirecionamento | Nome, E-mail, Assunto, Mensagem, Consentimento | Contato geral da empresa |
+| `contato-academy` | `/contato` | `/obrigado/contato` | Nome, E-mail, WhatsApp, Assunto, Mensagem, Consentimento | Contato geral da empresa |
 
 ---
 

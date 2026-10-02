@@ -1,0 +1,14 @@
+{
+  "codigo": "TEST-XSS-01",
+  "nome": "<script>alert('XSS')</script>&quot;<b>Teste Injection</b>",
+  "curso": "<img src=x onerror=alert(1)> Curso Teste",
+  "modalidade": "<svg onload=alert(2)>",
+  "dataEmissao": "01/01/2026",
+  "cargaHoraria": "10h",
+  "instrutor": "<script>evil()</script>",
+  "status": "Válido",
+  "competencias": [
+    "<script>malicious()</script>",
+    "<b>Negrito Seguro</b>"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "codigo": "TEST-REVOGADO-01",
+  "nome": "Titular Sintético Revogado",
+  "curso": "Formação de Teste Revogado",
+  "modalidade": "Remoto",
+  "dataEmissao": "10/01/2026",
+  "cargaHoraria": "10 horas",
+  "instrutor": "Instrutor Teste",
+  "status": "Revogado",
+  "motivoRevogacao": "Revogado por não cumprimento dos critérios de conclusão prática.",
+  "competencias": []
+}

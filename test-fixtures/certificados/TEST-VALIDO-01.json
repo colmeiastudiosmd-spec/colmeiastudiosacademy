@@ -1,0 +1,14 @@
+{
+  "codigo": "TEST-VALIDO-01",
+  "nome": "Titular Sintético de Teste",
+  "curso": "Formação de Teste Automatizado",
+  "modalidade": "Remoto",
+  "dataEmissao": "01/10/2026",
+  "cargaHoraria": "10 horas",
+  "instrutor": "Instrutor Teste",
+  "status": "Válido",
+  "competencias": [
+    "Competência Teste A",
+    "Competência Teste B"
+  ]
+}
