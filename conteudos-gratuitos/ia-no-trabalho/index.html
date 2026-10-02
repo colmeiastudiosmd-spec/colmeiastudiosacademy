@@ -98,9 +98,9 @@
         <!-- APRESENTAÇÃO DO LIVRO + VÍDEO SEM AUTOPLAY -->
         <section class="section-padding" style="background-color: var(--bg-page);">
             <div class="container">
-                <div style="display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 48px; align-items: center; margin-bottom: 64px;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px; align-items: center; margin-bottom: 64px;">
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
-                        <img src="/assets/mockup-ia-no-trabalho.jpg" alt="Capa do Livro IA no Trabalho" style="max-width: 300px; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+                        <img src="/assets/mockup-ia-no-trabalho.jpg" alt="Capa do Livro IA no Trabalho" style="max-width: 300px; width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
                         <span class="badge badge-info">Autor: Cristian Santos Pimentel</span>
                     </div>
 
@@ -121,6 +121,27 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+
+                <!-- VÍDEO DE APRESENTAÇÃO DO LIVRO (RESPONSIVO COM LINK ALTERNATIVO) -->
+                <div style="max-width: 800px; margin: 0 auto 64px;">
+                    <div style="text-align: center; margin-bottom: 20px;">
+                        <span class="eyebrow">Apresentação da Obra</span>
+                        <h2 style="font-size: 1.75rem;">Vídeo: Como a IA Transforma Seu Trabalho Diário</h2>
+                    </div>
+                    <div class="video-responsive-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); background: #000; border: 1px solid var(--border-light);">
+                        <iframe 
+                            src="https://www.youtube.com/embed/80aVHL-ksFY?rel=0&modestbranding=1" 
+                            title="Apresentação do livro IA no Trabalho por Cristian Santos Pimentel" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+                        </iframe>
+                    </div>
+                    <p style="text-align: center; margin-top: 12px; font-size: 0.875rem; color: var(--text-muted);">
+                        Caso o vídeo não carregue, <a href="https://www.youtube.com/watch?v=80aVHL-ksFY" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber); text-decoration: underline; font-weight: 600;">assista diretamente no YouTube &rarr;</a>
+                    </p>
                 </div>
 
                 <!-- FORMULÁRIO DE CADASTRO (MODO PENDENTE TRANSPARENTE) -->
@@ -244,8 +265,8 @@
                                     <td style="padding: 18px 20px; color: var(--text-muted); font-size: 0.875rem; vertical-align: middle;">
                                         Narração integral em áudio imersivo para escutar no carro, academia ou deslocamentos.
                                     </td>
-                                    <td style="padding: 18px 20px; text-align: center; color: var(--text-muted); font-size: 0.8125rem; font-weight: 600; vertical-align: middle;">
-                                        Consultar preço no checkout
+                                    <td style="padding: 18px 20px; text-align: center; font-weight: 700; font-size: 1.25rem; color: var(--text-main); vertical-align: middle; white-space: nowrap;">
+                                        R$ 47,37
                                     </td>
                                     <td style="padding: 18px 20px; text-align: right; vertical-align: middle;">
                                         <a href="https://pay.hotmart.com/D106085281T?bid=1780359143504" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Comprar &rarr;</a>

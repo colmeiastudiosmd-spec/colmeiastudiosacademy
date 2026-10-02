@@ -90,6 +90,18 @@ body.dark-theme .comparison-card {
   color: #FFFFFF;
 }
 
+body.dark-theme .btn-secondary {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  border-color: rgba(255, 208, 0, 0.35);
+}
+
+body.dark-theme .btn-secondary:hover {
+  background-color: rgba(255, 208, 0, 0.15);
+  color: #FFD000;
+  border-color: #FFD000;
+}
+
 /* Acessibilidade — Foco Visível */
 :focus-visible {
   outline: 3px solid var(--accent-amber);
