@@ -5,6 +5,15 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 
 ---
 
+## Política Estrita de Exibição de Preços no Site
+1. **Homepage (`index.html`):** ZERO preços (sem valores numéricos, sem "a partir de", sem preços em botões ou cards). As chamadas direcionam para as áreas específicas com CTAs descritivos ("Conhecer a Auditoria de Revisão", "Conhecer o Núcleo Jurídico", "Conhecer as Aulas Particulares", etc.).
+2. **Páginas Institucionais e de Catálogo (`/servicos`, `/cursos`, `/sobre`, `/contato`):** ZERO preços.
+3. **Rodapés de Todo o Site:** ZERO preços (link padronizado: `Auditoria de Revisão`).
+4. **Páginas Específicas de Serviços:** Preços apresentados EXCLUSIVAMENTE nas tabelas formais de investimento dedicadas. Nenhum preço em headers, botões, heros, FAQs, selects ou mensagens pré-preenchidas de WhatsApp.
+5. **Sanções Judiciais de Tribunais:** As multas documentadas (TJMG R$ 990, TRT-2 5%, TST 1%) são fatos processuais e evidências técnicas, não preços de serviços.
+
+---
+
 ## 1. Cursos (Formações em Inteligência Artificial)
 *Todos os cursos estão em fase de desenvolvimento. Inscrições funcionam exclusivamente como lista de interesse (sem cobrança, sem matrícula, sem garantia de vaga).*
 
@@ -27,7 +36,7 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 * **ID:** `auditoria-revisao`
 * **Rota:** `/auditoria-de-revisao` (com redirect 301 de `/auditoria-de-entrada`)
 * **Status:** Ativo
-* **Valor:** **R$ 500,00** (De R$ 800,00 por R$ 500,00, valor fixo, pagamento único)
+* **Valor:** **R$ 500,00** (Valor fixo por peça, pagamento único, sem ancoragem promocional no site)
 * **Tipo de Cobrança:** Pagamento único
 * **Volume:** Até 10 referências já pesquisadas pelo cliente
 * **Prazo Padrão:** Até 5 dias úteis (contados após recebimento dos materiais e formalização)

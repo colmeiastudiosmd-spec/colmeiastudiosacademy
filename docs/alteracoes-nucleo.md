@@ -1,49 +1,46 @@
 # Registro de Alterações Cirúrgicas — Núcleo de Inteligência Jurídica
 
 **Arquivo Alvo:** `nucleo-inteligencia-juridica.html`  
-**Referência Base:** Preview `https://6abd8fdc44f124b37246bc97--colmeia-auditoria-preview.netlify.app/nucleo-inteligencia-juridica`
+**Referência:** Versão persuasiva enxuta com tabela de investimento unificada e política estrita de preços concentrados.
 
 ---
 
 ## 1. Princípios e Preservações
-* **Estrutura e Identidade:** Preservados layout, paleta de cores, tipografia, seções da Estratégia COLMEIA, caso anonimizado, tabela comparativa, triagem com lógica de OAB e honeypot, FAQs e rodapé jurídico.
+* **Estrutura e Identidade:** Preservados layout, paleta de cores (preto/dourado escuro), tipografia Fraunces/IBM Plex Mono/Archivo, seções da Estratégia COLMEIA (7 etapas), caso de referência anonimizado (indulto), tabela comparativa de modalidades, triagem técnica com validação e honeypot, FAQs e rodapé jurídico isolado.
 * **Isolamento Técnico:** O setor jurídico não recebe o shell geral da Academy nem bibliotecas compartilhadas que possam alterar sua renderização.
 * **Privacidade:** Sem Google Analytics (GA4), sem heatmaps, sem session replay e sem pixels de anúncios.
 
 ---
 
-## 2. Alterações Institucionais Aplicadas
+## 2. Alterações e Consolidação Aplicadas
 1. **Cabeçalho e Navegação:**
-   * Logo agora aponta para a raiz (`/`) da Colmeia Studios Academy.
-   * Adicionado link bidirecional discreto de retorno: `&larr; Voltar para as áreas` (`/#escalar-com-ia`).
-   * Substituição de "Falar com Cristian" por "Falar com o Núcleo".
+   * Logo aponta para a raiz (`/`) da Colmeia Studios Academy.
+   * Link discreto de retorno: `&larr; Voltar para as áreas` (`/#escalar-com-ia`).
+   * CTA: "Falar com o Núcleo".
 
-2. **Mensagens de WhatsApp Institucionalizadas:**
+2. **Mensagens de WhatsApp Padronizadas e Limpas:**
    * Contato geral:  
      `Olá, Núcleo de Inteligência Jurídica da Colmeia Studios Academy. Gostaria de conversar sobre uma demanda técnica do escritório.`
    * Solicitação de amostra:  
-     `Olá, Núcleo de Inteligência Jurídica. Sou advogado(a) e gostaria de solicitar a amostra completa da entrega.`
+     `Olá, Núcleo de Inteligência Jurídica. Sou advogado(a) e gostaria de solicitar a amostra técnica de precedentes.`
    * Auditoria de Revisão:  
-     `Olá, Núcleo de Inteligência Jurídica da Colmeia Studios Academy. Tenho interesse na Auditoria de Revisão de R$ 800 para até 10 referências. Gostaria de confirmar se meu material se enquadra no escopo. Não enviarei autos nem dados sigilosos neste primeiro contato.`
+     `Olá, Núcleo de Inteligência Jurídica da Colmeia Studios Academy. Tenho interesse na Auditoria de Revisão para até 10 referências. Gostaria de confirmar se meu material se enquadra no escopo. Não enviarei autos nem dados sigilosos neste primeiro contato.`
+   *(Nenhum preço em URLs de WhatsApp ou botões)*.
 
-3. **Bloco de Auditoria de Revisão (`#auditoria-entrada`):**
-   * Botão principal configurado para navegar até `/auditoria-de-revisao` com o texto: **"Conhecer a Auditoria de Revisão"**.
-   * Link secundário para WhatsApp com a mensagem padronizada.
-   * Distinção explícita mantida: a Auditoria de Revisão (R$ 800) afere referências já pesquisadas pelo cliente (até 10), enquanto a faixa Essencial (a partir de R$ 1.800) realiza pesquisa e organização estruturada pelo Núcleo.
+3. **Política de Preços Concentrada:**
+   * **Preços Exclusivos na Tabela de Investimento (`#investimento`):**
+     * Auditoria de Revisão: R$ 500 (valor fixo por peça, até 10 referências, até 5 dias úteis, 1 revalidação).
+     * Urgência 72h: R$ 650 · Urgência 48h: R$ 750 (sujeito à confirmação prévia de capacidade técnica).
+     * Demandas completas: Essencial (a partir de R$ 1.800), Padrão (a partir de R$ 4.000), Complexa (a partir de R$ 7.000). Valores de referência iniciais sem teto fixo artificial, definidos após triagem.
+   * **Zero Preços fora da Tabela:** Nenhum preço em Hero, botões, cards conceituais, FAQs, selects ou rodapé.
+   * **Sanções Judiciais em `#riscos-fontes`:** Multa de 9,9% (R$ 990) no TJMG, 5% no TRT-2 e 1% no TST preservadas como fatos processuais documentados (não se confundem com preços de serviços).
 
-4. **Institucionalização da Seção do Fundador:**
-   * Substituição do bloco com foto de destaque pessoal pelo bloco institucional **"Método e Responsabilidade Técnica"**:
-     * A Colmeia executa a camada técnica de processamento, pesquisa, organização documental e rastreabilidade de fontes.
-     * A interpretação jurídica, estratégia forense e validação permanecem sob exclusiva responsabilidade do advogado contratante.
-     * Preservação explícita da menção aos três advogados independentes (penal, trabalhista e cível) que participaram da construção da metodologia.
-     * Link discreto: `Conheça a Colmeia → /sobre`.
+4. **Seção "Quem Conduz o Núcleo" Restabelecida:**
+   * Apresentação equilibrada de Cristian Santos Pimentel:
+     * Professor de IA, pesquisador e fundador da Colmeia Studios Academy.
+     * Esclarecimento transparente: não é advogado.
+     * Metodologia estruturada com o critério técnico de três advogados independentes (penal, trabalhista e cível).
+     * Protocolo de segurança: termo de confidencialidade (NDA), conformidade LGPD e não utilização de dados do cliente em modelos públicos.
 
-5. **Revisão de Fontes e Sanções:**
-   * TST: Relata multa de 1% à empresa e 1% ao advogado por possível uso de IA com jurisprudência inexistente. Noticiado na data de publicação oficial.
-   * TRT-2: Multa de 5% à empresa e ofício à OAB para apuração do advogado.
-   * TJSC: Multa de 10% ao agravante e comunicação à OAB.
-   * TJMG: Notícia sobre multa de R$ 990 e ofício à OAB; ressalva de que a cliente venceu no mérito.
-   * Ressalva: *"A Colmeia Studios Academy não atuou em nenhum desses casos."*
-
-6. **SEO e Indexação:**
-   * Meta robots configurada como `<meta name="robots" content="index, follow">` para permitir indexação nos motores de busca como unidade especializada ativa.
+5. **Caso de Referência (Indulto Humanitário):**
+   * Apresentação fática fundamentada: contexto, 9 precedentes mapeados contra 6 do Ministério Público, acolhimento pelo advogado e deferimento pelo juízo das execuções com a ressalva obrigatória de não garantia de resultado. Sem métricas não documentadas.
