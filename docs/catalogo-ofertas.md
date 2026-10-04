@@ -36,16 +36,17 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 * **ID:** `auditoria-revisao`
 * **Rota:** `/auditoria-de-revisao` (com redirect 301 de `/auditoria-de-entrada`)
 * **Status:** Ativo
-* **Valor:** **R$ 500,00** (Valor fixo por peça, pagamento único, sem ancoragem promocional no site)
-* **Tipo de Cobrança:** Pagamento único
-* **Volume:** Até 10 referências já pesquisadas pelo cliente
+* **Valor:** **A partir de R$ 500,00** (incluindo até 10 referências jurídicas e 1 rodada de revalidação)
+* **Tipo de Cobrança:** Pagamento único por peça avaliada
+* **Volume:** Até 10 referências jurídicas (normas, decisões, súmulas) em unidades delimitadas de conferência. Artigo e seus desdobramentos não são contados cumulativamente quando integrarem a mesma unidade de conferência; não inclui revisão integral de lei como referência única.
+* **Referência Adicional:** **R$ 50,00** por unidade delimitada de conferência adicional, com orçamento e escopo confirmados previamente.
 * **Prazo Padrão:** Até 5 dias úteis (contados após recebimento dos materiais e formalização)
-* **Revalidação:** 1 revalidação inclusa após ajustes apontados
+* **Revalidação:** 1 rodada de revalidação inclusa contemplando os itens originalmente auditados após ajustes do advogado, com solicitação em até 15 dias corridos contados da entrega do relatório inicial. Referências novas ou substituições por itens não auditados devem ser previamente avaliadas e orçadas.
 * **Urgência (Observação de acréscimo, não é produto de tabela):**
   * Acréscimo de 50% para atendimento em 48 horas úteis
   * Acréscimo de 30% para atendimento em 72 horas úteis
   * *Sujeito à confirmação de disponibilidade e das condições na proposta (sem linhas com valores recalculados na tabela).*
-* **NDA e Sigilo:** NDA incluído antes do envio de arquivos; envio restrito a trechos e referências públicas (sem envio de autos ou peças sigilosas).
+* **NDA e Sigilo:** NDA incluído antes do envio de arquivos; envio restrito a trechos e referências públicas (sem envio de autos integrais ou peças sigilosas).
 * **Entregáveis:** Ficha por referência, status técnico (*Confirmada*, *Com ressalva*, *Bloqueada para citação*), anotações para validação pelo advogado responsável.
 
 ### 2.2. Demandas Completas do Núcleo
