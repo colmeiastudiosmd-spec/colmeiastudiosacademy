@@ -229,11 +229,11 @@
                                 </tr>
                                 <tr style="border-bottom: 1px solid var(--border-light);">
                                     <td style="padding: 18px 20px; font-weight: 600; color: var(--text-main); vertical-align: middle;">
-                                        Livro Físico
+                                        Livro físico
                                         <span class="badge badge-info" style="display: block; width: fit-content; margin-top: 4px; font-size: 0.75rem;">Impresso</span>
                                     </td>
                                     <td style="padding: 18px 20px; color: var(--text-muted); font-size: 0.875rem; vertical-align: middle;">
-                                        Exemplar impresso enviado via Correios (prazo de entrega informado no checkout da Hotmart).
+                                        Exemplar impresso oficial com processamento e entrega informados no checkout da Hotmart.
                                     </td>
                                     <td style="padding: 18px 20px; text-align: center; font-weight: 700; font-size: 1.25rem; color: var(--text-main); vertical-align: middle; white-space: nowrap;">
                                         R$ 67,30
@@ -390,6 +390,17 @@
                 })
                 .then(function (result) {
                     var data = result.data;
+                    if (result.status === 429 || (data && data.duplicate)) {
+                        feedback.style.display = 'block';
+                        feedback.style.backgroundColor = 'rgba(242, 167, 27, 0.1)';
+                        feedback.style.border = '1px solid #f2a71b';
+                        feedback.style.color = '#b45309';
+                        feedback.textContent = (data && data.error) || 'Uma solicitação recente para este e-mail já foi processada. Por favor, aguarde alguns instantes antes de tentar novamente.';
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Receber o e-book completo gratuitamente por e-mail';
+                        return;
+                    }
+
                     if (result.ok && data && data.success) {
                         feedback.style.display = 'block';
                         if (data.emailSent) {
@@ -404,6 +415,14 @@
                             feedback.textContent = 'Solicitação registrada com sucesso! O cadastro foi confirmado e o envio do PDF para ' + emailVal + ' será concluído assim que a fila técnica de disparo for autorizada.';
                         }
                         
+                        try {
+                            sessionStorage.setItem('colmeia_ebook_submission', JSON.stringify({
+                                status: data.emailSent ? 'sent' : 'registered',
+                                email: emailVal,
+                                time: Date.now()
+                            }));
+                        } catch (e) {}
+
                         if (window.trackSafeEvent) {
                             window.trackSafeEvent('form_submission_success', { form_name: 'material-ia-no-trabalho', email_sent: !!data.emailSent });
                         }
@@ -433,6 +452,13 @@
                             feedback.style.border = '1px solid #f2a71b';
                             feedback.style.color = '#b45309';
                             feedback.textContent = 'Solicitação registrada em contingência. O disparo automático do PDF não pôde ser concluído no momento, mas seu contato foi salvo para envio manual da nossa equipe para ' + emailVal + '.';
+                            try {
+                                sessionStorage.setItem('colmeia_ebook_submission', JSON.stringify({
+                                    status: 'registered',
+                                    email: emailVal,
+                                    time: Date.now()
+                                }));
+                            } catch (e) {}
                             form.reset();
                         } else {
                             feedback.style.backgroundColor = 'rgba(239, 68, 68, 0.1)';

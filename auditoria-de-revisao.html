@@ -241,20 +241,20 @@
   }
   @media (max-width: 680px){
     .wrap{padding:0 16px}
-    .topbar .wrap{height:58px;gap:8px;padding:0 16px}
-    .brand{gap:8px;min-width:0;flex:1 1 auto;overflow:hidden}
+    .topbar .wrap{min-height:64px;height:auto;gap:10px;padding:8px 16px;display:flex;align-items:center;justify-content:space-between}
+    .brand{gap:10px;min-width:0;flex:1 1 auto}
     .hex{width:28px;height:28px;flex-shrink:0}
-    .brand div{min-width:0;overflow:hidden}
-    .brand b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .brand small{font-size:8px;letter-spacing:.12em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
-    .top-cta{font-size:11px;padding:7px 11px;white-space:nowrap;flex-shrink:0}
+    .brand div{min-width:0}
+    .brand b{font-size:13.5px;font-weight:620;line-height:1.2;white-space:normal;word-break:normal;overflow:visible;text-overflow:unset}
+    .brand small{font-size:8.5px;letter-spacing:.08em;line-height:1.25;white-space:normal;word-break:normal;overflow:visible;text-overflow:unset;display:block;margin-top:2px}
+    .top-cta{font-size:11.5px;padding:8px 12px;white-space:nowrap;flex-shrink:0;letter-spacing:.04em}
     .ficha{transform:none}
     .proof-grid{grid-template-columns:minmax(0, 1fr)}
     .proof-card{padding:20px 16px;min-width:0}
-    .verdict{grid-template-columns:repeat(3,minmax(0, 1fr));gap:6px}
-    .verdict div{padding:10px 4px;min-width:0;overflow:hidden}
-    .verdict .v{font-size:20px}
-    .verdict .l{font-size:8.5px;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .verdict{grid-template-columns:repeat(3,minmax(0, 1fr));gap:8px;margin:18px 0 14px}
+    .verdict div{padding:12px 6px;min-width:0;overflow:visible;text-align:center}
+    .verdict .v{font-size:22px;line-height:1}
+    .verdict .l{font-size:9.5px;letter-spacing:.03em;text-transform:uppercase;margin-top:5px;line-height:1.25;white-space:normal;overflow:visible;text-overflow:unset;word-break:normal}
     .offer-card{padding:24px 16px !important}
     .qa-card,.risk-item,.def-list li,.stake{min-width:0}
   }
@@ -588,7 +588,7 @@
                 <span style="font-size: 12px; font-weight: normal; color: var(--muted);">(Até 10 referências jurídicas em peça pronta)</span>
               </td>
               <td style="padding: 18px 16px; color: #D6DCD8; line-height: 1.6; vertical-align: top;">
-                Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; checagem em inteiro teor; relatório técnico estruturado com classificação e rastreabilidade; 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências adicionais mediante orçamento complementar (R$ 50,00 por referência adicional, confirmado previamente), sem migração automática para Demanda Completa. Sem envio de autos.
+                Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; checagem em inteiro teor; relatório técnico estruturado com classificação e rastreabilidade; 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências adicionais mediante orçamento previamente aprovado, sem migração automática para Demanda Completa. Sem envio de autos.
               </td>
               <td style="padding: 18px 16px; color: #FFFFFF; white-space: nowrap; vertical-align: top; font-weight: 600;">
                 Até 5 dias úteis
@@ -609,10 +609,10 @@
           <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade técnica e à confirmação prévia na proposta.
         </p>
         <p style="margin: 0 0 10px; color: var(--muted);">
-          <strong>Regra de contagem objetiva:</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência.
+          <strong>Regra de contagem objetiva:</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Artigo e seus desdobramentos não serão contados cumulativamente quando integrarem a mesma unidade de conferência. A contagem será delimitada e aprovada previamente no escopo. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência.
         </p>
         <p style="margin: 0; color: var(--muted);">
-          <strong>Condições comerciais:</strong> Caso a peça contenha mais de 10 referências, o cliente poderá contratar referências adicionais mediante orçamento complementar confirmado previamente ou optar pela seleção das 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. A rodada de revalidação inclusa pode ser solicitada em até 15 dias corridos da entrega do relatório inicial. Pagamento único via Pix ou transferência com emissão de nota fiscal de serviços.
+          <strong>Condições comerciais:</strong> Caso a peça contenha mais de 10 referências, o cliente poderá contratar referências adicionais mediante orçamento previamente aprovado ou optar pela seleção das 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. A rodada de revalidação inclusa pode ser solicitada em até 15 dias corridos da entrega do relatório inicial. Pagamento único via Pix ou transferência com emissão de nota fiscal de serviços.
         </p>
       </div>
 

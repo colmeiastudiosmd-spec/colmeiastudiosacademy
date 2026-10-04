@@ -2,6 +2,27 @@ const path = require('path');
 const fs = require('fs');
 const nodemailer = require('nodemailer');
 
+// Prevenção de envios duplicados no servidor (idempotência temporária por e-mail)
+const recentRequests = new Map();
+const COOLDOWN_MS = 60 * 1000; // 60 segundos de intervalo mínimo
+
+function checkAndRecordDuplicate(email) {
+  const now = Date.now();
+  for (const [key, timestamp] of recentRequests.entries()) {
+    if (now - timestamp > COOLDOWN_MS) {
+      recentRequests.delete(key);
+    }
+  }
+  if (recentRequests.has(email)) {
+    const elapsed = now - recentRequests.get(email);
+    if (elapsed < COOLDOWN_MS) {
+      return true;
+    }
+  }
+  recentRequests.set(email, now);
+  return false;
+}
+
 exports.handler = async (event, context) => {
   // Apenas aceita POST
   if (event.httpMethod !== 'POST') {
@@ -53,6 +74,20 @@ exports.handler = async (event, context) => {
         statusCode: 400,
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ error: 'É necessário confirmar o Aviso de Privacidade.' })
+      };
+    }
+
+    // Proteção contra duplicação no servidor
+    if (checkAndRecordDuplicate(email)) {
+      console.warn(`[E-BOOK] Tentativa de envio duplicado prevenida no servidor para: ${email}`);
+      return {
+        statusCode: 429,
+        headers: { 'Content-Type': 'application/json', 'Retry-After': '60' },
+        body: JSON.stringify({
+          success: false,
+          duplicate: true,
+          error: 'Uma solicitação recente para este endereço de e-mail já foi processada. Por favor, aguarde 60 segundos antes de tentar novamente.'
+        })
       };
     }
 

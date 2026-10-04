@@ -466,14 +466,20 @@
             .container {
                 padding: 0 16px;
             }
+            .site-header {
+                min-height: var(--header-height);
+                height: auto;
+                padding: 6px 0;
+            }
             .header-content {
+                min-height: var(--header-height);
+                height: auto;
                 gap: 8px;
             }
             .header-brand {
                 gap: 8px;
                 min-width: 0;
                 flex: 1 1 auto;
-                overflow: hidden;
             }
             .header-logo {
                 height: 28px;
@@ -483,21 +489,24 @@
             }
             .header-titles {
                 min-width: 0;
-                overflow: hidden;
             }
             .brand-main {
                 font-size: 0.82rem;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                line-height: 1.2;
+                white-space: normal;
+                overflow: visible;
+                text-overflow: unset;
+                line-height: 1.15;
+                font-weight: 700;
             }
             .brand-sub {
                 font-size: 0.68rem;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                white-space: normal;
+                overflow: visible;
+                text-overflow: unset;
                 line-height: 1.2;
+                color: var(--accent-gold);
+                display: block;
+                margin-top: 2px;
             }
             .mobile-menu-toggle {
                 width: 38px;
@@ -1624,7 +1633,7 @@
                                     <strong style="color: #ffffff; display: block;">Auditoria de Revisão</strong>
                                 </td>
                                 <td>
-                                    Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; relatório com classificação e memorial de checagem; 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências adicionais mediante orçamento complementar (R$ 50,00 por referência adicional, confirmado previamente), sem migração automática para Demanda Completa. Sem envio de autos.
+                                    Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; relatório com classificação e memorial de checagem; 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências adicionais mediante orçamento previamente aprovado, sem migração automática para Demanda Completa. Sem envio de autos.
                                 </td>
                                 <td>Até 5 dias úteis</td>
                                 <td class="col-val" style="color: var(--accent-gold);">
@@ -1683,7 +1692,7 @@
                         <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade técnica e à confirmação prévia na proposta.
                     </p>
                     <p style="margin-bottom: 8px;">
-                        <strong>Regra de contagem objetiva (Auditoria de Revisão):</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência. Caso a peça contenha mais de 10 referências, podem ser contratadas referências adicionais mediante orçamento complementar confirmado previamente ou o cliente pode selecionar as 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. A rodada de revalidação inclusa pode ser solicitada em até 15 dias corridos após a entrega do relatório inicial.
+                        <strong>Regra de contagem objetiva (Auditoria de Revisão):</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Artigo e seus desdobramentos não serão contados cumulativamente quando integrarem a mesma unidade de conferência. A contagem será delimitada e aprovada previamente no escopo. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência. Caso a peça contenha mais de 10 referências, podem ser contratadas referências adicionais mediante orçamento previamente aprovado ou o cliente pode selecionar as 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. A rodada de revalidação inclusa pode ser solicitada em até 15 dias corridos após a entrega do relatório inicial.
                     </p>
                     <p style="margin-bottom: 8px;">
                         <strong>Escopo das Demandas Completas:</strong> O apoio pode começar antes da elaboração da primeira petição e estender-se pelas fases processuais contratadas, conforme o plano de trabalho e a ordem de serviço formalizados com o escritório. Não há acompanhamento processual ilimitado; as entregas constituem insumos técnicos e estruturas editáveis preliminares, cabendo a redação final e a condução da causa com exclusividade ao advogado constituído (Lei nº 8.906/1994).

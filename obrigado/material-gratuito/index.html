@@ -49,23 +49,58 @@
                 <div style="width: 64px; height: 64px; border-radius: 50%; background: #E8F5E9; color: #2E7D32; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 24px;">
                     ✓
                 </div>
-                <span class="badge badge-active" style="margin-bottom: 12px;">Solicitação Confirmada</span>
-                <h1 style="margin-bottom: 16px;">Solicitação registrada com sucesso!</h1>
-                <p style="color: var(--text-muted); font-size: 1.125rem; line-height: 1.6; margin-bottom: 24px;">
-                    Seus dados foram recebidos pelo nosso sistema. O exemplar completo da obra em PDF é processado para o endereço de e-mail informado. Por favor, confira sua caixa de entrada e, se necessário, a pasta de spam ou promoções nos próximos minutos.
+                <span id="statusBadge" class="badge badge-active" style="margin-bottom: 12px;">Solicitação Registrada</span>
+                <h1 id="statusTitle" style="margin-bottom: 16px;">Solicitação registrada com sucesso!</h1>
+                <p id="statusDesc" style="color: var(--text-muted); font-size: 1.125rem; line-height: 1.6; margin-bottom: 24px;">
+                    Seus dados foram recebidos pelo nosso sistema. O registro da solicitação do e-book gratuito foi realizado com sucesso. A validação e o envio do arquivo em PDF seguem os procedimentos técnicos da plataforma.
                 </p>
                 <div class="notice-box" style="margin-bottom: 32px; font-size: 0.875rem; text-align: left;">
-                    <strong>Deseja também a edição física ou a experiência em áudio?</strong><br>
-                    • <strong>Livro Físico (Clube de Autores):</strong> R$ 67,30 + frete (impressão sob demanda).<br>
-                    • <strong>Audiobook Narrado (Hotmart):</strong> R$ 47,37 (acesso imediato via app ou web).
+                    <strong>Deseja também o exemplar impresso ou a experiência em áudio?</strong><br>
+                    • <strong>Livro físico:</strong> exemplar impresso oficial disponível na Hotmart.<br>
+                    • <strong>Audiobook Oficial:</strong> narração integral disponível na Hotmart.
                 </div>
                 <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-                    <a href="/conteudos-gratuitos/ia-no-trabalho#comprar" class="btn btn-primary">Ver opções na Hotmart e Clube de Autores</a>
+                    <a href="/conteudos-gratuitos/ia-no-trabalho#comprar" class="btn btn-primary">Consultar formatos e tabela de investimento</a>
+                    <a href="https://pay.hotmart.com/A106240775N?bid=1781054850796" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Comprar Livro físico na Hotmart</a>
                     <a href="/" class="btn btn-secondary">Voltar para a página inicial</a>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+    (function() {
+        try {
+            var raw = sessionStorage.getItem('colmeia_ebook_submission');
+            if (raw) {
+                var info = JSON.parse(raw);
+                var now = Date.now();
+                // Apenas considera eventos recentes (últimos 3 minutos)
+                if (info && (now - info.time < 180000)) {
+                    var badge = document.getElementById('statusBadge');
+                    var title = document.getElementById('statusTitle');
+                    var desc = document.getElementById('statusDesc');
+                    if (info.status === 'sent') {
+                        if (badge) { badge.textContent = 'Envio Aceito'; badge.className = 'badge badge-active'; }
+                        if (title) title.textContent = 'Envio aceito pelo servidor de e-mail!';
+                        if (desc) desc.textContent = 'O exemplar completo em PDF foi despachado para ' + (info.email || 'o seu e-mail') + '. Por favor, confira sua caixa de entrada e, se necessário, a pasta de spam ou promoções nos próximos minutos.';
+                    } else if (info.status === 'registered') {
+                        if (badge) { badge.textContent = 'Solicitação Registrada'; badge.className = 'badge badge-warning'; }
+                        if (title) title.textContent = 'Solicitação registrada com sucesso!';
+                        if (desc) desc.textContent = 'Seus dados foram recebidos com sucesso pelo nosso sistema. O cadastro para ' + (info.email || 'o seu e-mail') + ' foi confirmado e o envio do PDF aguarda a liberação das credenciais de envio pelo administrador.';
+                    } else if (info.status === 'error') {
+                        if (badge) { badge.textContent = 'Registro Pendente'; badge.className = 'badge badge-danger'; }
+                        if (title) title.textContent = 'Solicitação em análise técnica';
+                        if (desc) desc.textContent = 'Identificamos uma oscilação técnica momentânea. Seus dados foram salvos para conferência manual pela nossa equipe, ou você pode entrar em contato diretamente via contato@colmeiastudiosacademy.com.br.';
+                    }
+                }
+                sessionStorage.removeItem('colmeia_ebook_submission');
+            }
+        } catch (e) {
+            // Mantém mensagem padrão neutra em caso de erro
+        }
+    })();
+    </script>
 
     <!-- RODAPÉ UNIFICADO ACADEMY -->
     <footer class="academy-footer">
