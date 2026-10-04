@@ -1,5 +1,9 @@
 [build]
   publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  included_files = ["netlify/functions/assets/*"]
 
 
 [[headers]]

@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6WNR6F2CY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-B6WNR6F2CY');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conteúdos Gratuitos sobre IA | Colmeia Studios Academy</title>
-    <meta name="description" content="Acesse materiais gratuitos, checklists práticos, guias de prompts e conheça o livro IA no Trabalho da Colmeia Studios Academy.">
+    <meta name="description" content="Acesse materiais gratuitos, checklists práticos, guias de prompts e receba o e-book completo IA no Trabalho gratuitamente por e-mail da Colmeia Studios Academy.">
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/conteudos-gratuitos">
     
     <meta property="og:type" content="website">
     <meta property="og:title" content="Conteúdos Gratuitos sobre IA | Colmeia Studios Academy">
-    <meta property="og:description" content="Guias práticos, checklists de auditoria e materiais educativos para dominar IA no trabalho.">
+    <meta property="og:description" content="Guias práticos, checklists de auditoria e e-book completo gratuito para dominar IA no trabalho.">
     <meta property="og:url" content="https://colmeiastudiosacademy.com.br/conteudos-gratuitos">
     <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
 
@@ -26,7 +18,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="/assets/academy.css">
+    <link rel="stylesheet" href="/assets/consent.css">
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
+    <script src="/assets/consent.js" defer></script>
 </head>
 <body>
 
@@ -73,22 +67,23 @@
         <!-- DESTAQUE LIVRO IA NO TRABALHO -->
         <section class="section-padding" style="background-color: var(--bg-card); border-bottom: 1px solid var(--border-light);">
             <div class="container">
-                <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 48px 36px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 40px; align-items: center;">
-                    <div style="display: flex; justify-content: center;">
-                        <img src="/assets/mockup-ia-no-trabalho.jpg" alt="Livro IA no Trabalho" style="max-width: 280px; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                <div class="book-feature-card">
+                    <div class="book-feature-image-wrap">
+                        <img src="/assets/mockup-ia-no-trabalho.jpg" alt="Livro IA no Trabalho" width="280" height="420" loading="lazy">
                     </div>
 
-                    <div>
-                        <span class="badge badge-info" style="margin-bottom: 12px;">Livro &bull; Audiobook</span>
+                    <div class="book-feature-content">
+                        <span class="badge badge-info" style="margin-bottom: 12px;">E-book Gratuito &bull; Livro Físico &bull; Audiobook</span>
                         <h2>IA no Trabalho: Ganhe Tempo e Produza Melhor</h2>
                         <p style="color: var(--text-muted); font-size: 1rem; margin: 16px 0 20px; line-height: 1.6;">
                             Escrito por Cristian Santos Pimentel, este livro desmistifica a inteligência artificial para profissionais de todas as áreas. Sem jargões difíceis, focado em aplicação prática no dia a dia.
                         </p>
                         <p style="font-size: 0.9375rem; color: var(--text-subtle); margin-bottom: 24px;">
-                            Cadastre seu e-mail para acompanhar a liberação do material ou acesse as opções de compra nas versões digital, impressa e audiobook na Hotmart.
+                            Solicite o <strong>e-book completo gratuito enviado por e-mail</strong>. As edições em livro físico impresso e audiobook oficial permanecem disponíveis para aquisição na plataforma Hotmart.
                         </p>
                         <div style="display: flex; gap: 14px; flex-wrap: wrap;">
-                            <a href="/conteudos-gratuitos/ia-no-trabalho" class="btn btn-primary">Acessar página do livro &rarr;</a>
+                            <a href="/conteudos-gratuitos/ia-no-trabalho#cadastro" class="btn btn-primary">Receber o e-book completo gratuitamente por e-mail &rarr;</a>
+                            <a href="/conteudos-gratuitos/ia-no-trabalho" class="btn btn-secondary">Conhecer a obra e edições</a>
                         </div>
                     </div>
                 </div>
@@ -201,6 +196,7 @@
                 <div class="footer-bottom-links">
                     <a href="/aviso-de-privacidade">Aviso de Privacidade</a>
                     <a href="/termos-academy">Termos de Uso</a>
+                    <button type="button" class="footer-link cookie-pref-trigger" onclick="window.openCookiePreferences()">Preferências de Cookies</button>
                 </div>
             </div>
         </div>

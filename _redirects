@@ -13,10 +13,29 @@
 /projeto-social             /                                      301!
 /projeto-social.html        /                                      301!
 
-# Auditoria de Revisão
+# Auditoria de Revisão e Núcleo Jurídico
 /auditoria-de-entrada          /auditoria-de-revisao                  301!
 /auditoria-de-entrada.html     /auditoria-de-revisao                  301!
 /auditoria-de-revisao.html     /auditoria-de-revisao                  301!
+/nucleo-inteligencia-juridica.html /nucleo-inteligencia-juridica      301!
+
+# Páginas Legais
+/aviso-de-privacidade.html     /aviso-de-privacidade                  301!
+/termos.html                   /termos                                301!
+/termos-academy.html           /termos-academy                        301!
+/privacidade.html              /privacidade                           301!
+
+# API Endpoints
+/api/solicitar-ebook           /.netlify/functions/solicitar-ebook    200
+
+# Bloqueio de arquivos internos, assets de backend, scripts e documentos privados
+/netlify/*                     /404.html                              404!
+/docs/*                        /404.html                              404!
+/scratch/*                     /404.html                              404!
+/refactoring_report.txt        /404.html                              404!
+/*.py                          /404.html                              404!
+/*.bak*                        /404.html                              404!
+/*.backup*                     /404.html                              404!
 
 # Fallback 404 explícito
 /*                          /404.html                              404

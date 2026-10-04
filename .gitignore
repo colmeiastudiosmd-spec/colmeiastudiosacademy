@@ -1,3 +1,5 @@
 .netlify/
 *.backup-*.html
 scratch/
+node_modules/
+netlify/functions/node_modules/

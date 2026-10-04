@@ -729,3 +729,50 @@ textarea.form-control {
     align-items: flex-start;
   }
 }
+
+/* Responsive Book Feature Card */
+.book-feature-card {
+  background: var(--bg-page);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 48px 36px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.book-feature-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+}
+
+.book-feature-image-wrap img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+}
+
+.book-feature-content {
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .book-feature-card {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+    gap: 24px;
+    text-align: left;
+  }
+  .book-feature-image-wrap img {
+    max-width: 220px;
+  }
+}

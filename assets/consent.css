@@ -1,0 +1,195 @@
+/* Colmeia Studios Academy - Consent Banner & Modal Styles */
+.colmeia-consent-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: rgba(18, 15, 12, 0.98);
+  border-top: 1px solid #3a3227;
+  color: #f3efe6;
+  padding: 16px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.colmeia-consent-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.colmeia-consent-text {
+  flex: 1 1 540px;
+  color: #d1c9bd;
+}
+
+.colmeia-consent-text a {
+  color: #f2a71b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.colmeia-consent-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.colmeia-consent-btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  line-height: 1.3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.colmeia-consent-btn-primary {
+  background-color: #f2a71b;
+  color: #14100b;
+  border-color: #f2a71b;
+}
+
+.colmeia-consent-btn-primary:hover {
+  background-color: #ffc21a;
+  border-color: #ffc21a;
+}
+
+.colmeia-consent-btn-secondary {
+  background-color: transparent;
+  color: #e5dfd5;
+  border-color: #524738;
+}
+
+.colmeia-consent-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: #7a6a54;
+}
+
+.colmeia-consent-btn-ghost {
+  background-color: transparent;
+  color: #b5aaa0;
+  border-color: transparent;
+  text-decoration: underline;
+}
+
+.colmeia-consent-btn-ghost:hover {
+  color: #f2a71b;
+}
+
+/* Modal de Preferências */
+.colmeia-consent-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.colmeia-consent-modal {
+  background-color: #1a1612;
+  border: 1px solid #3a3227;
+  border-radius: 10px;
+  color: #f3efe6;
+  max-width: 580px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  padding: 24px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.colmeia-consent-modal h3 {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+  color: #ffffff;
+}
+
+.colmeia-consent-modal p {
+  font-size: 13.5px;
+  color: #b5aaa0;
+  line-height: 1.5;
+  margin: 0 0 16px;
+}
+
+.colmeia-pref-group {
+  background-color: #120f0c;
+  border: 1px solid #2e261e;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.colmeia-pref-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.colmeia-pref-header strong {
+  font-size: 14px;
+  color: #f3efe6;
+}
+
+.colmeia-pref-desc {
+  font-size: 12.5px;
+  color: #9c9184;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.colmeia-badge-locked {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background-color: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  font-weight: 600;
+}
+
+.colmeia-consent-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid #2e261e;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .colmeia-consent-banner {
+    padding: 14px 16px;
+  }
+  .colmeia-consent-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .colmeia-consent-btn {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}

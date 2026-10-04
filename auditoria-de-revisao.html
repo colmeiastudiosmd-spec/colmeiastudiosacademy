@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<link rel="stylesheet" href="/assets/consent.css">
+<script src="/assets/consent.js" defer></script>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Auditoria de Revisão de Fontes e Precedentes | Núcleo de Inteligência Jurídica</title>
@@ -215,7 +217,7 @@
 
   footer{background:var(--ink);color:#8A9199;font-size:12.5px;line-height:1.7}
   footer .wrap{padding:44px 28px}
-  footer a{color:#C9D0D6}
+  footer a{color:#C9D0D6;overflow-wrap:anywhere;word-break:break-word}
   footer .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
   footer .fine{border-top:1px solid var(--line-dark);margin-top:30px;padding-top:20px;font-size:11.5px}
 
@@ -224,17 +226,41 @@
   @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
   @media (prefers-reduced-motion: reduce){.rv{animation:none}html{scroll-behavior:auto}}
 
-  @media (max-width: 560px){.stake-grid{grid-template-columns:1fr}.risk-bridge{padding:22px}}
   @media (max-width: 960px){
     .hero .wrap{grid-template-columns:1fr;padding-top:64px;padding-bottom:72px;gap:44px}
     .risk-grid{grid-template-columns:1fr}
     .stake-grid{grid-template-columns:1fr 1fr}
-    .def-grid,.qa-grid,.proof-grid,.notfor .wrap{grid-template-columns:1fr}
+    .def-grid,.qa-grid,.proof-grid,.notfor .wrap{grid-template-columns:minmax(0, 1fr)}
     .offer-body{grid-template-columns:1fr}
     .offer-price{border-left:0;border-top:1px solid var(--line)}
     .def-side{position:static}
-    .verdict{grid-template-columns:repeat(3,1fr)}
     .sec{padding:64px 0}
+  }
+  @media (max-width: 768px){
+    footer .cols{grid-template-columns:1fr;gap:24px}
+  }
+  @media (max-width: 680px){
+    .wrap{padding:0 16px}
+    .topbar .wrap{height:58px;gap:8px;padding:0 16px}
+    .brand{gap:8px;min-width:0;flex:1 1 auto;overflow:hidden}
+    .hex{width:28px;height:28px;flex-shrink:0}
+    .brand div{min-width:0;overflow:hidden}
+    .brand b{font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .brand small{font-size:8px;letter-spacing:.12em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block}
+    .top-cta{font-size:11px;padding:7px 11px;white-space:nowrap;flex-shrink:0}
+    .ficha{transform:none}
+    .proof-grid{grid-template-columns:minmax(0, 1fr)}
+    .proof-card{padding:20px 16px;min-width:0}
+    .verdict{grid-template-columns:repeat(3,minmax(0, 1fr));gap:6px}
+    .verdict div{padding:10px 4px;min-width:0;overflow:hidden}
+    .verdict .v{font-size:20px}
+    .verdict .l{font-size:8.5px;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .offer-card{padding:24px 16px !important}
+    .qa-card,.risk-item,.def-list li,.stake{min-width:0}
+  }
+  @media (max-width: 560px){
+    .stake-grid{grid-template-columns:1fr}
+    .risk-bridge{padding:22px}
   }
 </style>
 <script type="application/ld+json">
@@ -545,7 +571,7 @@
     </div>
     
     <div class="offer-card rv" style="padding: 32px 28px;">
-      <div style="width: 100%; overflow-x: auto; margin-bottom: 24px;">
+      <div style="width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 24px;">
         <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14.5px; min-width: 520px;">
           <thead>
             <tr style="background: rgba(242,167,27,0.12); border-bottom: 2px solid var(--honey, #f2a71b);">
@@ -559,10 +585,10 @@
             <tr style="background: rgba(255,255,255,0.02); border-bottom: 1px solid var(--line-dark);">
               <td style="padding: 18px 16px; font-weight: 700; color: #FFFFFF; vertical-align: top;">
                 Auditoria de Revisão<br>
-                <span style="font-size: 12px; font-weight: normal; color: var(--muted);">(Até 10 referências em peça pronta)</span>
+                <span style="font-size: 12px; font-weight: normal; color: var(--muted);">(Até 10 referências jurídicas em peça pronta)</span>
               </td>
               <td style="padding: 18px 16px; color: #D6DCD8; line-height: 1.6; vertical-align: top;">
-                Conferência técnica direta nas fontes oficiais de até 10 referências em peça já pronta; checagem em inteiro teor; relatório técnico estruturado com classificação e rastreabilidade; 1 rodada de revalidação inclusa. Referências adicionais podem ser contratadas mediante orçamento complementar. Sem envio de autos.
+                Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; checagem em inteiro teor; relatório técnico estruturado com classificação e rastreabilidade; 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências adicionais mediante orçamento complementar (R$ 50,00 por referência adicional, confirmado previamente), sem migração automática para Demanda Completa. Sem envio de autos.
               </td>
               <td style="padding: 18px 16px; color: #FFFFFF; white-space: nowrap; vertical-align: top; font-weight: 600;">
                 Até 5 dias úteis
@@ -570,7 +596,8 @@
               <td style="padding: 18px 16px; vertical-align: top; white-space: nowrap;">
                 <span style="font-size: 12px; font-weight: normal; color: var(--muted); display: block;">A partir de</span>
                 <span style="font-weight: 800; font-size: 22px; color: var(--honey, #f2a71b);">R$ 500,00</span><br>
-                <span style="font-size: 11px; font-weight: normal; color: var(--muted);">(pagamento único)</span>
+                <span style="font-size: 11px; font-weight: normal; color: var(--muted);">(pagamento único)</span><br>
+                <span style="font-size: 12px; color: #EDEFEA; display: block; margin-top: 6px;">+ R$ 50,00 <span style="font-size: 11px; color: var(--muted);">/ ref. adicional</span></span>
               </td>
             </tr>
           </tbody>
@@ -579,10 +606,13 @@
 
       <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 16px 20px; font-size: 13.5px; line-height: 1.6; margin-bottom: 24px;">
         <p style="margin: 0 0 10px; color: #EDEFEA;">
-          <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade e à confirmação na proposta.
+          <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade técnica e à confirmação prévia na proposta.
+        </p>
+        <p style="margin: 0 0 10px; color: var(--muted);">
+          <strong>Regra de contagem objetiva:</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência.
         </p>
         <p style="margin: 0; color: var(--muted);">
-          <strong>Condições comerciais:</strong> O investimento inicial contempla até 10 referências jurisprudenciais. Referências adicionais podem ser contratadas mediante orçamento complementar. Pagamento único via Pix ou transferência com emissão de nota fiscal de serviços. Prazos de urgência sujeitos à capacidade técnica e confirmados somente após a triagem. Demandas completas de pesquisa ampliada seguem as faixas do Núcleo de Inteligência Jurídica.
+          <strong>Condições comerciais:</strong> Caso a peça contenha mais de 10 referências, o cliente poderá contratar referências adicionais mediante orçamento complementar confirmado previamente ou optar pela seleção das 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. A rodada de revalidação inclusa pode ser solicitada em até 15 dias corridos da entrega do relatório inicial. Pagamento único via Pix ou transferência com emissão de nota fiscal de serviços.
         </p>
       </div>
 
@@ -667,10 +697,10 @@
         <p>WhatsApp: <a href="https://wa.me/5531999314793">+55 31 99931-4793</a></p>
         <p>E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br">contato@colmeiastudiosacademy.com.br</a></p>
         <p>53.484.773 Cristian Santos Pimentel · CNPJ 53.484.773/0001-57<br>Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126</p>
-        <p><a href="/privacidade">Política de Privacidade</a> · <a href="/termos">Termos de Uso</a></p>
+        <p><a href="/privacidade">Política de Privacidade</a> · <a href="/termos">Termos de Uso</a> · <button type="button" class="cookie-pref-trigger" onclick="window.openCookiePreferences()" style="background: none; border: none; color: #C9D0D6; text-decoration: underline; cursor: pointer; font-size: inherit; font-family: inherit; padding: 0;">Preferências de Cookies</button></p>
       </div>
     </div>
-    <p class="fine">Os materiais constituem insumos técnicos editáveis para uso interno de advogados e não constituem parecer jurídico, peça processual concluída ou documento apto a protocolo. A auditoria de fontes é procedimento técnico de rastreabilidade e conferência documental — não certifica pertinência jurídica nem substitui a revisão do advogado responsável. Não há promessa ou garantia de resultado. Documentos sigilosos são recebidos somente após formalização contratual, Ordem de Serviço e assinatura de NDA. Tratamento de dados conforme LGPD; os arquivos não são utilizados para treinamento de modelos públicos. A Auditoria de Revisão possui escopo de até 10 referências existentes; escopos maiores seguem as modalidades completas do Núcleo de Inteligência Jurídica sujeitas a confirmação após triagem técnica.</p>
+    <p class="fine">Os materiais constituem insumos técnicos editáveis para uso interno de advogados e não constituem parecer jurídico, peça processual concluída ou documento apto a protocolo. A auditoria de fontes é procedimento técnico de rastreabilidade e conferência documental — não certifica pertinência jurídica nem substitui a revisão do advogado responsável. Não há promessa ou garantia de resultado. Documentos sigilosos são recebidos somente após formalização contratual, Ordem de Serviço e assinatura de NDA. Tratamento de dados conforme LGPD; os arquivos não são utilizados para treinamento de modelos públicos. A Auditoria de Revisão possui escopo base de até 10 referências jurídicas no total (normas/dispositivos, decisões judiciais e súmulas) com 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Peças com mais de 10 referências podem incluir itens adicionais mediante orçamento complementar prévio, sem migração automática para Demanda Completa.</p>
   </div>
 </footer>
 

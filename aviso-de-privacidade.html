@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B6WNR6F2CY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-B6WNR6F2CY');
-    </script>
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aviso de Privacidade | Colmeia Studios Academy</title>
@@ -110,15 +103,21 @@
                         <h2 style="font-size: 1.5rem; margin-bottom: 16px; color: var(--text-dark);">3. Dados Pessoais Tratados e Finalidades</h2>
                         <div style="display: flex; flex-direction: column; gap: 20px;">
                             <div>
-                                <h3 style="font-size: 1.125rem; color: var(--text-dark); margin-bottom: 6px;">a) Dados de Navegação e Métricas (Cookies)</h3>
+                                <h3 style="font-size: 1.125rem; color: var(--text-dark); margin-bottom: 6px;">a) Dados de Navegação e Métricas (Cookies e Consent Mode Básico)</h3>
+                                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 6px;">
+                                    Adotamos a modalidade <strong>Consent Mode Básico</strong> para a ferramenta Google Analytics (ID G-B6WNR6F2CY, fornecida pela Google LLC). Nenhum script analítico ou cookie de medição é executado antes do consentimento explícito do visitante.
+                                </p>
+                                <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 6px;">
+                                    <strong>Categorias:</strong> (i) <em>Estritamente necessários</em> (para segurança, prevenção de fraudes e controle de consentimento, sem necessidade de aceite); e (ii) <em>Analíticos opcionais</em> (estatísticas agregadas de visitas, retenção padrão de 14 meses no Google Analytics, ativados apenas se você clicar em "Aceitar todos" ou habilitar nos controles de privacidade).
+                                </p>
                                 <p style="color: var(--text-muted); font-size: 0.95rem;">
-                                    Utilizamos o Google Analytics (ID G-B6WNR6F2CY) nas páginas do portal Academy para entender padrões agregados de navegação (páginas visualizadas, tempo aproximado de permanência, país/cidade e tipo de dispositivo). Esses dados são estatísticos e não identificam o visitante individualmente. Você pode desativar cookies diretamente no seu navegador.
+                                    Você pode alterar ou revogar sua decisão a qualquer momento através do link <strong>"Preferências de Cookies"</strong> no rodapé de todas as páginas.
                                 </p>
                             </div>
                             <div>
-                                <h3 style="font-size: 1.125rem; color: var(--text-dark); margin-bottom: 6px;">b) Dados de Contato e Listas de Interesse (Netlify Forms)</h3>
+                                <h3 style="font-size: 1.125rem; color: var(--text-dark); margin-bottom: 6px;">b) E-book Gratuito e Formulários de Contato (Netlify Forms &amp; Functions)</h3>
                                 <p style="color: var(--text-muted); font-size: 0.95rem;">
-                                    Ao preencher formulários no site (manifestação de interesse em cursos em desenvolvimento, solicitação de materiais educativos ou contato institucional), coletamos seu nome, e-mail, telefone/WhatsApp e mensagem. A finalidade exclusiva é responder à sua solicitação e enviar avisos sobre o lançamento da formação escolhida.
+                                    Ao solicitar o e-book digital completo <em>"IA no Trabalho"</em> ou preencher formulários de contato/interesse, coletamos seu nome e e-mail. A finalidade é estritamente o envio automático do arquivo em PDF para sua caixa de entrada e comunicações pertinentes solicitadas por você. Não compartilhamos nem vendemos seu e-mail para terceiros.
                                 </p>
                             </div>
                             <div>
@@ -128,9 +127,9 @@
                                 </p>
                             </div>
                             <div>
-                                <h3 style="font-size: 1.125rem; color: var(--text-dark); margin-bottom: 6px;">d) Aquisição de Livros e Materiais Pagos</h3>
+                                <h3 style="font-size: 1.125rem; color: var(--text-dark); margin-bottom: 6px;">d) Aquisição de Livro Físico e Audiobook (Plataformas Externas)</h3>
                                 <p style="color: var(--text-muted); font-size: 0.95rem;">
-                                    A comercialização do livro digital e audiobook é processada diretamente pela plataforma <strong>Hotmart</strong>. A Colmeia Studios Academy não coleta, não processa e não armazena dados de cartão de crédito ou dados financeiros dos compradores. O processamento é regido pelos termos de privacidade da Hotmart.
+                                    A comercialização da versão física impressa (via <strong>Clube de Autores</strong>) e do audiobook narrado (via <strong>Hotmart</strong>) ocorre inteiramente nos ambientes externos dessas plataformas parceiras. A Colmeia Studios Academy não coleta, não processa e não armazena dados de pagamento, números de cartão ou informações financeiras das transações.
                                 </p>
                             </div>
                         </div>
@@ -251,6 +250,7 @@
                 <div class="footer-bottom-links">
                     <a href="/aviso-de-privacidade">Aviso de Privacidade</a>
                     <a href="/termos-academy">Termos de Uso</a>
+                    <button type="button" class="footer-link cookie-pref-trigger" onclick="window.openCookiePreferences()">Preferências de Cookies</button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -63,7 +65,7 @@
               "name": "Qual é a diferença entre Auditoria de Revisão e demanda completa?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A Auditoria de Revisão foca na conferência pontual de até 10 referências existentes em peça já elaborada pelo cliente, checando cada citação nas fontes oficiais. As modalidades de Demanda Completa abrangem a pesquisa assistida de teses, busca ampla de precedentes e estruturação de acervos documentais conduzidas pelo Núcleo conforme o escopo acordado."
+                "text": "A Auditoria de Revisão foca na conferência pontual de até 10 referências jurídicas (normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas) em peça já elaborada pelo cliente, checando cada citação nas fontes oficiais com 1 rodada de revalidação inclusa. As modalidades de Demanda Completa (Essencial, Padrão e Complexa) abrangem a pesquisa assistida de teses, busca ampla de precedentes e estruturação de acervos documentais e cronologias conduzidas pelo Núcleo nas fases processuais acordadas em proposta e Ordem de Serviço."
               }
             },
             {
@@ -71,7 +73,7 @@
               "name": "Como funciona a Auditoria de Revisão?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "O escritório envia até 10 referências (jurisprudência, súmulas ou normas) constantes em uma peça já redigida, sem necessidade de envio de autos. Auditamos cada citação diretamente nos repositórios oficiais dos tribunais e emitimos um relatório técnico com classificação das fontes e registro de divergências, com 1 rodada de revalidação inclusa após os ajustes da banca. Referências adicionais podem ser contratadas mediante orçamento complementar, sem classificação automática como Demanda Completa."
+                "text": "O escritório indica até 10 referências jurídicas no total (normas ou dispositivos, decisões judiciais e súmulas) constantes em uma peça já redigida, sem necessidade de envio de autos. Auditamos cada citação diretamente nos repositórios oficiais dos tribunais e diários de justiça e emitimos um relatório técnico com classificação das fontes e registro de divergências, com 1 rodada de revalidação inclusa (solicitada em até 15 dias corridos). Referências adicionais podem ser contratadas mediante orçamento complementar, sem migração automática para Demanda Completa."
               }
             },
             {
@@ -411,18 +413,19 @@
             justify-content: center;
             align-items: center;
             gap: 5px;
-            width: 44px;
-            height: 44px;
-            background: transparent;
-            border: 1px solid var(--border-dark);
+            width: 40px;
+            height: 40px;
+            background: rgba(242, 167, 27, 0.12);
+            border: 1px solid var(--accent-gold);
             border-radius: 6px;
             cursor: pointer;
+            flex-shrink: 0;
         }
 
         .hamburger-line {
-            width: 22px;
+            width: 20px;
             height: 2px;
-            background-color: var(--text-main);
+            background-color: var(--accent-gold);
             border-radius: 2px;
             transition: transform 0.3s ease, opacity 0.3s ease;
         }
@@ -456,6 +459,55 @@
             .header-nav .link-home-subtle {
                 border-left: none;
                 padding-left: 14px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 0 16px;
+            }
+            .header-content {
+                gap: 8px;
+            }
+            .header-brand {
+                gap: 8px;
+                min-width: 0;
+                flex: 1 1 auto;
+                overflow: hidden;
+            }
+            .header-logo {
+                height: 28px;
+                width: 28px;
+                object-fit: contain;
+                flex-shrink: 0;
+            }
+            .header-titles {
+                min-width: 0;
+                overflow: hidden;
+            }
+            .brand-main {
+                font-size: 0.82rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.2;
+            }
+            .brand-sub {
+                font-size: 0.68rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 1.2;
+            }
+            .mobile-menu-toggle {
+                width: 38px;
+                height: 38px;
+                flex-shrink: 0;
+            }
+            .top-institutional-bar {
+                font-size: 0.75rem;
+                padding: 6px 12px;
+                line-height: 1.4;
             }
         }
 
@@ -528,7 +580,7 @@
         /* Riscos / Casos Documentados */
         .riscos-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
             gap: 20px;
             margin: 28px 0 20px 0;
         }
@@ -542,6 +594,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            min-width: 0;
         }
 
         .risco-tag {
@@ -588,7 +641,7 @@
         /* Modalidades Cards */
         .modalidades-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
             gap: 24px;
             margin-top: 32px;
         }
@@ -601,6 +654,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            min-width: 0;
         }
 
         .mod-card.featured {
@@ -1139,7 +1193,7 @@
                 <p style="margin-bottom: 24px; color: var(--text-main); font-size: 1.0625rem; max-width: 900px; line-height: 1.7;">
                     Autos extensos, múltiplas instâncias e fontes dispersas consomem horas preciosas que deveriam estar concentradas na análise jurídica de mérito, na estratégia processual e no atendimento aos clientes. O Núcleo assume a camada operacional de pesquisa, organização documental e rastreabilidade para que o advogado receba um material pronto para revisão crítica.
                 </p>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin: 24px 0;">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 18px; margin: 24px 0;">
                     <div style="background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 8px; padding: 20px;">
                         <strong style="color: var(--accent-gold); display: block; margin-bottom: 6px;">Triagem Exaustiva</strong>
                         <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Profissionais experientes consumidos pela leitura mecânica de laudas repetitivas e certidões cartorárias.</p>
@@ -1238,15 +1292,17 @@
                             <span class="mod-badge">Conferência de fontes</span>
                             <h3 style="font-size: 1.35rem; color: #ffffff; margin-bottom: 8px;">Auditoria de Revisão de Peça e Fontes</h3>
                             <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-                                Conferência técnica direta em fontes oficiais de até 10 referências (jurisprudência, normas ou súmulas) em peças que o seu escritório já redigiu, antes do protocolo.
+                                Conferência técnica direta em fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peças que o seu escritório já redigiu, antes do protocolo.
                             </p>
 
                             <ul class="mod-list">
-                                <li>Conferência minuciosa de até 10 referências indicadas</li>
-                                <li>Verificação direta em repositórios oficiais dos tribunais</li>
+                                <li>Conferência minuciosa de até 10 referências jurídicas no total</li>
+                                <li>Combinação livre entre normas, decisões e súmulas (total de 10)</li>
+                                <li>Verificação direta em repositórios oficiais e diários de justiça</li>
                                 <li>Status técnico: Confirmada, Com ressalva ou Bloqueada</li>
-                                <li>1 rodada de revalidação inclusa após os seus ajustes</li>
+                                <li>1 rodada de revalidação inclusa após os ajustes da banca</li>
                                 <li>Entrega do Relatório Técnico de Auditoria de Fontes</li>
+                                <li>Referências adicionais mediante orçamento complementar (sem migração automática para Demanda Completa)</li>
                                 <li>Sem envio de autos ou dados sigilosos no primeiro contato</li>
                             </ul>
                         </div>
@@ -1266,16 +1322,17 @@
                             <span class="mod-badge" style="background: rgba(255, 255, 255, 0.05); color: var(--text-muted); border-color: rgba(255, 255, 255, 0.1);">SUPORTE INTEGRAL</span>
                             <h3 style="font-size: 1.35rem; color: #ffffff; margin-bottom: 8px;">Demandas Completas e Casos Complexos</h3>
                             <p style="font-size: 0.875rem; color: var(--text-muted); line-height: 1.6;">
-                                Pesquisa assistida aprofundada, organização de acervos documentais, mapeamento cronológico e organização de estruturas técnicas editáveis desde a concepção do caso.
+                                O apoio pode começar antes da elaboração da primeira petição e estender-se pelas fases processuais contratadas, conforme o plano de trabalho e a ordem de serviço formalizados com o escritório.
                             </p>
 
                             <ul class="mod-list">
+                                <li><strong>Três faixas dimensionadas:</strong> Essencial, Padrão e Complexa / Tribunais Superiores</li>
                                 <li>Dossiê técnico com mapeamento fático e documental</li>
                                 <li>Matriz de precedentes com confronto de notas contextuais de inteiro teor</li>
                                 <li>Cronologia de fatos e incidentes processuais</li>
-                                <li>Dossiês documentais, matrizes de referências e estruturas técnicas editáveis, organizados conforme o escopo e as orientações do advogado responsável</li>
-                                <li>Acordo de Confidencialidade (NDA) formal bilateral</li>
-                                <li>Faixas dimensionadas conforme a complexidade dos autos</li>
+                                <li>Estruturas preliminares editáveis para subsidiar a redação final do advogado</li>
+                                <li>Escopo, fases e entregas estritamente delimitados em OS (sem acompanhamento ilimitado)</li>
+                                <li>Acordo de Confidencialidade (NDA) formal bilateral antes do envio de peças</li>
                             </ul>
                         </div>
                         <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 10px;">
@@ -1567,11 +1624,12 @@
                                     <strong style="color: #ffffff; display: block;">Auditoria de Revisão</strong>
                                 </td>
                                 <td>
-                                    Conferência técnica direta nas fontes oficiais de até 10 referências em peça já pronta; relatório estruturado com rastreabilidade; 1 rodada de revalidação inclusa. Referências adicionais mediante orçamento complementar. Sem envio de autos.
+                                    Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; relatório com classificação e memorial de checagem; 1 rodada de revalidação inclusa (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências adicionais mediante orçamento complementar (R$ 50,00 por referência adicional, confirmado previamente), sem migração automática para Demanda Completa. Sem envio de autos.
                                 </td>
                                 <td>Até 5 dias úteis</td>
                                 <td class="col-val" style="color: var(--accent-gold);">
-                                    A partir de R$ 500,00
+                                    A partir de R$ 500,00<br>
+                                    <span style="font-size: 0.75rem; color: var(--text-muted); font-weight: normal;">(+ R$ 50,00 / ref. adicional)</span>
                                 </td>
                             </tr>
 
@@ -1581,7 +1639,7 @@
                                     <strong style="color: #ffffff; display: block;">Demanda Completa · Essencial</strong>
                                 </td>
                                 <td>
-                                    Pesquisa assistida de precedentes pontuais; organização documental; estrutura preliminar de apoio para revisão da banca.
+                                    Pesquisa assistida de precedentes pontuais; organização documental; estrutura preliminar de apoio para revisão da banca. Apoio nas fases acordadas em OS.
                                 </td>
                                 <td>Até 5 dias úteis</td>
                                 <td class="col-val">
@@ -1595,7 +1653,7 @@
                                     <strong style="color: #ffffff; display: block;">Demanda Completa · Padrão</strong>
                                 </td>
                                 <td>
-                                    Pesquisa aprofundada de jurisprudência; mapeamento de teses; autos de média complexidade; cronologia documental de fatos e incidentes.
+                                    Pesquisa aprofundada de jurisprudência; mapeamento de teses; autos de média complexidade; cronologia documental de fatos e incidentes. Apoio nas fases acordadas em OS.
                                 </td>
                                 <td>Até 8 dias úteis</td>
                                 <td class="col-val">
@@ -1609,7 +1667,7 @@
                                     <strong style="color: #ffffff; display: block;">Demanda Completa · Complexa / Tribunais Superiores</strong>
                                 </td>
                                 <td>
-                                    Múltiplos volumes, recursos especiais ou extraordinários, grande extensão de fontes, incidentes repetitivos e organização temática de referências para apoio à sustentação oral.
+                                    Múltiplos volumes, recursos especiais ou extraordinários, grande extensão de fontes, incidentes repetitivos e organização temática de referências para apoio à sustentação oral. Apoio nas fases acordadas em OS.
                                 </td>
                                 <td>Até 12 dias úteis</td>
                                 <td class="col-val">
@@ -1622,13 +1680,16 @@
 
                 <div class="pricing-note">
                     <p style="margin-bottom: 8px;">
-                        <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade e à confirmação na proposta.
+                        <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade técnica e à confirmação prévia na proposta.
                     </p>
                     <p style="margin-bottom: 8px;">
-                        <strong>Variação de investimento:</strong> Para a Auditoria de Revisão, o escopo inicial contempla até 10 referências jurisprudenciais, podendo ser contratadas referências adicionais mediante orçamento complementar. Para as Demandas Completas, o investimento depende do volume, complexidade e prazo. Condições formalizadas em proposta técnica e termo de confidencialidade (NDA) prévios.
+                        <strong>Regra de contagem objetiva (Auditoria de Revisão):</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência. Caso a peça contenha mais de 10 referências, podem ser contratadas referências adicionais mediante orçamento complementar confirmado previamente ou o cliente pode selecionar as 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. A rodada de revalidação inclusa pode ser solicitada em até 15 dias corridos após a entrega do relatório inicial.
+                    </p>
+                    <p style="margin-bottom: 8px;">
+                        <strong>Escopo das Demandas Completas:</strong> O apoio pode começar antes da elaboração da primeira petição e estender-se pelas fases processuais contratadas, conforme o plano de trabalho e a ordem de serviço formalizados com o escritório. Não há acompanhamento processual ilimitado; as entregas constituem insumos técnicos e estruturas editáveis preliminares, cabendo a redação final e a condução da causa com exclusividade ao advogado constituído (Lei nº 8.906/1994).
                     </p>
                     <p style="margin: 0; font-size: 0.8125rem; color: var(--text-dark);">
-                        Pagamento via Pix ou transferência com emissão de nota fiscal de serviços.
+                        Pagamento via Pix ou transferência bancária com emissão de nota fiscal de serviços e celebração prévia de Acordo de Confidencialidade (NDA).
                     </p>
                 </div>
             </div>
@@ -1670,7 +1731,7 @@
                                 <span class="faq-icon">+</span>
                             </button>
                             <div id="faq-panel-2" class="faq-content" role="region" aria-labelledby="faq-btn-2">
-                                <p>A Auditoria de Revisão foca na conferência pontual de até 10 referências existentes em peça já elaborada pelo cliente, checando cada citação nas fontes oficiais. As modalidades de Demanda Completa abrangem a pesquisa assistida de teses, busca ampla de precedentes e estruturação de acervos documentais conduzidas pelo Núcleo conforme o escopo acordado.</p>
+                                <p>A Auditoria de Revisão foca na conferência pontual de até 10 referências jurídicas (normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas) existentes em peça já elaborada pelo cliente, checando cada citação nas fontes oficiais com 1 rodada de revalidação inclusa. As modalidades de Demanda Completa (Essencial, Padrão e Complexa) abrangem a pesquisa assistida de teses, busca ampla de precedentes e estruturação de acervos documentais e cronologias conduzidas pelo Núcleo nas fases processuais acordadas em proposta e Ordem de Serviço.</p>
                             </div>
                         </div>
 
@@ -1681,7 +1742,7 @@
                                 <span class="faq-icon">+</span>
                             </button>
                             <div id="faq-panel-3" class="faq-content" role="region" aria-labelledby="faq-btn-3">
-                                <p>O escritório envia até 10 referências (jurisprudência, súmulas ou normas) constantes em uma peça já redigida, sem necessidade de envio de autos. Auditamos cada citação diretamente nos repositórios oficiais dos tribunais e emitimos um relatório técnico com classificação das fontes e registro de divergências, com 1 rodada de revalidação inclusa após os ajustes da banca. Referências adicionais podem ser contratadas mediante orçamento complementar, sem classificação automática como Demanda Completa.</p>
+                                <p>O escritório indica até 10 referências jurídicas no total (normas ou dispositivos, decisões judiciais e súmulas) constantes em uma peça já redigida, sem necessidade de envio de autos. Auditamos cada citação diretamente nos repositórios oficiais dos tribunais e diários de justiça e emitimos um relatório técnico com classificação das fontes e registro de divergências, com 1 rodada de revalidação inclusa (solicitada em até 15 dias corridos). Referências adicionais podem ser contratadas mediante orçamento complementar, sem migração automática para Demanda Completa.</p>
                             </div>
                         </div>
 
@@ -1918,10 +1979,14 @@
                                 <textarea id="resumo_demanda" name="resumo_demanda" required rows="4" class="form-input" placeholder="Descreva brevemente a matéria e os quesitos desejados. NÃO inclua dados de partes nem peças sob segredo de justiça."></textarea>
                             </div>
 
-                            <div class="form-group full-width checkbox-group">
+                            <div class="form-group full-width checkbox-group" style="display: flex; flex-direction: column; gap: 12px;">
                                 <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.8125rem; color: var(--text-muted); cursor: pointer;">
-                                    <input type="checkbox" id="concordo_lgpd" name="concordo_lgpd" required style="margin-top: 3px;">
-                                    <span>Declaro que li e concordo com os <a href="/termos" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Termos de Uso</a> e com a <a href="/privacidade" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Política de Privacidade</a> para fins de triagem técnica, e confirmo que não incluí dados sigilosos nem autos de processos neste formulário.</span>
+                                    <input type="checkbox" id="declaracao_advogado" name="declaracao_advogado" required style="margin-top: 3px;">
+                                    <span><strong>Declaração profissional:</strong> Declaro que sou advogado(a) devidamente inscrito(a) na OAB ou que atuo sob a coordenação direta e responsabilidade técnica de advogado(a) responsável. *</span>
+                                </label>
+                                <label style="display: flex; align-items: flex-start; gap: 10px; font-size: 0.8125rem; color: var(--text-muted); cursor: pointer;">
+                                    <input type="checkbox" id="concordo_termos_privacidade" name="concordo_termos_privacidade" required style="margin-top: 3px;">
+                                    <span><strong>Termos e confidencialidade:</strong> Declaro que li e concordo com os <a href="/termos" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Termos de Uso</a> e com o <a href="/aviso-de-privacidade" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Aviso de Privacidade</a> para fins de triagem técnica, e confirmo que não incluí dados sigilosos, informações sob segredo de justiça nem autos de processos neste formulário. *</span>
                                 </label>
                             </div>
                         </div>
@@ -1978,7 +2043,7 @@
                     &copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.
                 </p>
                 <p style="margin: 0;">
-                    <a href="/privacidade" style="color: var(--text-dark); text-decoration: underline;">Política de Privacidade</a> · <a href="/termos" style="color: var(--text-dark); text-decoration: underline;">Termos de Uso</a>
+                    <a href="/privacidade" style="color: var(--text-dark); text-decoration: underline;">Política de Privacidade</a> · <a href="/termos" style="color: var(--text-dark); text-decoration: underline;">Termos de Uso</a> · <button type="button" class="cookie-pref-trigger" onclick="window.openCookiePreferences()" style="background: none; border: none; color: var(--text-dark); text-decoration: underline; cursor: pointer; font-size: inherit; font-family: inherit; padding: 0;">Preferências de Cookies</button>
                 </p>
             </div>
         </div>
@@ -2057,6 +2122,14 @@
                     feedbackEl.style.display = "block";
                     feedbackEl.className = "form-feedback-message feedback-success";
                     feedbackEl.textContent = "Solicitação recebida com sucesso. O contato técnico será realizado pelo WhatsApp informado após a análise preliminar.";
+
+                    if (typeof window.trackSafeEvent === "function") {
+                        window.trackSafeEvent("form_submission_success", {
+                            form_name: "nucleo-inteligencia-juridica",
+                            tipo_demanda: formTriagem.querySelector("#tipo_demanda") ? formTriagem.querySelector("#tipo_demanda").value : ""
+                        });
+                    }
+
                     formTriagem.reset();
                     updateOabField();
                     submitBtn.disabled = false;
@@ -2088,7 +2161,7 @@
                 });
 
                 if (!isValid) {
-                    showFail("Por favor, preencha todos os campos obrigatórios (*) e confirme o termo de triagem.");
+                    showFail("Por favor, preencha todos os campos obrigatórios (*) e assinale ambas as declarações obrigatórias.");
                     return;
                 }
 
