@@ -83,8 +83,8 @@ Nenhum preço, escopo ou prazo deve ser divulgado no site sem estar formalmente 
 * **Status:** Ativo
 * **Planos:**
   * **Básico (One-page / Landing Page):** **R$ 1.497,00** · Prazo: 7 a 10 dias úteis
-  * **Completo (Até 5 páginas):** **R$ 2.497,00** · Prazo: 7 a 10 dias úteis
-  * **Premium (Até 10 páginas com agendamento):** **R$ 3.297,00** · Prazo: até 15 dias úteis
+  * **Avançado (Até 5 páginas):** **R$ 2.497,00** · Prazo: 7 a 10 dias úteis
+  * **Premium (Até 10 páginas com agendamento):** **R$ 3.497,00** · Prazo: até 15 dias úteis
 * **Pacote Presença Digital Completa:** **R$ 2.997,00**
   * Inclui: Landing page + Perfil empresarial (Google) + Instagram configurado com montagem única de 30 artes + análise e calendário + SEO previsto. (Entrega em 7 a 10 dias úteis). *Montagem única não se confunde com gestão contínua mensal.*
 
