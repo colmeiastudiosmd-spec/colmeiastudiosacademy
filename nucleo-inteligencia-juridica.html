@@ -706,7 +706,6 @@
         .am-ok { background: rgba(46, 160, 67, 0.15); color: #5fd07a; }
         .am-rs { background: rgba(214, 158, 46, 0.15); color: #f0b54a; }
         .am-bl { background: rgba(200, 80, 80, 0.15); color: #f08a8a; }
-        .am-ct { background: rgba(122, 90, 0, 0.25); color: #e6b438; border: 1px solid #7a5a00; }
 
         @media (max-width: 768px) {
             .am-table thead { display: none; }
@@ -1340,7 +1339,7 @@
                     <span class="hero-badge">Padrão de Entrega</span>
                     <h2>Veja como é uma entrega técnica</h2>
                     <p style="font-size: 1rem; color: var(--text-muted); max-width: 860px; margin-top: 8px; line-height: 1.65;">
-                        Amostra elaborada a partir do material real de um caso de execução penal (indulto) em que a Estratégia COLMEIA foi aplicada. Toda entrega traz documentos complementares: um relatório comprovando a conferência de cada fonte e a estrutura preliminar editável para redação do advogado.
+                        Amostra de uma Demanda Completa, elaborada a partir do material real de um caso de execução penal (indulto). Toda entrega traz documentos complementares: um relatório comprovando a conferência de cada fonte e a estrutura preliminar editável para redação do advogado.
                     </p>
                 </div>
 
@@ -1357,9 +1356,9 @@
                     </div>
                 </div>
 
-                <!-- Resumo da Auditoria da Amostra (9 precedentes auditados) -->
+                <!-- Resumo da amostra (9 fichas) -->
                 <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;">
-                    <span style="border: 1px solid var(--border-gold); color: var(--accent-gold); border-radius: 999px; padding: 4px 12px; font-size: 0.8125rem; font-weight: 600;">9 precedentes analisados</span>
+                    <span style="border: 1px solid var(--border-gold); color: var(--accent-gold); border-radius: 999px; padding: 4px 12px; font-size: 0.8125rem; font-weight: 600;">9 fichas de conferência</span>
                     <span style="border: 1px solid #5fd07a; color: #5fd07a; border-radius: 999px; padding: 4px 12px; font-size: 0.8125rem; font-weight: 600;">5 confirmados</span>
                     <span style="border: 1px solid #f0b54a; color: #f0b54a; border-radius: 999px; padding: 4px 12px; font-size: 0.8125rem; font-weight: 600;">2 com ressalva</span>
                     <span style="border: 1px solid #f08a8a; color: #f08a8a; border-radius: 999px; padding: 4px 12px; font-size: 0.8125rem; font-weight: 600;">2 bloqueados para citação</span>
@@ -1379,13 +1378,13 @@
                             <td data-label="Referência">STJ, AgRg no HC 950.184/SP, 5ª Turma, j. 14/04/2025</td>
                             <td data-label="Status de integridade"><span class="am-tag am-ok">Confirmada</span></td>
                             <td data-label="Onde foi conferida">SCON/STJ, fonte oficial</td>
-                            <td data-label="Observação para o advogado">Tese central: preenchidos os requisitos do decreto, não cabe interpretação extensiva das restrições. A descrição do caso foi corrigida em relação ao material de origem.</td>
+                            <td data-label="Observação para o advogado">Contraponto principal à referência do Ministério Público: preenchidos os requisitos do decreto, não cabe interpretação extensiva das restrições. A descrição do caso foi corrigida em relação ao material de origem.</td>
                         </tr>
                         <tr>
                             <td data-label="Referência">TJMG, Agravo em Execução Penal nº 1.0024.15.030052-3/001</td>
                             <td data-label="Status de integridade"><span class="am-tag am-rs">Com ressalva</span></td>
                             <td data-label="Onde foi conferida">Inteiro teor, portal do TJMG</td>
-                            <td data-label="Observação para o advogado">O trecho do material de origem não coincidia integralmente com o texto oficial. Transcreva apenas conforme o inteiro teor verificado.</td>
+                            <td data-label="Observação para o advogado">Julgado do mesmo tribunal da referência do Ministério Público. Usar como reforço, transcrevendo apenas conforme o inteiro teor oficial.</td>
                         </tr>
                         <tr>
                             <td data-label="Referência">Ementa estadual sobre o art. 9º, VIII (decreto anterior)</td>
@@ -1393,17 +1392,16 @@
                             <td data-label="Onde foi conferida">Não localizada: sem número do processo, órgão ou data</td>
                             <td data-label="Observação para o advogado">Não citar até a identificação completa ser conferida manualmente. Não localizada não equivale a inexistente.</td>
                         </tr>
-                        <tr>
-                            <td data-label="Referência">Precedente de câmara criminal estadual citado pela parte contrária</td>
-                            <td data-label="Status de integridade"><span class="am-tag am-ct">Contraposto</span></td>
-                            <td data-label="Onde foi conferida">Portal oficial do tribunal de origem</td>
-                            <td data-label="Observação para o advogado">Anotação de função argumentativa: único julgado contrário enfrentando a tese. Fundamentos de distinção organizados na Estrutura Preliminar Editável.</td>
-                        </tr>
                     </tbody>
                 </table>
 
+                <div style="border: 1px solid var(--border-gold-subtle); border-radius: 8px; padding: 20px; background: rgba(255, 255, 255, 0.02); margin-top: 20px;">
+                    <strong style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9375rem;">Referência principal do Ministério Público (não integra as 9 fichas)</strong>
+                    <p style="margin: 0; color: var(--text-muted); font-size: 0.875rem; line-height: 1.6;">Acórdão de câmara criminal estadual (2026) que tratou uma hipótese concessiva do decreto como "norma especial" em relação a outra. Conferido no portal oficial do tribunal de origem e cotejado com as fichas auditadas. Os fundamentos de distinção estão organizados na Estrutura Preliminar Editável.</p>
+                </div>
+
                 <p style="font-size: 0.8125rem; color: var(--text-dark); margin-top: 14px; line-height: 1.5;">
-                    Os critérios de integridade classificam: <em>Confirmada</em> (critérios técnicos auditados atendidos; não equivale a aprovação jurídica da tese), <em>Com ressalva</em> (limitações contextuais registradas), <em>Bloqueada</em> (referência não suficientemente verificada) e <em>Contraposto</em> (precedente utilizado pela parte contrária, conferido e cotejado com a pesquisa).
+                    Os critérios de integridade classificam: <em>Confirmada</em> (critérios técnicos auditados atendidos; não equivale a aprovação jurídica da tese), <em>Com ressalva</em> (limitações contextuais registradas) e <em>Bloqueada</em> (referência não suficientemente verificada).
                 </p>
 
                 <div style="margin-top: 20px;">
