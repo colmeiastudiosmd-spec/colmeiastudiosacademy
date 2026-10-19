@@ -1,4 +1,16 @@
+# === FORMAÇÃO PAUSADA — remover este bloco para reativar ===
+/formacao-inteligencia-juridica/escritorios/*  /nucleo-inteligencia-juridica  302!
+/formacao-inteligencia-juridica/escritorios    /nucleo-inteligencia-juridica  302!
+/formacao-inteligencia-juridica/*              /cursos/                       302!
+/formacao-inteligencia-juridica                /cursos/                       302!
+/crm/*                                         /cursos/                       302!
+/crm                                           /cursos/                       302!
+/regulamento-parceiros/*                       /cursos/                       302!
+/regulamento-parceiros                         /cursos/                       302!
+# === FIM FORMAÇÃO PAUSADA ===
+
 # Redirecionamentos 301 Legados e de Limpeza de URLs — Colmeia Studios Academy
+
 
 # Livros e Materiais
 /livros                     /conteudos-gratuitos/ia-no-trabalho    301!

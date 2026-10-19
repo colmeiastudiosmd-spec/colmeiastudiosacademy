@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <title>Colmeia Studios Academy | Formação Prática em Inteligência Artificial e Serviços Técnicos</title>
-    <meta name="description" content="Formação prática em Inteligência Artificial: Formação em Inteligência Jurídica com IA, Aulas Particulares 1 a 1 no Zoom, Núcleo de Inteligência Jurídica e websites profissionais.">
-    <meta name="keywords" content="inteligência artificial, formação em inteligência jurídica, pesquisa assistida por IA, aulas particulares de IA, núcleo de inteligência jurídica, auditoria de entrada">
+    <meta name="description" content="Formação prática em Inteligência Artificial: Aulas Particulares 1 a 1 no Zoom, Núcleo de Inteligência Jurídica e websites profissionais.">
+    <meta name="keywords" content="inteligência artificial, aulas particulares de IA, núcleo de inteligência jurídica, auditoria de fontes">
     <meta name="google-site-verification" content="ropeiNhhenmotE5GJ6wllg_oR2a1JuZPIvTRSwV8s84">
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/">
     
@@ -183,8 +183,15 @@
             flex: 1;
         }
 
+        .group-cursos .home-group-cards {
+            grid-template-columns: 1fr !important;
+            max-width: 480px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
         @media (min-width: 640px) and (max-width: 1023px) {
-            .home-group-cards {
+            .group-servicos .home-group-cards {
                 grid-template-columns: 1fr 1fr;
             }
         }
@@ -204,7 +211,7 @@
                 padding-left: 28px;
             }
 
-            .home-group-cards {
+            .group-servicos .home-group-cards {
                 grid-template-columns: 1fr 1fr;
             }
         }
@@ -220,7 +227,7 @@
                         <div class="home-group-header">
                             <span class="eyebrow">PARA VOCÊ APRENDER</span>
                             <h3>Cursos de IA</h3>
-                            <p class="home-group-sub">Aprenda a usar a Inteligência Artificial na prática e, na Formação, a prestar o serviço para escritórios.</p>
+                            <p class="home-group-sub">Aprenda a usar a Inteligência Artificial na prática, com aula particular ao vivo e foco no seu objetivo.</p>
                         </div>
                         <div class="home-group-cards">
                             <!-- Card 1: Aulas Particulares (1 a 1) -->
@@ -234,20 +241,6 @@
                                 </div>
                                 <div>
                                     <a href="/aulas-particulares-ia" class="btn btn-primary btn-block">Conhecer Aulas Particulares &rarr;</a>
-                                </div>
-                            </div>
-
-                            <!-- Card 2: Formação em Inteligência Jurídica -->
-                            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
-                                <div>
-                                    <span class="badge" style="margin-bottom: 16px; background: var(--accent-amber-light); color: #B25E00; border: 1px solid var(--accent-amber-border);">CURSO · CARREIRA E MERCADO</span>
-                                    <h4 style="margin-bottom: 12px; font-size: 1.25rem;">Formação em Inteligência Jurídica</h4>
-                                    <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
-                                        Formação de 20 horas, com aulas gravadas e encontros ao vivo, para prestar pesquisa assistida e auditoria de fontes para escritórios de advocacia.
-                                    </p>
-                                </div>
-                                <div>
-                                    <a href="/formacao-inteligencia-juridica" class="btn btn-primary btn-block">Ver Detalhes da Formação &rarr;</a>
                                 </div>
                             </div>
                         </div>
@@ -348,13 +341,11 @@
     <footer class="academy-footer">
         <div class="container">
             <div class="footer-grid">
-                <!-- Coluna 1: Formações -->
+                <!-- Coluna 1: Cursos -->
                 <div>
-                    <h3 class="footer-col-title">Formações em IA</h3>
+                    <h3 class="footer-col-title">Cursos de IA</h3>
                     <ul class="footer-links-list">
-                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
                         <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
-                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
                         <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
                     </ul>
                 </div>
