@@ -5,19 +5,31 @@
 /livros.html                /conteudos-gratuitos/ia-no-trabalho    301!
 
 # Rotas de Catálogo e Institucional
-/cursos.html                /cursos                                301!
+/cursos.html                /cursos/                               301!
 /servicos.html              /servicos                              301!
 /sobre.html                 /sobre                                 301!
 /contato.html               /contato                               301!
 /conteudos-gratuitos.html   /conteudos-gratuitos                   301!
 /projeto-social             /                                      301!
 /projeto-social.html        /                                      301!
+/mapa-oportunidades         /servicos                              301!
+/mapa-oportunidades/*       /servicos                              301!
+
+# Cursos Antigos Redirecionados
+/cursos/pesquisa-assistida-ia       /formacao-inteligencia-juridica        301!
+/cursos/pesquisa-assistida-ia/*   /formacao-inteligencia-juridica   301!
+/cursos/conteudo-redes-sociais-ia   /cursos/                               301!
+/cursos/conteudo-redes-sociais-ia/* /cursos/                               301!
+/cursos/criacao-websites-ia         /cursos/                               301!
+/cursos/criacao-websites-ia/*       /cursos/                               301!
+
 
 # Auditoria de Revisão e Núcleo Jurídico
 /auditoria-de-entrada          /auditoria-de-revisao                  301!
 /auditoria-de-entrada.html     /auditoria-de-revisao                  301!
 /auditoria-de-revisao.html     /auditoria-de-revisao                  301!
 /nucleo-inteligencia-juridica.html /nucleo-inteligencia-juridica      301!
+/formacao-inteligencia-juridica.html /formacao-inteligencia-juridica  301!
 
 # Páginas Legais
 /aviso-de-privacidade.html     /aviso-de-privacidade                  301!
@@ -28,9 +40,16 @@
 # API Endpoints
 /api/solicitar-ebook           /.netlify/functions/solicitar-ebook    200
 
+# Aplicativos Externos e Redirecionamentos de Alunos
+/entrar-crm                    https://crm-colmeia.netlify.app/       302
+
+# Rede de segurança para downloads (links legados/curtos)
+/downloads/ia-no-trabalho.pdf  /assets/downloads/ia-no-trabalho.pdf  200
+
 # Bloqueio de arquivos internos, assets de backend, scripts e documentos privados
 /netlify/*                     /404.html                              404!
 /docs/*                        /404.html                              404!
+/scratch/*                     /404                                   404!
 /scratch/*                     /404.html                              404!
 /refactoring_report.txt        /404.html                              404!
 /*.py                          /404.html                              404!

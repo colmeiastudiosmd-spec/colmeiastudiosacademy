@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
+    <title>Formação para Escritórios | Colmeia Studios Academy</title>
+    <meta name="description" content="Treine a equipe do seu escritório em pesquisa assistida por IA e auditoria de fontes. A partir de 2 inscrições, cada licença sai por R$ 1.176.">
+    <link rel="canonical" href="https://colmeiastudiosacademy.com.br/formacao-inteligencia-juridica/escritorios">
+
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Formação para Escritórios | Colmeia Studios Academy">
+    <meta property="og:description" content="Treine a equipe do seu escritório em pesquisa assistida por IA e auditoria de fontes. A partir de 2 inscrições, cada licença sai por R$ 1.176.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/formacao-inteligencia-juridica/escritorios">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Unificado da Academy -->
+    <link rel="stylesheet" href="/assets/academy.css">
+    <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
+
+    <style>
+    :root {
+      --bg: #0b0b0e;
+      --card: #16161b;
+      --card2: #1c1c22;
+      --line: #2a2a31;
+      --txt: #f1f1f5;
+      --mut: #a9a9b5;
+      --mel: #f5b301;
+      --mel2: #ffd24d;
+      --ok: #3ecf8e;
+      --no: #ff6b6b;
+      --mar: #38bdf8;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 120px;
+    }
+
+    body.formacao-body {
+      background-color: var(--bg);
+      color: var(--txt);
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    /* Botão flutuante do WhatsApp */
+    .wpp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25d366;
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 40px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      z-index: 999;
+      font-size: 0.95rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .wpp:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+      color: #fff;
+    }
+
+    /* Isolamento do CSS da Página de Formação (.pg-formacao) */
+    .pg-formacao {
+      color: var(--txt);
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+    .pg-formacao a {
+      color: inherit;
+    }
+    .pg-formacao .wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 22px;
+    }
+    .pg-formacao section {
+      padding: 84px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .pg-formacao .tag {
+      display: inline-block;
+      background: rgba(245, 179, 1, 0.12);
+      color: var(--mel);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 7px 14px;
+      border-radius: 30px;
+      margin-bottom: 18px;
+    }
+    .pg-formacao h1 {
+      font-size: clamp(2.2rem, 5.4vw, 3.9rem);
+      line-height: 1.08;
+      margin-bottom: 22px;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      font-weight: 800;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+    .pg-formacao h2 {
+      font-size: clamp(1.7rem, 3.6vw, 2.6rem);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+    .pg-formacao h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+    .pg-formacao p.lead {
+      color: var(--mut);
+      font-size: 1.15rem;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+    .pg-formacao .mel {
+      color: var(--mel);
+    }
+    .pg-formacao .center {
+      text-align: center;
+    }
+    .pg-formacao p.lead.center,
+    .pg-formacao .center p.lead {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pg-formacao .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--mel), var(--mel2));
+      color: #111;
+      font-weight: 900;
+      font-size: 1.08rem;
+      padding: 18px 34px;
+      border-radius: 14px;
+      text-decoration: none;
+      margin-top: 28px;
+      box-shadow: 0 10px 30px rgba(245, 179, 1, 0.25);
+      transition: 0.2s;
+      border: none;
+      font-family: Inter, Segoe UI, Arial, sans-serif;
+    }
+    .pg-formacao .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 38px rgba(245, 179, 1, 0.4);
+      color: #111;
+    }
+    .pg-formacao .btn-sub {
+      display: block;
+      color: var(--mut);
+      font-size: 0.88rem;
+      margin-top: 12px;
+    }
+    .pg-formacao .grid {
+      display: grid;
+      gap: 18px;
+      margin-top: 36px;
+    }
+    .pg-formacao .g2 {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .pg-formacao .g3 {
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+    .pg-formacao .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px;
+      transition: 0.2s;
+      box-shadow: none;
+    }
+    .pg-formacao .card:hover {
+      border-color: rgba(245, 179, 1, 0.5);
+    }
+    .pg-formacao .card p {
+      color: var(--mut);
+      font-size: 0.98rem;
+    }
+    .pg-formacao .hero {
+      padding: 96px 0 90px;
+      background: radial-gradient(ellipse at 85% 0%, rgba(56, 189, 248, 0.16), transparent 50%), radial-gradient(ellipse at 10% 100%, rgba(245, 179, 1, 0.18), transparent 55%);
+    }
+    .pg-formacao .checks {
+      list-style: none;
+      margin-top: 20px;
+    }
+    .pg-formacao .checks li {
+      margin: 12px 0;
+      padding-left: 28px;
+      position: relative;
+      color: var(--txt);
+    }
+    .pg-formacao .checks li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--mel);
+      font-weight: 900;
+    }
+    .pg-formacao .regras {
+      counter-reset: r;
+      list-style: none;
+      margin-top: 18px;
+    }
+    .pg-formacao .regras li {
+      counter-increment: r;
+      position: relative;
+      padding-left: 40px;
+      margin: 12px 0;
+      color: var(--mut);
+      font-size: 0.96rem;
+    }
+    .pg-formacao .regras li::before {
+      content: counter(r);
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--mel);
+      color: #111;
+      font-weight: 800;
+      text-align: center;
+      line-height: 26px;
+      font-size: 0.85rem;
+    }
+    .pg-formacao table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 26px;
+      font-size: 0.98rem;
+    }
+    .pg-formacao th,
+    .pg-formacao td {
+      border: 1px solid var(--line);
+      padding: 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+    .pg-formacao th {
+      background: var(--card2);
+      color: var(--mel);
+    }
+    .pg-formacao td {
+      color: var(--txt);
+      background: var(--card);
+    }
+    .pg-formacao .fonte {
+      font-size: 0.88rem;
+      color: var(--mut);
+      margin-top: 16px;
+    }
+    .pg-formacao .aviso-box {
+      background: var(--card2);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--mel);
+      border-radius: 14px;
+      padding: 20px 24px;
+      color: var(--mut);
+      font-size: 0.95rem;
+    }
+    </style>
+</head>
+<body class="formacao-body">
+
+    <!-- CABEÇALHO UNIFICADO ACADEMY -->
+    <header class="academy-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="/" class="header-brand" aria-label="Colmeia Studios Academy">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
+                <div class="brand-text">
+                    <span class="brand-title">Colmeia Studios Academy</span>
+                    <span class="brand-tagline">Formação Prática em IA</span>
+                </div>
+            </a>
+
+            <nav class="header-nav" aria-label="Navegação principal">
+                <a href="/cursos/" class="nav-link active">Cursos</a>
+                <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
+                <a href="/servicos" class="nav-link">Serviços para empresas</a>
+                <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
+                <a href="/sobre" class="nav-link">Sobre</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#investimento" class="btn btn-primary btn-sm">Ver condições</a>
+                <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="pg-formacao">
+        <!-- 1) TOPO -->
+        <section class="hero">
+            <div class="wrap">
+                <span class="tag">PARA ESCRITÓRIOS DE ADVOCACIA</span>
+                <h1>Sua equipe conferindo cada referência antes de ela chegar à peça.</h1>
+                <p class="lead">A IA acelera a pesquisa, mas também pode inventar decisões, trocar relatores e citar processos que não existem. A Formação em Inteligência Jurídica com IA ensina a sua equipe a usar a IA com um método de conferência na fonte oficial, para que nada chegue à peça sem verificação.</p>
+                <div>
+                    <a class="btn" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Colmeia%20Studios%20Academy!%20Quero%20inscrever%20a%20equipe%20do%20meu%20escrit%C3%B3rio%20na%20Forma%C3%A7%C3%A3o%20em%20Intelig%C3%AAncia%20Jur%C3%ADdica%20com%20IA." target="_blank" rel="noopener noreferrer">Solicitar inscrição da equipe →</a>
+                </div>
+                <div style="margin-top: 18px;">
+                    <a href="/formacao-inteligencia-juridica/" style="color: var(--mut); font-weight: 600; text-decoration: underline;">← Voltar para a Formação</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2) O QUE O ESCRITÓRIO GANHA -->
+        <section>
+            <div class="wrap">
+                <h2>O que o escritório ganha</h2>
+                <div class="grid g3">
+                    <div class="card">
+                        <h3>Um único método para toda a equipe</h3>
+                        <p>Todos trabalham com o método COLMEIA, do mesmo jeito e com o mesmo padrão de entrega.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Relatório de auditoria padronizado</h3>
+                        <p>Cada referência conferida chega ao advogado com status, fonte oficial e data de acesso, pronta para revisão.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Menos risco de citação falsa</h3>
+                        <p>A conferência na fonte oficial reduz o risco de referências inexistentes ou trocadas nas peças do escritório.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Certificado para cada membro</h3>
+                        <p>Quem alcança 70% recebe certificado de 20 horas com QR Code de verificação.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Dúvidas resolvidas ao vivo</h3>
+                        <p>5 encontros ao vivo às quartas, às 14h, em que a equipe tira dúvidas com a Colmeia Studios Academy.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3) COMO FUNCIONA -->
+        <section>
+            <div class="wrap">
+                <h2>Como funciona</h2>
+                <div class="card" style="margin-top: 24px;">
+                    <ul class="checks" style="margin-top: 0;">
+                        <li>Cada pessoa da equipe recebe a sua própria licença, com acesso pelo próprio e-mail.</li>
+                        <li>Todos seguem a mesma turma: início na segunda quarta-feira do mês, às 14h.</li>
+                        <li>Inscrições até o último dia do mês, às 17h00, para a turma do mês seguinte.</li>
+                        <li>Acesso às aulas gravadas por 12 meses a partir da data de inscrição.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4) INVESTIMENTO -->
+        <section id="investimento">
+            <div class="wrap">
+                <h2>Investimento</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>1 pessoa</td>
+                            <td>R$ 1.470 por licença</td>
+                        </tr>
+                        <tr>
+                            <td>2 ou mais pessoas no mesmo pedido</td>
+                            <td>R$ 1.176 por licença (20% de desconto)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="lead" style="margin-top: 18px; color: var(--txt);">Exemplo: equipe de 3 pessoas = 3 × R$ 1.176 = R$ 3.528. Pix ou até 12x no cartão, com acréscimo das taxas.</p>
+            </div>
+        </section>
+
+        <!-- 5) CADA MEMBRO TAMBÉM PODE GANHAR COM INDICAÇÕES -->
+        <section>
+            <div class="wrap">
+                <h2>Cada membro também pode ganhar com indicações</h2>
+                <p class="lead">Cada membro da equipe recebe o seu código pessoal e pode indicar até 5 amigos que ainda não estão inscritos. A cada nova compra feita pela indicação, quem indicou recebe R$ 235,20 por Pix (20% do valor da sua licença). Com 5 indicações, a licença volta inteira.</p>
+            </div>
+        </section>
+
+        <!-- 6) REGRAS DA CONDIÇÃO PARA EQUIPES -->
+        <section>
+            <div class="wrap">
+                <h2>Regras da condição para equipes</h2>
+                <ol class="regras">
+                    <li>Desconto de 20% por licença a partir de 2 inscrições no mesmo pedido. O desconto não aumenta com mais membros.</li>
+                    <li>Cada licença é individual: um e-mail, um acesso, um certificado e um código de indicação.</li>
+                    <li>O desconto para equipes não se acumula com o cupom de indicação.</li>
+                    <li>O cashback só é pago quando a indicação gera uma nova compra, de alguém que ainda não está inscrito, por conta própria ou pelo escritório.</li>
+                    <li>O Pix do cashback é pago a quem indicou, após o prazo de 7 dias de desistência da compra indicada.</li>
+                    <li>Garantia de 7 dias para desistência, conforme o art. 49 do Código de Defesa do Consumidor.</li>
+                </ol>
+
+                <!-- 7) AVISO FIXO -->
+                <div class="aviso-box" style="margin-top: 32px;">
+                    A formação prepara para apoio técnico, pesquisa assistida por IA e conferência de fontes. A revisão final e a responsabilidade pelas peças continuam sendo do advogado responsável.
+                </div>
+
+                <!-- 8) BOTÃO PRINCIPAL E LINK SECUNDÁRIO -->
+                <div class="center" style="margin-top: 36px;">
+                    <a class="btn" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Colmeia%20Studios%20Academy!%20Quero%20inscrever%20a%20equipe%20do%20meu%20escrit%C3%B3rio%20na%20Forma%C3%A7%C3%A3o%20em%20Intelig%C3%AAncia%20Jur%C3%ADdica%20com%20IA." target="_blank" rel="noopener noreferrer">Solicitar inscrição da equipe →</a>
+                    <div style="margin-top: 18px;">
+                        <a href="/formacao-inteligencia-juridica/" style="color: var(--mel); font-weight: 700; text-decoration: underline;">← Voltar para a Formação</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a class="wpp" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Colmeia%20Studios%20Academy!%20Quero%20saber%20mais%20sobre%20a%20Forma%C3%A7%C3%A3o%20em%20Intelig%C3%AAncia%20Jur%C3%ADdica." aria-label="Fale com a Colmeia Studios Academy no WhatsApp">💬 Fale com a Colmeia</a>
+
+    <!-- RODAPÉ UNIFICADO ACADEMY -->
+    <footer class="academy-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-col-title">Formações em IA</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
+                        <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
+                        <li><a href="/criacao-de-sites" class="footer-link">Criação de Websites</a></li>
+                        <li><a href="/gestao-de-redes-sociais" class="footer-link">Gestão de Redes Sociais</a></li>
+                        <li><a href="/servicos" class="footer-link">Portfólio Empresarial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
+                        <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
+                        <li><a href="/sobre" class="footer-link">Sobre a Colmeia</a></li>
+                        <li><a href="/contato" class="footer-link">Fale Conosco</a></li>
+                        <li><a href="/verificar-certificado" class="footer-link">Verificar Certificado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
+                    <div class="footer-legal-box">
+                        <strong>Colmeia Studios Academy</strong>
+                        CNPJ: 53.484.773/0001-57<br>
+                        Rua Terenas, 292, sala 201, Iguaçu<br>
+                        Ipatinga – MG, CEP 35162-126<br><br>
+                        WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
+                        E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/aviso-de-privacidade">Aviso de Privacidade</a>
+                    <a href="/termos-academy">Termos de Uso</a>
+                    <button type="button" class="footer-link cookie-pref-trigger" onclick="window.openCookiePreferences()">Preferências de Cookies</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/academy.js" defer></script>
+</body>
+</html>

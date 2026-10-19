@@ -24,6 +24,7 @@ function checkAndRecordDuplicate(email) {
 }
 
 exports.handler = async (event, context) => {
+  console.log('ebook: início do envio');
   // Apenas aceita POST
   if (event.httpMethod !== 'POST') {
     return {
@@ -79,7 +80,7 @@ exports.handler = async (event, context) => {
 
     // Proteção contra duplicação no servidor
     if (checkAndRecordDuplicate(email)) {
-      console.warn(`[E-BOOK] Tentativa de envio duplicado prevenida no servidor para: ${email}`);
+      console.warn('[E-BOOK] Tentativa de envio duplicado prevenida no servidor');
       return {
         statusCode: 429,
         headers: { 'Content-Type': 'application/json', 'Retry-After': '60' },
@@ -99,7 +100,7 @@ exports.handler = async (event, context) => {
     const gmailPass = process.env.GMAIL_APP_PASSWORD;
 
     if (!gmailPass) {
-      console.warn(`[E-BOOK] GMAIL_APP_PASSWORD não configurada. Cadastro registrado para ${email}. Dependência: credencial SMTP.`);
+      console.warn('ebook: erro GMAIL_APP_PASSWORD não configurada');
       return {
         statusCode: 200,
         headers: { 'Content-Type': 'application/json' },
@@ -114,7 +115,7 @@ exports.handler = async (event, context) => {
     }
 
     if (!pdfExists) {
-      console.error(`[E-BOOK] Arquivo PDF não encontrado em: ${pdfPath}`);
+      console.error('ebook: erro 500 Arquivo PDF não encontrado');
       return {
         statusCode: 500,
         headers: { 'Content-Type': 'application/json' },
@@ -155,7 +156,7 @@ exports.handler = async (event, context) => {
           </p>
           <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 24px 0;">
           <p style="font-size: 0.85rem; color: #9ca3af; margin: 0;">
-            Colmeia Studios Academy · 53.484.773 Cristian Santos Pimentel · CNPJ 53.484.773/0001-57<br>
+            Colmeia Studios Academy · CNPJ 53.484.773/0001-57<br>
             Ipatinga – MG, Brasil · <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: #6b7280;">contato@colmeiastudiosacademy.com.br</a>
           </p>
         </div>
@@ -169,7 +170,7 @@ exports.handler = async (event, context) => {
     };
 
     await transporter.sendMail(mailOptions);
-    console.log(`[E-BOOK] E-mail com PDF anexado enviado com sucesso para ${email}`);
+    console.log('ebook: envio OK');
 
     return {
       statusCode: 200,
@@ -183,7 +184,7 @@ exports.handler = async (event, context) => {
     };
 
   } catch (err) {
-    console.error('[E-BOOK] Erro no processamento:', err.message || err);
+    console.error('ebook: erro 502', err.message || err);
     return {
       statusCode: 502,
       headers: { 'Content-Type': 'application/json' },

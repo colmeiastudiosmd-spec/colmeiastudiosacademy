@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="/assets/consent.css">
-    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <title>Colmeia Studios Academy | Formação Prática em Inteligência Artificial e Serviços Técnicos</title>
-    <meta name="description" content="Formação prática em Inteligência Artificial e serviços técnicos especializados. Cursos em desenvolvimento, aulas particulares, websites e Núcleo de Inteligência Jurídica.">
-    <meta name="keywords" content="inteligência artificial, cursos de IA, pesquisa assistida por IA, criação de sites com IA, aulas particulares de IA, núcleo de inteligência jurídica, auditoria de entrada">
-    <meta name="google-site-verification" content="ropeiNhhenmotE5GJ6wllg_oR2a1JuZPIvTRSwV8s84" />
+    <meta name="description" content="Formação prática em Inteligência Artificial: Formação em Inteligência Jurídica com IA, Aulas Particulares 1 a 1 no Zoom, Núcleo de Inteligência Jurídica e websites profissionais.">
+    <meta name="keywords" content="inteligência artificial, formação em inteligência jurídica, pesquisa assistida por IA, aulas particulares de IA, núcleo de inteligência jurídica, auditoria de entrada">
+    <meta name="google-site-verification" content="ropeiNhhenmotE5GJ6wllg_oR2a1JuZPIvTRSwV8s84">
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/">
     
     <!-- Open Graph / Meta Tags Social -->
@@ -18,15 +21,20 @@
     <meta property="og:url" content="https://colmeiastudiosacademy.com.br/">
     <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
     <meta property="og:locale" content="pt_BR">
-    <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Colmeia Studios Academy | Inteligência Artificial Aplicada">
+    <meta name="twitter:description" content="Formação prática em Inteligência Artificial e serviços técnicos especializados. Encontre sua área de atuação em segundos.">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+
+    <!-- Google Fonts com display=swap -->
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="/assets/consent.css">
     <link rel="stylesheet" href="/assets/academy.css">
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
+    <script src="/assets/consent.js" defer></script>
 
     <!-- Schema JSON-LD Organization -->
     <script type="application/ld+json">
@@ -35,11 +43,11 @@
       "@type": "EducationalOrganization",
       "name": "Colmeia Studios Academy",
       "url": "https://colmeiastudiosacademy.com.br",
-      "logo": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
-      "image": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png",
-      "telephone": "+55-31-99931-4793",
-      "email": "contato@colmeiastudiosacademy.com.br",
-      "description": "Formação prática em inteligência artificial e serviços técnicos de pesquisa assistida, websites e inteligência documental.",
+      "logo": "https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.webp",
+      "founder": {
+        "@type": "Person",
+        "name": "Cristian Santos Pimentel"
+      },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Rua Terenas, 292, sala 201, Iguaçu",
@@ -48,17 +56,12 @@
         "postalCode": "35162-126",
         "addressCountry": "BR"
       },
-      "founder": {
-        "@type": "Person",
-        "name": "Cristian Santos Pimentel"
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-31-99931-4793",
+        "contactType": "customer service"
       },
-      "department": [
-        {
-          "@type": "ProfessionalService",
-          "name": "Núcleo de Inteligência Jurídica",
-          "url": "https://colmeiastudiosacademy.com.br/nucleo-inteligencia-juridica"
-        }
-      ]
+      "sameAs": ["https://www.instagram.com/colmeiastudiosacademy/", "https://www.youtube.com/@ColmeiaStudiosAcademy"]
     }
     </script>
 </head>
@@ -68,7 +71,7 @@
     <header class="academy-header" id="siteHeader">
         <div class="container header-container">
             <a href="/" class="header-brand" aria-label="Colmeia Studios Academy - Página Inicial">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
                 <div class="brand-text">
                     <span class="brand-title">Colmeia Studios Academy</span>
                     <span class="brand-tagline">Formação Prática em IA</span>
@@ -76,7 +79,7 @@
             </a>
 
             <nav class="header-nav" aria-label="Navegação principal">
-                <a href="/cursos" class="nav-link">Cursos</a>
+                <a href="/cursos/" class="nav-link">Cursos</a>
                 <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
                 <a href="/servicos" class="nav-link">Serviços para empresas</a>
                 <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
@@ -84,7 +87,7 @@
             </nav>
 
             <div class="header-actions">
-                <a href="/cursos" class="btn btn-primary btn-sm">Conhecer os cursos</a>
+                <a href="/cursos/" class="btn btn-primary btn-sm">Conhecer os cursos</a>
                 <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
@@ -93,192 +96,198 @@
     </header>
 
     <main>
-        <!-- BLOCO 2: HERO POSICIONADOR (FUNDO ESCURO #14100B) -->
-        <section class="section-padding" style="background-color: var(--bg-dark); color: var(--text-light); position: relative; overflow: hidden; border-bottom: 1px solid var(--border-dark);">
+        <!-- BLOCO 2: HERO POSICIONADOR (ROUTER PAGE - FUNDO ESCURO #14100B) -->
+        <section class="section-padding" style="background-color: var(--bg-dark); color: var(--text-light); position: relative; overflow: hidden; border-bottom: 1px solid var(--border-dark); padding: 56px 0 48px;">
             <div style="position: absolute; inset: 0; background: radial-gradient(circle at 50% 20%, rgba(242, 167, 27, 0.12) 0%, transparent 70%); pointer-events: none;"></div>
-            <div class="container text-center" style="position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center;">
-                <div style="display: flex; justify-content: center; margin-bottom: 24px;">
-                    <img src="/assets/colmeia-bee-logo.webp" alt="Emblema Colmeia" width="96" height="96" style="filter: drop-shadow(0 8px 24px rgba(242, 167, 27, 0.25));">
+            <div class="container text-center" style="position: relative; z-index: 1; max-width: 960px; margin: 0 auto; text-align: center;">
+                <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+                    <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" width="80" height="80" fetchpriority="high" decoding="async" style="filter: drop-shadow(0 6px 20px rgba(242, 167, 27, 0.25));">
                 </div>
                 
-                <span class="eyebrow" style="margin-bottom: 16px;">Formação Prática em IA &bull; Serviços Técnicos</span>
+                <span class="eyebrow" style="margin-bottom: 14px;">Formação Prática em IA &bull; Serviços Técnicos</span>
                 
-                <h1 style="color: #FFFFFF; margin-bottom: 24px;">
-                    Inteligência Artificial aplicada a <span style="color: var(--accent-amber);">negócios</span>, <span style="color: var(--accent-amber);">criação</span> e <span style="color: var(--accent-amber);">educação</span>.
+                <h1 style="color: #FFFFFF; margin-bottom: 18px; font-size: clamp(2rem, 3.8vw, 3.1rem); line-height: 1.15;">
+                    Inteligência Artificial prática para profissionais e empresas.
                 </h1>
                 
-                <p style="font-size: 1.25rem; color: #D6CEC4; max-width: 760px; margin: 0 auto 36px; line-height: 1.55;">
-                    Uma instituição de formação e serviços técnicos. Desenvolvemos competências práticas para profissionais, escritórios de advocacia e empresas que buscam resultados consistentes com IA.
+                <p style="font-size: 1.1875rem; color: #D6CEC4; max-width: 780px; margin: 0 auto 32px; line-height: 1.55;">
+                    Formação prática e serviços especializados em IA. Selecione abaixo a solução ideal para o seu objetivo.
                 </p>
 
-                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
-                    <a href="#seletor" class="btn btn-primary btn-lg">Explorar áreas de atuação &darr;</a>
-                    <a href="https://wa.me/5531999314793?text=Olá%2C%20Colmeia%20Studios%20Academy.%20Gostaria%20de%20conversar%20sobre%20as%20soluções%20da%20empresa." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">Falar no WhatsApp</a>
-                </div>
-
-                <div style="border-top: 1px solid var(--border-dark); padding-top: 24px; font-size: 0.875rem; color: var(--text-light-muted); display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-                    <span>&bull; Metodologia Prática sem Hype</span>
-                    <span>&bull; +15 Anos em Tecnologia e Negócios</span>
-                    <span>&bull; Unidade Jurídica Especializada</span>
+                <!-- BARRA DE CREDIBILIDADE IMEDIATA -->
+                <div class="credibility-bar" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 940px; margin: 0 auto;">
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.875rem; color: #E8E2D9;">
+                        <span style="color: var(--accent-amber); font-weight: 700;">&bull;</span>
+                        <span>Metodologia prática sem promessas irreais</span>
+                    </div>
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.875rem; color: #E8E2D9;">
+                        <span style="color: var(--accent-amber); font-weight: 700;">&bull;</span>
+                        <span>+15 anos em tecnologia e negócios</span>
+                    </div>
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.875rem; color: #E8E2D9;">
+                        <span style="color: var(--accent-amber); font-weight: 700;">&bull;</span>
+                        <span>Conformidade ética técnica (Lei 8.906/1994)</span>
+                    </div>
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 16px; border-radius: var(--radius-pill); font-size: 0.875rem; color: #E8E2D9;">
+                        <span style="color: var(--accent-amber); font-weight: 700;">&bull;</span>
+                        <span>Atendimento e mentoria 1 a 1 direta</span>
+                    </div>
+                    <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-badge">• +13 mil seguidores no Instagram</a>
                 </div>
             </div>
         </section>
 
-        <!-- BLOCO 3: SELETOR DE SETORES (A COLMEIA) -->
-        <section class="section-padding" id="seletor" style="background-color: var(--bg-page);">
+        <!-- BLOCO 3: SELETOR DE CAMINHOS (CURSOS E SERVIÇOS) -->
+        <style>
+        .home-catalog-groups {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+
+        .home-catalog-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .home-group-header {
+            margin-bottom: 24px;
+        }
+
+        .home-group-header .eyebrow {
+            margin-bottom: 8px;
+        }
+
+        .home-group-header h3 {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+            font-weight: 700;
+            color: var(--text-main);
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin-bottom: 8px;
+        }
+
+        .home-group-sub {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.55;
+            margin-bottom: 0;
+        }
+
+        .home-group-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            align-items: stretch;
+            flex: 1;
+        }
+
+        @media (min-width: 640px) and (max-width: 1023px) {
+            .home-group-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .home-catalog-groups {
+                grid-template-columns: 1fr 1fr;
+                gap: 56px;
+            }
+
+            .home-catalog-group.group-cursos {
+                padding-right: 28px;
+                border-right: 1px solid var(--border-light);
+            }
+
+            .home-catalog-group.group-servicos {
+                padding-left: 28px;
+            }
+
+            .home-group-cards {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        </style>
+
+        <section class="section-padding" id="seletor" style="background-color: var(--bg-page); padding-top: 48px; padding-bottom: 64px;">
             <div class="container">
-                <div style="text-align: center; max-width: 700px; margin: 0 auto 56px;">
-                    <span class="eyebrow">Escolha sua área de interesse</span>
-                    <h2>O que você procura hoje na Colmeia?</h2>
-                    <p style="color: var(--text-muted); font-size: 1.0625rem; margin-top: 12px;">
-                        Estruturamos nossas frentes em três pilares objetivos para você encontrar exatamente o que precisa em poucos cliques.
-                    </p>
-                </div>
+                <h2 style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">Cursos e serviços da Colmeia Studios Academy</h2>
 
-                <div class="grid-3">
-                    <!-- Trilha 1: Formações em IA -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span class="badge badge-info" style="margin-bottom: 16px;">Educação &bull; Formação</span>
-                            <h3 style="margin-bottom: 12px;">Aulas Particulares de IA — 1 a 1</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-bottom: 24px;">
-                                Orientação individual e prática, adaptada ao seu objetivo. Escolha o foco da sua aula:
-                            </p>
-                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.9375rem;">
-                                <li>
-                                    <a href="/aulas-particulares-ia" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--bg-page); border-radius: var(--radius-sm); border: 1px solid var(--border-light); text-decoration: none; color: inherit;">
-                                        <span><strong>Pesquisa assistida por IA para o Direito</strong></span>
-                                        <span style="color: var(--accent-amber); font-weight: 600; font-size: 0.8125rem;">1 a 1 &rarr;</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/aulas-particulares-ia" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--bg-page); border-radius: var(--radius-sm); border: 1px solid var(--border-light); text-decoration: none; color: inherit;">
-                                        <span><strong>Produção de conteúdo e vídeos com IA</strong></span>
-                                        <span style="color: var(--accent-amber); font-weight: 600; font-size: 0.8125rem;">1 a 1 &rarr;</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/aulas-particulares-ia" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--bg-page); border-radius: var(--radius-sm); border: 1px solid var(--border-light); text-decoration: none; color: inherit;">
-                                        <span><strong>Criação de websites com IA</strong></span>
-                                        <span style="color: var(--accent-amber); font-weight: 600; font-size: 0.8125rem;">1 a 1 &rarr;</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/aulas-particulares-ia" style="display: flex; flex-direction: column; gap: 4px; padding: 10px 14px; background: #FFF9EE; border-radius: var(--radius-sm); border: 1px solid #FFE7B3; text-decoration: none; color: inherit;">
-                                        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
-                                            <span><strong>Sua necessidade específica</strong></span>
-                                            <span style="color: var(--accent-amber); font-weight: 600; font-size: 0.8125rem;">Sob medida &rarr;</span>
-                                        </div>
-                                        <span style="font-size: 0.8125rem; color: var(--text-muted);">Tema definido previamente conforme seu objetivo.</span>
-                                    </a>
-                                </li>
-                            </ul>
+                <div class="home-catalog-groups">
+                    <!-- GRUPO 1: CURSOS -->
+                    <div class="home-catalog-group group-cursos">
+                        <div class="home-group-header">
+                            <span class="eyebrow">PARA VOCÊ APRENDER</span>
+                            <h3>Cursos de IA</h3>
+                            <p class="home-group-sub">Aprenda a usar a Inteligência Artificial na prática e, na Formação, a prestar o serviço para escritórios.</p>
                         </div>
-                        <a href="/aulas-particulares-ia" class="btn btn-secondary btn-block">Conhecer as aulas particulares &rarr;</a>
-                    </div>
+                        <div class="home-group-cards">
+                            <!-- Card 1: Aulas Particulares (1 a 1) -->
+                            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                <div>
+                                    <span class="badge" style="margin-bottom: 16px; background: var(--accent-amber-light); color: #B25E00; border: 1px solid var(--accent-amber-border);">CURSO · AULA INDIVIDUAL</span>
+                                    <h4 style="margin-bottom: 12px; font-size: 1.25rem;">Aulas Particulares (1 a 1)</h4>
+                                    <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+                                        Mentoria prática de 90 minutos ao vivo focada na sua necessidade real (pesquisa jurídica, criação de sites ou automações).
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="/aulas-particulares-ia" class="btn btn-primary btn-block">Conhecer Aulas Particulares &rarr;</a>
+                                </div>
+                            </div>
 
-                    <!-- Trilha 2: Setor Jurídico -->
-                    <div class="card" id="escalar-com-ia" style="border-color: #E8D3B0; background: #FFFCF7; display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span class="badge badge-dark" style="margin-bottom: 16px; background: var(--bg-dark); color: var(--accent-amber);">Unidade Jurídica Especializada</span>
-                            <h3 style="margin-bottom: 12px;">Núcleo de Inteligência Jurídica</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-bottom: 20px;">
-                                Inteligência documental, pesquisa assistida de jurisprudência e auditoria rigorosa de fontes para escritórios de advocacia.
-                            </p>
-                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; font-size: 0.9375rem;">
-                                <li>
-                                    <a href="/auditoria-de-revisao" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: #FFFFFF; border-radius: var(--radius-sm); border: 1px solid #E8D3B0; text-decoration: none; color: inherit;">
-                                        <span><strong>Auditoria de Revisão</strong> (Até 10 refs)</span>
-                                        <span style="font-size: 0.8125rem; color: var(--text-subtle);">Conferência pontual</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/nucleo-inteligencia-juridica" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: #FFFFFF; border-radius: var(--radius-sm); border: 1px solid #E8D3B0; text-decoration: none; color: inherit;">
-                                        <span><strong>Demandas Técnicas Complexas</strong></span>
-                                        <span style="font-size: 0.8125rem; color: var(--text-subtle);">Pesquisa e inteligência</span>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="notice-box" style="margin-bottom: 20px; font-size: 0.8125rem;">
-                                <strong>Garantia ética:</strong> Não prestamos consultoria jurídica. Apoio técnico restrito nos termos da Lei 8.906/1994.
+                            <!-- Card 2: Formação em Inteligência Jurídica -->
+                            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                <div>
+                                    <span class="badge" style="margin-bottom: 16px; background: var(--accent-amber-light); color: #B25E00; border: 1px solid var(--accent-amber-border);">CURSO · CARREIRA E MERCADO</span>
+                                    <h4 style="margin-bottom: 12px; font-size: 1.25rem;">Formação em Inteligência Jurídica</h4>
+                                    <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+                                        Formação de 20 horas, com aulas gravadas e encontros ao vivo, para prestar pesquisa assistida e auditoria de fontes para escritórios de advocacia.
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="/formacao-inteligencia-juridica" class="btn btn-primary btn-block">Ver Detalhes da Formação &rarr;</a>
+                                </div>
                             </div>
                         </div>
-                        <div style="display: flex; flex-direction: column; gap: 10px;">
-                            <a href="/auditoria-de-revisao" class="btn btn-primary btn-block">Conhecer a Auditoria de Revisão</a>
-                            <a href="/nucleo-inteligencia-juridica" class="btn btn-ghost-dark btn-block">Conhecer o Núcleo Jurídico</a>
-                        </div>
                     </div>
 
-                    <!-- Trilha 3: Presença Digital & Serviços -->
-                    <div class="card" id="presenca-digital" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span class="badge badge-info" style="margin-bottom: 16px;">Empresas &bull; Tecnologia</span>
-                            <h3 style="margin-bottom: 12px;">Websites e Presença Digital</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-bottom: 24px;">
-                                Estruturação de sites modernos, landing pages de alta conversão e presença digital estratégica para marcas.
-                            </p>
-                            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; font-size: 0.9375rem;">
-                                <li>
-                                    <a href="/criacao-de-sites" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--bg-page); border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
-                                        <span><strong>Criação de Websites</strong></span>
-                                        <span style="font-size: 0.8125rem; font-weight: 600; color: var(--text-subtle);">Landing pages e portais</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/gestao-de-redes-sociais" style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: var(--bg-page); border-radius: var(--radius-sm); border: 1px solid var(--border-light);">
-                                        <span><strong>Gestão de Redes Sociais</strong></span>
-                                        <span style="font-size: 0.8125rem; color: var(--text-subtle);">Sem fidelidade</span>
-                                    </a>
-                                </li>
-                            </ul>
+                    <!-- GRUPO 2: SERVIÇOS -->
+                    <div class="home-catalog-group group-servicos">
+                        <div class="home-group-header">
+                            <span class="eyebrow" style="color: var(--text-muted);">PARA SUA EMPRESA OU ESCRITÓRIO</span>
+                            <h3>Serviços da Colmeia</h3>
+                            <p class="home-group-sub">Você contrata, e a equipe da Colmeia Studios Academy executa o serviço.</p>
                         </div>
-                        <a href="/servicos" class="btn btn-secondary btn-block">Conhecer serviços empresariais &rarr;</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <div class="home-group-cards">
+                            <!-- Card 3: Núcleo Jurídico Especializado -->
+                            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                <div>
+                                    <span class="badge" style="margin-bottom: 16px; background: var(--bg-page-alt); color: var(--text-muted); border: 1px solid var(--border-light);">SERVIÇO · ESCRITÓRIOS DE ADVOCACIA</span>
+                                    <h4 style="margin-bottom: 12px; font-size: 1.25rem;">Núcleo Jurídico Especializado</h4>
+                                    <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+                                        Auditoria preventiva contra alucinações de IA em peças, inteligência documental e pesquisa jurisprudencial com conferência na fonte oficial.
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="/nucleo-inteligencia-juridica" class="btn btn-dark btn-block">Acessar Soluções Jurídicas &rarr;</a>
+                                </div>
+                            </div>
 
-        <!-- BLOCO 4: NÚCLEO DE INTELIGÊNCIA JURÍDICA EM DESTAQUE -->
-        
-
-        <!-- BLOCO 5: FORMAÇÕES EM DESENVOLVIMENTO (TRANSPARÊNCIA E ÉTICA) -->
-        
-
-        <!-- BLOCO 6: AULAS PARTICULARES DE IA -->
-        <section class="section-padding" style="background-color: var(--bg-card); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
-            <div class="container">
-                <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 48px 36px; gap: 40px; align-items: center;" class="grid-2">
-                    <div>
-                        <span class="badge badge-active" style="margin-bottom: 14px;">Aprendizado aplicado ao seu objetivo</span>
-                        <h2>Como funciona sua aula particular de IA</h2>
-                        <p style="color: var(--text-muted); font-size: 1.0625rem; margin: 16px 0 24px; line-height: 1.6;">
-                            Sessão individual de 90 minutos, com dois blocos de 40 minutos de aula e 10 minutos de intervalo. O foco é definido previamente conforme seu objetivo: pesquisa assistida por IA para o Direito, produção de conteúdo e vídeos, criação de websites ou outra necessidade combinada.
-                        </p>
-                        <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; font-size: 0.9375rem;">
-                            <li>✓ Atendimento individual ao vivo pelo Zoom com Cristian Santos Pimentel</li>
-                            <li>✓ Gravação integral em vídeo disponibilizada após o encontro</li>
-                            <li>✓ Modelos e roteiros práticos aplicados diretamente na sua demanda</li>
-                        </ul>
-                        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="/aulas-particulares-ia" class="btn btn-primary">Conhecer as Aulas Particulares</a>
-                            <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20particular%20de%20IA." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Agendar via WhatsApp</a>
-                        </div>
-                    </div>
-
-                    <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 32px; text-align: center; box-shadow: var(--shadow-sm);">
-                        <span class="eyebrow" style="margin-bottom: 8px;">Formato Individual</span>
-                        <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--text-main); line-height: 1.15; margin-bottom: 8px;">
-                            90 minutos de sessão
-                        </div>
-                        <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 8px;">
-                            40 min de aula + 10 min de intervalo + 40 min de aula
-                        </p>
-                        <p style="color: var(--text-muted); font-size: 0.875rem; margin-bottom: 20px;">
-                            Sessão prática individual ao vivo &bull; Sem mensalidade ou fidelidade
-                        </p>
-                        <a href="/aulas-particulares-ia" class="btn btn-secondary btn-block" style="margin-bottom: 16px;">Ver investimento e detalhes &rarr;</a>
-                        <div style="font-size: 0.8125rem; color: var(--text-subtle); line-height: 1.5; border-top: 1px solid var(--border-light); padding-top: 16px;">
-                            Atendimento focado em profissionais liberais, advogados, criadores de conteúdo e gestores de pequenas empresas.
+                            <!-- Card 4: Websites & Presença Digital -->
+                            <div class="card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                                <div>
+                                    <span class="badge" style="margin-bottom: 16px; background: var(--bg-page-alt); color: var(--text-muted); border: 1px solid var(--border-light);">SERVIÇO · EMPRESAS E NEGÓCIOS</span>
+                                    <h4 style="margin-bottom: 12px; font-size: 1.25rem;">Websites &amp; Presença Digital</h4>
+                                    <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 24px;">
+                                        Criação de landing pages de alta conversão, portais corporativos modernos e gestão digital sem contratos de fidelidade.
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="/criacao-de-sites" class="btn btn-dark btn-block">Conhecer Serviços Digitais &rarr;</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -290,7 +299,7 @@
             <div class="container">
                 <div style="gap: 48px; align-items: center;" class="grid-2">
                     <div style="display: flex; justify-content: center;">
-                        <img src="/assets/mockup-ia-no-trabalho.jpg" alt="Livro IA no Trabalho" style="max-width: 320px; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
+                        <img src="/assets/mockup-ia-no-trabalho.jpg" alt="Livro IA no Trabalho" width="320" height="213" loading="lazy" decoding="async" style="max-width: 320px; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
                     </div>
 
                     <div>
@@ -322,13 +331,13 @@
                             A <strong>Colmeia Studios Academy</strong> nasceu para transformar o excesso de ruído em torno da inteligência artificial em habilidades profissionais concretas. Atuamos com duas premissas inegociáveis: <em>ensinar o que realmente funciona no dia a dia de trabalho</em> e <em>oferecer serviços técnicos com controle rigoroso de qualidade e segurança</em>.
                         </p>
                         <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 28px;">
-                            A direção técnica é de <strong>Cristian Santos Pimentel</strong>, professor de inteligência artificial com mais de 15 anos de trajetória em marketing, tecnologia e negócios no Brasil, Estados Unidos e Irlanda.
+                            A direção técnica é de <strong>Cristian Santos Pimentel</strong>, fundador da Colmeia Studios Academy, professor de Inteligência Artificial e Diretor Técnico do Núcleo de Inteligência Jurídica, com mais de 15 anos em tecnologia, marketing e negócios no Brasil, na Irlanda e nos Estados Unidos.
                         </p>
                         <a href="/sobre" class="btn btn-secondary">Conheça nossa história e metodologia &rarr;</a>
                     </div>
 
                     <div style="display: flex; justify-content: center;">
-                        <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" width="280" height="350" style="border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;">
+                        <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" width="440" height="330" loading="lazy" decoding="async" style="max-width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-md); object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -341,19 +350,18 @@
             <div class="footer-grid">
                 <!-- Coluna 1: Formações -->
                 <div>
-                    <h4 class="footer-col-title">Formações em IA</h4>
+                    <h3 class="footer-col-title">Formações em IA</h3>
                     <ul class="footer-links-list">
-                        <li><a href="/cursos/pesquisa-assistida-ia" class="footer-link">Pesquisa Assistida por IA</a></li>
-                        <li><a href="/cursos/conteudo-redes-sociais-ia" class="footer-link">Produção de Conteúdo e Vídeo</a></li>
-                        <li><a href="/cursos/criacao-websites-ia" class="footer-link">Criação de Websites com IA</a></li>
-                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares 1 a 1</a></li>
-                        <li><a href="/cursos" class="footer-link">Catálogo Completo</a></li>
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
                     </ul>
                 </div>
 
                 <!-- Coluna 2: Serviços & Núcleo -->
                 <div>
-                    <h4 class="footer-col-title">Serviços &amp; Núcleo</h4>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
                     <ul class="footer-links-list">
                         <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
                         <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
@@ -365,7 +373,7 @@
 
                 <!-- Coluna 3: Conteúdos & Institucional -->
                 <div>
-                    <h4 class="footer-col-title">Conteúdos &amp; Empresa</h4>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
                     <ul class="footer-links-list">
                         <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
                         <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
@@ -377,14 +385,20 @@
 
                 <!-- Coluna 4: Atendimento & Legal -->
                 <div>
-                    <h4 class="footer-col-title">Atendimento &amp; Legal</h4>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
                     <div class="footer-legal-box">
-                        <strong>53.484.773 Cristian Santos Pimentel</strong>
+                        <strong>Colmeia Studios Academy</strong>
                         CNPJ: 53.484.773/0001-57<br>
                         Rua Terenas, 292, sala 201, Iguaçu<br>
                         Ipatinga – MG, CEP 35162-126<br><br>
                         WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
                         E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>

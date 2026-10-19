@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
+
+    <title>Regulamento do Programa de Parceiros | Colmeia Studios Academy</title>
+    <meta name="description" content="Regras do Programa de Parceiros Colmeia: requisitos, remuneração de 50% do valor líquido, obrigações, uso da marca e vigência a partir de 15 de janeiro de 2027.">
+    <link rel="canonical" href="https://colmeiastudiosacademy.com.br/regulamento-parceiros/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Regulamento do Programa de Parceiros | Colmeia Studios Academy">
+    <meta property="og:description" content="Regras do Programa de Parceiros Colmeia: requisitos, remuneração de 50% do valor líquido, obrigações, uso da marca e vigência a partir de 15 de janeiro de 2027.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/regulamento-parceiros/">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/academy.css">
+    <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
+
+    <style>
+        .reg-hero {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            border-bottom: 1px solid var(--border-dark);
+            padding: 64px 0 48px;
+        }
+        .reg-container {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        .reg-hero h1 {
+            color: #FFFFFF;
+            margin-bottom: 14px;
+            font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+        }
+        .reg-versao {
+            font-size: 0.95rem;
+            color: var(--accent-amber);
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .reg-content {
+            background-color: var(--bg-page);
+            padding: 56px 0 80px;
+        }
+        .reg-sumario {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-left: 4px solid var(--accent-amber);
+            border-radius: var(--radius-md);
+            padding: 24px 28px;
+            margin-bottom: 36px;
+            box-shadow: var(--shadow-sm);
+        }
+        .reg-sumario-titulo {
+            font-family: var(--font-display);
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 14px;
+        }
+        .reg-sumario-lista {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 8px 20px;
+            padding: 0;
+            margin: 0;
+        }
+        .reg-sumario-lista a {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .reg-sumario-lista a:hover {
+            color: var(--accent-amber-hover);
+            text-decoration: underline;
+        }
+        .reg-clausulas {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .reg-bloco {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: var(--radius-md);
+            padding: 28px 32px;
+            box-shadow: var(--shadow-sm);
+        }
+        .reg-bloco h2 {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin-bottom: 14px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-light-subtle);
+            scroll-margin-top: 96px;
+        }
+        .reg-bloco p {
+            color: var(--text-muted);
+            font-size: 0.96rem;
+            line-height: 1.75;
+            margin-bottom: 10px;
+        }
+        .reg-bloco p:last-child {
+            margin-bottom: 0;
+        }
+        .reg-bloco p.reg-alinea {
+            padding-left: 20px;
+        }
+        .reg-bloco a {
+            color: var(--accent-amber-hover);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .reg-cta {
+            margin-top: 40px;
+            text-align: center;
+        }
+        .reg-cta a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accent-amber);
+            color: var(--bg-dark);
+            font-weight: 700;
+            font-size: 1rem;
+            padding: 14px 28px;
+            border-radius: var(--radius-sm);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .reg-cta a:hover {
+            background-color: var(--accent-amber-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(242, 167, 27, 0.35);
+        }
+        @media (max-width: 640px) {
+            .reg-bloco {
+                padding: 22px 20px;
+            }
+            .reg-sumario {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO UNIFICADO ACADEMY -->
+    <header class="academy-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="/" class="header-brand" aria-label="Colmeia Studios Academy">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
+                <div class="brand-text">
+                    <span class="brand-title">Colmeia Studios Academy</span>
+                    <span class="brand-tagline">Formação Prática em IA</span>
+                </div>
+            </a>
+
+            <nav class="header-nav" aria-label="Navegação principal">
+                <a href="/cursos/" class="nav-link">Cursos</a>
+                <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
+                <a href="/servicos" class="nav-link">Serviços para empresas</a>
+                <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
+                <a href="/sobre" class="nav-link">Sobre</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="/cursos/" class="btn btn-primary btn-sm">Conhecer os cursos</a>
+                <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="reg-hero">
+            <div class="reg-container">
+                <h1>REGULAMENTO DO PROGRAMA DE PARCEIROS COLMEIA</h1>
+                <p class="reg-versao">Versão 1.0 · publicada em outubro de 2026 · vigência a partir de 15 de janeiro de 2027</p>
+            </div>
+        </section>
+
+        <section class="reg-content">
+            <div class="reg-container">
+
+                <nav class="reg-sumario" aria-label="Sumário das cláusulas">
+                    <div class="reg-sumario-titulo">Sumário</div>
+                    <ul class="reg-sumario-lista">
+                        <li><a href="#clausula-1">1. OBJETO</a></li>
+                        <li><a href="#clausula-2">2. DEFINIÇÕES</a></li>
+                        <li><a href="#clausula-3">3. REQUISITOS PARA SER PARCEIRO</a></li>
+                        <li><a href="#clausula-4">4. O QUE A COLMEIA FORNECE</a></li>
+                        <li><a href="#clausula-5">5. OBRIGAÇÕES DO PARCEIRO</a></li>
+                        <li><a href="#clausula-6">6. AUSÊNCIA DO PARCEIRO EM ENCONTRO</a></li>
+                        <li><a href="#clausula-7">7. REMUNERAÇÃO</a></li>
+                        <li><a href="#clausula-8">8. PREÇO E CONDIÇÕES DE VENDA</a></li>
+                        <li><a href="#clausula-9">9. DIVULGAÇÃO</a></li>
+                        <li><a href="#clausula-10">10. PROVA E CERTIFICADO</a></li>
+                        <li><a href="#clausula-11">11. MARCA, MATERIAIS E CONFIDENCIALIDADE</a></li>
+                        <li><a href="#clausula-12">12. NATUREZA DA RELAÇÃO E RESPONSABILIDADES</a></li>
+                        <li><a href="#clausula-13">13. SUSPENSÃO E ENCERRAMENTO</a></li>
+                        <li><a href="#clausula-14">14. ALTERAÇÕES</a></li>
+                        <li><a href="#clausula-15">15. CONTATO</a></li>
+                        <li><a href="#clausula-16">16. FORO</a></li>
+                    </ul>
+                </nav>
+
+                <div class="reg-clausulas">
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-1">1. OBJETO</h2>
+                        <p>1.1. Este Regulamento estabelece as regras para que alunos aprovados com 100% na Formação em Inteligência Jurídica com IA vendam a Formação e conduzam os encontros ao vivo de suas turmas, na condição de Parceiros da Colmeia Studios Academy, inscrita no CNPJ 53.484.773/0001-57, com sede em Ipatinga/MG ("Colmeia").</p>
+                        <p>1.2. A participação no Programa é opcional. A aprovação na Formação não obriga o aluno a se tornar Parceiro.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-2">2. DEFINIÇÕES</h2>
+                        <p>2.1. Parceiro: aluno que cumpriu todos os requisitos da cláusula 3 e teve a adesão aprovada pela Colmeia.</p>
+                        <p>2.2. Plataforma: a plataforma de pagamentos e área de membros utilizada pela Colmeia para vender a Formação.</p>
+                        <p>2.3. Valor líquido: o valor pago pelo aluno, deduzidas as taxas retidas pela Plataforma na venda.</p>
+                        <p>2.4. Venda do Parceiro: compra da Formação realizada pelo link de afiliado do Parceiro, conforme a regra de atribuição configurada na Plataforma.</p>
+                        <p>2.5. Turma do Parceiro: os alunos que adquiriram a Formação por meio de Venda do Parceiro.</p>
+                        <p>2.6. Pauta oficial: o roteiro dos 5 encontros ao vivo definido e atualizado pela Colmeia.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-3">3. REQUISITOS PARA SER PARCEIRO</h2>
+                        <p>3.1. Para aderir ao Programa, o aluno deve, cumulativamente:</p>
+                        <p class="reg-alinea">a) ter obtido 100% na avaliação da Formação (Parte A 70/70 e Parte B 30/30);</p>
+                        <p class="reg-alinea">b) manter o certificado ativo, com a verificação pública ligada;</p>
+                        <p class="reg-alinea">c) possuir CNPJ ativo, inclusive na modalidade MEI, para cumprir as obrigações fiscais sobre a comissão;</p>
+                        <p class="reg-alinea">d) aceitar este Regulamento de forma expressa, por escrito ou por meio eletrônico;</p>
+                        <p class="reg-alinea">e) ter a conta de afiliado aprovada pela Colmeia na Plataforma.</p>
+                        <p>3.2. A Colmeia analisa cada pedido de adesão e pode recusá-lo, de forma fundamentada, se houver descumprimento dos requisitos acima.</p>
+                        <p>3.3. Não há cobrança de taxa para aderir ao Programa ou para permanecer nele.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-4">4. O QUE A COLMEIA FORNECE</h2>
+                        <p>4.1. Acesso às 15 horas de aulas gravadas da Formação, na área de membros, para os alunos da Turma do Parceiro.</p>
+                        <p>4.2. Acesso gratuito do Parceiro à área de membros enquanto a parceria estiver ativa, para preparar os encontros.</p>
+                        <p>4.3. A pauta oficial dos 5 encontros ao vivo e suas atualizações.</p>
+                        <p>4.4. Página dedicada de Parceiro, selo Parceiro Colmeia 100%, textos aprovados, vídeo de apresentação e link de afiliado.</p>
+                        <p>4.5. Correção das provas e emissão dos certificados dos alunos da Turma do Parceiro.</p>
+                        <p>4.6. Atendimento de pagamentos, reembolsos e acesso dos alunos, por meio da Plataforma.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-5">5. OBRIGAÇÕES DO PARCEIRO</h2>
+                        <p>5.1. Conduzir os 5 encontros ao vivo de sua turma no calendário oficial (quartas-feiras, às 14h, com 1 hora cada), seguindo a pauta oficial.</p>
+                        <p>5.2. Gravar cada encontro na íntegra, com câmera ligada, e enviar a gravação à Colmeia em até 48 horas após o encontro. As gravações compõem o registro das 20 horas do certificado dos alunos.</p>
+                        <p>5.3. Comunicar à Colmeia, com pelo menos 24 horas de antecedência, a impossibilidade de conduzir um encontro.</p>
+                        <p>5.4. Responder às dúvidas dos alunos dentro do conteúdo oficial da Formação.</p>
+                        <p>5.5. Tratar os dados pessoais dos alunos apenas para conduzir os encontros, seguindo as instruções da Colmeia, com sigilo e segurança, conforme a Lei Geral de Proteção de Dados Pessoais (Lei 13.709/2018), e eliminá-los quando a parceria terminar, salvo obrigação legal.</p>
+                        <p>5.6. Manter seus dados cadastrais e fiscais atualizados junto à Colmeia e à Plataforma.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-6">6. AUSÊNCIA DO PARCEIRO EM ENCONTRO</h2>
+                        <p>6.1. Com aviso prévio de 24 horas, os alunos da Turma do Parceiro participam do encontro conduzido pela Colmeia no mesmo dia e horário, sem prejuízo da comissão.</p>
+                        <p>6.2. Sem aviso prévio, a Colmeia acolhe os alunos no encontro seguinte ou na gravação, e a ausência é registrada.</p>
+                        <p>6.3. Duas ausências sem aviso prévio em 12 meses autorizam a suspensão da parceria, nos termos da cláusula 13.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-7">7. REMUNERAÇÃO</h2>
+                        <p>7.1. O Parceiro recebe 50% (cinquenta por cento) do valor líquido de cada Venda do Parceiro. A Colmeia fica com os outros 50%.</p>
+                        <p>7.2. A comissão é paga diretamente pela Plataforma, nos prazos de liberação dela, e somente após o término do prazo de 7 dias de garantia da compra.</p>
+                        <p>7.3. Vendas reembolsadas, canceladas ou contestadas (chargeback) não geram comissão. Se a comissão já tiver sido paga, será estornada ou compensada.</p>
+                        <p>7.4. A comissão incide somente sobre vendas feitas diretamente pelo Parceiro. Não há qualquer ganho sobre vendas de outros Parceiros, sobre o cadastro de pessoas ou pela indicação de novos Parceiros.</p>
+                        <p>7.5. Compras feitas pelo próprio Parceiro, ou em seu benefício, pelo seu link não geram comissão.</p>
+                        <p>7.6. A mesma venda não gera, ao mesmo tempo, comissão de Parceiro e cashback de indicação.</p>
+                        <p>7.7. A taxa de refação de prova paga por alunos da Turma do Parceiro pertence integralmente à Colmeia, responsável pela correção.</p>
+                        <p>7.8. Cada parte é responsável pelos tributos e pelas obrigações fiscais referentes aos valores que recebe.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-8">8. PREÇO E CONDIÇÕES DE VENDA</h2>
+                        <p>8.1. O Parceiro vende a Formação exclusivamente pelo preço e nas condições oficiais publicados pela Colmeia (valor, parcelamento, garantia, desconto de equipe e cashback), sempre pelo seu link de afiliado.</p>
+                        <p>8.2. É vedado ao Parceiro criar descontos, brindes, bônus ou condições próprias, ou receber pagamentos dos alunos fora da Plataforma.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-9">9. DIVULGAÇÃO</h2>
+                        <p>9.1. É vedado ao Parceiro:</p>
+                        <p class="reg-alinea">a) prometer renda, ganho ou resultado financeiro a quem comprar a Formação;</p>
+                        <p class="reg-alinea">b) prometer resultado em processos ou apresentar-se como prestador de serviço jurídico;</p>
+                        <p class="reg-alinea">c) usar símbolos, brasões ou logotipos da OAB, de tribunais ou de órgãos públicos;</p>
+                        <p class="reg-alinea">d) apresentar-se como sócio, representante legal, funcionário ou especialista da Colmeia;</p>
+                        <p class="reg-alinea">e) realizar envio em massa, spam ou usar robôs de mensagem;</p>
+                        <p class="reg-alinea">f) alterar os textos oficiais sobre preço, condições, certificação, Rede de Prestadores e Programa de Parceiros.</p>
+                        <p>9.2. O Parceiro pode divulgar a Formação em sua página dedicada, em suas redes e em contatos profissionais, usando os materiais oficiais.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-10">10. PROVA E CERTIFICADO</h2>
+                        <p>10.1. A prova é aplicada e corrigida exclusivamente pela Colmeia, com os mesmos critérios objetivos para todos os alunos, e o certificado é emitido exclusivamente por ela.</p>
+                        <p>10.2. O Parceiro não tem acesso a gabaritos, provas ou notas dos alunos.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-11">11. MARCA, MATERIAIS E CONFIDENCIALIDADE</h2>
+                        <p>11.1. A Colmeia autoriza o Parceiro a usar a marca, o selo e os materiais oficiais enquanto a parceria estiver ativa, exclusivamente para as finalidades deste Regulamento. A autorização é não exclusiva, intransferível e revogável.</p>
+                        <p>11.2. É vedado copiar, baixar, gravar, revender ou redistribuir as aulas gravadas, a Skill, os modelos, a pauta oficial e o Método COLMEIA.</p>
+                        <p>11.3. O Parceiro mantém sigilo sobre informações internas da Colmeia a que tiver acesso, durante a parceria e após o seu término.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-12">12. NATUREZA DA RELAÇÃO E RESPONSABILIDADES</h2>
+                        <p>12.1. A parceria é um acordo comercial de comissionamento. Não cria sociedade, vínculo de emprego, representação comercial nem exclusividade entre as partes.</p>
+                        <p>12.2. A Colmeia responde perante os alunos pela Formação vendida. Se a Colmeia sofrer prejuízo por ato do Parceiro contrário a este Regulamento, poderá cobrar dele o valor correspondente.</p>
+                        <p>12.3. O Parceiro pode prestar seus próprios serviços e atuar em outras atividades, desde que não use a marca, os materiais ou o Método COLMEIA fora deste Programa.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-13">13. SUSPENSÃO E ENCERRAMENTO</h2>
+                        <p>13.1. A Colmeia pode suspender ou encerrar a parceria se o Parceiro descumprir este Regulamento, desligar a verificação pública do certificado ou incorrer na hipótese da cláusula 6.3. O Parceiro será avisado por escrito e poderá apresentar explicações em até 5 dias úteis, exceto em caso de falta grave, como promessa de renda, uso indevido da marca ou cobrança fora da Plataforma.</p>
+                        <p>13.2. O Parceiro pode encerrar a parceria a qualquer momento, por aviso escrito, desde que conclua os encontros das turmas já vendidas ou combine a transferência dos alunos para a turma da Colmeia.</p>
+                        <p>13.3. As comissões de vendas já confirmadas, com prazo de garantia encerrado, continuam devidas após o encerramento.</p>
+                        <p>13.4. O encerramento da parceria não cancela o certificado do Parceiro nem sua nota.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-14">14. ALTERAÇÕES</h2>
+                        <p>14.1. A Colmeia pode alterar este Regulamento, mediante aviso aos Parceiros com 30 dias de antecedência. As alterações não atingem vendas realizadas antes de sua vigência.</p>
+                        <p>14.2. A versão vigente fica sempre publicada nesta página, com número de versão e data.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-15">15. CONTATO</h2>
+                        <p>15.1. Dúvidas, avisos e comunicações sobre este Regulamento devem ser enviados para contato@colmeiastudiosacademy.com.br ou pelo WhatsApp da Colmeia Studios Academy, (31) 99931-4793.</p>
+                    </div>
+
+                    <div class="reg-bloco">
+                        <h2 id="clausula-16">16. FORO</h2>
+                        <p>16.1. Fica eleito o foro da Comarca de Ipatinga/MG, sede da Colmeia, para dirimir questões decorrentes deste Regulamento entre a Colmeia e o Parceiro.</p>
+                    </div>
+
+                </div>
+
+                <div class="reg-cta">
+                    <a href="/formacao-inteligencia-juridica/">Conhecer a Formação →</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ UNIFICADO ACADEMY -->
+    <footer class="academy-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-col-title">Formações em IA</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
+                        <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
+                        <li><a href="/criacao-de-sites" class="footer-link">Criação de Websites</a></li>
+                        <li><a href="/gestao-de-redes-sociais" class="footer-link">Gestão de Redes Sociais</a></li>
+                        <li><a href="/servicos" class="footer-link">Portfólio Empresarial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
+                        <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
+                        <li><a href="/sobre" class="footer-link">Sobre a Colmeia</a></li>
+                        <li><a href="/contato" class="footer-link">Fale Conosco</a></li>
+                        <li><a href="/verificar-certificado" class="footer-link">Verificar Certificado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
+                    <div class="footer-legal-box">
+                        <strong>Colmeia Studios Academy</strong>
+                        CNPJ: 53.484.773/0001-57<br>
+                        Rua Terenas, 292, sala 201, Iguaçu<br>
+                        Ipatinga – MG, CEP 35162-126<br><br>
+                        WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
+                        E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/aviso-de-privacidade">Aviso de Privacidade</a>
+                    <a href="/termos-academy">Termos de Uso</a>
+                    <button type="button" class="footer-link cookie-pref-trigger" onclick="window.openCookiePreferences()">Preferências de Cookies</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/academy.js" defer></script>
+</body>
+</html>

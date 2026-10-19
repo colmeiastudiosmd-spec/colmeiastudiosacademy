@@ -3,65 +3,53 @@
   <!-- Portal Gateway Principal -->
   <url>
     <loc>https://colmeiastudiosacademy.com.br/</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Educação e Cursos -->
+  <!-- Educação e Formações -->
   <url>
-    <loc>https://colmeiastudiosacademy.com.br/cursos</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://colmeiastudiosacademy.com.br/cursos/</loc>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://colmeiastudiosacademy.com.br/cursos/pesquisa-assistida-ia</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://colmeiastudiosacademy.com.br/formacao-inteligencia-juridica/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://colmeiastudiosacademy.com.br/cursos/pesquisa-assistida-ia/estudantes-direito</loc>
-    <lastmod>2026-10-01</lastmod>
+    <loc>https://colmeiastudiosacademy.com.br/formacao-inteligencia-juridica/escritorios/</loc>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colmeiastudiosacademy.com.br/cursos/pesquisa-assistida-ia/advogados</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colmeiastudiosacademy.com.br/cursos/conteudo-redes-sociais-ia</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://colmeiastudiosacademy.com.br/cursos/criacao-websites-ia</loc>
-    <lastmod>2026-10-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/aulas-particulares-ia</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://colmeiastudiosacademy.com.br/crm/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- Unidade Jurídica Especializada -->
   <url>
     <loc>https://colmeiastudiosacademy.com.br/nucleo-inteligencia-juridica</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/auditoria-de-revisao</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -69,19 +57,19 @@
   <!-- Serviços Técnicos -->
   <url>
     <loc>https://colmeiastudiosacademy.com.br/servicos</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/criacao-de-sites</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/gestao-de-redes-sociais</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -89,13 +77,13 @@
   <!-- Conteúdos e Publicações -->
   <url>
     <loc>https://colmeiastudiosacademy.com.br/conteudos-gratuitos</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/conteudos-gratuitos/ia-no-trabalho</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -103,33 +91,51 @@
   <!-- Institucional e Suporte -->
   <url>
     <loc>https://colmeiastudiosacademy.com.br/sobre</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/contato</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/verificar-certificado</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://colmeiastudiosacademy.com.br/regulamento-parceiros/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 
-  <!-- Políticas e Termos Academy -->
+  <!-- Políticas e Termos Legais -->
+  <url>
+    <loc>https://colmeiastudiosacademy.com.br/privacidade</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://colmeiastudiosacademy.com.br/termos</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/aviso-de-privacidade</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://colmeiastudiosacademy.com.br/termos-academy</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

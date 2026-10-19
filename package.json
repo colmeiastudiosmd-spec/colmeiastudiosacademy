@@ -1,0 +1,12 @@
+{
+  "name": "colmeia-studios-academy",
+  "version": "1.0.0",
+  "description": "Colmeia Studios Academy - Plataforma e Entrega Automatizada de Conteúdos",
+  "private": true,
+  "scripts": {
+    "build": "node --check netlify/functions/submission-created.js && echo 'Build concluído com sucesso: sintaxe validada.'"
+  },
+  "dependencies": {
+    "resend": "^4.1.2"
+  }
+}

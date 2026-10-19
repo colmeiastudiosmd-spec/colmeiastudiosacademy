@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="/assets/consent.css">
-    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
 
     <title>Núcleo de Inteligência Jurídica | Pesquisa Assistida e Inteligência Documental</title>
     <meta name="description" content="Pesquisa assistida por IA, organização documental e auditoria de fontes para advogados e escritórios. Materiais rastreáveis e editáveis para revisão profissional.">
@@ -27,8 +31,6 @@
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Structured Data (JSON-LD) -->
@@ -65,7 +67,7 @@
               "name": "Qual é a diferença entre Auditoria de Revisão e demanda completa?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A Auditoria de Revisão confere até 10 referências de uma peça já redigida. As Demandas Completas incluem pesquisa assistida, matriz de precedentes, organização documental e cronologia, nas fases definidas na ordem de serviço."
+                "text": "A Auditoria de Revisão confere até 10 referências de uma peça já redigida. As Demandas Completas incluem pesquisa assistida, matriz de referências, organização documental e cronologia, nas fases definidas na ordem de serviço."
               }
             },
             {
@@ -1077,13 +1079,14 @@
             color: var(--text-muted);
         }
     </style>
-</head>
+
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/og-image-nucleo.jpg"></head>
 <body>
     <!-- Header Fixo -->
     <header class="site-header">
         <div class="container header-content">
             <a href="/" class="header-brand" aria-label="Voltar para a página inicial da Colmeia Studios Academy">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="header-logo" onerror="this.style.display='none';">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="header-logo" width="36" height="36" decoding="async" onerror="this.style.display='none';">
                 <div class="header-titles">
                     <span class="brand-main">Núcleo de Inteligência Jurídica</span>
                     <span class="brand-sub">Colmeia Studios Academy</span>
@@ -1204,7 +1207,7 @@
                     <span class="hero-badge" style="background: rgba(200, 80, 80, 0.12); color: #f08a8a; border-color: rgba(200, 80, 80, 0.3);">Consequências Reais</span>
                     <h2>Referências não verificadas já produziram consequências reais em processos.</h2>
                     <p style="color: var(--text-muted); font-size: 1rem; max-width: 860px; margin-top: 8px;">
-                        Decisões recentes de tribunais brasileiros demonstram que a citação de precedentes inexistentes ou descontextualizados gera sanções diretas e comunicações aos órgãos de classe.
+                        Decisões recentes de tribunais brasileiros demonstram que a citação de referências inexistentes ou descontextualizadas gera sanções diretas e comunicações aos órgãos de classe.
                     </p>
                 </div>
 
@@ -1215,7 +1218,7 @@
                             <span class="risco-tag">TJMG · Juizado Especial Cível de Belo Horizonte</span>
                             <div class="risco-val">Multa de R$ 990</div>
                             <p class="risco-desc">
-                                Dois precedentes inexistentes foram citados em peça de contestação. O juízo aplicou multa de 9,9% sobre o valor da causa por litigância de má-fé e determinou a expedição de comunicação à OAB-MG.
+                                Duas referências inexistentes foram citadas em peça de contestação. O juízo aplicou multa de 9,9% sobre o valor da causa por litigância de má-fé e determinou a expedição de comunicação à OAB-MG.
                             </p>
                         </div>
                         <a href="https://www.tjmg.jus.br/portal-tjmg/noticias/uso-de-jurisprudencias-falsas-em-acao-de-acidente-de-transito-gera-multa.htm" target="_blank" rel="noopener noreferrer" class="risco-src">
@@ -1253,7 +1256,7 @@
                 </div>
 
                 <div class="riscos-closing">
-                    <strong>Esclarecimento institucional:</strong> Os casos mostram por que a existência, a transcrição e o contexto de cada precedente devem ser conferidos antes do uso. O Núcleo não atuou em nenhum desses processos.
+                    <strong>Esclarecimento institucional:</strong> Os casos mostram por que a existência, a transcrição e o contexto de cada referência devem ser conferidos antes do uso. O Núcleo não atuou em nenhum desses processos.
                 </div>
                 <p style="margin-top: 14px; font-size: 0.8125rem; color: var(--text-muted); text-align: center; line-height: 1.5;">
                     Em linha com a <a href="https://s.oab.org.br/arquivos/2024/11/7160d4fe-9449-4aed-80bc-a2d7ac1f5d2f.pdf" target="_blank" rel="noopener" style="color: var(--accent-gold); text-decoration: underline;">Recomendação nº 001/2024 do Conselho Federal da OAB</a>, que apresenta diretrizes para o uso de inteligência artificial generativa na prática jurídica.
@@ -1313,7 +1316,7 @@
                             <ul class="mod-list">
                                 <li><strong>Três faixas dimensionadas:</strong> Essencial, Padrão e Complexa / Tribunais Superiores</li>
                                 <li>Dossiê técnico com mapeamento fático e documental</li>
-                                <li>Matriz de precedentes com confronto de notas contextuais de inteiro teor</li>
+                                <li>Matriz de referências com confronto de notas contextuais de inteiro teor</li>
                                 <li>Cronologia de fatos e incidentes processuais</li>
                                 <li>Estruturas preliminares editáveis para subsidiar a redação final do advogado</li>
                                 <li>Escopo, fases e entregas definidos em OS, sem acompanhamento ilimitado</li>
@@ -1353,7 +1356,7 @@
                     <div style="border: 1px solid var(--border-gold-subtle); border-radius: 8px; padding: 20px; background: rgba(255, 255, 255, 0.02);">
                         <span style="font-size: 0.75rem; font-weight: 700; color: var(--accent-gold); text-transform: uppercase;">Documento 2</span>
                         <h3 style="font-size: 1.1rem; margin: 6px 0; color: #ffffff;">Estrutura Preliminar Editável</h3>
-                        <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Teses organizadas em blocos técnicos, notas operacionais para o advogado, distinção dos precedentes da parte contrária e checklist antes do protocolo.</p>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin: 0;">Teses organizadas em blocos técnicos, notas operacionais para o advogado, distinção das referências da parte contrária e checklist antes do protocolo.</p>
                     </div>
                 </div>
 
@@ -1407,12 +1410,12 @@
                 </table>
 
                 <div style="border: 1px solid var(--border-gold-subtle); border-radius: 8px; padding: 20px; background: rgba(255, 255, 255, 0.02); margin-top: 20px;">
-                    <strong style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9375rem;">Precedente da parte contrária (fora da contagem)</strong>
-                    <p style="margin: 0; color: var(--text-muted); font-size: 0.875rem; line-height: 1.6;">Acórdão de câmara criminal estadual invocado no parecer ministerial. É o precedente que a pesquisa rebate, e não uma referência proposta para citação. Conferência: portal oficial do tribunal de origem.</p>
+                    <strong style="color: #ffffff; display: block; margin-bottom: 8px; font-size: 0.9375rem;">Referência da parte contrária (fora da contagem)</strong>
+                    <p style="margin: 0; color: var(--text-muted); font-size: 0.875rem; line-height: 1.6;">Acórdão de câmara criminal estadual invocado no parecer ministerial. É a referência que a pesquisa rebate, e não uma referência proposta para citação. Conferência: portal oficial do tribunal de origem.</p>
                 </div>
 
                 <p style="font-size: 0.8125rem; color: var(--text-dark); margin-top: 14px; line-height: 1.5;">
-                    Os critérios de integridade classificam: <em>Confirmada</em> (Referência localizada na fonte oficial; tese e trecho conferem. Erros de digitação em dados secundários são indicados na observação.), <em>Com ressalva</em> (Referência existe, mas há divergência de dados, trecho ou contexto que o advogado precisa conhecer antes de citar.) e <em>Bloqueada</em> (Referência não corresponde ao que o material atribui. Não deve ser citada.). A etiqueta <em>Contraponto principal</em> marca a referência auditada com força mais direta contra o principal precedente da parte contrária. Não é uma referência adicional.
+                    Os critérios de integridade classificam: <em>Confirmada</em> (Referência localizada na fonte oficial; tese e trecho conferem. Erros de digitação em dados secundários são indicados na observação.), <em>Com ressalva</em> (Referência existe, mas há divergência de dados, trecho ou contexto que o advogado precisa conhecer antes de citar.) e <em>Bloqueada</em> (Referência não corresponde ao que o material atribui. Não deve ser citada.). A etiqueta <em>Contraponto principal</em> marca a referência auditada com força mais direta contra a principal referência da parte contrária. Não é uma referência adicional.
                 </p>
 
                 <div style="margin-top: 20px;">
@@ -1428,7 +1431,7 @@
             <div class="container">
                 <div class="section-header-block">
                     <span class="hero-badge">Caso Real Anonimizado</span>
-                    <h2>Caso de Referência: Resposta Fundamentada e Deferimento</h2>
+                    <h2>Caso de Referência: Resposta Fundamentada e Indulto Reconhecido</h2>
                     <p style="font-size: 1rem; color: var(--text-muted); max-width: 860px; margin-top: 8px;">
                         Exemplo concreto de aplicação da pesquisa assistida e da auditoria de fontes em apoio à atuação de um advogado responsável.
                     </p>
@@ -1447,7 +1450,7 @@
 
                     <div class="case-step">
                         <span class="case-label">3. Manifestação contrária do Ministério Público</span>
-                        <p class="case-text">Após a juntada do material ao processo pelo advogado, o Ministério Público apresentou manifestação desfavorável ao pedido, com fundamentação extensa e apoio em seis precedentes judiciais.</p>
+                        <p class="case-text">Após a juntada do material ao processo pelo advogado, o Ministério Público apresentou manifestação desfavorável ao pedido, com fundamentação extensa e apoio em seis referências judiciais.</p>
                     </div>
 
                     <div class="case-step">
@@ -1460,10 +1463,10 @@
                             Resultado do caso
                         </span>
                         <h3 style="color: #ffffff; font-size: 1.25rem; margin-bottom: 8px; font-weight: 800;">
-                            Pedido de indulto deferido pelo juízo competente
+                            Indulto reconhecido, com trânsito em julgado
                         </h3>
                         <p class="case-text" style="color: #d6cec4;">
-                            O juízo competente deferiu o pedido de indulto. O material conferido serviu de base para a resposta redigida pelo advogado responsável.
+                            O material conferido serviu de base para a resposta redigida pelo advogado responsável. O juízo competente reconheceu o indulto e declarou extinta a punibilidade. A decisão transitou em julgado sem recurso do Ministério Público.
                         </p>
                     </div>
 
@@ -1499,7 +1502,7 @@
                     <div class="colmeia-card">
                         <div class="colmeia-letter">L</div>
                         <h3>Localizar</h3>
-                        <p>Pesquisar legislação, precedentes e fontes públicas em repositórios oficiais e diários de justiça autorizados.</p>
+                        <p>Pesquisar legislação, referências e fontes públicas em repositórios oficiais e diários de justiça autorizados.</p>
                     </div>
                     <div class="colmeia-card">
                         <div class="colmeia-letter">M</div>
@@ -1539,18 +1542,18 @@
                 <!-- Quem Conduz (Cristian Santos Pimentel) -->
                 <div class="bio-wrapper" id="quem-conduz">
                     <div class="bio-image-container">
-                        <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" loading="lazy" width="280" height="350">
+                        <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador da Colmeia Studios Academy" width="280" height="210" loading="lazy" decoding="async">
                     </div>
                     <div>
                         <h3 style="font-size: 1.45rem; color: #ffffff; margin-bottom: 4px;">Cristian Santos Pimentel</h3>
                         <div style="color: var(--accent-gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 14px;">
-                            Direção Técnica · Fundador da Colmeia Studios Academy
+                            Fundador da Colmeia Studios Academy · Professor de Inteligência Artificial · Diretor Técnico do Núcleo de Inteligência Jurídica
                         </div>
                         <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.65; margin-bottom: 12px;">
-                            Com mais de 15 anos de atuação em comunicação e tecnologia, é responsável pela direção técnica do Núcleo, com foco em inteligência documental, aplicação prática de IA e auditoria de fontes.
+                            Com mais de 15 anos em tecnologia, marketing e negócios, é responsável pela direção técnica do Núcleo, com foco em inteligência documental, aplicação prática de IA e auditoria de fontes.
                         </p>
                         <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.65; margin-bottom: 16px;">
-                            As sete etapas da Estratégia COLMEIA e os protocolos de conferência documental foram organizados e revisados com a colaboração de três advogados contratados, das áreas cível, penal e trabalhista, para alinhar o método às necessidades práticas da advocacia.
+                            As sete etapas da Estratégia COLMEIA e os protocolos de conferência documental foram organizados e revisados com a colaboração de advogados independentes, das áreas cível, penal e trabalhista, para alinhar o método às necessidades práticas da advocacia.
                         </p>
                         <div style="border-top: 1px solid var(--border-dark); padding-top: 14px;">
                             <a href="https://www.linkedin.com/in/cristian-santos-pimentel-765061408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold); font-size: 0.84rem; text-decoration: underline;">
@@ -1634,7 +1637,7 @@
                                     <strong style="color: #ffffff; display: block;">Demanda Completa · Essencial</strong>
                                 </td>
                                 <td>
-                                    Pesquisa assistida de precedentes pontuais; organização documental; estrutura preliminar de apoio para revisão da banca.
+                                    Pesquisa assistida de referências pontuais; organização documental; estrutura preliminar de apoio para revisão da banca.
                                 </td>
                                 <td>Até 5 dias úteis</td>
                                 <td class="col-val">
@@ -1723,7 +1726,7 @@
                                 <span class="faq-icon">+</span>
                             </button>
                             <div id="faq-panel-2" class="faq-content" role="region" aria-labelledby="faq-btn-2">
-                                <p>A Auditoria de Revisão confere até 10 referências de uma peça já redigida. As Demandas Completas incluem pesquisa assistida, matriz de precedentes, organização documental e cronologia, nas fases definidas na ordem de serviço.</p>
+                                <p>A Auditoria de Revisão confere até 10 referências de uma peça já redigida. As Demandas Completas incluem pesquisa assistida, matriz de referências, organização documental e cronologia, nas fases definidas na ordem de serviço.</p>
                             </div>
                         </div>
 
@@ -1951,14 +1954,14 @@
                         <a href="#investimento" style="color: var(--text-muted);">Tabela de Investimento</a>
                         <a href="/auditoria-de-revisao" style="color: var(--accent-gold);">Auditoria de Revisão</a>
                         <a href="/" style="color: var(--text-muted);">Página Inicial (Academy)</a>
-                        <a href="/privacidade" style="color: var(--text-muted);">Política de Privacidade</a>
-                        <a href="/termos" style="color: var(--text-muted);">Termos de Uso</a>
                     </div>
                 </div>
                 <div>
                     <strong style="color: #ffffff; font-size: 0.9375rem; display: block; margin-bottom: 8px;">Atendimento Técnico</strong>
                     <p style="margin: 0 0 6px; line-height: 1.5; color: var(--text-muted);">Atendimento nacional a advogados e escritórios.</p>
-                    <p style="margin: 0; line-height: 1.5; color: var(--text-muted);">WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">(31) 99931-4793</a></p>
+                    <p style="margin: 0 0 6px; line-height: 1.5; color: var(--text-muted);">WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">(31) 99931-4793</a></p>
+                    <p style="margin: 0 0 6px; line-height: 1.5; color: var(--text-muted);">E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-gold);">contato@colmeiastudiosacademy.com.br</a></p>
+                    <p style="margin: 0; line-height: 1.5; color: var(--text-muted);">Colmeia Studios Academy · CNPJ 53.484.773/0001-57<br>Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126</p>
                 </div>
             </div>
 

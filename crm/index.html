@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
+    <title>CRM de Prospecção e Projetos | Colmeia Studios Academy</title>
+    <meta name="description" content="O CRM exclusivo dos alunos da Formação em Inteligência Jurídica com IA: prospecção ética no LinkedIn, scripts prontos, agenda automática em dias úteis e gestão de projetos até a entrega.">
+    <link rel="canonical" href="https://colmeiastudiosacademy.com.br/crm">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CRM de Prospecção e Projetos | Colmeia Studios Academy">
+    <meta property="og:description" content="O CRM exclusivo dos alunos da Formação em Inteligência Jurídica com IA: prospecção ética no LinkedIn, scripts prontos, agenda automática em dias úteis e gestão de projetos até a entrega.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/crm">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/academy.css">
+    <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
+
+    <style>
+      /* Estilos isolados para a página do CRM */
+      .crm-hero {
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        padding: 120px 0 70px;
+        text-align: center;
+        border-bottom: 1px solid var(--border-dark);
+        position: relative;
+      }
+      .crm-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(242, 167, 27, 0.15);
+        color: var(--accent-amber);
+        border: 1px solid rgba(242, 167, 27, 0.4);
+        padding: 6px 18px;
+        border-radius: 999px;
+        font-family: var(--font-mono);
+        font-size: 0.8125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        margin-bottom: 24px;
+      }
+      .crm-hero h1 {
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        font-size: clamp(2.1rem, 4vw, 3.2rem);
+        line-height: 1.15;
+      }
+      .crm-hero-lead {
+        font-size: 1.2rem;
+        color: #D6CEC4;
+        line-height: 1.6;
+        max-width: 760px;
+        margin: 0 auto 32px;
+      }
+      .crm-hero-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+      }
+      .crm-login-note {
+        font-size: 0.875rem;
+        color: #A39A8E;
+        font-family: var(--font-mono);
+      }
+      .crm-fluxo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin: 36px 0 10px;
+      }
+      .crm-fluxo-step {
+        background: #FFFFFF;
+        border: 1px solid var(--border-light);
+        border-radius: 10px;
+        padding: 12px 18px;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: var(--text-dark);
+        box-shadow: var(--shadow-sm);
+      }
+      .crm-fluxo-step.crm-fluxo-fim {
+        background: #059669;
+        border-color: #047857;
+        color: #FFFFFF;
+        font-weight: 700;
+        box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+      }
+      .crm-fluxo-arrow {
+        color: var(--accent-amber);
+        font-weight: 900;
+        font-size: 1.15rem;
+      }
+      .crm-grid-security {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      @media (max-width: 768px) {
+        .crm-grid-security {
+          grid-template-columns: 1fr;
+        }
+      }
+      .crm-security-card {
+        background: #FFFFFF;
+        border: 1px solid var(--border-light);
+        border-radius: var(--radius-md);
+        padding: 24px;
+        box-shadow: var(--shadow-sm);
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+      }
+      .crm-security-icon {
+        font-size: 1.5rem;
+        line-height: 1;
+        flex-shrink: 0;
+      }
+      .crm-security-text {
+        font-size: 0.9375rem;
+        color: var(--text-dark);
+        line-height: 1.55;
+      }
+      .crm-notice-box {
+        background: #F8F5F0;
+        border-left: 4px solid var(--accent-amber);
+        padding: 18px 22px;
+        border-radius: 6px;
+        margin-top: 28px;
+        font-size: 0.875rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+      .crm-card-icon {
+        width: 44px;
+        height: 44px;
+        background: rgba(242, 167, 27, 0.12);
+        color: var(--accent-amber);
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        margin-bottom: 16px;
+      }
+    </style>
+</head>
+<body class="pg-crm">
+
+    <!-- CABEÇALHO UNIFICADO ACADEMY -->
+    <header class="academy-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="/" class="header-brand" aria-label="Colmeia Studios Academy">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
+                <div class="brand-text">
+                    <span class="brand-title">Colmeia Studios Academy</span>
+                    <span class="brand-tagline">Formação Prática em IA</span>
+                </div>
+            </a>
+
+            <nav class="header-nav" aria-label="Navegação principal">
+                <a href="/cursos/" class="nav-link">Cursos</a>
+                <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
+                <a href="/servicos" class="nav-link">Serviços para empresas</a>
+                <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
+                <a href="/sobre" class="nav-link">Sobre</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="/entrar-crm" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Entrar no CRM</a>
+                <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- TOPO HERO -->
+        <section class="crm-hero">
+            <div class="container" style="max-width: 860px; margin: 0 auto;">
+                <span class="crm-badge">Exclusivo para alunos</span>
+                <h1>CRM de Prospecção e Projetos</h1>
+                <p class="crm-hero-lead">
+                    Do primeiro convite no LinkedIn até a entrega ao escritório. Você abre o CRM e ele mostra o que fazer hoje.
+                </p>
+                <div class="crm-hero-cta">
+                    <a href="/entrar-crm" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 16px 36px; font-size: 1.0625rem; font-weight: 700;">
+                        Entrar no CRM &rarr;
+                    </a>
+                    <span class="crm-login-note">
+                        Acesso com login Google, liberado para o e-mail cadastrado na matrícula.
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: O QUE O CRM FAZ -->
+        <section class="section-padding" style="background-color: var(--bg-page);">
+            <div class="container">
+                <div style="text-align: center; max-width: 680px; margin: 0 auto 48px;">
+                    <span class="eyebrow">Recursos Práticos</span>
+                    <h2>O que o CRM faz</h2>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card card-white">
+                        <div class="crm-card-icon">⚡</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-dark);">Tela "Hoje"</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.55;">
+                            As ações do dia (quem convidar, quem respondeu, quem cobrar), em 15 a 30 minutos por dia.
+                        </p>
+                    </div>
+
+                    <div class="card card-white">
+                        <div class="crm-card-icon">🎯</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-dark);">Modo foco</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.55;">
+                            Tudo em ordem de prioridade, com projeto vencendo, reunião do dia, proposta a cobrar e lead atrasado.
+                        </p>
+                    </div>
+
+                    <div class="card card-white">
+                        <div class="crm-card-icon">💬</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-dark);">Scripts prontos</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.55;">
+                            Convite, primeira mensagem, follow-up e encerramento, copiados com um clique.
+                        </p>
+                    </div>
+
+                    <div class="card card-white">
+                        <div class="crm-card-icon">📅</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-dark);">Agenda automática em dias úteis</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.55;">
+                            Mudou a etapa, a próxima ação já vem com data calculada. Lead parado há 7 dias gera um aviso.
+                        </p>
+                    </div>
+
+                    <div class="card card-white">
+                        <div class="crm-card-icon">📈</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-dark);">Métricas e teste A/B</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.55;">
+                            Compare 4 variações de abordagem com base no que aconteceu de verdade.
+                        </p>
+                    </div>
+
+                    <div class="card card-white">
+                        <div class="crm-card-icon">✅</div>
+                        <h3 style="font-size: 1.25rem; margin-bottom: 12px; color: var(--text-dark);">Entrega com segurança contratual</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.55;">
+                            A etapa "Entregue" só é liberada com a ordem de serviço criada e assinada e o checklist da entrega completo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: DO CONVITE À ENTREGA -->
+        <section class="section-padding" style="background-color: #FFFFFF; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container" style="text-align: center;">
+                <span class="eyebrow">Fluxo Operacional</span>
+                <h2>Do convite à entrega</h2>
+
+                <div class="crm-fluxo">
+                    <span class="crm-fluxo-step">Mapeado</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Convite</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Conectado</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Mensagem</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Follow-up</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Reunião</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Proposta</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step">Ordem de serviço</span>
+                    <span class="crm-fluxo-arrow">&rarr;</span>
+                    <span class="crm-fluxo-step crm-fluxo-fim">Entregue &check;</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SEGURANÇA E PRIVACIDADE -->
+        <section class="section-padding" style="background-color: var(--bg-page);">
+            <div class="container" style="max-width: 960px;">
+                <div style="text-align: center; margin-bottom: 40px;">
+                    <span class="eyebrow">Proteção e Conformidade</span>
+                    <h2>Segurança e privacidade</h2>
+                </div>
+
+                <div class="crm-grid-security">
+                    <div class="crm-security-card">
+                        <span class="crm-security-icon">🛡️</span>
+                        <div class="crm-security-text">
+                            <strong>Sem robô, sem extensão e sem envio em massa:</strong> sua conta do LinkedIn fica segura.
+                        </div>
+                    </div>
+
+                    <div class="crm-security-card">
+                        <span class="crm-security-icon">🔐</span>
+                        <div class="crm-security-text">
+                            <strong>Login Google:</strong> seus contatos são só seus. A Colmeia vê apenas números agregados.
+                        </div>
+                    </div>
+
+                    <div class="crm-security-card">
+                        <span class="crm-security-icon">📱</span>
+                        <div class="crm-security-text">
+                            <strong>Celular e computador:</strong> acesso pelo navegador, sincronizado entre aparelhos. É preciso estar conectado à internet.
+                        </div>
+                    </div>
+
+                    <div class="crm-security-card">
+                        <span class="crm-security-icon">⚖️</span>
+                        <div class="crm-security-text">
+                            <strong>Guia de ética embutido:</strong> Provimento 205/2021 da OAB e LGPD.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="crm-notice-box">
+                    <strong>Nota:</strong> O CRM organiza o seu trabalho manual. Ele não envia mensagens sozinho e não acessa o LinkedIn. A responsabilidade pela conduta na prospecção é de quem prospecta.
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: AINDA NÃO É ALUNO? -->
+        <section class="section-padding" style="background-color: #FFFFFF; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+            <div class="container" style="max-width: 760px; text-align: center;">
+                <span class="eyebrow">Matrícula e Acesso</span>
+                <h2>Ainda não é aluno?</h2>
+                <p style="font-size: 1.0625rem; color: var(--text-muted); line-height: 1.6; margin-top: 12px; margin-bottom: 32px;">
+                    O CRM faz parte da Formação em Inteligência Jurídica com IA. O acesso é liberado para o e-mail Google do aluno depois da confirmação da matrícula.
+                </p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="/formacao-inteligencia-juridica" class="btn btn-primary" style="padding: 14px 28px; font-weight: 700;">
+                        Conhecer a formação &rarr;
+                    </a>
+                    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Colmeia%20Studios%20Academy!%20Quero%20saber%20mais%20sobre%20o%20CRM%20e%20a%20Forma%C3%A7%C3%A3o%20em%20Intelig%C3%AAncia%20Jur%C3%ADdica." target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="padding: 14px 28px;">
+                        Fale com a Colmeia Studios Academy no WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: PROBLEMAS PARA ENTRAR? -->
+        <section class="section-padding" style="background-color: var(--bg-page);">
+            <div class="container" style="max-width: 760px; text-align: center;">
+                <span class="eyebrow">Suporte ao Aluno</span>
+                <h2>Problemas para entrar?</h2>
+                <p style="font-size: 1.0625rem; color: var(--text-muted); line-height: 1.6; margin-top: 12px;">
+                    Use o mesmo e-mail Google informado na matrícula. Se o acesso não for liberado, fale com a Colmeia Studios Academy pelo WhatsApp <a href="https://wa.me/5531999314793" target="_blank" rel="noopener" style="color: var(--accent-amber-hover); font-weight: 600; text-decoration: underline;">(31) 99931-4793</a> ou pelo e-mail <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber-hover); font-weight: 600; text-decoration: underline;">contato@colmeiastudiosacademy.com.br</a>.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ UNIFICADO ACADEMY -->
+    <footer class="academy-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h3 class="footer-col-title">Formações em IA</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
+                        <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
+                        <li><a href="/criacao-de-sites" class="footer-link">Criação de Websites</a></li>
+                        <li><a href="/gestao-de-redes-sociais" class="footer-link">Gestão de Redes Sociais</a></li>
+                        <li><a href="/servicos" class="footer-link">Portfólio Empresarial</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
+                    <ul class="footer-links-list">
+                        <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
+                        <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
+                        <li><a href="/sobre" class="footer-link">Sobre a Colmeia</a></li>
+                        <li><a href="/contato" class="footer-link">Fale Conosco</a></li>
+                        <li><a href="/verificar-certificado" class="footer-link">Verificar Certificado</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
+                    <div class="footer-legal-box">
+                        <strong>Colmeia Studios Academy</strong>
+                        CNPJ: 53.484.773/0001-57<br>
+                        Rua Terenas, 292, sala 201, Iguaçu<br>
+                        Ipatinga – MG, CEP 35162-126<br><br>
+                        WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
+                        E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>
+                    &copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="/aviso-de-privacidade">Aviso de Privacidade</a>
+                    <a href="/termos-academy">Termos de Uso</a>
+                    <button type="button" class="footer-link cookie-pref-trigger" onclick="window.openCookiePreferences()">Preferências de Cookies</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/academy.js" defer></script>
+</body>
+</html>

@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link rel="stylesheet" href="/assets/consent.css">
 <script src="/assets/consent.js" defer></script>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Auditoria de Revisão de Fontes e Precedentes | Núcleo de Inteligência Jurídica</title>
+<title>Auditoria de Revisão de Fontes e Referências | Núcleo de Inteligência Jurídica</title>
 <meta name="description" content="Auditoria de Revisão: conferência técnica direta em fontes oficiais de até 10 referências em peças prontas para a advocacia. 1 rodada de revalidação inclusa." />
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://colmeiastudiosacademy.com.br/auditoria-de-revisao">
@@ -17,8 +21,6 @@
 <meta property="og:locale" content="pt_BR">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,620;0,9..144,760;1,9..144,500&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -89,6 +91,8 @@
   .chip.ok{background:var(--green-soft);color:var(--green)}
   .chip.warn{background:var(--amber-soft);color:var(--amber)}
   .chip.block{background:var(--red-soft);color:var(--red)}
+  .chip.ct{background:rgba(122,90,0,.15);color:#9A6906;border:1px solid #7a5a00}
+  .chip.ct::before{display:none}
   .f-note{font-size:13px;color:var(--ink-soft);margin-top:8px;line-height:1.5}
   .f-note b{color:var(--ink)}
   .ficha-foot{background:var(--ink);color:#C9D0D6;font-family:"IBM Plex Mono",monospace;font-size:11px;padding:12px 22px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
@@ -221,6 +225,33 @@
   footer .cols{display:grid;grid-template-columns:1.2fr 1fr;gap:40px}
   footer .fine{border-top:1px solid var(--line-dark);margin-top:30px;padding-top:20px;font-size:11.5px}
 
+  /* nfooter classes para equivalência com rodapé do Núcleo */
+  .site-footer, .nfooter-site-footer {
+    background: #080605;
+    border-top: 1px solid var(--line-dark);
+    padding: 44px 0 24px;
+    font-size: 0.8125rem;
+    color: var(--muted);
+    --border-dark: var(--line-dark);
+    --accent-gold: var(--honey);
+    --text-muted: var(--muted);
+    --text-dark: var(--mute);
+  }
+  .site-footer .container, .nfooter-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 28px;
+  }
+  .nfooter-text-muted { color: var(--muted); }
+  .nfooter-text-dark { color: var(--mute); }
+  .nfooter-accent-gold { color: var(--honey); }
+  .nfooter-border-dark { border-top: 1px solid var(--line-dark); }
+  .nfooter-fine-block { background: var(--ink); border-top: 1px solid var(--line-dark); padding: 24px 0; }
+  .nfooter-fine-text { font-size: 11.5px; line-height: 1.6; color: var(--mute); margin: 0; }
+  @media (max-width: 680px) {
+    .site-footer .container, .nfooter-container { padding: 0 16px; }
+  }
+
   /* reveal */
   .rv{animation:rise .65s ease both}
   @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
@@ -275,7 +306,7 @@
         "name": "Colmeia Studios Academy — Núcleo de Inteligência Jurídica",
         "url": "https://colmeiastudiosacademy.com.br"
       },
-      "serviceType": "Auditoria Técnica de Precedentes e Fontes Jurídicas",
+      "serviceType": "Auditoria Técnica de Referências e Fontes Jurídicas",
       "description": "Conferência direta em fonte oficial de até 10 referências jurídicas pré-pesquisadas em peças prontas de escritórios de advocacia, com classificação técnica e 1 rodada de revalidação.",
       "url": "https://colmeiastudiosacademy.com.br/auditoria-de-revisao"
     },
@@ -295,7 +326,7 @@
           "name": "A auditoria avalia o mérito jurídico ou a estratégia da peça?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Não. Não avaliamos se a tese é boa, se o precedente convence o juiz ou qual recurso deve ser interposto. A auditoria é um procedimento técnico de rastreabilidade e integridade de fontes. A avaliação jurídica, a decisão sobre manter ou retirar a citação e a responsabilidade processual continuam integralmente com o advogado."
+            "text": "Não. Não avaliamos se a tese é boa, se a referência convence o juiz ou qual recurso deve ser interposto. A auditoria é um procedimento técnico de rastreabilidade e integridade de fontes. A avaliação jurídica, a decisão sobre manter ou retirar a citação e a responsabilidade processual continuam integralmente com o advogado."
           }
         },
         {
@@ -313,13 +344,22 @@
             "@type": "Answer",
             "text": "A rodada de revalidação inclusa contempla a conferência técnica dos itens originalmente auditados após os ajustes realizados pelo advogado, solicitada em até 15 dias corridos da entrega do relatório inicial. Referências novas ou substituições por itens não auditados devem ser previamente avaliadas e orçadas."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "E o sigilo dos meus casos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Três camadas: primeiro contato sem informações processuais; NDA formalizado antes de qualquer envio; arquivos tratados com confidencialidade. Não utilizamos materiais de clientes para treinar modelos de IA, próprios ou de terceiros. Nesta auditoria, você envia apenas a lista de referências ou a peça anonimizada."
+          }
         }
       ]
     }
   ]
 }
 </script>
-</head>
+
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/og-image-nucleo.jpg"></head>
 <body>
 
 <!-- ================= TOPBAR ================= -->
@@ -341,9 +381,9 @@
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Para advogados sêniores e escritórios</span>
+      <span class="eyebrow">Para advogados seniores e escritórios</span>
       <h1>Você não precisa de terceiros para pesquisar.<br><em>Precisa de quem confira.</em></h1>
-      <p class="lede">A <b>Auditoria de Revisão</b> confere cada referência da sua pesquisa — a sua, do seu estagiário ou da sua IA — direto na fonte oficial. Cada precedente sai com status de integridade: <b>confirmada, com ressalva ou bloqueada para citação</b>. O juízo e a estratégia continuam sendo seus. A conferência exaustiva, não.</p>
+      <p class="lede">A <b>Auditoria de Revisão</b> confere cada referência da sua pesquisa — a sua, do seu estagiário ou da sua IA — direto na fonte oficial. Cada referência sai com status de integridade: <b>confirmada, com ressalva ou bloqueada para citação</b>. O juízo e a estratégia continuam sendo seus. A conferência exaustiva, não.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20N%C3%BAcleo%20de%20Intelig%C3%AAncia%20Jur%C3%ADdica%20da%20Colmeia%20Studios%20Academy.%20Tenho%20interesse%20na%20Auditoria%20de%20Revis%C3%A3o%20para%20at%C3%A9%2010%20refer%C3%AAncias.%20Gostaria%20de%20confirmar%20se%20meu%20material%20se%20enquadra%20no%20escopo.%20N%C3%A3o%20enviarei%20autos%20nem%20dados%20sigilosos%20neste%20primeiro%20contato." target="_blank" rel="noopener">
           <svg class="wa" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.06c-.24.68-1.42 1.3-1.96 1.35-.5.05-1.13.24-3.8-.79-3.2-1.26-5.23-4.53-5.39-4.74-.16-.21-1.28-1.71-1.28-3.26 0-1.55.81-2.31 1.1-2.63.29-.31.63-.39.84-.39h.6c.19 0 .45-.07.7.53.26.63.89 2.18.97 2.34.08.16.13.34.02.55-.11.21-.16.34-.32.52-.16.19-.34.42-.48.56-.16.16-.33.33-.14.65.18.31.82 1.35 1.76 2.19 1.2 1.08 2.22 1.41 2.54 1.57.31.16.5.13.68-.08.18-.21.79-.92 1-1.24.21-.31.42-.26.71-.16.29.11 1.84.87 2.15 1.03.32.16.53.24.61.37.08.13.08.76-.16 1.44z"/></svg>
@@ -351,7 +391,7 @@
         </a>
         <a class="btn btn-ghost" href="#como">Ver como funciona</a>
       </div>
-      <p class="micro"><b>Sem envio de autos nesta etapa:</b> nada de autos, partes ou números de processo no primeiro contato. Você envia apenas a lista de referências a conferir.</p>
+      <p class="micro"><b>Sem envio de autos nesta etapa:</b> Nada de autos, partes ou números de processo no primeiro contato. Após o NDA, você envia a lista de referências com os trechos citados ou a peça anonimizada.</p>
     </div>
 
     <!-- ficha de auditoria — amostra real anonimizada -->
@@ -362,10 +402,16 @@
       </div>
       <div class="ficha-body">
         <div class="f-row">
-          <p class="f-ref">STJ, AgRg no HC 950.184/SP, 5ª Turma, j. 14/04/2025</p>
-          <p class="f-meta">Conferido em: base oficial do STJ</p>
+          <p class="f-ref">STF, ADI 5.874/DF, Tribunal Pleno, j. 09/05/2019</p>
+          <p class="f-meta">Conferido em: inteiro teor, portal do STF</p>
           <span class="chip ok">Confirmada</span>
-          <p class="f-note"><b>Existência e teor conferidos:</b> preenchidos os requisitos do decreto, não cabe interpretação extensiva das restrições. A descrição fática foi confrontada com a base oficial.</p>
+          <p class="f-note">Existência e teor conferidos. Teses atribuídas ao redator do acórdão, Min. Alexandre de Moraes; o relator ficou vencido.</p>
+        </div>
+        <div class="f-row">
+          <p class="f-ref">STJ, AgRg no HC 950.184/SP, 5ª Turma, sessão virtual de 08 a 14/04/2025</p>
+          <p class="f-meta">Conferido em: SCON/STJ, fonte oficial</p>
+          <span class="chip warn">Com ressalva</span> <span class="chip ct"><em>Contraponto principal</em></span>
+          <p class="f-note">O acórdão confere; o material de origem reproduzia ementa não oficial e fundamento que não consta do inteiro teor. Citar pelo texto oficial.</p>
         </div>
         <div class="f-row">
           <p class="f-ref">TJMG, Agravo em Execução Penal nº 1.0024.15.030052-3/001</p>
@@ -374,16 +420,13 @@
           <p class="f-note">O trecho do material de origem não coincidia com o texto oficial. <b>Transcreva apenas conforme o inteiro teor conferido.</b></p>
         </div>
         <div class="f-row">
-          <p class="f-ref">Ementa estadual sobre o art. 9º, VIII (decreto anterior)</p>
-          <p class="f-meta">Não localizada na base do tribunal: sem número ou órgão julgador</p>
+          <p class="f-ref">STF, RHC 165.633 (como citado no material)</p>
+          <p class="f-meta">Conferido em: acompanhamento processual, portal do STF</p>
           <span class="chip block">Bloqueada para citação</span>
-          <p class="f-note">Fonte não localizada na base oficial. Não citar até a identificação completa ser conferida na fonte.</p>
-        </div>
-        <div class="f-note" style="border-top:1px dashed var(--line);padding-top:10px;margin-top:10px;">
-          <em>Anotação comparativa separada:</em> Um precedente da parte contrária recebeu nota comparativa de distinção, sem constituir quarto status de integridade nem alterar a contagem total de 9 julgados auditados.
+          <p class="f-note">O número existe, mas pertence a outro processo, sem relação com indulto. Não citar.</p>
         </div>
       </div>
-      <div class="ficha-foot"><span>9 referências · caso real anonimizado (5 confirmadas, 2 ressalvas, 2 bloqueadas)</span><span><b>4 tinham apontamentos</b> antes da conferência</span></div>
+      <div class="ficha-foot"><span>Amostra: 12 referências em 9 fichas · caso real anonimizado</span></div>
     </div>
   </div>
 </section>
@@ -397,13 +440,13 @@
     <div class="risk-grid">
       <article class="risk-item">
         <span class="big">TST · 6ª Turma · mar/2026</span>
-        <p>Condenação por <b>possível uso de IA</b> com citações falsas de jurisprudência e dados adulterados em contrarrazões. Multa de <b>1% sobre o valor da causa</b> para a empresa e, no mesmo percentual, <b>para o advogado</b>. Ofícios à OAB e ao Ministério Público Federal.</p>
+        <p>Condenação por <b>possível uso de IA</b> com citações falsas de jurisprudência e dados adulterados em contrarrazões. Multa de <b>1% sobre o valor da causa</b> para a empresa e, no mesmo percentual, <b>para o advogado</b>. Ofícios à OAB e ao Ministério Público Federal. RR-0000284-92.2024.5.06.0351.</p>
         <blockquote>"A responsabilidade pela verificação da veracidade das informações permanece integralmente com o advogado e a parte."</blockquote>
-        <a class="risk-src" href="https://www.tst.jus.br/en/-/empresa-e-advogado-sao-condenados-por-possivel-uso-de-ia-com-citacoes-falsas-de-jurisprudencia" target="_blank" rel="noopener">Fonte: TST</a>
+        <a class="risk-src" href="https://www.tst.jus.br/-/empresa-e-advogado-sao-condenados-por-possivel-uso-de-ia-com-citacoes-falsas-de-jurisprudencia" target="_blank" rel="noopener">Fonte: TST</a>
       </article>
       <article class="risk-item">
         <span class="big">TRT-2 · 6ª Turma · fev/2026</span>
-        <p>O advogado atribuiu a pesquisa ao <b>"corpo de estagiários"</b>. O tribunal rejeitou a justificativa: multa de <b>5% sobre o valor da causa</b> à empresa e ofício à OAB-SP para apuração sobre a conduta do advogado.</p>
+        <p>O advogado atribuiu a pesquisa ao <b>"corpo de estagiários"</b>. O tribunal rejeitou a justificativa: multa de <b>5% sobre o valor da causa</b> à empresa e ofício à OAB-SP para apuração sobre a conduta do advogado. RO 1001128-84.2024.5.02.0044.</p>
         <blockquote>"A postulação em juízo é ato privativo do advogado, que também é o responsável por seu conteúdo."</blockquote>
         <a class="risk-src" href="https://conjur.com.br/2026-fev-16/uso-de-jurisprudencia-criada-por-ia-gera-multa-por-ma-fe-e-oficio-a-oab/" target="_blank" rel="noopener">Fonte: ConJur</a>
       </article>
@@ -413,8 +456,8 @@
         <a class="risk-src" href="https://www.tjsc.jus.br/web/imprensa/-/tjsc-multa-autor-de-recurso-por-jurisprudencia-falsa-gerada-por-ia" target="_blank" rel="noopener">Fonte: TJSC</a>
       </article>
       <article class="risk-item">
-        <span class="big">TJMG · Juizado de BH · jul/2026</span>
-        <p>Dois precedentes falsos atribuídos ao STJ e ao TJMG na contestação. A ré <b>venceu no mérito</b> (improcedência dos pedidos do autor) e, ainda assim, houve multa de <b>9,9% (R$ 990)</b> por litigância de má-fé e ofício à OAB-MG.</p>
+        <span class="big">TJMG · Juizado Especial Cível de BH · jul/2026</span>
+        <p>Duas referências falsas atribuídas ao STJ e ao TJMG na contestação. A ré <b>venceu no mérito</b> (improcedência dos pedidos do autor) e, ainda assim, houve multa de <b>9,9% (R$ 990)</b> por litigância de má-fé e ofício à OAB-MG.</p>
         <blockquote>"Todo uso de tecnologia, inclusive Inteligência Artificial, demanda supervisão humana contínua."</blockquote>
         <a class="risk-src" href="https://www.tjmg.jus.br/portal-tjmg/noticias/uso-de-jurisprudencias-falsas-em-acao-de-acidente-de-transito-gera-multa.htm" target="_blank" rel="noopener">Fonte: TJMG</a>
       </article>
@@ -422,9 +465,9 @@
 
     <h3 class="risk-h3">O que está em jogo quando uma citação não se sustenta</h3>
     <div class="stake-grid">
-      <div class="stake"><b>Multa ao seu cliente</b><span>Litigância de má-fé: de 1% a 10% do valor da causa em três dos casos acima. A multa recai sobre a parte que você representa — e, no caso do TST, também sobre o advogado.</span></div>
+      <div class="stake"><b>Multa ao seu cliente</b><span>Litigância de má-fé: entre 1% e 10% do valor da causa nos quatro casos acima. A multa recai sobre a parte que você representa — e, no caso do TST, também sobre o advogado.</span></div>
       <div class="stake"><b>Ofício à OAB</b><span>Nos quatro casos, o juízo encaminhou a conduta à Ordem para apuração disciplinar do advogado responsável.</span></div>
-      <div class="stake"><b>Responsabilidade indelegável</b><span>Nem a IA nem o estagiário absorvem a culpa: quem assina responde. A Recomendação nº 1/2024 do Conselho Federal da OAB orienta supervisão humana no uso de IA generativa.</span></div>
+      <div class="stake"><b>Responsabilidade indelegável</b><span>Nem a IA nem o estagiário absorvem a culpa: quem assina responde. <a href="https://s.oab.org.br/arquivos/2024/11/7160d4fe-9449-4aed-80bc-a2d7ac1f5d2f.pdf" target="_blank" rel="noopener" style="color:var(--honey-deep);text-decoration:underline;">A Recomendação nº 001/2024 do Conselho Federal da OAB</a> orienta supervisão humana no uso de IA generativa.</span></div>
       <div class="stake"><b>Credibilidade perante o juízo</b><span>Uma referência falsa contamina a leitura de toda a peça — inclusive das teses corretas — e expõe o escritório perante o cliente.</span></div>
     </div>
 
@@ -434,6 +477,7 @@
     </div>
 
     <p class="src-note">Contexto de adoção: <a href="https://www.aasp.org.br/na-midia/ia-ja-faz-parte-da-rotina-da-advocacia-brasileira/" target="_blank" rel="noopener">levantamento da AASP (jul/2026)</a> aponta que 87,4% dos respondentes já usam IA no trabalho e 85,3% reconhecem a necessidade de capacitação específica; o <a href="https://www.migalhas.com.br/quentes/452698/trybe-anuncia-edicao-2026-do-relatorio-sobre-impacto-da-ia-no-direito" target="_blank" rel="noopener">relatório "Impacto da IA generativa no Direito" 2026</a> (Trybe, seccionais da OAB, Jusbrasil e ITS Rio) registra que os usuários frequentes passaram de 55% para 77%. Casos citados com base nas notícias oficiais ou jornalísticas indicadas; a Colmeia Studios Academy não atuou em nenhum deles.</p>
+    <p class="src-note" style="margin-top:8px">Em linha com a <a href="https://s.oab.org.br/arquivos/2024/11/7160d4fe-9449-4aed-80bc-a2d7ac1f5d2f.pdf" target="_blank" rel="noopener">Recomendação nº 001/2024 do Conselho Federal da OAB</a>, que apresenta diretrizes para o uso de inteligência artificial generativa na prática jurídica.</p>
   </div>
 </section>
 
@@ -448,10 +492,10 @@
           <p>Você já pesquisou — sozinho, com estagiário ou com IA. O Núcleo confere <b>cada referência na fonte oficial</b> e devolve um relatório que indica, referência por referência, o que está confirmado, o que requer ressalva e o que está bloqueado para citação.</p>
         </div>
         <ul class="def-list">
-          <li><span class="n">01</span><div><b>Ficha por referência</b><span>Identificação completa, base oficial consultada (tribunal, diário oficial, repositório) e status de integridade atribuído. O status "Confirmada" atesta existência e correspondência textual na fonte oficial, sem certificar pertinência jurídica.</span></div></li>
+          <li><span class="n">01</span><div><b>Ficha por referência</b><span>Identificação completa, base oficial consultada (tribunal, diário oficial, repositório) e status de integridade atribuído. O status "Confirmada" indica referência localizada na fonte oficial, com tese e trecho conferidos; erros de digitação em dados secundários são indicados na observação. Não certifica pertinência jurídica.</span></div></li>
           <li><span class="n">02</span><div><b>Divergências documentadas</b><span>Quando a transcrição citada diverge do inteiro teor do acórdão, a discrepância é apontada e o trecho oficial é registrado ao lado para sua decisão.</span></div></li>
           <li><span class="n">03</span><div><b>Conferência de material existente</b><span>Conferência de até 10 referências indicadas pelo cliente. A avaliação de mérito, pertinência e distinção jurídica ao caso concreto cabe privativamente ao advogado responsável.</span></div></li>
-          <li><span class="n">04</span><div><b>Pontos de revisão sinalizados</b><span>Trechos que demandam verificação atenta vêm destacados para que sua validação final seja rápida e segura, sem retrabalho.</span></div></li>
+          <li><span class="n">04</span><div><b>Pontos de revisão sinalizados</b><span>Trechos que demandam verificação atenta vêm destacados para que sua validação final seja mais rápida.</span></div></li>
         </ul>
       </div>
       <aside class="def-side rv">
@@ -486,14 +530,14 @@
       </div>
       <div class="step rv">
         <span class="s-tag">Passo 3</span>
-        <h3>Você envia só as referências</h3>
-        <p>O envio restringe-se às referências públicas e aos trechos estritamente necessários à checagem, sem autos completos ou peças sigilosas. A lista pode ter sido levantada por você, pela sua equipe ou por IA.</p>
-        <span class="safeg">Sem autos completos nem dados do caso nesta oferta</span>
+        <h3>Você envia só o necessário</h3>
+        <p>Após o NDA, você envia a lista de referências com os trechos citados ou a peça anonimizada, sem autos completos. A lista pode ter sido levantada por você, pela sua equipe ou por IA.</p>
+        <span class="safeg">Sem autos completos nesta oferta</span>
       </div>
       <div class="step rv">
         <span class="s-tag">Passo 4</span>
         <h3>Relatório Técnico de Auditoria de Fontes entregue</h3>
-        <p>Cada precedente com status, base oficial registrada e divergências apontadas em relatório estruturado para sua conferência privativa.</p>
+        <p>Cada referência com status, base oficial registrada e divergências apontadas em relatório estruturado para sua conferência privativa.</p>
         <span class="safeg">1 revalidação dos itens auditados após seus ajustes incluída</span>
       </div>
     </div>
@@ -514,16 +558,16 @@
         <p class="a">Vai revisar — <b>e deve</b>: a validação jurídica final é privativa do advogado que assina a peça. A diferença é que você recebe um relatório objetivo com cada fonte verificada na base oficial, divergências textuais apontadas e trechos que exigem conferência sinalizados, em vez de refazer a busca do zero.</p>
       </div>
       <div class="qa-card rv">
-        <p class="q">"E se houver divergência em um precedente?"</p>
+        <p class="q">"E se houver divergência em uma referência?"</p>
         <p class="a">Cada ficha técnica registra a <b>base oficial exata</b> e o teor confrontado. Quando uma citação não coincide com a fonte oficial ou não é localizada no tribunal, a referência é sinalizada com ressalva ou bloqueada para citação, cabendo ao advogado decidir o uso processual.</p>
       </div>
       <div class="qa-card rv">
         <p class="q">"Por que não uso a minha IA e ponto?"</p>
-        <p class="a">Uma resposta gerada por IA, por si só, não comprova conferência na fonte oficial nem registra a correspondência textual entre o rascunho e a decisão publicada. Os tribunais puniram a citação de precedentes inexistentes ou distorcidos sem conferência na fonte oficial, não o uso da tecnologia em si.</p>
+        <p class="a">Uma resposta gerada por IA, por si só, não comprova conferência na fonte oficial nem registra a correspondência textual entre o rascunho e a decisão publicada. Os tribunais puniram a citação de referências inexistentes ou distorcidas sem conferência na fonte oficial, não o uso da tecnologia em si.</p>
       </div>
       <div class="qa-card rv">
         <p class="q">"E o sigilo dos meus casos?"</p>
-        <p class="a">Três camadas: primeiro contato sem informações processuais; NDA formalizado antes de qualquer envio; arquivos tratados sob estrita confidencialidade, <b>sem treinamento de modelos públicos</b>. E nesta auditoria, você envia apenas a lista de referências públicas.</p>
+        <p class="a">Três camadas: primeiro contato sem informações processuais; NDA formalizado antes de qualquer envio; arquivos tratados com confidencialidade. Não utilizamos materiais de clientes para treinar modelos de IA, próprios ou de terceiros. Nesta auditoria, você envia apenas a lista de referências ou a peça anonimizada.</p>
       </div>
     </div>
   </div>
@@ -539,22 +583,22 @@
     <div class="proof-grid">
       <div class="proof-card rv">
         <span class="tag">Execução penal · pedido de indulto</span>
-        <h3>Pedido <em style="color:var(--green)">deferido</em></h3>
-        <p>Após a petição inicial, o material de pesquisa cruzada sustentou a resposta à manifestação desfavorável do Ministério Público — que se apoiava em <b>seis precedentes</b>. A pesquisa estruturou <b>nove julgados</b> do ponto controvertido, confrontando com a jurisprudência do mesmo tribunal.</p>
-        <p style="margin-top:12px">Depois da revisão e validação pelo advogado responsável, o juízo competente deferiu o pedido.</p>
-        <p class="fine">Caso real anonimizado. O deferimento ocorreu nas circunstâncias específicas deste caso e não representa garantia de resultado futuro. A Auditoria de Revisão foca na conferência do material já levantado pelo cliente; pesquisas cruzadas amplas integram as demandas completas sob medida.</p>
+        <h3>Indulto <em style="color:var(--green)">reconhecido</em>, com trânsito em julgado</h3>
+        <p>Após a petição inicial, o Ministério Público apresentou manifestação desfavorável apoiada em seis referências. A pesquisa cruzada reuniu 12 referências, organizadas em 9 fichas, incluindo decisão do mesmo tribunal referente à principal referência ministerial.</p>
+        <p style="margin-top:12px">O material conferido serviu de base para a resposta redigida pelo advogado responsável. O juízo competente reconheceu o indulto e declarou extinta a punibilidade. A decisão transitou em julgado sem recurso do Ministério Público.</p>
+        <p class="fine">Caso real anonimizado. O resultado decorre das circunstâncias específicas deste processo e não representa garantia de resultado futuro. A Auditoria de Revisão foca na conferência do material já levantado pelo cliente; pesquisas cruzadas amplas integram as demandas completas sob medida.</p>
       </div>
       <div class="proof-card rv">
         <span class="tag">A amostra que mostra o método</span>
-        <h3>9 precedentes auditados, 4 com problemas identificados</h3>
-        <p>Na amostra pública da entrega, construída a partir de um caso real de execução penal, a auditoria examinou 9 precedentes e devolveu o diagnóstico abaixo. Nesta amostra, quatro das nove referências receberam ressalvas ou bloqueio para citação.</p>
+        <h3>12 referências auditadas, 5 com apontamentos</h3>
+        <p>A amostra da entrega, construída a partir de uma Demanda Completa em execução penal (caso real, anonimizado), reúne 9 fichas com 12 referências. Na Auditoria de Revisão, o relatório segue o mesmo padrão de fichas, limitado a até 10 referências. A amostra é enviada mediante solicitação pelo WhatsApp.</p>
         <div class="verdict">
-          <div class="v-ok"><div class="v">5</div><div class="l">Confirmadas</div></div>
-          <div class="v-warn"><div class="v">2</div><div class="l">Com ressalva</div></div>
-          <div class="v-block"><div class="v">2</div><div class="l">Bloqueadas</div></div>
+          <div class="v-ok"><div class="v">7</div><div class="l">Confirmadas</div></div>
+          <div class="v-warn"><div class="v">4</div><div class="l">Com ressalva</div></div>
+          <div class="v-block"><div class="v">1</div><div class="l">Bloqueada</div></div>
         </div>
-        <p class="fine" style="margin-top:10px;line-height:1.45;"><em>Nota sobre precedentes auditados:</em> Entre as nove referências auditadas, uma também recebeu anotação comparativa de distinção em relação à tese contrária. Essa anotação comparativa não constitui quarto status de integridade nem altera a contagem total de 9 julgados.</p>
-        <p class="fine">Precedentes citados são decisões públicas; todos os dados identificáveis foram removidos.</p>
+        <p class="fine" style="margin-top:10px;line-height:1.45;">A Ficha 04 reúne três referências e a Ficha 06, duas, porque foram citadas juntas no material de pesquisa. Cada referência recebeu conferência e status próprios. A etiqueta Contraponto principal marca a referência auditada com força mais direta contra a principal referência da parte contrária. Não é uma referência adicional.</p>
+        <p class="fine">Referências citadas são decisões públicas; todos os dados identificáveis foram removidos.</p>
       </div>
     </div>
   </div>
@@ -588,16 +632,14 @@
                 <span style="font-size: 12px; font-weight: normal; color: var(--muted);">(Até 10 referências jurídicas em peça pronta)</span>
               </td>
               <td style="padding: 18px 16px; color: #D6DCD8; line-height: 1.6; vertical-align: top;">
-                Conferência técnica direta nas fontes oficiais de até 10 referências jurídicas — normas ou dispositivos normativos, decisões judiciais e enunciados de súmulas — em peça já elaborada; checagem em inteiro teor; relatório técnico estruturado com classificação e rastreabilidade; 1 rodada de revalidação inclusa contemplando os itens originalmente auditados após ajustes do advogado (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências novas, substituições por itens não auditados ou adicionais mediante orçamento previamente aprovado, sem migração automática para Demanda Completa. Sem envio de autos.
+                Conferência de até 10 referências de peça já elaborada; relatório com classificação e memorial de checagem; 1 rodada de revalidação inclusa. Sem envio de autos.
               </td>
               <td style="padding: 18px 16px; color: #FFFFFF; white-space: nowrap; vertical-align: top; font-weight: 600;">
                 Até 5 dias úteis
               </td>
-              <td style="padding: 18px 16px; vertical-align: top; white-space: nowrap;">
-                <span style="font-size: 12px; font-weight: normal; color: var(--muted); display: block;">A partir de</span>
-                <span style="font-weight: 800; font-size: 22px; color: var(--honey, #f2a71b);">R$ 500,00</span><br>
-                <span style="font-size: 11px; font-weight: normal; color: var(--muted);">(pagamento único)</span><br>
-                <span style="font-size: 12px; color: #EDEFEA; display: block; margin-top: 6px;">+ R$ 50,00 <span style="font-size: 11px; color: var(--muted);">/ ref. adicional</span></span>
+              <td style="padding: 18px 16px; vertical-align: top;">
+                <span style="font-weight: 800; font-size: 18px; color: var(--honey, #f2a71b); display: block;">A partir de R$ 500,00</span>
+                <span style="font-size: 12px; color: var(--muted); font-weight: normal; display: block; margin-top: 4px; line-height: 1.45;">R$ 50,00 por referência adicional, mediante aprovação prévia do orçamento, sem migração automática para Demanda Completa.</span>
               </td>
             </tr>
           </tbody>
@@ -609,10 +651,16 @@
           <strong>Atendimento de urgência:</strong> acréscimo de 50% para entrega em 48 horas corridas ou de 30% para entrega em 72 horas corridas, sujeito à disponibilidade técnica e à confirmação prévia na proposta.
         </p>
         <p style="margin: 0 0 10px; color: var(--muted);">
-          <strong>Regra de contagem objetiva:</strong> O escopo base contempla até 10 referências jurídicas no total (combinação livre entre normas, decisões e súmulas). A contagem é realizada por unidades delimitadas de conferência: cada dispositivo específico (artigo, parágrafo, inciso ou alínea) conta como 1 referência, não sendo considerada uma lei inteira como uma única referência. Artigo e seus desdobramentos não serão contados cumulativamente quando integrarem a mesma unidade de conferência. A contagem será delimitada e aprovada previamente no escopo. Cada decisão judicial ou acórdão conta como 1 referência. Cada enunciado de súmula conta como 1 referência. A conferência é documental. Não inclui atualização jurisprudencial nem pesquisa de decisões posteriores para verificar se o entendimento permanece sendo seguido.
+          <strong>Contagem:</strong> contam como 1 cada dispositivo citado de forma autônoma, cada decisão e cada súmula; incisos e parágrafos citados com o caput, no mesmo trecho, também contam como 1. Acima de 10, você escolhe as 10 prioritárias ou aprova o adicional. Referências novas ou substituídas após a entrega são orçadas previamente.
+        </p>
+        <p style="margin: 0 0 10px; color: var(--muted);">
+          <strong>Revalidação:</strong> 1 rodada sobre os itens auditados, solicitada em até 15 dias corridos da entrega.
+        </p>
+        <p style="margin: 0 0 10px; color: var(--muted);">
+          <strong>Escopo:</strong> a conferência é documental e não inclui atualização jurisprudencial.
         </p>
         <p style="margin: 0; color: var(--muted);">
-          <strong>Condições comerciais:</strong> A rodada de revalidação inclusa contempla os itens originalmente auditados após ajustes do advogado, solicitada em até 15 dias corridos da entrega do relatório inicial. Referências novas ou substituições por itens não auditados devem ser previamente avaliadas e orçadas. Caso a peça contenha mais de 10 referências, podem ser contratadas referências adicionais mediante orçamento previamente aprovado ou o cliente pode selecionar as 10 prioritárias; a existência de mais referências <em>não migra automaticamente</em> a contratação para Demanda Completa. Pagamento único via Pix ou transferência com emissão de nota fiscal de serviços.
+          Pagamento via Pix ou transferência bancária, com nota fiscal.
         </p>
       </div>
 
@@ -669,7 +717,7 @@
         <div style="width:52px;height:52px;border-radius:8px;background:var(--honey);display:flex;align-items:center;justify-content:center;color:var(--ink);font-weight:700;font-size:22px;flex:none;">C</div>
         <div>
           <b>Núcleo de Inteligência Jurídica</b>
-          <span>Unidade técnica especializada da Colmeia Studios Academy. Direção técnica por Cristian Santos Pimentel (fundador). Metodologia e protocolos de conferência documental organizados e revisados com a colaboração de três advogados contratados (penal, trabalhista e cível). <a href="/sobre" style="color:var(--honey-deep);font-weight:600;text-decoration:underline;">Conheça a Colmeia Studios Academy &rarr;</a></span>
+          <span>Unidade técnica especializada da Colmeia Studios Academy. Direção técnica por Cristian Santos Pimentel (Fundador da Colmeia Studios Academy · Professor de Inteligência Artificial · Diretor Técnico do Núcleo de Inteligência Jurídica). Metodologia e protocolos de conferência documental organizados e revisados com a colaboração de advogados independentes (cível, penal e trabalhista). <a href="/sobre" style="color:var(--honey-deep);font-weight:600;text-decoration:underline;">Conheça a Colmeia Studios Academy &rarr;</a></span>
         </div>
       </div>
     </div>
@@ -680,28 +728,56 @@
 <section style="background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:36px 0;">
   <div class="wrap" style="text-align:center;">
     <p style="font-size:15px;color:var(--mute);margin-bottom:8px;">Deseja capacitar sua própria equipe jurídica no uso e conferência segura de IA?</p>
-    <p style="font-size:16px;"><a href="/cursos/pesquisa-assistida-ia" style="color:var(--ink);font-weight:700;text-decoration:underline;">Conheça a formação em Pesquisa Assistida por IA para Advocacia &rarr;</a></p>
+    <p style="font-size:16px;"><a href="/formacao-inteligencia-juridica" style="color:var(--ink);font-weight:700;text-decoration:underline;">Conheça a Formação em Inteligência Jurídica com IA &rarr;</a></p>
   </div>
 </section>
 
-<footer>
+<section class="nfooter-fine-block" style="background: var(--ink); border-top: 1px solid var(--line-dark); padding: 24px 0;">
   <div class="wrap">
-    <div class="cols">
-      <div>
-        <p style="color:#C9D0D6"><b>Colmeia Studios Academy</b> — Núcleo de Inteligência Jurídica</p>
-        <p>Pesquisa assistida por IA, inteligência documental e auditoria de fontes, com metodologia Estratégia COLMEIA (Contextualizar · Organizar · Localizar · Mapear · Examinar · Integrar · Apresentar). Atendimento exclusivo a advogados, escritórios e departamentos jurídicos.</p>
-      </div>
-      <div>
-        <p><a href="/nucleo-inteligencia-juridica">Página completa do Núcleo</a></p>
-        <p><a href="https://colmeiastudiosacademy.com.br">colmeiastudiosacademy.com.br</a></p>
-        <p>WhatsApp: <a href="https://wa.me/5531999314793">+55 31 99931-4793</a></p>
-        <p>E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br">contato@colmeiastudiosacademy.com.br</a></p>
-        <p>53.484.773 Cristian Santos Pimentel · CNPJ 53.484.773/0001-57<br>Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126</p>
-        <p><a href="/privacidade">Política de Privacidade</a> · <a href="/termos">Termos de Uso</a> · <button type="button" class="cookie-pref-trigger" onclick="window.openCookiePreferences()" style="background: none; border: none; color: #C9D0D6; text-decoration: underline; cursor: pointer; font-size: inherit; font-family: inherit; padding: 0;">Preferências de Cookies</button></p>
-      </div>
-    </div>
-    <p class="fine">Os materiais constituem insumos técnicos editáveis para uso interno de advogados e não constituem parecer jurídico, peça processual concluída ou documento apto a protocolo. A auditoria de fontes é procedimento técnico de rastreabilidade e conferência documental — não certifica pertinência jurídica nem substitui a revisão do advogado responsável. Não há promessa ou garantia de resultado. Documentos sigilosos são recebidos somente após formalização contratual, Ordem de Serviço e assinatura de NDA. Tratamento de dados conforme LGPD; os arquivos não são utilizados para treinamento de modelos públicos. A Auditoria de Revisão possui escopo base de até 10 referências jurídicas no total (normas/dispositivos, decisões judiciais e súmulas) com 1 rodada de revalidação inclusa sobre os itens originalmente auditados após ajustes do advogado (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências novas ou substituições por itens não auditados devem ser previamente avaliadas e orçadas. Peças com mais de 10 referências podem incluir itens adicionais mediante orçamento previamente aprovado, sem migração automática para Demanda Completa.</p>
+    <p class="fine nfooter-fine-text" style="font-size: 11.5px; line-height: 1.6; color: var(--mute); margin: 0;">Os materiais constituem insumos técnicos editáveis para uso interno de advogados e não constituem parecer jurídico, peça processual concluída ou documento apto a protocolo. A auditoria de fontes é procedimento técnico de rastreabilidade e conferência documental — não certifica pertinência jurídica nem substitui a revisão do advogado responsável. Não há promessa ou garantia de resultado. Documentos sigilosos são recebidos somente após formalização contratual, Ordem de Serviço e assinatura de NDA. Tratamento de dados conforme LGPD; os arquivos não são utilizados para treinamento de modelos públicos. A Auditoria de Revisão possui escopo base de até 10 referências jurídicas no total (normas/dispositivos, decisões judiciais e súmulas) com 1 rodada de revalidação inclusa sobre os itens originalmente auditados após ajustes do advogado (solicitação em até 15 dias corridos da entrega do relatório inicial). Referências novas ou substituições por itens não auditados devem ser previamente avaliadas e orçadas. Peças com mais de 10 referências podem incluir itens adicionais mediante orçamento previamente aprovado, sem migração automática para Demanda Completa.</p>
   </div>
+</section>
+
+<!-- Rodapé Institucional com Aviso Estatutário Legal -->
+<footer class="site-footer nfooter-site-footer">
+    <div class="container nfooter-container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; margin-bottom: 28px;">
+            <div>
+                <strong style="color: #ffffff; font-size: 0.9375rem; display: block; margin-bottom: 8px;">Núcleo de Inteligência Jurídica</strong>
+                <p style="line-height: 1.5; color: var(--text-muted);">Unidade especializada da <strong>Colmeia Studios Academy</strong> dedicada à pesquisa assistida, inteligência documental e auditoria de fontes para a advocacia.</p>
+            </div>
+            <div>
+                <strong style="color: #ffffff; font-size: 0.9375rem; display: block; margin-bottom: 8px;">Navegação</strong>
+                <div style="display: flex; flex-direction: column; gap: 6px;">
+                    <a href="/nucleo-inteligencia-juridica#modalidades" style="color: var(--text-muted);">Modalidades de Apoio</a>
+                    <a href="/nucleo-inteligencia-juridica#amostra" style="color: var(--text-muted);">Amostra Técnica</a>
+                    <a href="/nucleo-inteligencia-juridica#metodo" style="color: var(--text-muted);">Método COLMEIA</a>
+                    <a href="/nucleo-inteligencia-juridica#investimento" style="color: var(--text-muted);">Tabela de Investimento</a>
+                    <a href="/auditoria-de-revisao" style="color: var(--accent-gold);">Auditoria de Revisão</a>
+                    <a href="/" style="color: var(--text-muted);">Página Inicial (Academy)</a>
+                </div>
+            </div>
+            <div>
+                <strong style="color: #ffffff; font-size: 0.9375rem; display: block; margin-bottom: 8px;">Atendimento Técnico</strong>
+                <p style="margin: 0 0 6px; line-height: 1.5; color: var(--text-muted);">Atendimento nacional a advogados e escritórios.</p>
+                <p style="margin: 0 0 6px; line-height: 1.5; color: var(--text-muted);">WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-gold);">(31) 99931-4793</a></p>
+                <p style="margin: 0 0 6px; line-height: 1.5; color: var(--text-muted);">E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-gold);">contato@colmeiastudiosacademy.com.br</a></p>
+                <p style="margin: 0; line-height: 1.5; color: var(--text-muted);">Colmeia Studios Academy · CNPJ 53.484.773/0001-57<br>Rua Terenas, 292, sala 201, Iguaçu, Ipatinga – MG, CEP 35162-126</p>
+            </div>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-dark); padding-top: 20px; font-size: 0.75rem; line-height: 1.6; text-align: center; color: var(--text-dark);">
+            <p style="margin-bottom: 6px;">
+                <strong>AVISO ESTATUTÁRIO LEGAL:</strong> O Núcleo de Inteligência Jurídica presta exclusivamente apoio operacional, inteligência documental e auditoria de fontes públicas. Não prestamos assessoria, consultoria ou representação judicial, atividades privativas da advocacia nos termos do art. 1º da Lei Federal nº 8.906/1994. Toda manifestação processual cabe com exclusividade ao advogado legalmente habilitado.
+            </p>
+            <p style="margin: 0 0 4px;">
+                &copy; 2026 Colmeia Studios Academy. Todos os direitos reservados.
+            </p>
+            <p style="margin: 0;">
+                <a href="/privacidade" style="color: var(--text-dark); text-decoration: underline;">Política de Privacidade</a> · <a href="/termos" style="color: var(--text-dark); text-decoration: underline;">Termos de Uso</a> · <button type="button" class="cookie-pref-trigger" onclick="window.openCookiePreferences()" style="background: none; border: none; color: var(--text-dark); text-decoration: underline; cursor: pointer; font-size: inherit; font-family: inherit; padding: 0;">Preferências de Cookies</button>
+            </p>
+        </div>
+    </div>
 </footer>
 
 </body>

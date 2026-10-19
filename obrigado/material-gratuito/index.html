@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="/assets/consent.css">
-    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
     <title>E-book a Caminho | Colmeia Studios Academy</title>
     <meta name="robots" content="noindex, follow">
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/obrigado/material-gratuito">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="/assets/academy.css">
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
-</head>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="E-book a Caminho | Colmeia Studios Academy">
+    <meta property="og:description" content="Formação prática em Inteligência Artificial e serviços técnicos especializados.">
+    <meta property="og:url" content="https://colmeiastudiosacademy.com.br/obrigado/material-gratuito">
+    <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png"></head>
 <body>
 
     <!-- CABEÇALHO UNIFICADO ACADEMY -->
     <header class="academy-header" id="siteHeader">
         <div class="container header-container">
             <a href="/" class="header-brand" aria-label="Colmeia Studios Academy">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
                 <div class="brand-text">
                     <span class="brand-title">Colmeia Studios Academy</span>
                     <span class="brand-tagline">Formação Prática em IA</span>
@@ -30,7 +39,7 @@
             </a>
 
             <nav class="header-nav" aria-label="Navegação principal">
-                <a href="/cursos" class="nav-link">Cursos</a>
+                <a href="/cursos/" class="nav-link">Cursos</a>
                 <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
                 <a href="/servicos" class="nav-link">Serviços para empresas</a>
                 <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
@@ -49,18 +58,28 @@
                 <div style="width: 64px; height: 64px; border-radius: 50%; background: #E8F5E9; color: #2E7D32; display: flex; align-items: center; justify-content: center; font-size: 32px; margin: 0 auto 24px;">
                     ✓
                 </div>
-                <span id="statusBadge" class="badge badge-active" style="margin-bottom: 12px;">Solicitação Registrada</span>
-                <h1 id="statusTitle" style="margin-bottom: 16px;">Solicitação registrada com sucesso!</h1>
-                <p id="statusDesc" style="color: var(--text-muted); font-size: 1.125rem; line-height: 1.6; margin-bottom: 24px;">
-                    Seus dados foram recebidos pelo nosso sistema. O registro da solicitação do e-book gratuito foi realizado com sucesso. A validação e o envio do arquivo em PDF seguem os procedimentos técnicos da plataforma.
+                <span id="statusBadge" class="badge badge-active" style="margin-bottom: 12px;">Download Liberado</span>
+                <h1 id="statusTitle" style="margin-bottom: 16px;">Seu exemplar está pronto para download!</h1>
+                <h2 style="font-size: 1.25rem; font-weight: 600; color: var(--text-muted); margin-bottom: 20px;">Edição Integral Autorizada (PDF)</h2>
+                <p id="statusDesc" style="color: var(--text-muted); font-size: 1.125rem; line-height: 1.6; margin-bottom: 28px;">
+                    Clique no botão abaixo para baixar a edição completa do livro <strong>IA no Trabalho</strong> em formato PDF (~7,09 MB). Você também pode salvar o arquivo em seus dispositivos para leitura a qualquer momento.
                 </p>
+
+                <!-- BOTÃO DE DOWNLOAD IMEDIATO DO E-BOOK -->
+                <div style="margin-bottom: 36px;">
+                    <a href="/assets/downloads/ia-no-trabalho.pdf" download="ia-no-trabalho.pdf" id="btnDownloadPdf" class="btn btn-primary btn-lg" style="font-size: 1.125rem; padding: 18px 36px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; box-shadow: var(--shadow-md); text-decoration: none;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Baixar E-book em PDF (~7,09 MB)
+                    </a>
+                </div>
+
                 <div class="notice-box" style="margin-bottom: 32px; font-size: 0.875rem; text-align: left;">
                     <strong>Deseja também o exemplar impresso ou a experiência em áudio?</strong><br>
                     • <strong>Livro físico:</strong> exemplar impresso oficial disponível na Hotmart.<br>
                     • <strong>Audiobook Oficial:</strong> narração integral disponível na Hotmart.
                 </div>
                 <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
-                    <a href="/conteudos-gratuitos/ia-no-trabalho#comprar" class="btn btn-primary">Consultar formatos e tabela de investimento</a>
+                    <a href="/conteudos-gratuitos/ia-no-trabalho#comprar" class="btn btn-secondary">Consultar formatos e tabela de investimento</a>
                     <a href="https://pay.hotmart.com/A106240775N?bid=1781054850796" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Comprar Livro físico na Hotmart</a>
                     <a href="/" class="btn btn-secondary">Voltar para a página inicial</a>
                 </div>
@@ -75,24 +94,13 @@
             if (raw) {
                 var info = JSON.parse(raw);
                 var now = Date.now();
-                // Apenas considera eventos recentes (últimos 3 minutos)
                 if (info && (now - info.time < 180000)) {
                     var badge = document.getElementById('statusBadge');
                     var title = document.getElementById('statusTitle');
                     var desc = document.getElementById('statusDesc');
-                    if (info.status === 'sent') {
-                        if (badge) { badge.textContent = 'Envio Aceito'; badge.className = 'badge badge-active'; }
-                        if (title) title.textContent = 'Envio aceito pelo servidor de e-mail!';
-                        if (desc) desc.textContent = 'O exemplar completo em PDF foi despachado para ' + (info.email || 'o seu e-mail') + '. Por favor, confira sua caixa de entrada e, se necessário, a pasta de spam ou promoções nos próximos minutos.';
-                    } else if (info.status === 'registered') {
-                        if (badge) { badge.textContent = 'Solicitação Registrada'; badge.className = 'badge badge-warning'; }
-                        if (title) title.textContent = 'Solicitação registrada com sucesso!';
-                        if (desc) desc.textContent = 'Seus dados foram recebidos com sucesso pelo nosso sistema. O cadastro para ' + (info.email || 'o seu e-mail') + ' foi confirmado e o envio do PDF aguarda a liberação das credenciais de envio pelo administrador.';
-                    } else if (info.status === 'error') {
-                        if (badge) { badge.textContent = 'Registro Pendente'; badge.className = 'badge badge-danger'; }
-                        if (title) title.textContent = 'Solicitação em análise técnica';
-                        if (desc) desc.textContent = 'Identificamos uma oscilação técnica momentânea. Seus dados foram salvos para conferência manual pela nossa equipe, ou você pode entrar em contato diretamente via contato@colmeiastudiosacademy.com.br.';
-                    }
+                    if (badge) { badge.textContent = 'Download Liberado'; badge.className = 'badge badge-active'; }
+                    if (title) title.textContent = 'Seu exemplar está pronto para download!';
+                    if (desc) desc.textContent = 'Clique no botão acima para baixar seu exemplar do livro IA no Trabalho em PDF (~7,09 MB). Uma cópia com o link também foi enviada para o seu e-mail.';
                 }
                 sessionStorage.removeItem('colmeia_ebook_submission');
             }
@@ -107,17 +115,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h4 class="footer-col-title">Formações em IA</h4>
+                    <h3 class="footer-col-title">Formações em IA</h3>
                     <ul class="footer-links-list">
-                        <li><a href="/cursos/pesquisa-assistida-ia" class="footer-link">Pesquisa Assistida por IA</a></li>
-                        <li><a href="/cursos/conteudo-redes-sociais-ia" class="footer-link">Produção de Conteúdo e Vídeo</a></li>
-                        <li><a href="/cursos/criacao-websites-ia" class="footer-link">Criação de Websites com IA</a></li>
-                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares 1 a 1</a></li>
-                        <li><a href="/cursos" class="footer-link">Catálogo Completo</a></li>
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Serviços &amp; Núcleo</h4>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
                     <ul class="footer-links-list">
                         <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
                         <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
@@ -127,7 +134,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Conteúdos &amp; Empresa</h4>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
                     <ul class="footer-links-list">
                         <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
                         <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
@@ -137,14 +144,20 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Atendimento &amp; Legal</h4>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
                     <div class="footer-legal-box">
-                        <strong>53.484.773 Cristian Santos Pimentel</strong>
+                        <strong>Colmeia Studios Academy</strong>
                         CNPJ: 53.484.773/0001-57<br>
                         Rua Terenas, 292, sala 201, Iguaçu<br>
                         Ipatinga – MG, CEP 35162-126<br><br>
                         WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
                         E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>

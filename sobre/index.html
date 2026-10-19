@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="/assets/consent.css">
-    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
     <title>Sobre a Colmeia Studios Academy | Formação e Serviços em IA</title>
     <meta name="description" content="Conheça a história, os valores e a metodologia da Colmeia Studios Academy. Formação prática em Inteligência Artificial e serviços técnicos especializados.">
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/sobre">
@@ -14,21 +18,20 @@
     <meta property="og:description" content="Inteligência Artificial sem hype, com aplicação prática imediata e rigor técnico.">
     <meta property="og:url" content="https://colmeiastudiosacademy.com.br/sobre">
     <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="/assets/academy.css">
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
-</head>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png"></head>
 <body>
 
     <!-- CABEÇALHO UNIFICADO ACADEMY -->
     <header class="academy-header" id="siteHeader">
         <div class="container header-container">
             <a href="/" class="header-brand" aria-label="Colmeia Studios Academy">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
                 <div class="brand-text">
                     <span class="brand-title">Colmeia Studios Academy</span>
                     <span class="brand-tagline">Formação Prática em IA</span>
@@ -36,7 +39,7 @@
             </a>
 
             <nav class="header-nav" aria-label="Navegação principal">
-                <a href="/cursos" class="nav-link">Cursos</a>
+                <a href="/cursos/" class="nav-link">Cursos</a>
                 <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
                 <a href="/servicos" class="nav-link">Serviços para empresas</a>
                 <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
@@ -44,7 +47,7 @@
             </nav>
 
             <div class="header-actions">
-                <a href="/cursos" class="btn btn-primary btn-sm">Conhecer os cursos</a>
+                <a href="/cursos/" class="btn btn-primary btn-sm">Conhecer os cursos</a>
                 <button type="button" class="mobile-menu-btn" aria-label="Abrir menu" aria-expanded="false">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
                 </button>
@@ -80,7 +83,7 @@
                     </div>
 
                     <div style="display: flex; justify-content: center;">
-                        <img src="/assets/colmeia-bee-logo.webp" alt="Símbolo da Colmeia Studios Academy" width="240" height="240" style="filter: drop-shadow(0 12px 30px rgba(242, 167, 27, 0.2));">
+                        <img src="/assets/colmeia-bee-logo.webp" alt="Símbolo da Colmeia Studios Academy" width="240" height="240" loading="lazy" decoding="async" style="filter: drop-shadow(0 12px 30px rgba(242, 167, 27, 0.2));">
                     </div>
                 </div>
 
@@ -92,28 +95,51 @@
                     </div>
 
                     <div class="grid-3">
-                        <div class="card">
-                            <span class="badge badge-info" style="margin-bottom: 12px;">Pilar 1</span>
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <span class="badge badge-info" style="margin-bottom: 12px; align-self: flex-start;">PILAR 1 · PARA VOCÊ APRENDER</span>
                             <h3>Formações em IA</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px;">
-                                Cursos curriculares em desenvolvimento (Pesquisa Jurídica, Criação de Websites e Conteúdo) e Aulas Particulares 1 a 1 ativas com suporte individualizado.
+                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px; margin-bottom: 12px;">
+                                <em>Aprenda a usar IA para entregar trabalho profissional, não só para testar ferramentas.</em>
                             </p>
+                            <ul style="color: var(--text-muted); font-size: 0.9375rem; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                                <li>Formação em Inteligência Jurídica com IA: 20 horas, certificado com QR Code, Skill e CRM inclusos, turma nova todo mês.</li>
+                                <li>Aulas Particulares 1 a 1 no Zoom: 90 minutos, com gravação integral enviada após o encontro.</li>
+                            </ul>
+                            <div style="margin-top: auto; padding-top: 8px; font-weight: 600; color: var(--accent-amber-hover); text-decoration: underline;">
+                                <a href="/cursos/">Ver as formações →</a>
+                            </div>
                         </div>
 
-                        <div class="card">
-                            <span class="badge badge-dark" style="margin-bottom: 12px; background: var(--bg-dark); color: var(--accent-amber);">Pilar 2</span>
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <span class="badge badge-dark" style="margin-bottom: 12px; background: var(--bg-dark); color: var(--accent-amber); align-self: flex-start;">PILAR 2 · SERVIÇO PARA ESCRITÓRIOS DE ADVOCACIA</span>
                             <h3>Núcleo de Inteligência Jurídica</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px;">
-                                Unidade especializada em inteligência documental, pesquisa assistida e auditoria rigorosa de fontes para escritórios de advocacia, incluindo a Auditoria de Revisão.
+                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px; margin-bottom: 12px;">
+                                <em>Cada referência conferida na fonte oficial antes de chegar à peça.</em>
                             </p>
+                            <ul style="color: var(--text-muted); font-size: 0.9375rem; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                                <li>Auditoria de Revisão: até 10 referências, cada uma classificada como Confirmada, Com ressalva ou Bloqueada.</li>
+                                <li>Pesquisa assistida, dossiê técnico e cronologia para demandas completas.</li>
+                                <li>Apoio exclusivamente técnico: a revisão final é sempre do advogado responsável.</li>
+                            </ul>
+                            <div style="margin-top: auto; padding-top: 8px; font-weight: 600; color: var(--accent-amber-hover); text-decoration: underline;">
+                                <a href="/nucleo-inteligencia-juridica">Conhecer o Núcleo →</a>
+                            </div>
                         </div>
 
-                        <div class="card">
-                            <span class="badge badge-info" style="margin-bottom: 12px;">Pilar 3</span>
-                            <h3>Serviços Técnicos e Presença</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px;">
-                                Desenvolvimento de landing pages e websites profissionais ultra-rápidos, além de gestão editorial de redes sociais para empresas e profissionais liberais.
+                        <div class="card" style="display: flex; flex-direction: column;">
+                            <span class="badge badge-info" style="margin-bottom: 12px; align-self: flex-start;">PILAR 3 · SERVIÇO PARA EMPRESAS E NEGÓCIOS</span>
+                            <h3>Websites & Presença Digital</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px; margin-bottom: 12px;">
+                                <em>Seu site, seu domínio, suas senhas: tudo fica no seu nome.</em>
                             </p>
+                            <ul style="color: var(--text-muted); font-size: 0.9375rem; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                                <li>Sites e landing pages entregues em 7 a 15 dias úteis, conforme o plano.</li>
+                                <li>PD Digital: site, Instagram e Google Business Profile integrados.</li>
+                                <li>Projetos entregues para clientes nos Estados Unidos, com sites bilíngues. Gestão mensal de redes contratada à parte.</li>
+                            </ul>
+                            <div style="margin-top: auto; padding-top: 8px; font-weight: 600; color: var(--accent-amber-hover); text-decoration: underline;">
+                                <a href="/criacao-de-sites">Ver planos de sites →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,24 +148,27 @@
                 <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 48px 36px; box-shadow: var(--shadow-sm);">
                     <div style="display: grid; grid-template-columns: 0.7fr 1.3fr; gap: 40px; align-items: center;">
                         <div style="display: flex; justify-content: center;">
-                            <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador e professor da Colmeia Studios Academy" width="260" height="325" style="border-radius: var(--radius-md); object-fit: cover; box-shadow: var(--shadow-md);">
+                            <img src="/assets/images/cristian-santos-pimentel.webp" alt="Cristian Santos Pimentel, fundador e professor da Colmeia Studios Academy" width="320" height="240" loading="lazy" decoding="async" style="max-width: 100%; height: auto; border-radius: var(--radius-md); object-fit: cover; box-shadow: var(--shadow-md);">
                         </div>
 
                         <div>
                             <span class="eyebrow">Direção Técnica</span>
                             <h2>Cristian Santos Pimentel</h2>
                             <p style="font-weight: 600; color: var(--accent-amber-hover); margin-bottom: 16px;">
-                                Fundador e Professor de Inteligência Artificial
+                                Fundador da Colmeia Studios Academy · Professor de Inteligência Artificial · Diretor Técnico do Núcleo de Inteligência Jurídica
                             </p>
                             <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 14px;">
-                                Com mais de 15 anos de experiência nas áreas de tecnologia, marketing, comunicação e empreendedorismo, Cristian fundou e liderou empresas no Brasil e na Irlanda, além de ter vivido nos Estados Unidos.
+                                Com mais de 15 anos de experiência em tecnologia, marketing, comunicação e empreendedorismo, Cristian fundou e liderou empresas no Brasil e na Irlanda, além de ter vivido nos Estados Unidos. Hoje dirige o Núcleo de Inteligência Jurídica, que presta auditoria de fontes e inteligência documental para escritórios de advocacia, e é o professor da Formação em Inteligência Jurídica com IA.
                             </p>
                             <p style="color: var(--text-muted); font-size: 0.9375rem; line-height: 1.6; margin-bottom: 20px;">
-                                É autor do livro <em>IA no Trabalho</em> e idealizador da metodologia <strong>Estratégia COLMEIA</strong> (Contextualizar, Organizar, Localizar, Mapear, Examinar, Integrar e Apresentar). Sua atuação técnica foca na simplificação de processos, automação de fluxos operacionais e garantia de integridade metodológica em cada projeto entregue.
+                                É autor do livro <em>IA no Trabalho</em> e idealizador da metodologia <strong>Estratégia COLMEIA</strong> (Contextualizar, Organizar, Localizar, Mapear, Examinar, Integrar e Apresentar). Sua atuação técnica foca na simplificação de processos, automação de fluxos operacionais e conferência metodológica em cada projeto entregue.
                             </p>
-                            <a href="https://www.linkedin.com/in/cristian-santos-pimentel-765061408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="color: var(--text-main); font-weight: 600; text-decoration: underline;">
-                                Ver perfil profissional no LinkedIn &rarr;
-                            </a>
+                            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+                                <a href="https://www.linkedin.com/in/cristian-santos-pimentel-765061408?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" style="color: var(--text-main); font-weight: 600; text-decoration: underline;">
+                                    Ver perfil profissional no LinkedIn &rarr;
+                                </a>
+                                <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Instagram da Colmeia: +13 mil seguidores →</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,17 +181,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h4 class="footer-col-title">Formações em IA</h4>
+                    <h3 class="footer-col-title">Formações em IA</h3>
                     <ul class="footer-links-list">
-                        <li><a href="/cursos/pesquisa-assistida-ia" class="footer-link">Pesquisa Assistida por IA</a></li>
-                        <li><a href="/cursos/conteudo-redes-sociais-ia" class="footer-link">Produção de Conteúdo e Vídeo</a></li>
-                        <li><a href="/cursos/criacao-websites-ia" class="footer-link">Criação de Websites com IA</a></li>
-                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares 1 a 1</a></li>
-                        <li><a href="/cursos" class="footer-link">Catálogo Completo</a></li>
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Serviços &amp; Núcleo</h4>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
                     <ul class="footer-links-list">
                         <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
                         <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
@@ -172,7 +200,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Conteúdos &amp; Empresa</h4>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
                     <ul class="footer-links-list">
                         <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
                         <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
@@ -182,14 +210,20 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Atendimento &amp; Legal</h4>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
                     <div class="footer-legal-box">
-                        <strong>53.484.773 Cristian Santos Pimentel</strong>
+                        <strong>Colmeia Studios Academy</strong>
                         CNPJ: 53.484.773/0001-57<br>
                         Rua Terenas, 292, sala 201, Iguaçu<br>
                         Ipatinga – MG, CEP 35162-126<br><br>
                         WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
                         E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,34 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="/assets/consent.css">
-    <script src="/assets/consent.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Preconnect Google Fonts no topo do <head> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="/assets/consent.css">
+    <script src="/assets/consent.js" defer></script>
     <title>Cursos de Inteligência Artificial | Colmeia Studios Academy</title>
-    <meta name="description" content="Catálogo de formações práticas em Inteligência Artificial da Colmeia Studios Academy. Cursos em desenvolvimento com lista de interesse e aulas particulares ativas.">
+    <meta name="description" content="Cursos da Colmeia Studios Academy: Formação em Inteligência Jurídica com IA, com certificado, CRM de prospecção e cashback de até 100%, e Aulas Particulares de IA ao vivo, 1 a 1 no Zoom.">
     <link rel="canonical" href="https://colmeiastudiosacademy.com.br/cursos">
     
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Cursos de IA | Colmeia Studios Academy">
-    <meta property="og:description" content="Formações práticas em IA: Pesquisa Jurídica, Criação de Conteúdo e Websites. Cursos em estruturação e aulas particulares disponíveis.">
+    <meta property="og:title" content="Cursos de Inteligência Artificial | Colmeia Studios Academy">
+    <meta property="og:description" content="Cursos da Colmeia Studios Academy: Formação em Inteligência Jurídica com IA, com certificado, CRM de prospecção e cashback de até 100%, e Aulas Particulares de IA ao vivo, 1 a 1 no Zoom.">
     <meta property="og:url" content="https://colmeiastudiosacademy.com.br/cursos">
     <meta property="og:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="/assets/academy.css">
     <link rel="icon" href="/assets/colmeia-bee-logo.png" type="image/png">
-</head>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Cursos de Inteligência Artificial | Colmeia Studios Academy",
+      "description": "Cursos da Colmeia Studios Academy: Formação em Inteligência Jurídica com IA, com certificado, CRM de prospecção e cashback de até 100%, e Aulas Particulares de IA ao vivo, 1 a 1 no Zoom.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Formação em Inteligência Jurídica com IA",
+          "url": "https://colmeiastudiosacademy.com.br/formacao-inteligencia-juridica"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Aulas Particulares 1 a 1 de Inteligência Artificial",
+          "url": "https://colmeiastudiosacademy.com.br/aulas-particulares-ia"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+      .course-featured-grid {
+        display: grid;
+        grid-template-columns: 1.25fr 0.75fr;
+        gap: 40px;
+        align-items: center;
+      }
+      @media (max-width: 880px) {
+        .course-featured-grid {
+          grid-template-columns: 1fr !important;
+          gap: 28px !important;
+          padding: 32px 20px !important;
+        }
+      }
+    </style>
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://colmeiastudiosacademy.com.br/assets/colmeia-bee-logo.png"></head>
 <body>
 
     <!-- CABEÇALHO UNIFICADO ACADEMY -->
     <header class="academy-header" id="siteHeader">
         <div class="container header-container">
             <a href="/" class="header-brand" aria-label="Colmeia Studios Academy">
-                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36">
+                <img src="/assets/colmeia-bee-logo.webp" alt="Colmeia Studios Academy" class="brand-logo" width="36" height="36" decoding="async">
                 <div class="brand-text">
                     <span class="brand-title">Colmeia Studios Academy</span>
                     <span class="brand-tagline">Formação Prática em IA</span>
@@ -36,7 +78,7 @@
             </a>
 
             <nav class="header-nav" aria-label="Navegação principal">
-                <a href="/cursos" class="nav-link active">Cursos</a>
+                <a href="/cursos/" class="nav-link active">Cursos</a>
                 <a href="/nucleo-inteligencia-juridica" class="nav-link">Núcleo Jurídico</a>
                 <a href="/servicos" class="nav-link">Serviços para empresas</a>
                 <a href="/conteudos-gratuitos" class="nav-link">Conteúdos gratuitos</a>
@@ -56,10 +98,10 @@
         <!-- HERO DO CATÁLOGO -->
         <section class="section-padding" style="background-color: var(--bg-dark); color: var(--text-light); border-bottom: 1px solid var(--border-dark);">
             <div class="container text-center" style="max-width: 800px; margin: 0 auto;">
-                <span class="eyebrow">Catálogo Educacional</span>
-                <h1 style="color: #FFFFFF; margin-bottom: 18px;">Formações Práticas em Inteligência Artificial</h1>
+                <span class="eyebrow">Catálogo de cursos</span>
+                <h1 style="color: #FFFFFF; margin-bottom: 18px;">Aprenda a usar a Inteligência Artificial na prática</h1>
                 <p style="font-size: 1.125rem; color: #D6CEC4; line-height: 1.6;">
-                    Desenvolvemos programas focados na aplicação real do dia a dia profissional. Nossos cursos completos estão em fase de elaboração e testes práticos; enquanto isso, o atendimento individual está ativo nas Aulas Particulares.
+                    Escolha o seu caminho: transformar IA em um serviço profissional para escritórios de advocacia ou aprender IA no seu ritmo, com aula particular ao vivo.
                 </p>
             </div>
         </section>
@@ -67,89 +109,69 @@
         <!-- SEÇÃO PRINCIPAL DE CURSOS -->
         <section class="section-padding" style="background-color: var(--bg-page);">
             <div class="container">
-                <div class="scope-notice" style="margin-top: 0; margin-bottom: 40px;">
-                    <strong>Aviso sobre formações em desenvolvimento:</strong> Esta formação está em desenvolvimento. A inscrição na lista de interesse não é matrícula, não exige pagamento e não garante vaga. Formato, conteúdo final, investimento e disponibilidade serão informados quando definidos.
-                </div>
-
-                <div class="grid-3" style="margin-bottom: 64px;">
-                    <!-- Curso 1: Pesquisa Assistida por IA -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span class="badge badge-dev" style="margin-bottom: 12px;">Em Desenvolvimento</span>
-                            <h3>Pesquisa Assistida por IA e Inteligência Documental com Auditoria de Fontes</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px; margin-bottom: 20px;">
-                                Como usar inteligência artificial para pesquisar jurisprudência em bases oficiais, organizar referências e auditar acórdãos com segurança ética e técnica.
-                            </p>
-                            <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 24px; font-size: 0.8125rem;">
-                                <strong>Duas trilhas independentes:</strong>
-                                <ul style="margin-top: 6px; padding-left: 18px; color: var(--text-subtle);">
-                                    <li>Trilha para Estudantes de Direito</li>
-                                    <li>Trilha para Advogados Atuantes</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="/cursos/pesquisa-assistida-ia" class="btn btn-primary btn-block">Conhecer o programa &rarr;</a>
-                    </div>
-
-                    <!-- Curso 2: Produção de Conteúdo -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span class="badge badge-dev" style="margin-bottom: 12px;">Em Desenvolvimento</span>
-                            <h3>Criação de Conteúdo para Redes Sociais com IA</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px; margin-bottom: 20px;">
-                                Estruture um estúdio digital ágil: roteiros consistentes, criação de imagens realistas, clones de voz, avatares e edição assistida para marcas e criadores.
-                            </p>
-                            <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 24px; font-size: 0.8125rem;">
-                                <strong>Foco prático:</strong>
-                                <ul style="margin-top: 6px; padding-left: 18px; color: var(--text-subtle);">
-                                    <li>Midjourney, Flux, ElevenLabs e HeyGen</li>
-                                    <li>Fluxo editorial sem perder identidade</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="/cursos/conteudo-redes-sociais-ia" class="btn btn-primary btn-block">Conhecer o programa &rarr;</a>
-                    </div>
-
-                    <!-- Curso 3: Criação de Websites Profissionais com IA -->
-                    <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
-                        <div>
-                            <span class="badge badge-dev" style="margin-bottom: 12px;">Em Desenvolvimento</span>
-                            <h3>Criação de Websites Profissionais com IA</h3>
-                            <p style="color: var(--text-muted); font-size: 0.9375rem; margin-top: 10px; margin-bottom: 20px;">
-                                Aprenda a criar landing pages modernas, responsivas e leves do zero. Use ferramentas de IA para gerar código limpo, copy atraente e publicar na web.
-                            </p>
-                            <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 14px; margin-bottom: 24px; font-size: 0.8125rem;">
-                                <strong>Do briefing ao ar:</strong>
-                                <ul style="margin-top: 6px; padding-left: 18px; color: var(--text-subtle);">
-                                    <li>HTML5/CSS moderno sem builders pesados</li>
-                                    <li>Hospedagem rápida na Netlify e formulários</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <a href="/cursos/criacao-websites-ia" class="btn btn-primary btn-block">Conhecer o programa &rarr;</a>
-                    </div>
-                </div>
-
-                <!-- BLOCO SECUNDÁRIO: AULAS PARTICULARES IMEDIATAS -->
-                <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 48px 36px; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center; box-shadow: var(--shadow-sm);">
+                
+                <!-- CARD 1: FORMAÇÃO EM INTELIGÊNCIA JURÍDICA COM IA (DESTAQUE) -->
+                <div class="card course-featured-grid" style="background: #FFFFFF; border: 2px solid var(--accent-amber); border-radius: var(--radius-lg); padding: 48px 36px; box-shadow: var(--shadow-md); margin-bottom: 40px;">
                     <div>
-                        <span class="badge badge-active" style="margin-bottom: 12px;">Oferta Ativa &bull; Sem Espera</span>
-                        <h2>Aulas Particulares 1 a 1 de Inteligência Artificial</h2>
-                        <p style="color: var(--text-muted); font-size: 1rem; margin: 16px 0 20px; line-height: 1.6;">
-                            Se você não quer aguardar a abertura das turmas e possui uma demanda prática imediata no seu trabalho ou negócio, agende uma sessão individual ao vivo pelo Zoom com Cristian Santos Pimentel.
+                        <div style="display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px;">
+                            <span class="badge" style="background: var(--accent-amber); color: var(--bg-dark); font-weight: 700;">Inscrições abertas</span>
+                            <span class="badge badge-dark">Nova turma todo mês • 100% online, no seu ritmo, com encontros ao vivo</span>
+                        </div>
+                        <h2 style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin-bottom: 12px; color: var(--text-main);">Formação em Inteligência Jurídica com IA</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 18px; line-height: 1.6;">
+                            Aprenda a prestar pesquisa assistida por IA, auditoria de fontes e inteligência documental para escritórios de advocacia, trabalhando de onde quiser.
                         </p>
-                        <p style="font-size: 0.9375rem; color: var(--text-subtle); margin-bottom: 24px;">
-                            Sessão prática de 90 minutos (80 minutos de aula em 2 blocos de 40 min + 10 min de intervalo) com gravação integral da aula e modelos práticos aplicados. As aulas particulares não oferecem certificado.
-                        </p>
-                        <a href="/aulas-particulares-ia" class="btn btn-primary">Ver detalhes da Aula Particular &rarr;</a>
+                        <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 18px 20px; font-size: 0.875rem;">
+                            <ul style="margin: 0; padding-left: 20px; color: var(--text-subtle); line-height: 1.65;">
+                                <li>15h de aulas gravadas + 5 encontros ao vivo às quartas (20 horas)</li>
+                                <li>Certificado digital com QR Code para os aprovados (certificado com 70% ou mais)</li>
+                                <li>CRM de Prospecção e Projetos e skill do operador</li>
+                                <li>Rede de Prestadores Colmeia para quem alcança 100% na avaliação</li>
+                                <li>Cashback de até 100% por indicação</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 28px; text-align: center;">
-                        <span class="eyebrow">Agendamento Flexível</span>
-                        <div style="font-size: 2rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); margin: 8px 0;">90 minutos</div>
-                        <p style="font-size: 0.875rem; color: var(--text-muted); margin: 6px 0 16px;">Sessão prática individual ao vivo</p>
-                        <a href="/aulas-particulares-ia" class="btn btn-secondary btn-block">Conhecer investimento &rarr;</a>
+                    <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 32px 24px; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <span class="eyebrow" style="margin-bottom: 6px;">Investimento</span>
+                        <div style="font-size: 2.25rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); line-height: 1.1; margin: 4px 0;">R$ 1.470</div>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin: 6px 0 16px; line-height: 1.45;">à vista no Pix ou em até 12x no cartão, com acréscimo das taxas bancárias</p>
+                        <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 20px; font-size: 0.8125rem; color: var(--text-subtle); line-height: 1.4;">
+                            <strong>Prazo da turma:</strong> Inscrições até o último dia de cada mês, às 17h00, para a turma do mês seguinte
+                        </div>
+                        <a href="/formacao-inteligencia-juridica" class="btn btn-primary btn-block" style="font-size: 1rem; padding: 14px 20px;">Conhecer a formação &rarr;</a>
                     </div>
                 </div>
+
+                <!-- CARD 2: AULAS PARTICULARES 1 A 1 -->
+                <div class="card course-featured-grid" style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 48px 36px; box-shadow: var(--shadow-sm); margin-bottom: 48px;">
+                    <div>
+                        <span class="badge badge-active" style="margin-bottom: 12px;">Oferta ativa &bull; Sem espera</span>
+                        <h2 style="font-size: clamp(1.6rem, 2.8vw, 2.2rem); margin-bottom: 12px; color: var(--text-main);">Aulas Particulares 1 a 1 de Inteligência Artificial</h2>
+                        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 18px; line-height: 1.6;">
+                            Tem uma demanda prática no seu trabalho ou negócio? Agende uma sessão individual ao vivo pelo Zoom, focada no seu objetivo e no seu projeto real.
+                        </p>
+                        <p style="font-size: 0.9375rem; color: var(--text-subtle); line-height: 1.55; margin: 0;">
+                            Sessão prática de 90 minutos (80 minutos de aula em 2 blocos de 40 min + 10 min de intervalo), com gravação integral da aula e modelos práticos aplicados. As aulas particulares não oferecem certificado.
+                        </p>
+                    </div>
+                    <div style="background: var(--bg-page); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 32px 24px; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <span class="eyebrow" style="margin-bottom: 6px;">Agendamento Flexível</span>
+                        <div style="font-size: 2.25rem; font-weight: 700; color: var(--text-main); font-family: var(--font-display); line-height: 1.1; margin: 4px 0;">90 minutos</div>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin: 6px 0 20px;">Sessão prática individual ao vivo</p>
+                        <a href="/aulas-particulares-ia" class="btn btn-primary btn-block" style="font-size: 1rem; padding: 14px 20px;">Ver detalhes da Aula Particular &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- FECHAMENTO / DÚVIDA -->
+                <div style="background: #FFFFFF; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 40px 32px; text-align: center; max-width: 800px; margin: 0 auto; box-shadow: var(--shadow-sm);">
+                    <p style="font-size: 1.125rem; font-weight: 600; color: var(--text-main); margin-bottom: 20px; line-height: 1.5;">
+                        Ficou em dúvida sobre qual curso escolher? Fale com a Colmeia Studios Academy.
+                    </p>
+                    <a href="https://wa.me/5531999314793?text=Ol%C3%A1%2C%20Colmeia%20Studios%20Academy!%20Quero%20ajuda%20para%20escolher%20o%20curso%20ideal." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="font-size: 1rem; padding: 14px 26px;">
+                        Fale com a Colmeia Studios Academy no WhatsApp &rarr;
+                    </a>
+                </div>
+
             </div>
         </section>
     </main>
@@ -159,17 +181,16 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <h4 class="footer-col-title">Formações em IA</h4>
+                    <h3 class="footer-col-title">Formações em IA</h3>
                     <ul class="footer-links-list">
-                        <li><a href="/cursos/pesquisa-assistida-ia" class="footer-link">Pesquisa Assistida por IA</a></li>
-                        <li><a href="/cursos/conteudo-redes-sociais-ia" class="footer-link">Produção de Conteúdo e Vídeo</a></li>
-                        <li><a href="/cursos/criacao-websites-ia" class="footer-link">Criação de Websites com IA</a></li>
-                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares 1 a 1</a></li>
-                        <li><a href="/cursos" class="footer-link">Catálogo Completo</a></li>
+                        <li><a href="/formacao-inteligencia-juridica" class="footer-link">Formação em Inteligência Jurídica</a></li>
+                        <li><a href="/aulas-particulares-ia" class="footer-link">Aulas Particulares de IA</a></li>
+                        <li><a href="/crm/" class="footer-link">CRM do Aluno</a></li>
+                        <li><a href="/cursos/" class="footer-link">Catálogo Completo</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Serviços &amp; Núcleo</h4>
+                    <h3 class="footer-col-title">Serviços &amp; Núcleo</h3>
                     <ul class="footer-links-list">
                         <li><a href="/nucleo-inteligencia-juridica" class="footer-link">Núcleo de Inteligência Jurídica</a></li>
                         <li><a href="/auditoria-de-revisao" class="footer-link">Auditoria de Revisão</a></li>
@@ -179,7 +200,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Conteúdos &amp; Empresa</h4>
+                    <h3 class="footer-col-title">Conteúdos &amp; Empresa</h3>
                     <ul class="footer-links-list">
                         <li><a href="/conteudos-gratuitos" class="footer-link">Conteúdos Gratuitos</a></li>
                         <li><a href="/conteudos-gratuitos/ia-no-trabalho" class="footer-link">Livro IA no Trabalho</a></li>
@@ -189,14 +210,20 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-col-title">Atendimento &amp; Legal</h4>
+                    <h3 class="footer-col-title">Atendimento &amp; Legal</h3>
                     <div class="footer-legal-box">
-                        <strong>53.484.773 Cristian Santos Pimentel</strong>
+                        <strong>Colmeia Studios Academy</strong>
                         CNPJ: 53.484.773/0001-57<br>
                         Rua Terenas, 292, sala 201, Iguaçu<br>
                         Ipatinga – MG, CEP 35162-126<br><br>
                         WhatsApp: <a href="https://wa.me/5531999314793" target="_blank" rel="noopener noreferrer" style="color: var(--accent-amber);">(31) 99931-4793</a><br>
                         E-mail: <a href="mailto:contato@colmeiastudiosacademy.com.br" style="color: var(--accent-amber);">contato@colmeiastudiosacademy.com.br</a>
+                        <!-- ATUALIZAR número de seguidores: conferido em 17/10/2026 (13K) -->
+                        <div class="social-row">
+                          <span class="social-title">Siga a Colmeia</span>
+                          <a href="https://www.instagram.com/colmeiastudiosacademy/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram da Colmeia Studios Academy"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> @colmeiastudiosacademy · +13 mil seguidores</a>
+                          <a href="https://www.youtube.com/@ColmeiaStudiosAcademy" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Canal da Colmeia Studios Academy no YouTube"><svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 15,12 10,15" fill="currentColor" stroke="none"/></svg> YouTube</a>
+                        </div>
                     </div>
                 </div>
             </div>

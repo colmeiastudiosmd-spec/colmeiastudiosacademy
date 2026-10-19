@@ -13,6 +13,11 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+[[headers]]
+  for = "/assets/downloads/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
 [context.deploy-preview]
   command = 'printf "\n/*\n  X-Robots-Tag: noindex\n" >> _headers'
 
