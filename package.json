@@ -4,7 +4,8 @@
   "description": "Colmeia Studios Academy - Plataforma e Entrega Automatizada de Conteúdos",
   "private": true,
   "scripts": {
-    "build": "node --check netlify/functions/submission-created.js && echo 'Build concluído com sucesso: sintaxe validada.'"
+    "build": "node --check netlify/functions/submission-created.js && node scripts/generate-sitemap.js && echo 'Build concluído com sucesso.'",
+    "generate-sitemap": "node scripts/generate-sitemap.js"
   },
   "dependencies": {
     "resend": "^4.1.2"

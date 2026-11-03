@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colmeia Studios Academy — Configuração da recepção virtual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --tinta:#E8E2D9;
+  --fundo:#14100B;
+  --papel:rgba(255,255,255,.05);
+  --ameixa:#1A130C;
+  --rosa:#F2A71B;
+  --rosa-suave:rgba(242,167,27,.14);
+  --ouro:#F2A71B;
+  --linha:rgba(255,255,255,.12);
+  --cinza:#D6CEC4;
+  --erro:#FF9E8A;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{
+  font-family:'Instrument Sans',sans-serif;
+  background:var(--fundo);
+  color:var(--tinta);
+  line-height:1.55;
+  font-size:16px;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ---------- CABEÇALHO ---------- */
+header{
+  background:radial-gradient(circle at 85% 12%,rgba(242,167,27,.25),transparent 45%),radial-gradient(circle at 8% 95%,rgba(242,167,27,.12),transparent 40%),#14100B;
+  color:#fff;
+  padding:56px 0 48px;
+  position:relative;
+  overflow:hidden;
+}
+header::after{
+  content:"";
+  position:absolute;right:-80px;top:-80px;
+  width:320px;height:320px;border-radius:50%;
+  border:1px solid rgba(242,167,27,.22);
+}
+header::before{
+  content:"";
+  position:absolute;right:-40px;top:-40px;
+  width:200px;height:200px;border-radius:50%;
+  border:1px solid rgba(242,167,27,.3);
+}
+.lang{position:absolute;top:22px;right:24px;display:flex;gap:8px;z-index:3}
+.lang button{
+  border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.08);color:#fff;
+  font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;
+  padding:6px 14px;border-radius:999px;cursor:pointer;transition:background .15s;
+}
+.lang button:hover{background:rgba(255,255,255,.18)}
+.lang button[aria-pressed=true]{background:var(--rosa);border-color:var(--rosa);font-weight:700;color:#14100B}
+.logo{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+  font-size:clamp(19px,2.4vw,23px);letter-spacing:.02em;color:var(--rosa);
+  margin-bottom:14px;
+}
+.logo span{color:var(--tinta);font-weight:600}
+.eyebrow{
+  font-family:'IBM Plex Mono',monospace;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--ouro);
+  display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:36px;height:1px;background:var(--ouro)}
+header h1{
+  font-family:'Bricolage Grotesque',sans-serif;
+  font-weight:700;
+  font-size:clamp(30px,4.5vw,46px);
+  line-height:1.15;
+  margin:18px 0 14px;
+  max-width:640px;
+}
+header h1 em{font-style:normal;color:var(--rosa)}
+header p.lead{
+  max-width:560px;color:rgba(255,255,255,.82);
+  font-size:17px;font-weight:300;
+}
+.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.badge{
+  font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.06em;
+  border:1px solid rgba(255,255,255,.3);border-radius:999px;
+  padding:6px 14px;color:rgba(255,255,255,.85);
+}
+
+/* ---------- LAYOUT ---------- */
+.layout{display:grid;grid-template-columns:250px 1fr;gap:48px;padding:48px 0 80px}
+aside{position:sticky;top:24px;align-self:start}
+aside .menu-titulo{
+  font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--cinza);margin-bottom:14px;
+}
+aside nav a{
+  display:flex;gap:12px;align-items:baseline;
+  padding:9px 10px;border-left:2px solid var(--linha);
+  text-decoration:none;color:var(--cinza);
+  font-size:14.5px;transition:color .15s,border-color .15s,background .15s;
+}
+aside nav a:hover{color:var(--rosa);background:rgba(242,167,27,.08)}
+aside nav a.ativo{color:var(--rosa);border-left-color:var(--rosa);font-weight:600}
+aside nav a .num{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:13px;color:var(--ouro);min-width:26px;
+}
+.progresso{margin-top:22px;padding:14px;border:1px solid var(--linha);border-radius:10px;background:var(--papel)}
+.progresso .rotulo{font-size:12px;color:var(--cinza);margin-bottom:8px}
+.barra{height:6px;background:var(--rosa-suave);border-radius:99px;overflow:hidden}
+.barra>span{display:block;height:100%;width:0;background:var(--rosa);transition:width .3s}
+.progresso .pct{font-family:'IBM Plex Mono',monospace;font-size:12px;margin-top:8px;color:var(--rosa)}
+
+/* ---------- SEÇÕES ---------- */
+section.bloco{margin-bottom:56px;scroll-margin-top:24px}
+.cabeca{display:flex;align-items:baseline;gap:16px;border-bottom:2px solid rgba(242,167,27,.55);padding-bottom:10px;margin-bottom:6px}
+.cabeca .num{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:26px;color:var(--ouro)}
+.cabeca h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:24px}
+.descricao{color:var(--cinza);font-size:14.5px;margin:10px 0 22px;max-width:640px}
+
+.card{background:var(--papel);border:1px solid var(--linha);border-radius:14px;padding:26px}
+.campo{margin-bottom:20px}
+.campo:last-child{margin-bottom:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px}
+label{display:block;font-weight:600;font-size:14px;margin-bottom:6px}
+label .opc{font-weight:400;color:var(--cinza);font-size:12.5px}
+.ajuda{font-size:13px;color:var(--cinza);margin-bottom:8px;margin-top:-2px}
+input[type=text],input[type=tel],input[type=email],input[type=url],input[type=time],input[type=number],select,textarea{
+  width:100%;padding:11px 13px;border:1px solid var(--linha);border-radius:9px;
+  font-family:'Instrument Sans',sans-serif;font-size:15px;color:var(--tinta);background:rgba(255,255,255,.06);
+  transition:border-color .15s,box-shadow .15s;
+}
+input::placeholder,textarea::placeholder{color:#9C948B;opacity:1}
+input:focus,select:focus,textarea:focus{
+  outline:none;border-color:var(--rosa);box-shadow:0 0 0 3px rgba(242,167,27,.2);
+}
+ textarea{resize:vertical;min-height:84px}
+ /* Opções do menu suspenso: os navegadores abrem a lista nativa em fundo branco;
+    sem esta regra, o texto claro do tema escuro fica ilegível dentro dela. */
+ select option{color:#14100B;background:#FFFFFF}
+.falta{border-color:var(--erro)!important;box-shadow:0 0 0 3px rgba(176,58,58,.12)!important}
+
+/* radio-cards */
+.opcoes{display:grid;gap:10px}
+.opcoes.col3{grid-template-columns:repeat(3,1fr)}
+.radio-card{position:relative;display:block;cursor:pointer}
+.radio-card input{position:absolute;opacity:0}
+.radio-card .face{
+  border:1.5px solid var(--linha);border-radius:10px;padding:12px 14px;
+  font-size:14.5px;background:rgba(255,255,255,.06);transition:all .15s;display:flex;flex-direction:column;gap:2px;
+}
+.radio-card .face b{font-weight:600}
+.radio-card .face small{color:var(--cinza);font-size:12.5px}
+.radio-card input:checked+.face{border-color:var(--rosa);background:var(--rosa-suave)}
+.radio-card input:focus-visible+.face{box-shadow:0 0 0 3px rgba(242,167,27,.3)}
+
+/* tabelas dinâmicas */
+.tabela-dinamica{border:1px solid var(--linha);border-radius:12px;overflow:hidden}
+.linha-campos{display:grid;gap:10px;padding:14px;background:rgba(255,255,255,.06);border-bottom:1px solid var(--linha);align-items:center}
+.linha-campos.cabecalho-tabela{background:var(--rosa-suave);font-weight:600;font-size:12.5px;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em;color:var(--ameixa);padding:10px 14px}
+.linha-campos input,.linha-campos select{padding:9px 11px;font-size:14px}
+.remover{
+  border:none;background:none;color:var(--cinza);cursor:pointer;font-size:18px;
+  padding:6px;border-radius:8px;line-height:1;
+}
+.remover:hover{color:var(--erro);background:rgba(176,58,58,.08)}
+.remover:disabled{opacity:.25;cursor:default}
+.adicionar{
+  margin-top:14px;border:1.5px dashed var(--rosa);color:var(--rosa);background:none;
+  padding:10px 18px;border-radius:10px;font-family:'Instrument Sans',sans-serif;font-weight:600;
+  font-size:14px;cursor:pointer;transition:background .15s;
+}
+.adicionar:hover{background:var(--rosa-suave)}
+.acao-linha{display:flex;justify-content:flex-end;min-width:36px}
+
+.horarios .linha-campos{grid-template-columns:110px 1fr 1fr 36px}
+.servicos .linha-campos{grid-template-columns:2.2fr 1fr .9fr 2fr 36px}
+.equipe .linha-campos{grid-template-columns:1.2fr 1fr 1.4fr 36px}
+
+/* switches (sim/não) */
+.sn{display:flex;gap:0;border:1.5px solid var(--linha);border-radius:10px;overflow:hidden;width:fit-content}
+.sn label{position:relative;cursor:pointer;margin:0}
+.sn input{position:absolute;opacity:0}
+.sn .face{padding:9px 20px;font-size:14px;font-weight:600;color:var(--cinza);background:rgba(255,255,255,.06);transition:all .15s}
+.sn label:first-child .face{border-right:1.5px solid var(--linha)}
+.sn input:checked+.face{background:var(--rosa);color:#14100B}
+.sn input:focus-visible+.face{box-shadow:inset 0 0 0 3px rgba(242,167,27,.4)}
+
+/* ---------- AÇÃO FINAL ---------- */
+.final{
+  background:#1A130C;color:#fff;border:1px solid rgba(242,167,27,.35);border-radius:18px;padding:34px;
+}
+.final h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:26px;margin-bottom:8px}
+.final p{color:rgba(255,255,255,.8);font-size:14.5px;max-width:560px;margin-bottom:22px}
+.final .botoes{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  border:none;border-radius:11px;padding:14px 24px;font-family:'Instrument Sans',sans-serif;
+  font-weight:700;font-size:15px;cursor:pointer;transition:transform .12s,background .15s;
+}
+.btn:active{transform:scale(.98)}
+.btn-principal{background:var(--rosa);color:#14100B}
+.btn-principal:hover{background:#FFB63F}
+.btn-secundario{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.btn-secundario:hover{background:rgba(255,255,255,.2)}
+.saida{display:none;margin-top:24px}
+.saida.visivel{display:block}
+.saida label{color:#fff;font-size:13px;font-weight:600;margin:10px 0 6px}
+.saida textarea{
+  width:100%;min-height:320px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;
+  background:rgba(255,255,255,.97);color:#14100B;border-radius:12px;padding:18px;line-height:1.6;
+}
+.aviso-campos{
+  display:none;background:rgba(176,58,58,.16);border:1px solid rgba(255,150,150,.5);
+  color:#FFD9D9;border-radius:10px;padding:12px 16px;font-size:14px;margin-bottom:16px;
+}
+.aviso-campos.visivel{display:block}
+
+footer{
+  border-top:1px solid var(--linha);padding:28px 0 48px;color:var(--cinza);font-size:13px;
+}
+footer b{color:var(--rosa)}
+
+.toast{
+  position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);
+  background:var(--rosa);color:#14100B;font-weight:600;padding:12px 22px;border-radius:99px;font-size:14px;
+  opacity:0;transition:all .3s;pointer-events:none;z-index:99;
+}
+.toast.visivel{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Revisão funcional: preserva tokens, fontes e composição originais. */
+[hidden]{display:none!important}
+main,.grid2>*,.grid3>*,.linha-campos>*{min-width:0}
+.campo,.linha-campos,.final{overflow-wrap:anywhere}
+.linha-campos label{margin:0;font-size:12px}
+.linha-campos label span{display:block;margin-bottom:4px}
+.servicos .linha-campos:not(.cabecalho-tabela),.equipe .linha-campos:not(.cabecalho-tabela){grid-template-columns:repeat(2,minmax(0,1fr))}
+.servicos .cabecalho-tabela,.equipe .cabecalho-tabela{display:none}
+.erro-campo{color:var(--erro);font-size:13px;display:block;margin:4px 0}
+.aviso-campos a{color:inherit;text-decoration:underline}
+.armazenamento{margin-bottom:24px}
+.armazenamento label input{margin-right:8px}
+.btn:disabled{opacity:.55;cursor:not-allowed}
+.btn.destaque{animation:colmeia-pulse 2s ease}
+@keyframes colmeia-pulse{0%{box-shadow:0 0 0 0 rgba(242,167,27,0)}30%{box-shadow:0 0 0 10px rgba(242,167,27,.45)}100%{box-shadow:0 0 0 0 rgba(242,167,27,0)}}
+.sn{max-width:100%;flex-wrap:wrap}
+.sn .face{padding:9px 12px}
+:focus-visible{outline:3px solid var(--rosa);outline-offset:3px}
+#statusAcao,#avisoWhats{margin-top:16px}
+#resumoImpressao pre{white-space:pre-wrap;overflow-wrap:anywhere;font-family:'Instrument Sans',sans-serif}
+@media(max-width:880px){
+ .wrap{padding:0 16px}.layout{grid-template-columns:1fr;gap:24px;padding-top:24px}
+ aside{position:static}
+ header{padding-top:64px}.lang{top:16px;right:16px}
+ aside nav{display:flex;flex-wrap:wrap}aside nav a{font-size:13px}
+ .card{padding:18px}.final{padding:22px}
+ .opcoes.col3{grid-template-columns:1fr}
+ .radio-card{min-width:0}
+ input[type=text],input[type=tel],input[type=email],input[type=url],input[type=time],input[type=number],select,textarea,.linha-campos input,.linha-campos select,.saida textarea{font-size:16px}
+ .linha-campos.cabecalho-tabela{display:none}
+ .horarios .linha-campos{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .botoes .btn{width:100%;padding:14px 12px}
+}
+@media(max-width:420px){.servicos .linha-campos:not(.cabecalho-tabela),.equipe .linha-campos:not(.cabecalho-tabela){grid-template-columns:1fr}}
+@media print{
+ body>*{display:none!important}.wrap.layout{display:block!important}
+ aside,.lang,main>*{display:none!important}main,#resumoImpressao:not([hidden]){display:block!important}
+ #resumoImpressao pre{white-space:pre-wrap;overflow:visible;max-height:none}
+ body{color:#000;background:#fff}.wrap{max-width:none;padding:0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="lang" role="group" aria-label="Language / Idioma">
+    <button type="button" id="btnEn" aria-pressed="false">EN</button>
+    <button type="button" id="btnPt" aria-pressed="true">PT</button>
+  </div>
+  <div class="wrap">
+    <div class="logo">Colmeia <span>Studios Academy</span></div>
+    <div class="eyebrow" data-i18n="tag"></div>
+    <h1><span data-i18n="h1a"></span> <em data-i18n="h1b"></em><span data-i18n="h1c"></span></h1>
+    <p class="lead" data-i18n="lead"></p>
+    <div class="badges">
+      <span class="badge" data-i18n="badge1"></span>
+      <span class="badge" data-i18n="badge2"></span>
+      <span class="badge" data-i18n="badge3"></span>
+      <span class="badge" data-i18n="badge4"></span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap layout">
+
+  <aside>
+    <div class="menu-titulo" data-i18n="menuTitulo"></div>
+    <nav id="menu">
+      <a href="#s1"><span class="num">I</span> <span data-i18n="nav1"></span></a>
+      <a href="#s2"><span class="num">II</span> <span data-i18n="nav2"></span></a>
+      <a href="#s3"><span class="num">III</span> <span data-i18n="nav3"></span></a>
+      <a href="#s4"><span class="num">IV</span> <span data-i18n="nav4"></span></a>
+      <a href="#s5"><span class="num">V</span> <span data-i18n="nav5"></span></a>
+      <a href="#s6"><span class="num">VI</span> <span data-i18n="nav6"></span></a>
+      <a href="#s7"><span class="num">VII</span> <span data-i18n="nav7"></span></a>
+      <a href="#s8"><span class="num">VIII</span> <span data-i18n="nav8"></span></a>
+    </nav>
+    <div class="progresso">
+      <div class="rotulo" data-i18n="progresso"></div>
+      <div class="barra" role="progressbar" aria-label="Required answers" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="barraPct"></span></div>
+      <div class="pct" id="rotuloPct">0%</div>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- ============ I. SEU SALÃO ============ -->
+    <section class="bloco" id="s1">
+      <div class="cabeca"><span class="num">I</span><h2 data-i18n="s1t"></h2></div>
+      <p class="descricao" data-i18n="s1d"></p>
+      <div class="card">
+        <div class="campo">
+          <label><span data-i18n="l_businessType"></span></label>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="radio" name="businessType" value="Salão de cabelo"><span class="face"><b data-i18n="bt_hair"></b></span></label>
+            <label class="radio-card"><input type="radio" name="businessType" value="Studio de beleza"><span class="face"><b data-i18n="bt_studio"></b></span></label>
+            <label class="radio-card"><input type="radio" name="businessType" value="Barbearia"><span class="face"><b data-i18n="bt_barber"></b></span></label>
+            <label class="radio-card"><input type="radio" name="businessType" value="E-commerce"><span class="face"><b data-i18n="bt_ecom"></b></span></label>
+            <label class="radio-card"><input type="radio" name="businessType" value="Outro"><span class="face"><b data-i18n="bt_other"></b></span></label>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label for="nomeSalao"><span data-i18n="l_nomeSalao"></span></label>
+            <input type="text" id="nomeSalao" data-i18n-ph="p_nomeSalao">
+          </div>
+          <div class="campo">
+            <label for="responsavel"><span data-i18n="l_responsavel"></span> <span class="opc" data-i18n="opc_contato"></span></label>
+            <input type="text" id="responsavel" data-i18n-ph="p_responsavel">
+          </div>
+        </div>
+        <div class="grid3">
+          <div class="campo">
+            <label for="whatsResp"><span data-i18n="l_whatsResp"></span></label>
+            <div class="ajuda" data-i18n="help_phone"></div>
+            <input type="tel" id="whatsResp" data-i18n-ph="p_whatsResp">
+          </div>
+          <div class="campo">
+            <label for="emailResp"><span data-i18n="l_emailResp"></span> <span class="opc" data-i18n="optional"></span></label>
+            <input type="email" id="emailResp" data-i18n-ph="p_emailResp">
+          </div>
+          <div class="campo">
+            <label for="instagram"><span data-i18n="l_instagram"></span> <span class="opc" data-i18n="optional"></span></label>
+            <input type="text" id="instagram" data-i18n-ph="p_instagram">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="endereco"><span data-i18n="l_endereco"></span></label>
+          <input type="text" id="endereco" data-i18n-ph="p_endereco">
+        </div>
+        <div class="campo">
+          <label for="cidadeEstado"><span data-i18n="l_cidadeEstado"></span></label>
+          <div class="ajuda" data-i18n="help_cidadeEstado"></div>
+          <input type="text" id="cidadeEstado" data-i18n-ph="p_cidadeEstado">
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label><span data-i18n="l_estacionamento"></span></label>
+            <div class="sn">
+              <label><input type="radio" name="estacionamento" value="Sim"><span class="face" data-i18n="yes"></span></label>
+              <label><input type="radio" name="estacionamento" value="Não"><span class="face" data-i18n="no"></span></label>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="referencia"><span data-i18n="l_referencia"></span></label>
+            <input type="text" id="referencia" data-i18n-ph="p_referencia">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="site"><span data-i18n="l_site"></span> <span class="opc" data-i18n="optional"></span></label>
+          <input type="url" id="site" data-i18n-ph="p_site">
+        </div>
+        <div class="campo">
+          <label for="unidade"><span data-i18n="l_unidade"></span></label>
+          <input type="text" id="unidade" data-i18n-ph="p_unidade">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ II. HORÁRIOS ============ -->
+    <section class="bloco" id="s2">
+      <div class="cabeca"><span class="num">II</span><h2 data-i18n="s2t"></h2></div>
+      <p class="descricao" data-i18n="s2d"></p>
+      <div class="card">
+        <div class="grid2">
+          <div class="campo">
+            <label for="fuso"><span data-i18n="l_fuso"></span></label>
+            <div class="ajuda" data-i18n="help_fuso"></div>
+            <select id="fuso" data-vl>
+              <option value="America/New_York">America/New_York</option>
+              <option value="America/Chicago">America/Chicago</option>
+              <option value="America/Denver">America/Denver</option>
+              <option value="America/Los_Angeles">America/Los_Angeles</option>
+              <option value="America/Anchorage">America/Anchorage</option>
+              <option value="Pacific/Honolulu">Pacific/Honolulu</option>
+              <option value="America/Sao_Paulo">America/Sao_Paulo</option>
+              <option value="Atlantic/Azores">Atlantic/Azores</option>
+              <option value="Europe/Berlin">Europe/Berlin</option>
+              <option value="Europe/London">Europe/London</option>
+              <option value="Outro / não sei">Outro / não sei</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="fusoOutro"><span data-i18n="l_fusoOutro"></span></label>
+            <input type="text" id="fusoOutro">
+          </div>
+        </div>
+        <div class="tabela-dinamica horarios" id="tabelaHorarios">
+          <div class="linha-campos cabecalho-tabela"><span data-i18n="th_dia"></span><span data-i18n="th_abre"></span><span data-i18n="th_fecha"></span><span></span></div>
+        </div>
+        <button type="button" class="adicionar" onclick="adicionarHorario()" data-i18n="addDay"></button>
+        <div class="campo" style="margin-top:20px">
+          <label for="feriados"><span data-i18n="l_feriados"></span></label>
+          <div class="ajuda" data-i18n="help_feriados"></div>
+          <textarea id="feriados" data-i18n-ph="p_feriados"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ III. SERVIÇOS ============ -->
+    <section class="bloco" id="s3">
+      <div class="cabeca"><span class="num">III</span><h2 data-i18n="s3t"></h2></div>
+      <p class="descricao" data-i18n="s3d"></p>
+      <div class="card">
+        <p class="ajuda" data-i18n="s3help"></p>
+        <div class="tabela-dinamica servicos" id="tabelaServicos">
+          <div class="linha-campos cabecalho-tabela"><span data-i18n="spec_service"></span><span data-i18n="spec_price"></span><span data-i18n="spec_duration"></span><span data-i18n="spec_note"></span><span></span></div>
+        </div>
+        <button type="button" class="adicionar" onclick="adicionarServico()" data-i18n="addService"></button>
+        <div class="campo" style="margin-top:20px">
+          <label for="pacotes"><span data-i18n="l_pacotes"></span></label>
+          <div class="ajuda" data-i18n="help_pacotes"></div>
+          <textarea id="pacotes" data-i18n-ph="p_pacotes"></textarea>
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label for="formaPagamento"><span data-i18n="l_formaPagamento"></span></label>
+            <input type="text" id="formaPagamento" data-i18n-ph="p_formaPagamento">
+          </div>
+          <div class="campo">
+            <label><span data-i18n="l_podePreco"></span></label>
+            <div class="sn">
+              <label><input type="radio" name="podePreco" value="Sim, pode informar"><span class="face" data-i18n="sn_yes_price"></span></label>
+              <label><input type="radio" name="podePreco" value="Não, pedir para confirmar no salão"><span class="face" data-i18n="sn_no_price"></span></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IV. EQUIPE ============ -->
+    <section class="bloco" id="s4">
+      <div class="cabeca"><span class="num">IV</span><h2 data-i18n="s4t"></h2></div>
+      <p class="descricao" data-i18n="s4d"></p>
+      <div class="card">
+        <p class="ajuda" data-i18n="s4help"></p>
+        <div class="tabela-dinamica equipe" id="tabelaEquipe">
+          <div class="linha-campos cabecalho-tabela"><span data-i18n="spec_name"></span><span data-i18n="spec_role"></span><span data-i18n="spec_schedule"></span><span></span></div>
+        </div>
+        <button type="button" class="adicionar" onclick="adicionarEquipe()" data-i18n="addPro"></button>
+        <div class="campo" style="margin-top:20px">
+          <label><span data-i18n="l_escolheProf"></span></label>
+          <div class="sn">
+            <label><input type="radio" name="escolheProf" value="Sim, podem escolher"><span class="face" data-i18n="sn_yes_choice"></span></label>
+            <label><input type="radio" name="escolheProf" value="Não, atribuímos conforme a agenda"><span class="face" data-i18n="sn_no_choice"></span></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ V. AGENDAMENTO ============ -->
+    <section class="bloco" id="s5">
+      <div class="cabeca"><span class="num">V</span><h2 data-i18n="s5t"></h2></div>
+      <p class="descricao" data-i18n="s5d"></p>
+      <div class="card">
+        <div class="campo">
+          <label><span data-i18n="l_plataforma"></span></label>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="radio" name="plataforma" value="Google Agenda" onchange="atualizarOutraPlataforma()"><span class="face"><b data-i18n="pf_google"></b><small data-i18n="pfs_review"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Calendly" onchange="atualizarOutraPlataforma()"><span class="face"><b>Calendly</b><small data-i18n="pfs_review"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Cal.com" onchange="atualizarOutraPlataforma()"><span class="face"><b>Cal.com</b><small data-i18n="pfs_review"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Trinks" onchange="atualizarOutraPlataforma()"><span class="face"><b>Trinks</b><small data-i18n="pfs_deps"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Fresha" onchange="atualizarOutraPlataforma()"><span class="face"><b>Fresha</b><small data-i18n="pfs_deps"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Salão99" onchange="atualizarOutraPlataforma()"><span class="face"><b>Salão99</b><small data-i18n="pfs_deps"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Booksy" onchange="atualizarOutraPlataforma()"><span class="face"><b>Booksy</b><small data-i18n="pfs_deps"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Papel / caderno" onchange="atualizarOutraPlataforma()"><span class="face"><b data-i18n="pf_paper"></b><small data-i18n="pfs_paper"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Outra" onchange="atualizarOutraPlataforma()"><span class="face"><b data-i18n="pf_other"></b><small data-i18n="pfs_other"></small></span></label>
+            <label class="radio-card"><input type="radio" name="plataforma" value="Não sei" onchange="atualizarOutraPlataforma()"><span class="face"><b data-i18n="pf_dontknow"></b><small data-i18n="pfs_dontknow"></small></span></label>
+          </div>
+        </div>
+        <div class="campo" id="campoOutraPlataforma" style="display:none">
+          <label for="outraPlataforma"><span data-i18n="l_outraPlataforma"></span></label>
+          <input type="text" id="outraPlataforma" data-i18n-ph="p_outraPlataforma">
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label><span data-i18n="l_acessoAdmin"></span></label>
+            <div class="sn">
+              <label><input type="radio" name="acessoAdmin" value="Sim"><span class="face" data-i18n="yes"></span></label>
+              <label><input type="radio" name="acessoAdmin" value="Não sei"><span class="face" data-i18n="dontknow"></span></label>
+              <label><input type="radio" name="acessoAdmin" value="Não"><span class="face" data-i18n="no"></span></label>
+            </div>
+          </div>
+          <div class="campo">
+            <label for="linkAgenda"><span data-i18n="l_linkAgenda"></span> <span class="opc" data-i18n="optional"></span></label>
+            <input type="text" id="linkAgenda" data-i18n-ph="p_linkAgenda">
+          </div>
+        </div>
+        <div class="campo">
+          <label><span data-i18n="l_destinoAgenda"></span></label>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="radio" name="destinoAgenda" value="Na minha agenda atual, conectada"><span class="face"><b data-i18n="df_current"></b><small data-i18n="dfs_current"></small></span></label>
+            <label class="radio-card"><input type="radio" name="destinoAgenda" value="Em uma agenda nova criada pela Colmeia"><span class="face"><b data-i18n="df_new"></b><small data-i18n="dfs_new"></small></span></label>
+            <label class="radio-card"><input type="radio" name="destinoAgenda" value="Recepcionista coleta os dados e a equipe confirma depois"><span class="face"><b data-i18n="df_collect"></b><small data-i18n="dfs_collect"></small></span></label>
+          </div>
+        </div>
+        <div class="campo">
+          <label><span data-i18n="l_whatsappHoje"></span></label>
+          <div class="sn">
+            <label><input type="radio" name="whatsappHoje" value="Sim, WhatsApp Business"><span class="face" data-i18n="sn_wa_business"></span></label>
+            <label><input type="radio" name="whatsappHoje" value="Sim, WhatsApp comum"><span class="face" data-i18n="sn_wa_personal"></span></label>
+            <label><input type="radio" name="whatsappHoje" value="Não"><span class="face" data-i18n="no"></span></label>
+            <label><input type="radio" name="whatsappHoje" value="Não sei"><span class="face" data-i18n="dontknow"></span></label>
+          </div>
+        </div>
+        <div class="campo">
+          <label><span data-i18n="l_numeroVirtual"></span></label>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="radio" name="numeroVirtual" value="Número novo exclusivo para a recepção virtual"><span class="face"><b data-i18n="nv_new"></b><small data-i18n="nvs_new"></small></span></label>
+            <label class="radio-card"><input type="radio" name="numeroVirtual" value="Quero avaliar manter meu número atual"><span class="face"><b data-i18n="nv_keep"></b><small data-i18n="nvs_keep"></small></span></label>
+            <label class="radio-card"><input type="radio" name="numeroVirtual" value="Ainda não sei, me indiquem a melhor opção"><span class="face"><b data-i18n="nv_advise"></b><small data-i18n="nvs_advise"></small></span></label>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="agendasRecursos"><span data-i18n="l_agendasRecursos"></span></label>
+          <textarea id="agendasRecursos"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VI. REGRAS ============ -->
+    <section class="bloco" id="s6">
+      <div class="cabeca"><span class="num">VI</span><h2 data-i18n="s6t"></h2></div>
+      <p class="descricao" data-i18n="s6d"></p>
+      <div class="card">
+        <div class="grid3">
+          <div class="campo">
+            <label for="antecedencia"><span data-i18n="l_antecedencia"></span></label>
+            <input type="text" id="antecedencia" data-i18n-ph="p_antecedencia">
+          </div>
+          <div class="campo">
+            <label for="tolerancia"><span data-i18n="l_tolerancia"></span></label>
+            <input type="text" id="tolerancia" data-i18n-ph="p_tolerancia">
+          </div>
+          <div class="campo">
+            <label for="cancelamento"><span data-i18n="l_cancelamento"></span></label>
+            <input type="text" id="cancelamento" data-i18n-ph="p_cancelamento">
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label for="sinal"><span data-i18n="l_sinal"></span></label>
+            <input type="text" id="sinal" data-i18n-ph="p_sinal">
+          </div>
+          <div class="campo">
+            <label for="falta"><span data-i18n="l_falta"></span></label>
+            <input type="text" id="falta" data-i18n-ph="p_falta">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="regraOuro"><span data-i18n="l_regraOuro"></span></label>
+          <div class="ajuda" data-i18n="help_regraOuro"></div>
+          <textarea id="regraOuro" data-i18n-ph="p_regraOuro"></textarea>
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label for="acompanhante"><span data-i18n="l_acompanhante"></span></label>
+            <input type="text" id="acompanhante" data-i18n-ph="p_acompanhante">
+          </div>
+          <div class="campo">
+            <label for="duvidaFrequente"><span data-i18n="l_duvidaFrequente"></span></label>
+            <input type="text" id="duvidaFrequente" data-i18n-ph="p_duvidaFrequente">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="respostaFaq"><span data-i18n="l_respostaFaq"></span></label>
+          <textarea id="respostaFaq"></textarea>
+        </div>
+        <div class="campo">
+          <label for="encaixeRecursos"><span data-i18n="l_encaixeRecursos"></span> <span class="opc" data-i18n="optional"></span></label>
+          <textarea id="encaixeRecursos"></textarea>
+        </div>
+        <div class="campo">
+          <label for="verificacao"><span data-i18n="l_verificacao"></span></label>
+          <textarea id="verificacao"></textarea>
+        </div>
+        <div class="campo">
+          <label for="dadosMinimos"><span data-i18n="l_dadosMinimos"></span></label>
+          <div class="ajuda" data-i18n="help_dadosMinimos"></div>
+          <textarea id="dadosMinimos"></textarea>
+        </div>
+        <p class="ajuda" data-i18n="s6help"></p>
+      </div>
+    </section>
+
+    <!-- ============ VII. VOZ ============ -->
+    <section class="bloco" id="s7">
+      <div class="cabeca"><span class="num">VII</span><h2 data-i18n="s7t"></h2></div>
+      <p class="descricao" data-i18n="s7d"></p>
+      <div class="card">
+        <div class="grid2">
+          <div class="campo">
+            <label for="nomeRecepcao"><span data-i18n="l_nomeRecepcao"></span></label>
+            <input type="text" id="nomeRecepcao" data-i18n-ph="p_nomeRecepcao">
+          </div>
+          <div class="campo">
+            <label><span data-i18n="l_estiloVoz"></span></label>
+            <div class="opcoes col3">
+              <label class="radio-card"><input type="radio" name="estiloVoz" value="Calorosa e acolhedora"><span class="face"><b data-i18n="vf_warm"></b><small data-i18n="vfs_warm"></small></span></label>
+              <label class="radio-card"><input type="radio" name="estiloVoz" value="Animada e simpática"><span class="face"><b data-i18n="vf_upbeat"></b><small data-i18n="vfs_upbeat"></small></span></label>
+              <label class="radio-card"><input type="radio" name="estiloVoz" value="Calma e objetiva"><span class="face"><b data-i18n="vf_calm"></b><small data-i18n="vfs_calm"></small></span></label>
+            </div>
+          </div>
+        </div>
+        <div class="campo">
+          <label><span data-i18n="l_serviceLang"></span></label>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="radio" name="serviceLang" value="English"><span class="face"><b data-i18n="sl_en"></b></span></label>
+            <label class="radio-card"><input type="radio" name="serviceLang" value="Português (Brasil)"><span class="face"><b data-i18n="sl_pt"></b></span></label>
+            <label class="radio-card"><input type="radio" name="serviceLang" value="Bilíngue EN + pt-BR"><span class="face"><b data-i18n="sl_bi"></b></span></label>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="saudacao"><span data-i18n="l_saudacao"></span> <span class="opc" data-i18n="opc_saudacao"></span></label>
+          <input type="text" id="saudacao" data-i18n-ph="p_saudacao">
+        </div>
+        <div class="campo">
+          <label><span data-i18n="l_transferir"></span></label>
+          <div class="ajuda" data-i18n="help_transferir"></div>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="checkbox" name="transferir" value="Reclamação ou cliente irritada"><span class="face"><b data-i18n="tf_complaint"></b></span></label>
+            <label class="radio-card"><input type="checkbox" name="transferir" value="Pedido de falar com a gerente ou com a dona"><span class="face"><b data-i18n="tf_owner"></b></span></label>
+            <label class="radio-card"><input type="checkbox" name="transferir" value="Dúvida técnica sobre química, cor ou tratamento"><span class="face"><b data-i18n="tf_technical"></b></span></label>
+            <label class="radio-card"><input type="checkbox" name="transferir" value="Negociação de preço ou desconto"><span class="face"><b data-i18n="tf_discount"></b></span></label>
+            <label class="radio-card"><input type="checkbox" name="transferir" value="Agendamento de grupo ou evento (noivas, formaturas)"><span class="face"><b data-i18n="tf_groups"></b></span></label>
+            <label class="radio-card"><input type="checkbox" name="transferir" value="Outro motivo que não souber responder"><span class="face"><b data-i18n="tf_unknown"></b></span></label>
+          </div>
+        </div>
+        <div class="grid2">
+          <div class="campo">
+            <label for="contatoTransferencia"><span data-i18n="l_contatoTransferencia"></span></label>
+            <input type="text" id="contatoTransferencia" data-i18n-ph="p_contatoTransferencia">
+          </div>
+          <div class="campo">
+            <label for="telefoneHumano"><span data-i18n="l_telefoneHumano"></span></label>
+            <div class="ajuda" data-i18n="help_phone"></div>
+            <input type="tel" id="telefoneHumano" data-i18n-ph="p_whatsResp">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="horarioHumano"><span data-i18n="l_horarioHumano"></span></label>
+          <input type="text" id="horarioHumano">
+        </div>
+        <div class="campo">
+          <label><span data-i18n="l_foraHorario"></span></label>
+          <div class="opcoes col3">
+            <label class="radio-card"><input type="radio" name="foraHorario" value="Anotar o recado e avisar a responsável no WhatsApp"><span class="face"><b data-i18n="fh_message"></b></span></label>
+            <label class="radio-card"><input type="radio" name="foraHorario" value="Sugerir agendamento online direto"><span class="face"><b data-i18n="fh_direct"></b></span></label>
+            <label class="radio-card"><input type="radio" name="foraHorario" value="Perguntar à cliente o que prefere"><span class="face"><b data-i18n="fh_ask"></b></span></label>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="fallback"><span data-i18n="l_fallback"></span> <span class="opc" data-i18n="optional"></span></label>
+          <textarea id="fallback"></textarea>
+        </div>
+        <div class="campo">
+          <label for="observacoes"><span data-i18n="l_observacoes"></span></label>
+          <div class="ajuda" data-i18n="help_observacoes"></div>
+          <textarea id="observacoes"></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VIII. OPERAÇÃO ============ -->
+    <section class="bloco" id="s8">
+      <div class="cabeca"><span class="num">VIII</span><h2 data-i18n="s8t"></h2></div>
+      <p class="descricao" data-i18n="s8d"></p>
+      <div class="card">
+        <div class="campo">
+          <label for="canais"><span data-i18n="l_canais"></span></label>
+          <div class="ajuda" data-i18n="help_canais"></div>
+          <select id="canais" data-vl>
+            <option value="" data-i18n="opt_select"></option>
+            <option value="Telefone (voz)">Telefone (voz)</option>
+            <option value="WhatsApp (mensagens)">WhatsApp (mensagens)</option>
+            <option value="WhatsApp (voz/chamadas)">WhatsApp (voz/chamadas)</option>
+            <option value="Telefone + WhatsApp mensagens">Telefone + WhatsApp mensagens</option>
+            <option value="Telefone + WhatsApp mensagens + voz/chamadas">Telefone + WhatsApp mensagens + voz/chamadas</option>
+            <option value="Site">Site</option>
+            <option value="Outro / a definir">Outro / a definir</option>
+            <option value="Não sei">Não sei</option>
+          </select>
+        </div>
+        <div class="campo">
+          <label for="volume"><span data-i18n="l_volume"></span></label>
+          <input type="text" id="volume">
+        </div>
+        <div class="campo">
+          <label for="picos"><span data-i18n="l_picos"></span> <span class="opc" data-i18n="optional"></span></label>
+          <input type="text" id="picos">
+        </div>
+        <div class="campo">
+          <label for="acoesAutorizadas"><span data-i18n="l_acoesAutorizadas"></span> <span class="opc" data-i18n="optional"></span></label>
+          <textarea id="acoesAutorizadas"></textarea>
+        </div>
+        <div class="campo">
+          <label for="aprovador"><span data-i18n="l_aprovador"></span></label>
+          <input type="text" id="aprovador">
+        </div>
+        <div class="campo">
+          <label for="gravacaoRetencao"><span data-i18n="l_gravacao"></span> <span class="opc" data-i18n="optional"></span></label>
+          <div class="ajuda" data-i18n="help_gravacao"></div>
+          <textarea id="gravacaoRetencao"></textarea>
+        </div>
+        <div class="campo">
+          <label for="numeroComercial"><span data-i18n="l_numeroComercial"></span> <span class="opc" data-i18n="optional"></span></label>
+          <div class="ajuda" data-i18n="help_phone"></div>
+          <input type="tel" id="numeroComercial" data-i18n-ph="p_whatsResp">
+        </div>
+        <div class="campo">
+          <label for="metaWhats"><span data-i18n="l_metaWhats"></span> <span class="opc" data-i18n="optional"></span></label>
+          <input type="text" id="metaWhats">
+        </div>
+        <p class="ajuda" data-i18n="s8help"></p>
+        <div class="campo">
+          <label for="cienteVirtual"><input type="checkbox" id="cienteVirtual"> <span data-i18n="ciente_label"></span></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ARMAZENAMENTO + FINAL ============ -->
+    <div class="card armazenamento">
+      <label for="salvarLocal"><input type="checkbox" id="salvarLocal"> <span data-i18n="st_title"></span></label>
+      <p class="ajuda" data-i18n="st_help"></p>
+      <p id="statusStorage" role="status"></p>
+      <div id="migracao" hidden>
+        <p class="ajuda" data-i18n="mig_text"></p>
+        <button type="button" class="adicionar" id="btnMigrar" data-i18n="mig_import"></button>
+        <button type="button" class="adicionar" id="btnExcluirV1" data-i18n="mig_delete"></button>
+      </div>
+    </div>
+    <div class="final">
+      <h2 data-i18n="f_title"></h2>
+      <p data-i18n="f_p"></p>
+      <div class="aviso-campos" id="avisoCampos" role="region" aria-label="Errors" tabindex="-1"></div>
+      <div class="botoes">
+        <button type="button" class="btn btn-principal" onclick="copiarResumo()" data-i18n="b_copiar"></button>
+        <button type="button" class="btn btn-secundario" onclick="enviarWhats()" id="btnWhats" data-i18n="b_whats"></button>
+      </div>
+      <p id="avisoWhats" role="status" data-i18n="steps"></p>
+      <p data-i18n="p_whats_note"></p>
+      <div class="saida" id="saida">
+        <label for="textoResumo" data-i18n="o_priv"></label><textarea id="textoResumo" readonly></textarea>
+      </div>
+      <p id="statusAcao" role="status" aria-live="polite"></p>
+    </div>
+    <article id="resumoImpressao" hidden><h2 data-i18n="print_title"></h2><pre id="textoImpressao"></pre></article>
+
+  </main>
+</div>
+
+<footer>
+  <div class="wrap">
+    <b>Colmeia Studios Academy</b> — <span data-i18n="foot_line"></span> · <span style="font-family:'IBM Plex Mono',monospace;font-size:12px">colmeiastudiosacademy.com.br</span><br>
+    <span data-i18n="foot_priv"></span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" data-i18n="copyToast"></div>
+
+<script>
+'use strict';
+/* Colmeia WhatsApp number, digits only (31 99931-4793). */
+const WHATSAPP_AGENCIA = '5531999314793';
+const STORAGE_KEY = 'colmeia_onboarding_v2';
+const LEGACY_KEY = 'colmeia_onboarding';
+const VERSION = 2;
+
+const DIAS = ['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'];
+const STR = {
+en:{
+ doc_title:'Colmeia Studios Academy — Virtual Reception Setup',
+ tag:'Colmeia Studios Academy · Virtual reception setup',
+ h1a:"Set up your salon's", h1b:'virtual reception', h1c:' with Colmeia.',
+ lead:'Answer the questions below so the Colmeia team can build the virtual reception of your salon. This page is a form: it does not answer calls and does not send anything by itself.',
+ badge1:'Setup form', badge2:'Connections reviewed case by case', badge3:'Virtual reception', badge4:'Review before go-live',
+ menuTitulo:'Form sections',
+ nav1:'Your salon', nav2:'Business hours', nav3:'Services & prices', nav4:'Team', nav5:'Booking', nav6:'Policies', nav7:'Reception style', nav8:'Operation & go-live',
+ progresso:'Required answers', reqUnit:'required answered',
+ s1t:'Your salon', s1d:'This describes your business to guests and guides the Colmeia team while configuring your virtual reception.',
+ l_businessType:'Type of business', bt_hair:'Hair salon', bt_studio:'Beauty studio', bt_barber:'Barbershop', bt_ecom:'E-commerce', bt_other:'Other',
+ l_nomeSalao:'Salon / business name *', p_nomeSalao:'Ex.: Bella Vida Hair Salon',
+ l_responsavel:'Owner or manager *', opc_contato:'(who we may contact)', p_responsavel:'Ex.: Ana Souza',
+ l_whatsResp:'Contact WhatsApp *', help_phone:'US: (415) 555-0132 · Brazil: (11) 98765-4321', p_whatsResp:'(415) 555-0132',
+ l_emailResp:'E-mail', optional:'(optional)', p_emailResp:'you@salon.com',
+ l_instagram:'Instagram', p_instagram:'@yoursalon',
+ l_endereco:'Full address *', p_endereco:'Street, number, neighborhood, city — how guests find you',
+ l_cidadeEstado:'City and state of the business *', help_cidadeEstado:'So the reception always says where you are (e.g., Miami, FL).', p_cidadeEstado:'Ex.: Miami, FL', er_cidade:'Enter the business city and state (e.g.: Miami, FL).',
+ l_estacionamento:'Parking or arrival landmark?', l_referencia:'If yes, or another arrival detail', p_referencia:'Ex.: blue gate next to the bakery; parking around the back',
+ l_site:'Website or booking page', p_site:'https://',
+ l_unidade:'Additional location / branch (optional)', p_unidade:'Ex.: Downtown branch — second address guests may mention',
+ l_fuso:'Time zone', help_fuso:'The hours below follow this time zone. Suggested default: US Eastern (New York/Miami). Change it to your business time zone. This does not set your business hours.',
+ l_fusoOutro:'If other, which time zone or city?',
+ s2t:'Business hours', s2d:'Only the intervals you enter here will be offered to guests, in the time zone selected below. Leave days blank when the salon is closed or when you are not sure — blank means not informed yet, never assumed closed.',
+ th_dia:'DAY', th_abre:'OPENS', th_fecha:'CLOSES',
+ addDay:'+ Add day or interval',
+ l_feriados:'Holidays and exceptions', help_feriados:'How does the salon run on holidays? Your virtual reception will explain exactly this.', p_feriados:'Ex.: closed on national holidays; reduced hours in January',
+ s3t:'Services & prices', s3d:'This is the price list your virtual reception will share: what you charge and how much calendar time each service takes.',
+ s3help:'When you start a line, complete name, price type and duration. Prices in US dollars: 19.99 or 1,234.50. "Quote on request" needs no price; the duration is still required (it can be the consult itself). Extra columns are optional.',
+ addService:'+ Add service',
+ l_pacotes:'Packages & promotions', help_pacotes:'Write any offer the reception may mention — or make it clear there is none.', p_pacotes:'Ex.: monthly blowout + treatment 120.00; first visit 20% off one blowout',
+ l_formaPagamento:'Accepted payment methods', p_formaPagamento:'Ex.: card, cash, Pix or Zelle',
+ l_podePreco:'May the reception share prices on the phone?', sn_yes_price:'Yes', sn_no_price:'No',
+ s4t:'Team', s4d:'If guests ask for "the same person as always", the reception needs to know who does what and when.',
+ s4help:'Team is optional in this first step. If you fill a line, complete name, role, schedule and services. Use professional names, never client names.',
+ addPro:'+ Add professional',
+ l_escolheProf:'Can guests choose their professional?', sn_yes_choice:'Yes', sn_no_choice:'No',
+ s5t:'Booking', s5d:'We review how your current calendar can work with your virtual reception. Any connection depends on your plan, permissions and testing — nothing is guaranteed on this page.',
+ l_plataforma:'Where do you book today? *',
+ pf_google:'Google Calendar', pfs_review:'reviewed case by case', pfs_deps:'depends on your plan & permissions',
+ pf_paper:'Paper / notebook', pfs_paper:'we can suggest a digital option', pf_other:'Other', pfs_other:'tell us the name below', pf_dontknow:'Not sure yet', pfs_dontknow:'we figure it out together',
+ l_outraPlataforma:'Which platform do you use?', p_outraPlataforma:'Platform or system name',
+ l_acessoAdmin:'If you use one of the platforms above, can you authorize a connection?',
+ l_linkAgenda:'Calendar account or link', p_linkAgenda:'Ex.: booking link or account e-mail',
+ l_destinoAgenda:'Where should bookings be saved?',
+ df_current:'My current calendar', dfs_current:'we review the connection', df_new:'A new calendar', dfs_new:'created for you', df_collect:'Collect & confirm', dfs_collect:'the reception notes it; your team confirms',
+ l_whatsappHoje:'Does your business use WhatsApp today? *', sn_wa_business:'Yes — Business', sn_wa_personal:'Yes — regular',
+ l_numeroVirtual:'Phone number for the virtual reception',
+ nv_new:'New dedicated number', nvs_new:'subject to availability', nv_keep:'Keep my current number', nvs_keep:'we review call forwarding with you', nv_advise:'Recommend the best option', nvs_advise:'the Colmeia team suggests the best path',
+ l_planoPlataforma:'Your plan on that platform (name, if you know)', l_sitePlataforma:'Platform website', l_docsPlataforma:'Help or documentation page', l_suportePlataforma:'Platform support contact (private)',
+ l_apiDisponivel:'Does your platform allow outside connections?', opt_notinformed:'Not informed', opt_select:'Select…',
+ l_agendasRecursos:'Calendars, professionals, rooms or equipment to consider',
+ s6t:'Policies', s6d:'Your rules. The virtual reception follows them — and kindly explains when someone asks for exceptions.',
+ l_antecedencia:'Minimum advance notice', p_antecedencia:'Ex.: bookings start 2 hours ahead',
+ l_tolerancia:'Late arrival tolerance', p_tolerancia:'Ex.: 15 minutes',
+ l_cancelamento:'Free cancellation until', p_cancelamento:'Ex.: 24 hours before the time',
+ l_sinal:'Deposit for some services?', p_sinal:'Ex.: services over US$ 150 ask for a 30% deposit',
+ l_falta:'What happens after a no-show?', p_falta:'Ex.: after 2 no-shows, booking only with a deposit',
+ l_regraOuro:'Things the reception must NEVER do', help_regraOuro:'Ex.: give discounts, book services that need an in-person consult, share staff details…', p_regraOuro:'Ex.: never give discounts; never advise on color without a consult; never share staff details',
+ l_acompanhante:'May guests bring companions, children or pets?', p_acompanhante:'Ex.: children welcome if accompanied; no pets',
+ l_duvidaFrequente:'Most frequent guest question', p_duvidaFrequente:'Ex.: how much is a balayage?',
+ l_respostaFaq:'Approved answer for that question',
+ l_antecedenciaMax:'Maximum advance notice to book',
+ l_encaixeRecursos:'Durations, back-to-back rules, simultaneous professionals or resources',
+ l_verificacao:'How to verify identity for reschedules or cancellations (without exposing other people\'s data)',
+ l_dadosMinimos:'Minimum guest details you need to hold a booking', help_dadosMinimos:'Describe the fields, do not enter real guest data here.',
+ s6help:'A booking, deposit or payment counts as confirmed only after the system shows the confirmation. Without a tested connection, treat it as pending.',
+ s7t:'Reception style', s7d:'Personality and behavior. You hear a sample and approve everything before going live.',
+ l_nomeRecepcao:'Receptionist name', p_nomeRecepcao:'Ex.: Paula, Bia, Fernanda — or we suggest one',
+ l_estiloVoz:'Voice style', vf_warm:'Warm', vfs_warm:'caring tone', vf_upbeat:'Upbeat', vfs_upbeat:'high energy', vf_calm:'Calm', vfs_calm:'direct & serene',
+ l_serviceLang:'Initial service language *', sl_en:'English', sl_pt:'Português (Brasil)', sl_bi:'Bilingual EN + pt-BR',
+ l_saudacao:'Opening greeting', opc_saudacao:'(optional — we draft one if blank)', p_saudacao:'Ex.: "Bella Vida Salon, good afternoon! How can I help?"',
+ l_transferir:'When should a person from your team take over?', help_transferir:'Choose as many as you want. These become possible handoff moments, subject to testing.',
+ tf_complaint:'Complaint', tf_owner:'Ask the owner', tf_technical:'Technical question', tf_discount:'Discount request', tf_groups:'Groups & events', tf_unknown:"Doesn't know the answer",
+ l_contatoTransferencia:'Who takes over (name or role, private)', p_contatoTransferencia:'Name or role; phone in the field below',
+ l_telefoneHumano:'Internal phone for handoff (private)',
+ l_horarioHumano:'When a human is available (days, hours, time zone)',
+ l_foraHorario:'Outside handoff hours, what should happen?', fh_message:'Take a message', fh_direct:'Suggest booking', fh_ask:'Ask the guest',
+ l_prazoRetorno:'Promise to a guest about human follow-up', l_fallback:'What to do if the system or the handoff is unavailable',
+ l_observacoes:'Anything else? (internal notes, private)', help_observacoes:'Special situations only. Do not include guest names, health data or secrets.',
+ s8t:'Operation & go-live', s8d:'Optional details for a smooth start. "Not sure" is a fine answer; open points are listed separately.',
+ l_canais:'Channels you want *', help_canais:'WhatsApp messages, voice and calls each need separate setup and approval. One channel working does not unlock the others.',
+ l_canaisAdicionais:'Other channel or combination', p_canaisAdicionais:'Ex.: website + phone + WhatsApp messages; or not sure',
+ l_volume:'Expected contact volume (per day/month)', l_duracaoContato:'Typical contact length', l_picos:'Busiest days and hours', l_metaOperacao:'What success looks like for you',
+ l_acoesAutorizadas:'What the reception may do on its own — and what it may not', l_aprovador:'Who reviews and approves the setup (private)',
+ l_golive:'What must be checked and approved before going live', l_gravacao:'Call recording: your decision (record? notice? how long kept?)', help_gravacao:'Recording and retention are decisions for you as the business owner — confirm what applies to you.',
+ l_numeroComercial:'Current business phone', l_operadora:'Phone carrier and line type (landline/mobile/VoIP)',
+ l_metaWhats:'WhatsApp today: regular app, Business app, or via a provider? Blank or "not sure" is fine.',
+ l_contatoPrivacidade:'Privacy contact (optional, private)',
+ s8help:'Do not share passwords, access codes, client lists or health data. The reception always introduces itself as virtual. Everything goes live only after your approval.',
+ ciente_label:'I understand this is a setup form for a virtual reception, reviewed before go-live. *',
+  st_title:'Save answers on this device (optional)', st_help:'Skip this on shared devices. Nothing is saved without this option; unchecking erases the local copy. Reopening the page asks again.',
+ st_status_default:'local saving is off.',
+ mig_text:'A copy from an earlier version was found on this device. It was not loaded. After turning on local saving you can import it as text. Old hours especially need review — the earlier version filled in default hours.',
+ mig_import:'Import old copy after opting in', mig_delete:'Delete old copy',
+ f_title:'Review and send your setup', f_p:'Your reception goes live after your approval. Then: 1. Tap "Copy summary". 2. Tap "Open Colmeia WhatsApp". 3. Paste the summary and send it there.',
+ b_copiar:'Copy summary', b_whats:'Open Colmeia WhatsApp',
+ steps:'1. Tap "Copy summary". 2. Tap "Open Colmeia WhatsApp". 3. Paste the summary and send.', p_whats_note:'Nothing is sent automatically: opening WhatsApp does not confirm sending.',
+ o_priv:'Full setup summary · review before copying',
+ print_title:'Private setup summary', print_unvalidated:'ANSWERS NOT VALIDATED — fix the errors before sharing.',
+ copyToast:'Copied', st_copy_ok:'Summary copied! Now tap Open Colmeia WhatsApp and paste it there.',   st_copy_fail:'Could not copy. The text is selected - press Ctrl+C or use Copy.',
+ yes:'Yes', no:'No', dontknow:'Not sure',
+ foot_line:'Virtual reception for salons and beauty businesses',
+  foot_priv:'No server involved: answers stay in this page and in your optional local copy. WhatsApp sending is manual.',
+ st_saved:'answers saved on this device.',
+ st_off:'saving is off — local copy removed. The earlier copy, if any, is kept until you delete it.',
+ st_off_fail:'saving is off, but removing the local copy failed. Clear site data in your browser.',
+  st_save_fail:'saving failed — storage is unavailable or full. Copy the summary instead.',
+ st_restore_confirm:'Restore the copy saved on this device? This replaces current answers. Cancel keeps current answers.',
+  st_restore_fail:'could not read the saved copy — it was not overwritten. Your current answers are intact.',
+ st_mig_need:'turn on local saving before importing the old copy.',
+ st_mig_confirm:'Import the old saved copy as text and replace current answers? Old hours especially need review.',
+ st_mig_ok:'old copy imported as text. Review hours, price types and required fields. The old copy stays until you delete it.',
+ st_mig_fail:'old copy import failed — check storage.',
+ st_del_confirm:'Delete the old saved copy from this device?',
+ st_deleted:'old copy deleted.',
+ st_del_fail:'could not delete the old copy.',
+  st_storage_unavail:'storage unavailable; nothing is saved. You can still copy the summary.',
+ st_blocked:'Fix the highlighted fields first.', st_regenerated:'Summary ready. Review it below, then copy and paste it into WhatsApp.', st_whats_opened:'Requested WhatsApp. If no tab opens, allow pop-ups for this site. Paste the copied summary and send it there.',
+  clear_confirm:'Erase current answers and saved local copies on this device?',
+ er_title:'Review the fields below ({n}).',
+ er_nomeSalao:'Enter the salon / business name.', er_responsavel:'Enter the owner or manager.',
+ er_whats:'Enter a valid WhatsApp — US (415) 555-0132 or Brazil (11) 98765-4321.',
+ er_endereco:'Enter the full address: street, number (or s/n), neighborhood and city (min. 12 characters).',
+ er_plataforma:'Choose where you book today; if Other, enter the name.', er_outra:"Enter the other platform's name.",
+ er_whatsHoje:'Tell us if you use WhatsApp today (not sure is OK).',
+ er_canais:'Choose the channels you want (not sure is OK).',
+ er_serviceLang:'Choose the initial service language.',
+ er_service:'Enter at least one complete service: name, price type, positive price when applicable and positive duration.',
+ er_ciente:'Acknowledge the virtual reception and the review before go-live.',
+ er_url:'Enter a full valid URL (https://…).', er_email:'Enter a valid e-mail.',
+ er_phoneOpt:'Enter a valid phone (US or Brazil) or leave it blank.',
+ er_day:'Choose the day of this interval.', er_abre:'Enter the opening time.', er_fecha:'Enter the closing time.',
+ er_invert:'Closing must be after opening. Split overnight hours into separate days.', er_overlap:'Overlapping intervals on the same day.',
+ er_snome:'Enter the service name.', er_stipo:'Choose Fixed, Starting at or Quote on request.',
+ er_spreco:'Use a positive price — 19.99 or 1,234.50.', er_sdur:'Enter the calendar time in whole positive minutes.',
+ er_sint:'Cleanup/buffer must be zero or a whole positive number.',
+ er_equipe:'Complete name, role, schedule and services — or remove the line.',
+ er_faq:'Add the answer to the frequent question — or remove the question.', er_faq2:'Add the question that matches this answer.',
+ sum_title:'COLMEIA VIRTUAL RECEPTION — SETUP DETAILS',
+ sum_l1:'Prepared from the Colmeia onboarding form.', sum_l2:'Nothing here is connected to a live reception. Connections depend on plans, permissions and testing.',
+ sum_l3:'A booking, deposit or payment counts as confirmed only after the system shows the confirmation.', sum_l4:'The reception goes live after your review and approval.',
+ sum_source:'Source: Colmeia onboarding form · ',
+ sum_salon:'SALON', sum_hours:'BUSINESS HOURS', sum_services:'SERVICES & PRICES', sum_team:'TEAM', sum_booking:'BOOKING', sum_policies:'POLICIES', sum_persona:'RECEPTION STYLE & LANGUAGE', sum_ops:'OPERATION & GO-LIVE', sum_choices:'CHOICES', sum_open:'STILL TO CONFIRM',
+ currency:'US$', sum_currency:'Currency', sum_quote:'Quote on request', sum_ni:'Not informed',
+ pend_hours:'Business hours not informed yet.', pend_team:'Team / enabled services not informed yet.',
+ pend_api:'Outside connections on your platform: not informed.', pend_fuso:'Time zone to confirm.',
+ pend_notinformed:'not informed', pend_final:'Feasibility, channels, plans, permissions and testing are still to be confirmed.',
+ pub_title:'PUBLIC SUMMARY — PLEASE REVIEW BEFORE USE',
+ pub_l1:'Guest-facing information only, prepared for your virtual reception.',
+ pub_l2:'Free-text fields can still contain private details. Review everything before use. It does not include your contacts, staff details or internal notes.',
+ whats_msg:'Hello Colmeia! Here is the summary for my virtual reception:',
+ spec_day:'Day *', spec_opens:'Opens *', spec_closes:'Closes *', selectDay:'Day…',
+ spec_service:'Service *', spec_ptype:'Price type *', spec_price:'Price in US$ (dollars)', spec_duration:'Calendar time (min) *', spec_buffer:'Cleanup / buffer (min)', spec_enabled:'Enabled professionals', spec_consult:'Needs in-person consult?', spec_note:'Public note',
+ selectType:'Select…', selectAnswer:'Select…', p_s_nome:"Ex.: Ladies' cut", p_s_preco:'19.99', p_s_duracao:'60', p_s_obs:'Ex.: price varies by hair length',
+ spec_name:'Name *', spec_role:'Role *', spec_schedule:'Schedule *', spec_services:'Services *',
+ p_e_nome:'Ex.: Carol', p_e_funcao:'Ex.: colorist', p_e_dias:'Ex.: Tue-Sat, 9am-5pm', p_e_servicos:'Ex.: color, treatments',
+ removeRow:'Remove row'
+},
+pt:{
+ doc_title:'Colmeia Studios Academy — Configuração da recepção virtual',
+ tag:'Colmeia Studios Academy · Configuração da recepção virtual',
+ h1a:'Vamos configurar a', h1b:'recepção virtual da Colmeia', h1c:' do seu salão.',
+ lead:'Responda às perguntas abaixo para a equipe da Colmeia montar a recepção virtual do seu salão. Esta página é um formulário: não atende ligações e não envia nada sozinha.',
+ badge1:'Formulário de configuração', badge2:'Conexões avaliadas caso a caso', badge3:'Recepção virtual', badge4:'Revisão antes de entrar no ar',
+ menuTitulo:'Seções do formulário',
+ nav1:'Seu salão', nav2:'Horários', nav3:'Serviços e preços', nav4:'Equipe', nav5:'Agendamento', nav6:'Regras e políticas', nav7:'Estilo da recepção', nav8:'Operação e início',
+ progresso:'Respostas obrigatórias', reqUnit:'obrigatórios respondidos',
+ s1t:'Seu salão', s1d:'Isso apresenta o seu negócio às clientes e orienta a equipe da Colmeia na configuração da sua recepção virtual.',
+ l_businessType:'Tipo de negócio', bt_hair:'Salão de cabelo', bt_studio:'Studio de beleza', bt_barber:'Barbearia', bt_ecom:'E-commerce', bt_other:'Outro',
+ l_nomeSalao:'Nome do salão / negócio *', p_nomeSalao:'Ex.: Studio Bella Vida',
+ l_responsavel:'Responsável *', opc_contato:'(quem podemos contatar)', p_responsavel:'Ex.: Ana Souza',
+ l_whatsResp:'WhatsApp do responsável *', help_phone:'EUA: (415) 555-0132 · Brasil: (11) 98765-4321', p_whatsResp:'(11) 98765-4321',
+ l_emailResp:'E-mail', optional:'(opcional)', p_emailResp:'voce@salao.com.br',
+ l_instagram:'Instagram', p_instagram:'@seusalao',
+ l_endereco:'Endereço completo *', p_endereco:'Rua, número, bairro, cidade — como a cliente chega até você',
+ l_cidadeEstado:'Cidade e estado do negócio *', help_cidadeEstado:'Para a recepção sempre dizer onde você fica (ex.: Miami, FL).', p_cidadeEstado:'Ex.: Miami, FL', er_cidade:'Informe a cidade e o estado do negócio (ex.: Miami, FL).',
+ l_estacionamento:'Estacionamento ou ponto de referência?', l_referencia:'Se sim, ou outro detalhe de chegada', p_referencia:'Ex.: portão azul ao lado da padaria; estacionamento nos fundos',
+ l_site:'Site ou página de reservas', p_site:'https://',
+ l_unidade:'Unidade / filial adicional (opcional)', p_unidade:'Ex.: filial Centro — segundo endereço que a cliente pode mencionar',
+ l_fuso:'Fuso horário', help_fuso:'Os horários abaixo valem para o fuso selecionado. Sugestão padrão: Leste dos EUA (Nova York/Miami). Ajuste para o fuso do seu negócio. Isso não define seus horários de funcionamento.',
+ l_fusoOutro:'Se outro, qual fuso ou cidade?',
+ s2t:'Horários de funcionamento', s2d:'Só os intervalos que você preencher aqui serão oferecidos às clientes, no fuso selecionado abaixo. Deixe os dias em branco quando o salão estiver fechado ou quando você não tiver certeza — em branco significa ainda não informado, nunca fechado por suposição.',
+ th_dia:'DIA', th_abre:'ABRE', th_fecha:'FECHA',
+ addDay:'+ Adicionar dia ou intervalo',
+ l_feriados:'Feriados e exceções', help_feriados:'Como o salão funciona em feriados? A recepção virtual vai explicar exatamente isso.', p_feriados:'Ex.: fechamos em feriados nacionais; janeiro com horário reduzido',
+ s3t:'Serviços e preços', s3d:'Esta é a tabela de preços que a recepção virtual vai consultar: o que você cobra e quanto tempo de agenda cada serviço ocupa.',
+ s3help:'Ao iniciar uma linha, complete nome, tipo de preço e duração. Preços em reais: 19,99 ou 1.234,50. "Sob avaliação" dispensa preço; a duração continua obrigatória (pode ser a própria consulta). Colunas extras são opcionais.',
+ addService:'+ Adicionar serviço',
+ l_pacotes:'Pacotes e promoções', help_pacotes:'Escreva qualquer oferta que a recepção possa mencionar — ou deixe claro que não existe.', p_pacotes:'Ex.: pacote mensal escova + tratamento 120,00; primeira visita 20% em uma escova',
+ l_formaPagamento:'Formas de pagamento aceitas', p_formaPagamento:'Ex.: cartão, dinheiro, Pix ou Zelle',
+ l_podePreco:'A recepção pode informar preços no telefone?', sn_yes_price:'Sim', sn_no_price:'Não',
+ s4t:'Equipe', s4d:'Se a cliente pede "a mesma pessoa de sempre", a recepção precisa saber quem faz o quê e quando.',
+ s4help:'Equipe é opcional nesta primeira etapa. Se preencher uma linha, complete nome, função, jornada e serviços. Use nomes profissionais, nunca nome de cliente.',
+ addPro:'+ Adicionar profissional',
+ l_escolheProf:'A cliente pode escolher a profissional?', sn_yes_choice:'Sim', sn_no_choice:'Não',
+ s5t:'Agendamento', s5d:'Avaliamos como sua agenda atual pode trabalhar com a recepção virtual. Qualquer conexão depende do seu plano, permissões e testes — nada é garantido nesta página.',
+ l_plataforma:'Onde você agenda hoje? *',
+ pf_google:'Google Agenda', pfs_review:'avaliada caso a caso', pfs_deps:'depende do plano e das permissões',
+ pf_paper:'Papel / caderno', pfs_paper:'podemos sugerir uma opção digital', pf_other:'Outra', pfs_other:'nos diga o nome abaixo', pf_dontknow:'Ainda não sei', pfs_dontknow:'resolvemos juntos',
+ l_outraPlataforma:'Qual plataforma você usa?', p_outraPlataforma:'Nome da plataforma ou sistema',
+ l_acessoAdmin:'Se usa uma das plataformas acima, você pode autorizar uma conexão?',
+ l_linkAgenda:'Conta ou link da agenda', p_linkAgenda:'Ex.: link de reservas ou e-mail da conta',
+ l_destinoAgenda:'Onde os agendamentos devem ficar?',
+ df_current:'Minha agenda atual', dfs_current:'avaliamos a conexão', df_new:'Agenda nova', dfs_new:'criada para você', df_collect:'Coleta e confirmação', dfs_collect:'a recepção anota; sua equipe confirma',
+ l_whatsappHoje:'Seu negócio usa WhatsApp hoje? *', sn_wa_business:'Sim — Business', sn_wa_personal:'Sim — comum',
+ l_numeroVirtual:'Telefone da recepção virtual',
+ nv_new:'Número novo exclusivo', nvs_new:'sujeito a disponibilidade', nv_keep:'Manter meu número atual', nvs_keep:'avaliamos o desvio de chamadas com você', nv_advise:'Recomendem a melhor opção', nvs_advise:'a equipe da Colmeia sugere o melhor caminho',
+ l_planoPlataforma:'Seu plano nessa plataforma (nome, se souber)', l_sitePlataforma:'Site da plataforma', l_docsPlataforma:'Página de ajuda ou documentação', l_suportePlataforma:'Contato do suporte da plataforma (privado)',
+ l_apiDisponivel:'Sua plataforma permite conexões externas?', opt_notinformed:'Não informado', opt_select:'Selecione…',
+ l_agendasRecursos:'Agendas, profissionais, salas ou equipamentos a considerar',
+ s6t:'Regras e políticas', s6d:'Suas regras. A recepção virtual as segue — e explica com educação quando alguém pedir exceção.',
+ l_antecedencia:'Antecedência mínima', p_antecedencia:'Ex.: só marca a partir de 2 horas de antecedência',
+ l_tolerancia:'Tolerância de atraso', p_tolerancia:'Ex.: 15 minutos',
+ l_cancelamento:'Cancelamento sem custo até', p_cancelamento:'Ex.: 24 horas antes do horário',
+ l_sinal:'Sinal para alguns serviços?', p_sinal:'Ex.: serviços acima de US$ 150 pedem 30% de sinal',
+ l_falta:'O que acontece depois de uma falta?', p_falta:'Ex.: após 2 faltas, só agenda com sinal',
+ l_regraOuro:'O que a recepção NUNCA pode fazer', help_regraOuro:'Ex.: dar desconto, agendar serviço que precisa de avaliação presencial, passar dados da equipe…', p_regraOuro:'Ex.: nunca dar desconto; nunca opinar sobre cor sem avaliação; nunca passar dados da equipe',
+ l_acompanhante:'A cliente pode levar acompanhante, criança ou pet?', p_acompanhante:'Ex.: crianças podem acompanhadas; não aceitamos pets',
+ l_duvidaFrequente:'Pergunta mais frequente das clientes', p_duvidaFrequente:'Ex.: quanto custa um balayage?',
+ l_respostaFaq:'Resposta aprovada para essa pergunta',
+ l_antecedenciaMax:'Antecedência máxima para agendar',
+ l_encaixeRecursos:'Durações, regras de encaixe, profissionais ou recursos simultâneos',
+ l_verificacao:'Como verificar identidade ao reagendar ou cancelar (sem expor dados de outras pessoas)',
+ l_dadosMinimos:'Dados mínimos do cliente para segurar a reserva', help_dadosMinimos:'Descreva os campos; não insira dados reais de clientes aqui.',
+ s6help:'Uma reserva, sinal ou pagamento só é confirmado depois que o sistema mostrar a confirmação. Sem conexão testada, trate como pendente.',
+ s7t:'Estilo da recepção', s7d:'Personalidade e comportamento. Você ouve uma amostra e aprova tudo antes de entrar no ar.',
+ l_nomeRecepcao:'Nome da recepcionista', p_nomeRecepcao:'Ex.: Paula, Bia, Fernanda — ou sugerimos um',
+ l_estiloVoz:'Estilo de voz', vf_warm:'Calorosa', vfs_warm:'tom de cuidado', vf_upbeat:'Animada', vfs_upbeat:'energia alta', vf_calm:'Calma', vfs_calm:'direta e serena',
+ l_serviceLang:'Idioma inicial do atendimento *', sl_en:'English', sl_pt:'Português (Brasil)', sl_bi:'Bilíngue EN + pt-BR',
+ l_saudacao:'Saudação inicial', opc_saudacao:'(opcional — redigimos uma se ficar em branco)', p_saudacao:'Ex.: "Salão Bella Vida, boa tarde! Posso ajudar?"',
+ l_transferir:'Quando uma pessoa da sua equipe deve assumir?', help_transferir:'Marque quantos quiser. Estes viram possíveis momentos de transferência, sujeitos a teste.',
+ tf_complaint:'Reclamação', tf_owner:'Pedir a dona', tf_technical:'Dúvida técnica', tf_discount:'Desconto', tf_groups:'Grupos e eventos', tf_unknown:'Não souber responder',
+ l_contatoTransferencia:'Quem assume (nome ou função, privado)', p_contatoTransferencia:'Nome ou função; telefone no campo abaixo',
+ l_telefoneHumano:'Telefone interno para transferência (privado)',
+ l_horarioHumano:'Quando há atendimento humano (dias, horários, fuso)',
+ l_foraHorario:'Fora do horário de transferência, o que fazer?', fh_message:'Anotar recado', fh_direct:'Sugerir agendamento', fh_ask:'Perguntar à cliente',
+ l_prazoRetorno:'Promessa à cliente sobre retorno humano', l_fallback:'O que fazer se o sistema ou a transferência estiver indisponível',
+ l_observacoes:'Algo mais? (notas internas, privadas)', help_observacoes:'Apenas situações especiais. Não inclua nomes de clientes, dados de saúde ou segredos.',
+ s8t:'Operação e início', s8d:'Detalhes opcionais para um bom começo. "Não sei" é uma resposta válida; pontos em aberto ficam listados à parte.',
+ l_canais:'Canais desejados *', help_canais:'Mensagens, voz e chamadas de WhatsApp exigem configuração e aprovação distintas. Um canal funcionando não libera os outros.',
+ l_canaisAdicionais:'Outro canal ou combinação', p_canaisAdicionais:'Ex.: site + telefone + WhatsApp mensagens; ou não sei',
+ l_volume:'Volume estimado de contatos (por dia/mês)', l_duracaoContato:'Duração média dos contatos', l_picos:'Dias e horários de pico', l_metaOperacao:'O que é sucesso para você',
+ l_acoesAutorizadas:'O que a recepção pode fazer sozinha — e o que não pode', l_aprovador:'Quem revisa e aprova a configuração (privado)',
+ l_golive:'O que precisa ser conferido e aprovado antes de entrar no ar', l_gravacao:'Gravação de ligações: decisão sua (gravar? aviso? por quanto tempo guardar?)', help_gravacao:'Gravação e guarda das gravações são decisões suas como responsável pelo negócio — confirme o que se aplica a você.',
+ l_numeroComercial:'Telefone comercial atual', l_operadora:'Operadora e tipo de linha (fixa/móvel/VoIP)',
+ l_metaWhats:'WhatsApp hoje: aplicativo comum, Business ou via provedor? Em branco ou "não sei" está ok.',
+ l_contatoPrivacidade:'Contato de privacidade (opcional, privado)',
+ s8help:'Não envie senhas, códigos de acesso, listas de clientes ou dados de saúde. A recepção sempre se apresenta como virtual. Tudo entra no ar só depois da sua aprovação.',
+ ciente_label:'Entendo que isto é um formulário de configuração para uma recepção virtual, com revisão antes de entrar no ar. *',
+ st_title:'Salvar respostas neste dispositivo (opcional)', st_help:'Evite em dispositivos compartilhados. Nada é salvo sem esta opção; desmarcar apaga a cópia local. Ao reabrir a página, perguntamos de novo. Arquivos baixados não são afetados.',
+ st_status_default:'salvamento local desativado.',
+ mig_text:'Foi encontrada neste dispositivo uma cópia de versão anterior. Ela não foi carregada. Depois de ativar o salvamento local, você pode importá-la como texto. Os horários antigos precisam de conferência — a versão anterior preenchia horários padrão.',
+ mig_import:'Importar cópia antiga após optar', mig_delete:'Excluir cópia antiga',
+ f_title:'Revise e envie sua configuração', f_p:'Sua recepção entra no ar depois da sua aprovação. Depois: 1. Toque em "Copiar resumo". 2. Toque em "Abrir WhatsApp da Colmeia". 3. Cole o resumo e envie por lá.',
+ b_copiar:'Copiar resumo', b_whats:'Abrir WhatsApp da Colmeia',
+ steps:'1. Toque em "Copiar resumo". 2. Toque em "Abrir WhatsApp da Colmeia". 3. Cole o resumo e envie.', p_whats_note:'Nada é enviado automaticamente: abrir o WhatsApp não confirma o envio.',
+ o_priv:'Resumo completo da configuração · confira antes de copiar',
+ print_title:'Resumo privado da configuração', print_unvalidated:'RESPOSTAS NÃO VALIDADAS — corrija os erros antes de compartilhar.',
+ copyToast:'Copiado', st_copy_ok:'Resumo copiado! Agora toque em Abrir WhatsApp da Colmeia e cole.', st_copy_fail:'Não foi possível copiar. O texto está selecionado - use Ctrl+C ou Copiar, ou baixe o .txt.',
+ yes:'Sim', no:'Não', dontknow:'Não sei',
+ foot_line:'Recepção virtual para salões e negócios de beleza',
+  foot_priv:'Sem servidor: as respostas ficam nesta página e na sua cópia local opcional. O envio por WhatsApp é manual.',
+ st_saved:'respostas salvas neste dispositivo.',
+ st_off:'salvamento desativado — cópia local removida. A cópia antiga, se existir, fica até você excluir.',
+ st_off_fail:'salvamento desativado, mas a remoção da cópia local falhou. Limpe os dados do site no navegador.',
+  st_save_fail:'falha ao salvar — armazenamento indisponível ou cheio. Copie o resumo manualmente.',
+ st_restore_confirm:'Restaurar a cópia salva neste dispositivo? Isso substitui as respostas atuais. Cancelar mantém as respostas atuais.',
+  st_restore_fail:'não foi possível ler a cópia salva — ela não foi sobrescrita. Suas respostas atuais estão intactas.',
+ st_mig_need:'ative o salvamento local antes de importar a cópia antiga.',
+ st_mig_confirm:'Importar a cópia antiga como texto e substituir as respostas atuais? Os horários antigos, principalmente, precisam de conferência.',
+ st_mig_ok:'cópia antiga importada como texto. Revise horários, tipos de preço e campos obrigatórios. A cópia antiga fica até você excluir.',
+ st_mig_fail:'falha na importação da cópia antiga — verifique o armazenamento.',
+ st_del_confirm:'Excluir a cópia antiga salva deste dispositivo?',
+ st_deleted:'cópia antiga excluída.',
+ st_del_fail:'não foi possível excluir a cópia antiga.',
+  st_storage_unavail:'armazenamento indisponível; nada foi salvo. Você ainda pode copiar o resumo.',
+ st_blocked:'Corrija os campos destacados antes.', st_regenerated:'Resumo pronto. Confira abaixo, depois copie e cole no WhatsApp.', st_whats_opened:'WhatsApp solicitado. Se a aba não abrir, permita pop-ups para este site. Cole o resumo copiado e envie por lá.',
+ clear_confirm:'Apagar as respostas atuais e as cópias locais salvas? Arquivos baixados não são apagados.',
+ er_title:'Revise os campos abaixo ({n}).',
+ er_nomeSalao:'Informe o nome do salão / negócio.', er_responsavel:'Informe o responsável.',
+ er_whats:'Informe um WhatsApp válido — EUA (415) 555-0132 ou Brasil (11) 98765-4321.',
+ er_endereco:'Informe o endereço completo: rua, número (ou s/n), bairro e cidade (mín. 12 caracteres).',
+ er_plataforma:'Escolha onde você agenda hoje; se Outra, informe o nome.', er_outra:'Informe o nome da outra plataforma.',
+ er_whatsHoje:'Diga se você usa WhatsApp hoje (não sei aceito).',
+ er_canais:'Escolha os canais desejados (não sei aceito).',
+ er_serviceLang:'Escolha o idioma inicial do atendimento.',
+ er_service:'Informe pelo menos um serviço completo: nome, tipo de preço, preço positivo quando aplicável e duração positiva.',
+ er_ciente:'Reconheça a recepção virtual e a revisão antes de entrar no ar.',
+ er_url:'Informe uma URL completa válida (https://…).', er_email:'Informe um e-mail válido.',
+ er_phoneOpt:'Informe um telefone válido (EUA ou Brasil) ou deixe em branco.',
+ er_day:'Escolha o dia deste intervalo.', er_abre:'Informe a abertura do intervalo.', er_fecha:'Informe o fechamento do intervalo.',
+ er_invert:'O fechamento deve ser depois da abertura. Separe horários noturnos em dias distintos.', er_overlap:'Intervalos sobrepostos no mesmo dia.',
+ er_snome:'Informe o nome do serviço.', er_stipo:'Escolha Fixo, A partir de ou Sob avaliação.',
+ er_spreco:'Use um preço positivo — 19,99 ou 1.234,50.', er_sdur:'Informe a duração de agenda em minutos inteiros positivos.',
+ er_sint:'Intervalo/limpeza deve ser zero ou número inteiro positivo.',
+ er_equipe:'Complete nome, função, jornada e serviços — ou remova a linha.',
+ er_faq:'Inclua a resposta da pergunta frequente — ou remova a pergunta.', er_faq2:'Inclua a pergunta correspondente a esta resposta.',
+ sum_title:'RECEPÇÃO VIRTUAL DA COLMEIA — DETALHES PARA CONFIGURAÇÃO',
+ sum_l1:'Preparado a partir do formulário de onboarding da Colmeia.', sum_l2:'Nada aqui está conectado a uma recepção em funcionamento. Conexões dependem de planos, permissões e testes.',
+ sum_l3:'Reserva, sinal ou pagamento só é confirmado depois que o sistema mostra a confirmação.', sum_l4:'A recepção entra no ar depois da sua revisão e aprovação.',
+ sum_source:'Fonte: formulário de onboarding Colmeia · ',
+ sum_salon:'SALÃO', sum_hours:'HORÁRIOS DE FUNCIONAMENTO', sum_services:'SERVIÇOS E PREÇOS', sum_team:'EQUIPE', sum_booking:'AGENDAMENTO', sum_policies:'REGRAS', sum_persona:'ESTILO DA RECEPÇÃO E IDIOMA', sum_ops:'OPERAÇÃO E INÍCIO', sum_choices:'ESCOLHAS', sum_open:'A CONFIRMAR',
+ currency:'US$', sum_currency:'Moeda', sum_quote:'Sob avaliação', sum_ni:'Não informado',
+ pend_hours:'Horários de funcionamento ainda não informados.', pend_team:'Equipe / serviços habilitados ainda não informados.',
+ pend_api:'Conexões externas da sua plataforma: não informado.', pend_fuso:'Fuso horário a confirmar.',
+ pend_notinformed:'não informado', pend_final:'Viabilidade, canais, planos, permissões e testes ainda precisam de confirmação.',
+ pub_title:'RESUMO PÚBLICO — REVISAR ANTES DE USAR',
+ pub_l1:'Apenas informações para clientes, preparadas para a sua recepção virtual.',
+ pub_l2:'Campos de texto livre ainda podem conter detalhes privados. Revise tudo antes de usar. Não inclui seus contatos, dados da equipe nem notas internas.',
+ whats_msg:'Olá, Colmeia! Aqui está o resumo da minha recepção virtual:',
+ spec_day:'Dia *', spec_opens:'Abre *', spec_closes:'Fecha *', selectDay:'Dia…',
+ spec_service:'Serviço *', spec_ptype:'Tipo de preço *', spec_price:'Preço em US$ (em dólares)', spec_duration:'Duração de agenda (min) *', spec_buffer:'Intervalo / limpeza (min)', spec_enabled:'Profissionais habilitados', spec_consult:'Exige avaliação presencial?', spec_note:'Observação pública',
+ selectType:'Selecione…', selectAnswer:'Selecione…', p_s_nome:'Ex.: Corte feminino', p_s_preco:'19,99', p_s_duracao:'60', p_s_obs:'Ex.: varia por comprimento',
+ spec_name:'Nome *', spec_role:'Função *', spec_schedule:'Jornada *', spec_services:'Serviços *',
+ p_e_nome:'Ex.: Carol', p_e_funcao:'Ex.: colorista', p_e_dias:'Ex.: terça a sábado, 9h-17h', p_e_servicos:'Ex.: coloração, tratamentos',
+ removeRow:'Remover linha'
+}
+};
+/* Display labels for stored canonical values (EN translations; PT shows canonical). */
+const VL = {en:{
+ 'Google Agenda':'Google Calendar','Papel / caderno':'Paper notebook','Outra':'Other','Não sei':"Not sure",
+ 'Sim, WhatsApp Business':'Yes — WhatsApp Business','Sim, WhatsApp comum':'Yes — regular WhatsApp','Não':'No','Sim':'Yes',
+ 'Na minha agenda atual, conectada':'My current calendar (connected)','Em uma agenda nova criada pela Colmeia':'A new calendar created by Colmeia','Recepcionista coleta os dados e a equipe confirma depois':'Reception collects; my team confirms',
+ 'Número novo exclusivo para a recepção virtual':'New dedicated number','Quero avaliar manter meu número atual':'Keep my current number (to review)','Ainda não sei, me indiquem a melhor opção':"Not sure yet — recommend the best option",
+ 'Calorosa e acolhedora':'Warm and welcoming','Animada e simpática':'Upbeat and friendly','Calma e objetiva':'Calm and objective',
+ 'Anotar o recado e avisar a responsável no WhatsApp':'Take a message and alert me on WhatsApp','Sugerir agendamento online direto':'Suggest direct booking','Perguntar à cliente o que prefere':'Ask the guest what they prefer',
+ 'Sim, pode informar':'Yes, may share prices','Não, pedir para confirmar no salão':'No — confirm in salon',
+ 'Sim, podem escolher':'Yes, they may choose','Não, atribuímos conforme a agenda':'No — assigned by schedule',
+ 'Fixo':'Fixed','A partir de':'Starting at','Sob avaliação':'Quote on request',
+ 'Sim, a confirmar no plano':'Yes — to confirm with my plan',
+ 'Telefone (voz)':'Phone (voice calls)','WhatsApp (mensagens)':'WhatsApp (messages)','WhatsApp (voz/chamadas)':'WhatsApp (voice/calls)','Telefone + WhatsApp mensagens':'Phone + WhatsApp messages','Telefone + WhatsApp mensagens + voz/chamadas':'Phone + WhatsApp messages + voice/calls','Site':'Website','Outro / a definir':'Other / to be defined','Outro / não sei':'Other / not sure',
+ 'Salão de cabelo':'Hair salon','Studio de beleza':'Beauty studio','Barbearia':'Barbershop','Outro':'Other',
+ 'English':'English','Português (Brasil)':'Portuguese (Brazil)','Bilíngue EN + pt-BR':'Bilingual EN + pt-BR',
+ 'Reclamação ou cliente irritada':'Complaint or upset guest','Pedido de falar com a gerente ou com a dona':'Ask for the owner or manager','Dúvida técnica sobre química, cor ou tratamento':'Technical question (color, chemistry, treatment)','Negociação de preço ou desconto':'Price or discount negotiation','Agendamento de grupo ou evento (noivas, formaturas)':'Group or event booking (weddings, parties)','Outro motivo que não souber responder':"Anything it can't answer",
+ 'Segunda':'Monday','Terça':'Tuesday','Quarta':'Wednesday','Quinta':'Thursday','Sexta':'Friday','Sábado':'Saturday','Domingo':'Sunday',
+ 'America/New_York':'US Eastern (New York/Miami)','America/Chicago':'US Central (Chicago)','America/Denver':'US Mountain (Denver)','America/Los_Angeles':'US Pacific (Los Angeles)','America/Anchorage':'Alaska','Pacific/Honolulu':'Hawaii','America/Sao_Paulo':'Brasília (Brazil)','Atlantic/Azores':'Azores/Lisbon','Europe/Berlin':'Central Europe','Europe/London':'London'
+},pt:{'English':'Inglês','America/New_York':'Leste dos EUA (Nova York/Miami)','America/Chicago':'Central dos EUA (Chicago)','America/Denver':'Montanha (Denver)','America/Los_Angeles':'Pacífico (Los Angeles)','America/Anchorage':'Alasca','Pacific/Honolulu':'Havaí','America/Sao_Paulo':'Brasília (Brasil)','Atlantic/Azores':'Açores/Lisboa','Europe/Berlin':'Europa Central','Europe/London':'Londres'}};
+const RADIO_LABELS = {plataforma:'l_plataforma',acessoAdmin:'l_acessoAdmin',destinoAgenda:'l_destinoAgenda',whatsappHoje:'l_whatsappHoje',numeroVirtual:'l_numeroVirtual',serviceLang:'l_serviceLang',businessType:'l_businessType',podePreco:'l_podePreco',escolheProf:'l_escolheProf',estiloVoz:'l_estiloVoz',foraHorario:'l_foraHorario',estacionamento:'l_estacionamento'};
+const CHECKBOX_LABELS = {transferir:'l_transferir'};
+const PHONE_FIELDS = ['whatsResp','numeroComercial','telefoneHumano'];
+
+let lang = 'pt';
+try{ if(sessionStorage.getItem('colmeia_lang')==='en') lang='en'; }catch(e){}
+const $ = id => document.getElementById(id);
+const rows = id => [...$(id).querySelectorAll('.linha-campos:not(.cabecalho-tabela)')];
+const radio = name => [...document.querySelectorAll('input[type=radio]')].find(e=>e.name===name&&e.checked)?.value || '';
+const text = id => $(id).value.trim();
+const t = k => { const d=STR[lang]||STR.en; return (k in d)?d[k]:STR.en[k]; };
+const vl = v => (v!=null && VL[lang] && VL[lang][v]) || v;
+let serial=0, restoring=false, errorsShown=false;
+const fields = () => [...document.querySelectorAll('section.bloco input[id],section.bloco select[id],section.bloco textarea[id]')].filter(e=>!e.closest('.linha-campos'));
+const SPECS = {
+ horarios:[
+  {k:'d',label:'spec_day',kind:'select',opts:DIAS,ph:'selectDay',cls:'h-dia'},
+  {k:'a',label:'spec_opens',kind:'time',cls:'h-abre'},
+  {k:'f',label:'spec_closes',kind:'time',cls:'h-fecha'}],
+ servicos:[
+  {k:'n',label:'spec_service',kind:'text',ph:'p_s_nome',cls:'s-nome'},
+  {k:'t',label:'spec_ptype',kind:'select',opts:['','Fixo','A partir de','Sob avaliação'],ph:'selectType',cls:'s-tipo'},
+  {k:'p',label:'spec_price',kind:'text',ph:'p_s_preco',cls:'s-preco'},
+  {k:'d',label:'spec_duration',kind:'number',ph:'p_s_duracao',cls:'s-duracao'},
+  {k:'i',label:'spec_buffer',kind:'number',ph:'',cls:'s-intervalo'},
+  {k:'h',label:'spec_enabled',kind:'text',ph:'',cls:'s-habilitados'},
+  {k:'a',label:'spec_consult',kind:'select',opts:['','Não sei','Sim','Não'],ph:'selectAnswer',cls:'s-avaliacao'},
+  {k:'o',label:'spec_note',kind:'text',ph:'p_s_obs',cls:'s-obs'}],
+ equipe:[
+  {k:'n',label:'spec_name',kind:'text',ph:'p_e_nome',cls:'e-nome'},
+  {k:'f',label:'spec_role',kind:'text',ph:'p_e_funcao',cls:'e-funcao'},
+  {k:'d',label:'spec_schedule',kind:'text',ph:'p_e_dias',cls:'e-dias'},
+  {k:'s',label:'spec_services',kind:'text',ph:'p_e_servicos',cls:'e-servicos'}]
+};
+const tableId = type => ({horarios:'tabelaHorarios',servicos:'tabelaServicos',equipe:'tabelaEquipe'})[type];
+function optionText(spec,v){ if(v==='') return t(spec.ph||'opt_select'); return vl(v); }
+function createRow(type, values={}){
+ const row=document.createElement('div'); row.className='linha-campos'; row.dataset.type=type;
+ for(const spec of SPECS[type]){
+  const wrap=document.createElement('label');
+  const title=document.createElement('span');
+  const el=document.createElement(spec.kind==='select'?'select':'input');
+  if(spec.kind!=='select') el.type=spec.kind;
+  else for(const v of spec.opts){const o=document.createElement('option');o.value=v;o.textContent=optionText(spec,v);el.append(o);}
+  el.id='linha-'+(++serial); wrap.htmlFor=el.id; el.className=spec.cls; el.dataset.key=spec.k;
+  el.value=typeof values[spec.k]==='string'?values[spec.k]:'';
+  if(spec.kind==='number'){el.min=spec.k==='i'?'0':'1';el.step='1';}
+  if(spec.cls==='s-preco')el.inputMode='decimal';
+  wrap.append(title,el);row.append(wrap);
+ }
+ const action=document.createElement('div');action.className='acao-linha';
+ const btn=document.createElement('button');btn.type='button';btn.className='remover';btn.textContent='✕';
+ btn.setAttribute('aria-label',t('removeRow'));
+ btn.addEventListener('click',()=>removerLinha(btn));action.append(btn);row.append(action);
+ $(tableId(type)).append(row);return row;
+}
+function relabelRows(){
+ for(const type of Object.keys(SPECS))for(const row of rows(tableId(type))){
+  for(const el of row.querySelectorAll('[data-key]')){
+   const spec=SPECS[type].find(s=>s.k===el.dataset.key);
+   const span=el.closest('label').querySelector('span');
+   if(spec&&span)span.textContent=t(spec.label);
+   for(const o of el.options||[])if(o.value!==''||spec.ph)o.textContent=optionText(spec,o.value);
+  }
+ }
+}
+function adicionarHorario(d='',a='',f=''){const r=createRow('horarios',{d,a,f});changed();return r;}
+function adicionarServico(n='',p='',d='',o=''){const r=createRow('servicos',{n,p,d,o});changed();return r;}
+function adicionarEquipe(n='',f='',d=''){const r=createRow('equipe',{n,f,d});changed();return r;}
+function removerLinha(btn){btn.closest('.linha-campos').remove();changed();}
+function atualizarOutraPlataforma(){
+ const active=radio('plataforma')==='Outra';
+ $('campoOutraPlataforma').style.display=active?'block':'none';
+ $('outraPlataforma').required=active;
+}
+function snapshot(){
+ const dados={version:VERSION,campos:{},radios:{},checkboxes:{},horarios:[],servicos:[],equipe:[]};
+ for(const e of fields())dados.campos[e.id]=e.type==='checkbox'?e.checked:e.value;
+ for(const e of document.querySelectorAll('input[type=radio]'))dados.radios[e.name]=radio(e.name);
+ for(const e of document.querySelectorAll('input[type=checkbox][name]')){
+  if(!dados.checkboxes[e.name])dados.checkboxes[e.name]=[];
+  if(e.checked)dados.checkboxes[e.name].push(e.value);
+ }
+ for(const type of Object.keys(SPECS))dados[type]=rows(tableId(type)).map(row=>Object.fromEntries([...row.querySelectorAll('[data-key]')].map(e=>[e.dataset.key,e.value])));
+ return dados;
+}
+function applyData(data, legacy=false){
+ if(!data||typeof data!=='object'||Array.isArray(data))throw new Error('estrutura inválida');
+ if(!legacy&&data.version!==VERSION)throw new Error('versão não suportada');
+ restoring=true;
+ try{
+  for(const e of fields()){
+   const value=data.campos?.[e.id];
+   if(e.type==='checkbox')e.checked=value===true;
+   else if(typeof value==='string')e.value=value;
+  }
+  for(const e of document.querySelectorAll('input[type=radio]'))e.checked=(legacy?data.campos?.['r_'+e.name]:data.radios?.[e.name])===e.value;
+  for(const e of document.querySelectorAll('input[type=checkbox][name]'))e.checked=Array.isArray(data.checkboxes?.[e.name])&&data.checkboxes[e.name].includes(e.value);
+  for(const type of Object.keys(SPECS))if(Array.isArray(data[type])){
+   rows(tableId(type)).forEach(e=>e.remove());
+   for(const values of data[type])if(values&&typeof values==='object')createRow(type,values);
+  }
+ }finally{restoring=false;}
+ atualizarOutraPlataforma();calcularProgresso();
+}
+function storageStatus(msg){$('statusStorage').textContent='v2 · '+msg;}
+function salvar(){
+ if(restoring||!$('salvarLocal').checked)return;
+ try{localStorage.setItem(STORAGE_KEY,JSON.stringify(snapshot()));storageStatus(t('st_saved'));}
+ catch(e){storageStatus(t('st_save_fail'));}
+}
+function optStorage(){
+ if(!$('salvarLocal').checked){
+  try{localStorage.removeItem(STORAGE_KEY);storageStatus(t('st_off'));}
+  catch(e){storageStatus(t('st_off_fail'));}
+  return;
+ }
+ try{
+  const saved=localStorage.getItem(STORAGE_KEY);
+  if(saved){
+   if(confirm(t('st_restore_confirm')))applyData(JSON.parse(saved));
+  }
+  salvar();
+ }catch(e){storageStatus(t('st_restore_fail'));}
+}
+function migrar(){
+ if(!$('salvarLocal').checked){storageStatus(t('st_mig_need'));return;}
+ if(!confirm(t('st_mig_confirm')))return;
+ try{
+  const raw=localStorage.getItem(LEGACY_KEY);if(!raw)throw new Error('ausente');
+  applyData(JSON.parse(raw),true);salvar();storageStatus(t('st_mig_ok'));
+ }catch(e){storageStatus(t('st_mig_fail'));}
+}
+function changed(){
+ if(restoring)return;
+ atualizarOutraPlataforma();calcularProgresso();salvar();
+ if(errorsShown)renderErrors(validate(),false);
+ $('saida').classList.remove('visivel');$('textoResumo').value='';
+ $('textoImpressao').textContent='';$('resumoImpressao').hidden=true;
+}
+function parsePrice(value){
+ const s=String(value).trim();
+ if(!/^(?:\d+(?:[.,]\d{1,2})?|\d{1,3}(?:[.,]\d{3})+(?:[.,]\d{1,2})?)$/.test(s))return NaN;
+ const lastSep=Math.max(s.lastIndexOf('.'),s.lastIndexOf(','));
+ const dec=/[.,]\d{1,2}$/.test(s)&&/\d/.test(s[lastSep-1]||'');
+ let n=s;
+ if(dec&&s[lastSep]){n=s.slice(0,lastSep).replace(/[.,]/g,'')+'.'+s.slice(lastSep+1);}
+ else{n=s.replace(/[.,]/g,'');}
+ const num=Number(n);return Number.isFinite(num)?num:NaN;
+}
+const positiveInt=s=>/^\d+$/.test(s)&&Number(s)>0&&Number.isSafeInteger(Number(s));
+function validPhone(value){
+ if(!/^[+\d\s().\-]+$/.test(value))return false;
+ let d=value.replace(/\D/g,'');
+ if((d.length===12||d.length===13)&&d.startsWith('55'))d=d.slice(2);
+ if(d.length<10||d.length>11)return false;
+ if(/^(\d)\1+$/.test(d))return false;
+ if(d.length===11){ if(d[0]==='1'){ if(d[1]>='2')return true; return d[2]==='9'; } return d[2]==='9'; }
+ return true;
+}
+const normPhone=v=>v.replace(/\s+/g,' ').trim();
+function addrOk(){
+ const a=text('endereco');
+ return a.length>=12&&a.split(/[\s,;—-]+/).filter(Boolean).length>=4&&/(?:\d|\bs\s*\/\s*n\b|sem número|no number)/i.test(a);
+}
+function requiredChecks(){
+ const p=radio('plataforma');
+ const completeService=rows('tabelaServicos').some(row=>{
+  const v=k=>row.querySelector('[data-key="'+k+'"]').value.trim();
+  return v('n')&&v('t')&&positiveInt(v('d'))&&(v('t')==='Sob avaliação'?!v('p')||parsePrice(v('p'))>0:parsePrice(v('p'))>0);
+ });
+ return [
+  ['nomeSalao',!!text('nomeSalao'),'er_nomeSalao'],
+  ['responsavel',!!text('responsavel'),'er_responsavel'],
+  ['whatsResp',validPhone(text('whatsResp')),'er_whats'],
+  ['endereco',addrOk(),'er_endereco'],
+ ['cidadeEstado',!!text('cidadeEstado'),'er_cidade'],
+  ['plataforma',!!p&&(p!=='Outra'||!!text('outraPlataforma')),'er_plataforma'],
+  ['whatsappHoje',!!radio('whatsappHoje'),'er_whatsHoje'],
+  ['serviceLang',!!radio('serviceLang'),'er_serviceLang'],
+  ['canais',!!text('canais'),'er_canais'],
+  ['servicos',completeService,'er_service'],
+  ['cienteVirtual',$('cienteVirtual').checked,'er_ciente']
+ ];
+}
+function targetFor(id){
+ if(id==='servicos')return rows('tabelaServicos')[0]?.querySelector('input')||document.querySelector('[onclick="adicionarServico()"]');
+ if(['plataforma','whatsappHoje','serviceLang'].includes(id))return document.querySelector('input[name="'+id+'"]');
+ return $(id);
+}
+function validate(){
+ const errors=[];const add=(el,msgKey)=>{if(el&&!errors.some(e=>e.el===el&&e.msg===msgKey))errors.push({el,msg:t(msgKey)});};
+ for(const [id,ok,msgKey] of requiredChecks())if(!ok)add(targetFor(id),msgKey);
+ if(radio('plataforma')==='Outra'&&!text('outraPlataforma'))add($('outraPlataforma'),'er_outra');
+ for(const e of fields()){
+  if(e.value&&['email','url'].includes(e.type)&&!e.validity.valid)add(e,e.type==='url'?'er_url':'er_email');
+ }
+ for(const id of ['numeroComercial','telefoneHumano'])if(text(id)&&!validPhone(text(id)))add($(id),'er_phoneOpt');
+ const intervals=[];
+ for(const row of rows('tabelaHorarios')){
+  const day=row.querySelector('.h-dia'),a=row.querySelector('.h-abre'),f=row.querySelector('.h-fecha');
+  if(!a.value&&!f.value)continue;
+  if(!day.value)add(day,'er_day');
+  if(!a.value)add(a,'er_abre');
+  if(!f.value)add(f,'er_fecha');
+  if(a.value&&f.value){
+   if(a.value>=f.value)add(f,'er_invert');
+   else if(day.value){
+    for(const old of intervals)if(old.day===day.value&&a.value<old.end&&f.value>old.start){add(a,'er_overlap');add(old.el,'er_overlap');}
+    intervals.push({day:day.value,start:a.value,end:f.value,el:a});
+   }
+  }
+ }
+ for(const row of rows('tabelaServicos')){
+  const at=k=>row.querySelector('[data-key="'+k+'"]');const v=k=>at(k).value.trim();
+  if(!SPECS.servicos.some(s=>v(s.k)))continue;
+  if(!v('n'))add(at('n'),'er_snome');
+  if(!v('t'))add(at('t'),'er_stipo');
+  if((v('t')!=='Sob avaliação'||v('p'))&&!(parsePrice(v('p'))>0))add(at('p'),'er_spreco');
+  if(!positiveInt(v('d')))add(at('d'),'er_sdur');
+  if(v('i')&&(!/^\d+$/.test(v('i'))||!Number.isSafeInteger(Number(v('i')))))add(at('i'),'er_sint');
+ }
+ for(const row of rows('tabelaEquipe')){
+  const inputs=[...row.querySelectorAll('input')];
+  if(inputs.some(e=>e.value.trim()))for(const e of inputs)if(!e.value.trim())add(e,'er_equipe');
+ }
+ if(text('duvidaFrequente')&&!text('respostaFaq'))add($('respostaFaq'),'er_faq');
+ if(text('respostaFaq')&&!text('duvidaFrequente'))add($('duvidaFrequente'),'er_faq2');
+ return errors.sort((a,b)=>a.el===b.el?0:(a.el.compareDocumentPosition(b.el)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1));
+}
+function renderErrors(errors,focus=true){
+ document.querySelectorAll('[aria-invalid=true]').forEach(e=>{e.removeAttribute('aria-invalid');e.classList.remove('falta');});
+ document.querySelectorAll('[data-error-ref]').forEach(e=>{
+  const ids=(e.getAttribute('aria-describedby')||'').split(' ').filter(id=>id&&id!==e.dataset.errorRef);
+  if(ids.length)e.setAttribute('aria-describedby',ids.join(' '));else e.removeAttribute('aria-describedby');delete e.dataset.errorRef;
+ });
+ document.querySelectorAll('.erro-campo').forEach(e=>e.remove());
+ const box=$('avisoCampos');box.replaceChildren();box.classList.toggle('visivel',errors.length>0);
+ if(!errors.length)return;
+ const title=document.createElement('p');title.textContent=t('er_title').replace('{n}',String(errors.length));box.append(title);
+ const list=document.createElement('ul');box.append(list);
+ const refs=new Map();
+ for(const {el,msg} of errors){
+  if(!el.id)el.id='campo-'+(++serial);
+  let error=refs.get(el);
+  if(!error){
+   error=document.createElement('span');error.className='erro-campo';error.id='erro-'+el.id;error.textContent=msg;el.after(error);refs.set(el,error);
+   el.setAttribute('aria-invalid','true');el.classList.add('falta');
+   const old=el.getAttribute('aria-describedby');el.setAttribute('aria-describedby',(old?old+' ':'')+error.id);el.dataset.errorRef=error.id;
+  }else error.textContent+=' '+msg;
+  const li=document.createElement('li'),a=document.createElement('a');a.href='#'+el.id;a.textContent=msg;
+  a.addEventListener('click',ev=>{ev.preventDefault();el.focus();});li.append(a);list.append(li);
+ }
+ if(focus)errors[0].el.focus();
+}
+function labelFor(e){return document.querySelector('label[for="'+e.id+'"]')?.textContent.replace(/\s+/g,' ').trim()||e.id;}
+function pendencias(data){
+ const p=[];
+ if(!data.horarios.some(h=>h.a&&h.f))p.push(t('pend_hours'));
+ if(!data.equipe.some(e=>e.n))p.push(t('pend_team'));
+ for(const id of ['unidade','numeroComercial','metaWhats','agendasRecursos','verificacao','dadosMinimos','fallback','horarioHumano','volume','picos','acoesAutorizadas','aprovador','gravacaoRetencao'])if(!data.campos[id])p.push(labelFor($(id))+': '+t('pend_notinformed')+'.');
+ for(const [id,value] of Object.entries(data.campos))if(typeof value==='string'&&/não sei|not sure|don.t know|desconhe|a definir|to be defined/i.test(value))p.push(labelFor($(id))+': '+value);
+ for(const [name,value] of Object.entries(data.radios))if(value==='Não sei')p.push(t(RADIO_LABELS[name]||name)+': '+vl(value));
+ if(data.campos.fuso==='Outro / não sei'&&!data.campos.fusoOutro)p.push(t('pend_fuso'));
+ p.push(t('pend_final'));
+ return p;
+}
+function fmtVal(type,k,v){ if(v==null||v==='')return t('sum_ni'); if(k==='p')return 'US$ '+v; return vl(v); }
+function buildPrivate(data){
+ const lines=[t('sum_title'),t('sum_l1'),t('sum_l2'),t('sum_l3'),t('sum_l4'),''];
+ for(const e of fields()){
+  let value=data.campos[e.id];
+  if(value===''||value===false)continue;
+  if(PHONE_FIELDS.includes(e.id))value=normPhone(value);
+  lines.push(labelFor(e)+': '+(value===true?t('yes'):value));
+ }
+ lines.push('\n'+t('sum_choices'));
+ for(const [name,value] of Object.entries(data.radios))if(value)lines.push(t(RADIO_LABELS[name]||name)+': '+vl(value));
+ for(const [name,vals] of Object.entries(data.checkboxes))if(vals.length)lines.push(t(CHECKBOX_LABELS[name]||name)+': '+vals.map(vl).join('; '));
+ const sec={horarios:'sum_hours',servicos:'sum_services',equipe:'sum_team'};
+ for(const type of Object.keys(SPECS)){
+  lines.push('\n'+t(sec[type]));
+  if(type==='servicos')lines.push(t('sum_currency')+': '+t('currency'));
+  for(const row of data[type]){
+   if(!Object.values(row).some(Boolean))continue;
+   lines.push(SPECS[type].map(s=>t(s.label)+': '+fmtVal(type,s.k,row[s.k])).join(' | '));
+  }
+ }
+ lines.push('\n'+t('sum_open'),...pendencias(data).map(s=>'- '+s));
+ return lines.join('\n');
+}
+function calcularProgresso(){
+ const checks=requiredChecks();const n=checks.filter(c=>c[1]).length;const pct=Math.round(n/checks.length*100);
+ $('barraPct').style.width=pct+'%';$('barraPct').parentElement.setAttribute('aria-valuenow',String(pct));
+ $('rotuloPct').textContent=pct+'% · '+n+'/'+checks.length+' '+t('reqUnit');return pct;
+}
+function gerarResumo(){
+ errorsShown=true;const errors=validate();renderErrors(errors);calcularProgresso();
+ if(errors.length){$('statusAcao').textContent=t('st_blocked');return null;}
+ const data=snapshot(),privado=buildPrivate(data);
+ $('textoResumo').value=privado;$('saida').classList.add('visivel');
+ $('textoImpressao').textContent=privado;$('resumoImpressao').hidden=false;
+ $('statusAcao').textContent=t('st_regenerated');return {privado};
+}
+async function copiarResumo(){
+ const result=gerarResumo();if(!result)return false;
+ try{if(!navigator.clipboard?.writeText)throw new Error('indisponível');await navigator.clipboard.writeText(result.privado);}
+ catch(e){
+  const ta=$('textoResumo');ta.focus();ta.select();
+  try{if(typeof document.execCommand!=='function'||!document.execCommand('copy'))throw new Error('negado');}
+  catch(e2){$('statusAcao').textContent=t('st_copy_fail');return false;}
+ }
+ const btn=$('btnWhats');btn.classList.add('destaque');
+ setTimeout(()=>btn.classList.remove('destaque'),2000);
+ $('statusAcao').textContent=t('st_copy_ok');return true;
+}
+function enviarWhats(){
+ if(!gerarResumo())return false;
+ const a=document.createElement('a');
+ a.href='https://wa.me/'+WHATSAPP_AGENCIA+'?text='+encodeURIComponent(t('whats_msg'));
+ a.target='_blank';a.rel='noopener noreferrer';
+ document.body.append(a);a.click();a.remove();
+ $('statusAcao').textContent=t('st_whats_opened');return true;
+}
+window.addEventListener('beforeprint',()=>{
+ if(!gerarResumo()){
+  $('resumoImpressao').hidden=false;$('textoImpressao').textContent=t('print_unvalidated')+'\n\n'+buildPrivate(snapshot());
+ }
+});
+function limparForm(){
+ if(!confirm(t('clear_confirm')))return;
+ try{localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(LEGACY_KEY);storageStatus(t('st_deleted'));}
+ catch(e){storageStatus(t('st_del_fail'));}
+ restoring=true;
+ for(const e of fields())if(e.type==='checkbox')e.checked=false;else e.value=e.id==='fuso'?'America/New_York':'';
+ document.querySelectorAll('input[type=radio],input[type=checkbox][name]').forEach(e=>e.checked=false);
+ for(const type of Object.keys(SPECS))rows(tableId(type)).forEach(e=>e.remove());
+ adicionarHorario();adicionarServico();adicionarEquipe();restoring=false;
+ $('salvarLocal').checked=false;$('migracao').hidden=true;errorsShown=false;renderErrors([]);changed();
+}
+function applyLang(l){
+ lang=l;
+ try{sessionStorage.setItem('colmeia_lang',l);}catch(e){}
+ document.documentElement.lang=l==='pt'?'pt-BR':'en';
+ document.title=t('doc_title');
+ document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));
+ document.querySelectorAll('[data-i18n-ph]').forEach(el=>el.placeholder=t(el.dataset.i18nPh));
+ document.querySelectorAll('select[data-vl]').forEach(sel=>{for(const o of sel.options)if(o.value)o.textContent=vl(o.value);});
+ relabelRows();
+ $('btnEn').setAttribute('aria-pressed',String(l==='en'));
+ $('btnPt').setAttribute('aria-pressed',String(l==='pt'));
+ $('barraPct').parentElement.setAttribute('aria-label',t('progresso'));
+ calcularProgresso();
+ if(errorsShown)renderErrors(validate(),false);
+ $('saida').classList.remove('visivel');$('textoResumo').value='';
+ $('textoImpressao').textContent='';$('resumoImpressao').hidden=true;
+ if(!$('salvarLocal').checked)storageStatus(t('st_status_default'));
+}
+$('btnEn').addEventListener('click',()=>applyLang('en'));
+$('btnPt').addEventListener('click',()=>applyLang('pt'));
+for(const id of ['nomeSalao','responsavel','whatsResp','endereco','cidadeEstado','canais','cienteVirtual'])$(id).required=true;
+for(const e of document.querySelectorAll('input[name=plataforma],input[name=whatsappHoje],input[name=serviceLang]')){e.required=true;e.id=e.id||'escolha-'+(++serial);}
+restoring=true;adicionarHorario();adicionarServico();adicionarEquipe();restoring=false;
+$('salvarLocal').addEventListener('change',optStorage);
+$('btnMigrar').addEventListener('click',migrar);
+$('btnExcluirV1').addEventListener('click',()=>{
+ if(!confirm(t('st_del_confirm')))return;
+ try{localStorage.removeItem(LEGACY_KEY);$('migracao').hidden=true;storageStatus(t('st_deleted'));}
+ catch(e){storageStatus(t('st_del_fail'));}
+});
+document.addEventListener('input',event=>{if(event.target.closest('section.bloco'))changed();});
+document.addEventListener('change',event=>{if(event.target.closest('section.bloco'))changed();});
+if('IntersectionObserver' in window){
+ const links=[...document.querySelectorAll('#menu a')];
+ const obs=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('ativo',a.getAttribute('href')==='#'+e.target.id));}),{rootMargin:'-20% 0px -70% 0px'});
+ document.querySelectorAll('section.bloco').forEach(s=>obs.observe(s));
+}
+applyLang(lang);
+try{$('migracao').hidden=!localStorage.getItem(LEGACY_KEY);}catch(e){storageStatus(t('st_storage_unavail'));}
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

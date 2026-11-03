@@ -1,5 +1,14 @@
 .netlify/
+.gemini/
+.env
+.env.*
 *.backup-*.html
+*.bak
+*.bak*
+*.py
+refactoring_report.txt
+capturas/
 scratch/
 node_modules/
 netlify/functions/node_modules/
+sitemap-auto.xml

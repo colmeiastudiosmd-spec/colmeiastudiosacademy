@@ -1,10 +1,10 @@
 [build]
+  command = "npm run build"
   publish = "."
   functions = "netlify/functions"
 
 [functions]
   included_files = ["netlify/functions/assets/*"]
-
 
 [[headers]]
   for = "/*"
@@ -17,6 +17,35 @@
   for = "/assets/downloads/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/obrigado/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
+
+[[headers]]
+  for = "/recepcao-virtual*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[plugins]]
+package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+  buildDir = "."
+  filePath = "sitemap-auto.xml"
+  exclude = [
+    "**/scratch/**",
+    "**/404.html",
+    "**/og-image.html",
+    "**/crm/**",
+    "**/cursos/criacao-websites-ia/**",
+    "**/cursos/conteudo-redes-sociais-ia/**",
+    "**/cursos/pesquisa-assistida-ia/**",
+    "**/formacao-inteligencia-juridica/**",
+    "**/obrigado/**",
+    "**/recepcao-virtual/**",
+    "**/consultoria-e-treinamento-empresarial.html"
+  ]
 
 [context.deploy-preview]
   command = 'printf "\n/*\n  X-Robots-Tag: noindex\n" >> _headers'

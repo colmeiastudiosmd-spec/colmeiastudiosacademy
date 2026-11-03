@@ -1,2 +1,4 @@
 /assets/downloads/*
   X-Robots-Tag: noindex, nofollow
+/recepcao-virtual*
+  X-Robots-Tag: noindex, nofollow

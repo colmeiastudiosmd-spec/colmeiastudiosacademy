@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /scratch/
 
 Sitemap: https://colmeiastudiosacademy.com.br/sitemap.xml
+
